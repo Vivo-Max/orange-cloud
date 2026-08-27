@@ -1,0 +1,188 @@
+name: Multi-Platform Build & Release (WEB + Android Only)
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Release version (for example, 2.1.0)
+        required: true
+        type: string
+      create_release:
+        description: Create GitHub Release after all builds pass
+        required: false
+        default: true
+        type: boolean
+      release_notes:
+        description: Release notes (optional)
+        required: false
+        default: ""
+        type: string
+
+env:
+  VERSION: ${{ inputs.version }}
+
+permissions:
+  contents: read
+
+jobs:
+  build-web:
+    name: Build Web
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.5.1
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build web app
+        working-directory: apps/web
+        env:
+          NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: "1"
+          WRANGLER_SEND_METRICS: "false"
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: pnpm build
+
+      - name: Upload web build artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: web-build-${{ env.VERSION }}
+          path: |
+            apps/web/.open-next/
+            apps/web/.next/
+            apps/web/dist/
+            apps/web/public/
+          if-no-files-found: warn
+          retention-days: 30
+          overwrite: true
+
+  build-android:
+    name: Build Android
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+
+      - name: Make Gradle Wrapper executable
+        run: chmod +x apps/android/gradlew
+
+      - name: Build OSS release APK
+        working-directory: apps/android
+        run: |
+          ./gradlew \
+            assembleOssRelease \
+            -PversionName="${VERSION}" \
+            -PversionCode="${{ github.run_number }}" \
+            --stacktrace \
+            --no-daemon
+
+      - name: Build Direct release APK
+        working-directory: apps/android
+        run: |
+          ./gradlew \
+            assembleDirectRelease \
+            -PversionName="${VERSION}" \
+            -PversionCode="${{ github.run_number }}" \
+            --stacktrace \
+            --no-daemon
+
+      - name: Upload Android artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build-${{ env.VERSION }}
+          path: |
+            apps/android/app/build/outputs/apk/oss/release/*.apk
+            apps/android/app/build/outputs/apk/direct/release/*.apk
+            apps/android/app/build/outputs/mapping/ossRelease/mapping.txt
+            apps/android/app/build/outputs/mapping/directRelease/mapping.txt
+          if-no-files-found: warn
+          retention-days: 30
+          overwrite: true
+
+  release:
+    name: Create GitHub Release
+    needs:
+      - build-web
+      - build-android
+    if: ${{ inputs.create_release }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - name: Download Web artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: web-build-${{ env.VERSION }}
+          path: artifacts/web
+
+      - name: Download Android artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: android-build-${{ env.VERSION }}
+          path: artifacts/android
+
+      - name: Delete existing GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ env.VERSION }}
+        run: |
+          gh release delete "$TAG" \
+            --repo "$GITHUB_REPOSITORY" \
+            --yes \
+            || true
+
+      - name: Delete existing Git tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ env.VERSION }}
+        run: |
+          gh api \
+            --method DELETE \
+            "repos/${GITHUB_REPOSITORY}/git/refs/tags/${TAG}" \
+            || true
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ env.VERSION }}
+          name: Orange Cloud v${{ env.VERSION }}
+          body: |
+            ${{ inputs.release_notes }}
+            ## Build artifacts
+            - Web: Next.js production build validation
+            - Android: OSS and Direct Release APKs
+            ## Notes
+            - iOS build has been removed (no longer needed).
+            - TestFlight/App Store release requires a separate archive/export workflow with Apple signing certificates, provisioning profiles, and an App Store Connect API key.
+            - Android OSS flavor has all Pro features enabled.
+          draft: false
+          prerelease: false
+          files: |
+            artifacts/web/
+            artifacts/android/**/*.apk
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
