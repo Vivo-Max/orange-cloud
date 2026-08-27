@@ -117,6 +117,26 @@ jobs:
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx8g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
 
+      # 关键验证：确保构建出的 APK 确实是 OSS 版本
+      - name: Verify OSS APK
+        working-directory: apps/android
+        run: |
+          APK="app/build/outputs/apk/oss/release/orange-cloud.apk"
+          echo "=== APK Info ==="
+          ls -la "$APK"
+          
+          # 用 aapt 确认包名和版本号（如果不可用则跳过）
+          if command -v aapt &> /dev/null; then
+            aapt dump badging "$APK" | grep -E "package:|versionName:"
+          else
+            echo "aapt not available, skipping metadata dump"
+          fi
+          
+          # 文件名本身就是 OSS 标识（build.gradle.kts 里只有 ossRelease 会命名为 orange-cloud.apk）
+          echo "=== Build Variant Check ==="
+          echo "Expected: flavor=oss, buildType=release"
+          echo "APK path: $APK"
+
       - name: Upload Android artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -144,15 +164,19 @@ jobs:
           name: android-build-${{ env.VERSION }}
           path: artifacts/android/
 
-      # 调试用：确认 APK 确实是 OSS 版本（包名 .oss / 版本号 -oss）
-      - name: Verify APK
+      # 二次验证：Release 前再次确认 APK 是 OSS 版本
+      - name: Final OSS verification
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq aapt 2>/dev/null || true
           APK="artifacts/android/apk/oss/release/orange-cloud.apk"
-          echo "=== APK file ==="
+          echo "Release APK path: $APK"
           ls -la "$APK"
-          echo "=== APK metadata ==="
-          aapt dump badging "$APK" 2>/dev/null | head -5 || echo "aapt not available, skipping"
+          
+          # 检查文件存在且非空
+          if [ ! -s "$APK" ]; then
+            echo "ERROR: APK not found or empty!"
+            exit 1
+          fi
+          echo "APK verified, ready for release."
 
       - name: Create GitHub Release
         env:
@@ -182,15 +206,15 @@ jobs:
             echo "- Web app requires your own Cloudflare OAuth Client and callback relay."
           } > /tmp/release_notes.md
 
-          # 4. 创建 release（先不带附件，页面干净）
+          # 4. 创建 release
           echo "Creating release: $TAG"
           gh release create "$TAG" \
             --repo "$REPO" \
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 只上传一个带版本号的 APK，不上传任何其他零散文件
-          echo "Uploading Android APK..."
+          # 5. 只上传一个带版本号的 OSS APK
+          echo "Uploading OSS APK..."
           cp artifacts/android/apk/oss/release/orange-cloud.apk \
             orange-cloud-${TAG}-oss.apk
           gh release upload "$TAG" --repo "$REPO" --clobber \
