@@ -52,17 +52,28 @@ jobs:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
+      # 调试：确认构建到底输出了什么（下次运行后可删掉）
+      - name: Verify build output
+        run: |
+          echo "=== apps/web/ contents ==="
+          ls -la apps/web/ || true
+          echo "=== .next/ ==="
+          ls -la apps/web/.next/ 2>/dev/null || echo ".next/ not found"
+          echo "=== dist/ ==="
+          ls -la apps/web/dist/ 2>/dev/null || echo "dist/ not found"
+
       - name: Upload Web artifacts
         uses: actions/upload-artifact@v4
         with:
           name: web-build-${{ env.VERSION }}
           path: |
-            apps/web/.open-next/
             apps/web/.next/
-            apps/web/dist/
-          # 排除 public/，避免截图/图标/SVG 污染 Release
+          # 如果你确实需要以下目录，确认构建命令能生成它们：
+          # apps/web/.open-next/
+          # apps/web/dist/
           retention-days: 30
           overwrite: true
+          if-no-files-found: warn
 
   build-android:
     name: Build Android (OSS Only)
@@ -73,7 +84,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5   # 升级 v4 → v5，消除 deprecation warning
         with:
           distribution: temurin
           java-version: '21'
@@ -82,7 +93,6 @@ jobs:
       - name: Make Gradle Wrapper executable
         run: chmod +x apps/android/gradlew
 
-      # CI 环境没有 Android Studio，手动生成 local.properties 注入 OAuth
       - name: Generate local.properties
         working-directory: apps/android
         run: |
@@ -120,6 +130,10 @@ jobs:
     permissions:
       contents: write
     steps:
+      # 修复核心：加上 checkout，否则 git archive 找不到仓库
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Download Android artifacts
         uses: actions/download-artifact@v4
         with:
