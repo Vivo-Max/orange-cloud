@@ -6,7 +6,11 @@ import { getCloudflareContext } from "@opennextjs/cloudflare";
 import { SESSION_COOKIE, verifySessionToken } from "@/lib/admin/auth";
 import { login } from "./actions";
 
-// 读 cookie 判定是否已登录即令本页动态渲染（无需 force-dynamic）。
+// 后台账本依赖 Cloudflare 环境变量（ADMIN_PASSWORD），必须每请求实时渲染。
+// 显式 force-dynamic：避免 next build 预渲染探测期执行 getCloudflareContext()
+// 时尝试启动 wrangler 远程代理（CI 无 Cloudflare 凭证会导致构建失败）。
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
 	title: "登录 · Orange Cloud 后台账本",
 	robots: { index: false, follow: false },
