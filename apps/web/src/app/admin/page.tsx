@@ -23,8 +23,10 @@ import { TimezoneToggle, UpdatedAt } from "@/components/dashboard/prefs";
 import { SESSION_COOKIE, verifySessionToken } from "@/lib/admin/auth";
 import { parseFilters, parsePage } from "@/lib/dashboard/types";
 
-// 无 force-dynamic：读取会话 cookie（next/headers）即令本路由动态渲染，
-// 每次请求实时读 D1，构建期不会预渲染（D1 / cookie 在构建期不可用）。
+// 后台账本依赖 Cloudflare D1 / KV / 环境变量（ADMIN_PASSWORD 等），必须每请求实时渲染。
+// 显式 force-dynamic：避免 next build 预渲染探测期执行 getCloudflareContext()
+// 时尝试启动 wrangler 远程代理（CI 无 Cloudflare 凭证会导致构建失败）。
+export const dynamic = "force-dynamic";
 
 type SearchParams = Record<string, string | string[] | undefined>;
 
