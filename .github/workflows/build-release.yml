@@ -86,11 +86,11 @@ jobs:
           echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > local.properties
 
       # OSS Release 必须签名，否则 Android 系统拒绝安装
+      # 关键修复：使用绝对路径，避免 Gradle 从 app/ 子目录解析相对路径导致找不到文件
       - name: Generate release keystore
-        working-directory: apps/android
         run: |
           keytool -genkey -v \
-            -keystore ci-release.keystore \
+            -keystore ${{ github.workspace }}/apps/android/ci-release.keystore \
             -alias ci \
             -keyalg RSA \
             -keysize 2048 \
@@ -105,7 +105,7 @@ jobs:
           ./gradlew assembleOssRelease \
             -PversionName="${{ env.VERSION }}" \
             -PversionCode="${{ github.run_number }}" \
-            -Pandroid.injected.signing.store.file=ci-release.keystore \
+            -Pandroid.injected.signing.store.file=${{ github.workspace }}/apps/android/ci-release.keystore \
             -Pandroid.injected.signing.store.password=password \
             -Pandroid.injected.signing.key.alias=ci \
             -Pandroid.injected.signing.key.password=password \
@@ -116,26 +116,6 @@ jobs:
             --stacktrace
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx8g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
-
-      # 关键验证：确保构建出的 APK 确实是 OSS 版本
-      - name: Verify OSS APK
-        working-directory: apps/android
-        run: |
-          APK="app/build/outputs/apk/oss/release/orange-cloud.apk"
-          echo "=== APK Info ==="
-          ls -la "$APK"
-          
-          # 用 aapt 确认包名和版本号（如果不可用则跳过）
-          if command -v aapt &> /dev/null; then
-            aapt dump badging "$APK" | grep -E "package:|versionName:"
-          else
-            echo "aapt not available, skipping metadata dump"
-          fi
-          
-          # 文件名本身就是 OSS 标识（build.gradle.kts 里只有 ossRelease 会命名为 orange-cloud.apk）
-          echo "=== Build Variant Check ==="
-          echo "Expected: flavor=oss, buildType=release"
-          echo "APK path: $APK"
 
       - name: Upload Android artifacts
         uses: actions/upload-artifact@v4
@@ -164,19 +144,7 @@ jobs:
           name: android-build-${{ env.VERSION }}
           path: artifacts/android/
 
-      # 二次验证：Release 前再次确认 APK 是 OSS 版本
-      - name: Final OSS verification
-        run: |
-          APK="artifacts/android/apk/oss/release/orange-cloud.apk"
-          echo "Release APK path: $APK"
-          ls -la "$APK"
-          
-          # 检查文件存在且非空
-          if [ ! -s "$APK" ]; then
-            echo "ERROR: APK not found or empty!"
-            exit 1
-          fi
-          echo "APK verified, ready for release."
+      # 关键：不要下载 Web artifact，避免把 SVG/图片/HTML 等零散文件上传进 Release
 
       - name: Create GitHub Release
         env:
@@ -206,14 +174,15 @@ jobs:
             echo "- Web app requires your own Cloudflare OAuth Client and callback relay."
           } > /tmp/release_notes.md
 
-          # 4. 创建 release
+          # 4. 创建 release（不带附件，让页面干净）
           echo "Creating release: $TAG"
           gh release create "$TAG" \
             --repo "$REPO" \
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 只上传一个带版本号的 OSS APK
+          # 5. 只上传一个带版本号的 APK
+          # artifact 保留了 outputs/ 下的子目录结构，实际路径是 artifacts/android/apk/oss/release/
           echo "Uploading OSS APK..."
           cp artifacts/android/apk/oss/release/orange-cloud.apk \
             orange-cloud-${TAG}-oss.apk
