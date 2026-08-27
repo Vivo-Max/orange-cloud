@@ -80,17 +80,11 @@ jobs:
       - name: Make Gradle Wrapper executable
         run: chmod +x apps/android/gradlew
 
-      # 关键修复：双重保险注入 OAUTH_CLIENT_ID
-      # 1. 写 local.properties（Gradle 配置阶段读取）
-      # 2. 同时通过 -P 参数传入（防 local.properties 读取失败）
       - name: Generate local.properties
         working-directory: apps/android
         run: |
           echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > local.properties
-          echo "=== Generated local.properties ==="
-          cat local.properties | sed 's/=.*/=***/'  # 掩码输出，仅确认格式
 
-      # OSS Release 必须签名，否则 Android 系统拒绝安装
       - name: Generate release keystore
         run: |
           keytool -genkey -v \
@@ -121,21 +115,6 @@ jobs:
             --stacktrace
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx8g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
-
-      # 关键验证：确保 OAUTH_CLIENT_ID 真的写进了 BuildConfig，不是空字符串
-      - name: Verify BuildConfig
-        working-directory: apps/android
-        run: |
-          APK="app/build/outputs/apk/oss/release/orange-cloud.apk"
-          echo "=== Checking OAUTH_CLIENT_ID in BuildConfig ==="
-          # 解压 BuildConfig 类文件并 strings 查找
-          unzip -p "$APK" classes.dex | strings | grep -E "^[a-f0-9]{32}$" || true
-          # 更直接：用 aapt 看应用标签（如果可用）
-          if command -v aapt &> /dev/null; then
-            aapt dump badging "$APK" | head -3
-          fi
-          # 兜底：只要 APK 存在且大于 5MB 就认为构建成功
-          ls -lh "$APK"
 
       - name: Upload Android artifacts
         uses: actions/upload-artifact@v4
@@ -199,7 +178,7 @@ jobs:
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 只上传一个带版本号的 APK
+          # 5. 上传带版本号的 OSS APK
           echo "Uploading OSS APK..."
           cp artifacts/android/apk/oss/release/orange-cloud.apk \
             orange-cloud-${TAG}-oss.apk
