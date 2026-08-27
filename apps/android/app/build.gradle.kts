@@ -44,8 +44,11 @@ android {
         // 实况通知促升(API36) 均 if-guard 渐进增强，Android 8–11 落固定品牌调色板与常驻通知回退。
         minSdk = 26
         targetSdk = 36
-        versionCode = 24
-        versionName = "2.1.0"
+
+        // 读取 CI / 命令行传入的 -P 属性，回退到硬编码默认值
+        versionCode = (providers.gradleProperty("versionCode").orNull ?: "24").toInt()
+        versionName = providers.gradleProperty("versionName").orNull ?: "2.1.0"
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         // OAuth 回调（Web 后端 302 跳回的自定义 scheme）
@@ -135,6 +138,17 @@ android {
 
     packaging {
         resources.excludes += "/META-INF/{AL2.0,LGPL2.1}"
+    }
+
+    // 配置 OSS Release APK 输出文件名
+    applicationVariants.all {
+        val variant = this
+        if (variant.flavorName == "oss" && variant.buildType.name == "release") {
+            variant.outputs.all {
+                val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+                output.outputFileName = "orange-cloud.apk"
+            }
+        }
     }
 }
 
