@@ -1,4 +1,4 @@
-name: Multi-Platform Build & Release
+name: Build & Release (Web + Android)
 
 on:
   workflow_dispatch:
@@ -17,198 +17,15 @@ on:
         required: false
         type: string
         default: ''
-      cloudflare_api_token:
-        description: 'Cloudflare API Token (optional, for Web build)'
-        required: false
-        type: string
-        default: ''
-      admin_password:
-        description: 'Admin password for Web build (optional, runtime only)'
-        required: false
-        type: string
-        default: ''
 
 env:
   VERSION: ${{ github.event.inputs.version }}
 
 jobs:
-  # ═══════════════════════════════════════════════════════════════
-  # iOS / iPadOS Build (Simulator)
-  # ═══════════════════════════════════════════════════════════════
-  # "Orange Cloud" target 包含 embedded Watch App / WatchExtension 依赖，
-  # 导致 -target 构建时仍强制编译 Watch 代码。WatchExtension 中的
-  # accessoryCorner API 仅在 watchOS 可用，在 iOS Simulator 上编译失败。
-  # 修复：构建前彻底修改 project.pbxproj：
-  #   1. 从 buildPhases 中移除所有含 "Watch" / "Target Dependencies" 的项
-  #   2. 清空 dependencies 数组
-  # 使 xcodebuild 仅编译纯 iOS 代码。
-  # ═══════════════════════════════════════════════════════════════
-  build-ios:
-    name: Build iOS (Xcode)
-    runs-on: macos-15
-    timeout-minutes: 45
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Select Xcode 26
-        run: sudo xcode-select -s /Applications/Xcode_26.0.app/Contents/Developer
-
-      - name: Show Xcode version
-        run: xcodebuild -version
-
-      - name: Strip Watch dependencies from iOS target
-        run: |
-          cd "apps/ios/Orange Cloud/Orange Cloud.xcodeproj"
-          python3 << 'PYEOF'
-          filepath = "project.pbxproj"
-          with open(filepath, "r", encoding="utf-8") as f:
-              content = f.read()
-
-          # 定位 "Orange Cloud" target 块（ID: E9AD1A7A2FE1B6A90020AAAF）
-          marker = 'E9AD1A7A2FE1B6A90020AAAF /* Orange Cloud */ = {'
-          start = content.find(marker)
-          if start == -1:
-              print("ERROR: Could not find Orange Cloud target block")
-              exit(1)
-          end = content.find('};', start)
-          if end == -1:
-              print("ERROR: Could not find end of Orange Cloud target block")
-              exit(1)
-          end += 2
-          block = content[start:end]
-
-          # 1. 在 target 块内找到 buildPhases 数组，移除所有含 Watch/Target Dependencies 的行
-          bp_marker = 'buildPhases = ('
-          bp_start = block.find(bp_marker)
-          if bp_start != -1:
-              bp_end = block.find(');', bp_start)
-              if bp_end != -1:
-                  bp_block = block[bp_start:bp_end+2]
-                  lines = bp_block.splitlines()
-                  new_lines = []
-                  for line in lines:
-                      # 移除含 Watch / Target Dependencies / Embed App Extensions 的行
-                      # Embed App Extensions 可能包含 WatchExtension，一并移除
-                      if any(k in line for k in ['Watch', 'Target Dependencies', 'Embed App Extensions']):
-                          continue
-                      new_lines.append(line)
-                  new_bp = "\n".join(new_lines)
-                  block = block[:bp_start] + new_bp + block[bp_end+2:]
-
-          # 2. 在 target 块内找到 dependencies 数组，清空
-          dep_marker = 'dependencies = ('
-          dep_start = block.find(dep_marker)
-          if dep_start != -1:
-              dep_end = block.find(');', dep_start)
-              if dep_end != -1:
-                  block = block[:dep_start] + 'dependencies = (\n\t\t\t);' + block[dep_end+2:]
-
-          # 写回
-          content = content[:start] + block + content[end:]
-          with open(filepath, "w", encoding="utf-8") as f:
-              f.write(content)
-          print("Stripped Watch dependencies from 'Orange Cloud' target")
-          PYEOF
-
-      - name: Cache DerivedData
-        uses: actions/cache@v4
-        with:
-          path: ~/Library/Developer/Xcode/DerivedData
-          key: ios-deriveddata-${{ hashFiles('apps/ios/**/*.swift', 'apps/ios/**/*.xcodeproj/**') }}
-          restore-keys: ios-deriveddata-
-
-      - name: Build iOS (Simulator / Unsigned)
-        run: |
-          cd "apps/ios/Orange Cloud"
-          set -o pipefail
-          xcodebuild build \
-            -project "Orange Cloud.xcodeproj" \
-            -target "Orange Cloud" \
-            -sdk iphonesimulator \
-            -configuration Release \
-            -skipPackagePluginValidation \
-            -skipMacroValidation \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
-            DEVELOPMENT_TEAM="" \
-            PROVISIONING_PROFILE_SPECIFIER="" \
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS="OPENSOURCE_UNLOCKED" \
-            | xcbeautify --renderer github-actions
-
-      - name: Upload iOS Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ios-build-${{ env.VERSION }}
-          path: |
-            apps/ios/Orange Cloud/build/
-          retention-days: 30
-          overwrite: true
-
-  # ═══════════════════════════════════════════════════════════════
-  # Android Build
-  # ═══════════════════════════════════════════════════════════════
-  build-android:
-    name: Build Android (Gradle)
-    runs-on: ubuntu-latest
-    timeout-minutes: 30
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 21
-        uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'temurin'
-
-      - name: Ensure gradlew is executable
-        run: chmod +x apps/android/gradlew
-
-      - name: Cache Gradle
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: gradle-${{ hashFiles('apps/android/**/*.gradle*', 'apps/android/**/gradle-wrapper.properties', 'apps/android/**/gradle-daemon-jvm.properties') }}
-          restore-keys: gradle-
-
-      - name: Build Android OSS APK
-        run: |
-          cd apps/android
-          ./gradlew assembleOssRelease \
-            -PversionName="${{ env.VERSION }}" \
-            -PversionCode="${{ github.run_number }}" \
-            --stacktrace
-
-      - name: Build Android Direct APK
-        run: |
-          cd apps/android
-          ./gradlew assembleDirectRelease \
-            -PversionName="${{ env.VERSION }}" \
-            -PversionCode="${{ github.run_number }}" \
-            --stacktrace
-
-      - name: Upload Android Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: android-build-${{ env.VERSION }}
-          path: |
-            apps/android/app/build/outputs/apk/oss/release/*.apk
-            apps/android/app/build/outputs/apk/direct/release/*.apk
-            apps/android/app/build/outputs/mapping/ossRelease/mapping.txt
-            apps/android/app/build/outputs/mapping/directRelease/mapping.txt
-          retention-days: 30
-          overwrite: true
-
-  # ═══════════════════════════════════════════════════════════════
-  # Web Build (Next.js on Cloudflare Workers)
-  # ═══════════════════════════════════════════════════════════════
   build-web:
-    name: Build Web (Next.js)
+    name: Build Web
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -216,7 +33,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -226,17 +43,16 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build Web
-        run: |
-          cd apps/web
-          pnpm build
+        working-directory: apps/web
+        run: pnpm build
         env:
           NODE_ENV: production
-          NEXT_TELEMETRY_DISABLED: 1
-          WRANGLER_SEND_METRICS: false
-          ADMIN_PASSWORD: ${{ github.event.inputs.admin_password }}
-          CLOUDFLARE_API_TOKEN: ${{ github.event.inputs.cloudflare_api_token }}
+          NEXT_TELEMETRY_DISABLED: '1'
+          WRANGLER_SEND_METRICS: 'false'
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-      - name: Upload Web Artifacts
+      - name: Upload Web artifacts
         uses: actions/upload-artifact@v4
         with:
           name: web-build-${{ env.VERSION }}
@@ -248,34 +64,83 @@ jobs:
           retention-days: 30
           overwrite: true
 
-  # ═══════════════════════════════════════════════════════════════
-  # GitHub Release
-  # ═══════════════════════════════════════════════════════════════
+  build-android:
+    name: Build Android
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+
+      - name: Make Gradle Wrapper executable
+        run: chmod +x apps/android/gradlew
+
+      - name: Build OSS release APK
+        working-directory: apps/android
+        run: |
+          ./gradlew assembleOssRelease \
+            -PversionName="${{ env.VERSION }}" \
+            -PversionCode="${{ github.run_number }}" \
+            --stacktrace \
+            --no-daemon
+
+      - name: Build Direct release APK
+        working-directory: apps/android
+        run: |
+          ./gradlew assembleDirectRelease \
+            -PversionName="${{ env.VERSION }}" \
+            -PversionCode="${{ github.run_number }}" \
+            --stacktrace \
+            --no-daemon
+
+      - name: Upload Android artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-build-${{ env.VERSION }}
+          path: |
+            apps/android/app/build/outputs/apk/oss/release/*.apk
+            apps/android/app/build/outputs/apk/direct/release/*.apk
+            apps/android/app/build/outputs/mapping/ossRelease/mapping.txt
+            apps/android/app/build/outputs/mapping/directRelease/mapping.txt
+          retention-days: 30
+          overwrite: true
+
   release:
     name: Create GitHub Release
-    needs: [build-ios, build-android, build-web]
+    needs: [build-web, build-android]
     runs-on: ubuntu-latest
     if: ${{ github.event.inputs.create_release == 'true' }}
     permissions:
       contents: write
     steps:
-      - name: Download all artifacts
+      - name: Download Web artifacts
         uses: actions/download-artifact@v4
         with:
-          path: artifacts/
-          merge-multiple: false
+          name: web-build-${{ env.VERSION }}
+          path: artifacts/web/
+
+      - name: Download Android artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: android-build-${{ env.VERSION }}
+          path: artifacts/android/
 
       - name: Delete existing release and tag
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="v${{ env.VERSION }}"
-          echo "Force-deleting existing release/tag: $TAG"
-          gh release delete "$TAG" --yes --repo "${{ github.repository }}" 2>/dev/null || true
+          gh release delete "$TAG" --repo "${{ github.repository }}" --yes 2>/dev/null || true
           gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/$TAG" 2>/dev/null || true
-          echo "Cleanup done."
 
-      - name: Create Release
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ env.VERSION }}
@@ -284,19 +149,17 @@ jobs:
             ${{ github.event.inputs.release_notes }}
 
             ## Build Artifacts
-            - **iOS**: Simulator build (compile verification only; install on device requires self-signing in Xcode)
             - **Android**: OSS & Direct APKs (Pro features unlocked in OSS flavor)
             - **Web**: Next.js static output for Cloudflare Workers deployment
 
             ## Notes
-            - iOS build is a Simulator verification build. To install on a real device, open in Xcode, set your own Bundle ID / App Group / Signing Team, and rebuild.
+            - iOS build requires Apple Developer certificate and is not included in CI.
             - Android OSS flavor has all Pro features enabled at zero cost.
             - Web app requires your own Cloudflare OAuth Client and callback relay.
           draft: false
           prerelease: false
           files: |
-            artifacts/ios-build-${{ env.VERSION }}/**/*
-            artifacts/android-build-${{ env.VERSION }}/**/*.apk
-            artifacts/web-build-${{ env.VERSION }}/**/*
+            artifacts/android/**/*.apk
+            artifacts/web/**/*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
