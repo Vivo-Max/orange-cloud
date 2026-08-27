@@ -91,8 +91,7 @@ jobs:
             --parallel \
             --build-cache \
             --configure-on-demand \
-            -x lintVitalAnalyzeOssRelease \
-            -x lintVitalReportOssRelease \
+            -x lintVitalOssRelease \
             --stacktrace
         env:
           GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx8g -XX:MaxMetaspaceSize=512m -XX:+HeapDumpOnOutOfMemoryError"
