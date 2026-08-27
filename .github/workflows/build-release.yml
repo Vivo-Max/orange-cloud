@@ -60,7 +60,7 @@ jobs:
             apps/web/.open-next/
             apps/web/.next/
             apps/web/dist/
-          # 注意：排除 apps/web/public/，避免截图/图标/SVG 被当成 Release asset
+          # 排除 public/，避免截图/图标/SVG 污染 Release
           retention-days: 30
           overwrite: true
 
@@ -81,6 +81,12 @@ jobs:
 
       - name: Make Gradle Wrapper executable
         run: chmod +x apps/android/gradlew
+
+      # CI 环境没有 Android Studio，手动生成 local.properties 注入 OAuth
+      - name: Generate local.properties
+        working-directory: apps/android
+        run: |
+          echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > local.properties
 
       - name: Build OSS release APK
         working-directory: apps/android
@@ -114,12 +120,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Download Web artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: web-build-${{ env.VERSION }}
-          path: artifacts/web/
-
       - name: Download Android artifacts
         uses: actions/download-artifact@v4
         with:
@@ -153,7 +153,7 @@ jobs:
 
           ## Build Artifacts
           - **Android**: OSS APK (all Pro features unlocked at zero cost)
-          - **Web**: Next.js static output for Cloudflare Workers deployment
+          - **Source Code**: Full source archive
 
           ## Notes
           - iOS build requires Apple Developer certificate and is not included in CI.
@@ -168,7 +168,7 @@ jobs:
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 上传 Android APK
+          # 5. 上传 Android APK（OSS 版本，已注入 OAuth）
           echo "Uploading Android APK..."
           gh release upload "$TAG" --repo "$REPO" --clobber artifacts/android/orange-cloud.apk
 
