@@ -42,9 +42,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Web
+      - name: Build Web (OpenNext)
         working-directory: apps/web
-        run: pnpm build
+        run: pnpm exec open-next build
         env:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: '1'
@@ -52,25 +52,11 @@ jobs:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
 
-      # 调试：确认构建到底输出了什么（下次运行后可删掉）
-      - name: Verify build output
-        run: |
-          echo "=== apps/web/ contents ==="
-          ls -la apps/web/ || true
-          echo "=== .next/ ==="
-          ls -la apps/web/.next/ 2>/dev/null || echo ".next/ not found"
-          echo "=== dist/ ==="
-          ls -la apps/web/dist/ 2>/dev/null || echo "dist/ not found"
-
       - name: Upload Web artifacts
         uses: actions/upload-artifact@v4
         with:
           name: web-build-${{ env.VERSION }}
-          path: |
-            apps/web/.next/
-          # 如果你确实需要以下目录，确认构建命令能生成它们：
-          # apps/web/.open-next/
-          # apps/web/dist/
+          path: apps/web/.open-next/
           retention-days: 30
           overwrite: true
           if-no-files-found: warn
@@ -84,7 +70,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 21
-        uses: actions/setup-java@v5   # 升级 v4 → v5，消除 deprecation warning
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '21'
@@ -130,7 +116,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 修复核心：加上 checkout，否则 git archive 找不到仓库
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -139,6 +124,12 @@ jobs:
         with:
           name: android-build-${{ env.VERSION }}
           path: artifacts/android/
+
+      - name: Download Web artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: web-build-${{ env.VERSION }}
+          path: artifacts/web/
 
       - name: Archive source code
         run: |
@@ -182,13 +173,16 @@ jobs:
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 上传 Android APK（OSS 版本，已注入 OAuth）
+          # 5. 上传 Android APK（artifact 保留了从 outputs/ 开始的子目录结构）
           echo "Uploading Android APK..."
-          gh release upload "$TAG" --repo "$REPO" --clobber artifacts/android/orange-cloud.apk
+          gh release upload "$TAG" --repo "$REPO" --clobber \
+            artifacts/android/apk/oss/release/orange-cloud.apk
 
           # 6. 上传源码压缩包
           echo "Uploading source code archives..."
-          gh release upload "$TAG" --repo "$REPO" --clobber "orange-cloud-${TAG}-source.zip"
-          gh release upload "$TAG" --repo "$REPO" --clobber "orange-cloud-${TAG}-source.tar.gz"
+          gh release upload "$TAG" --repo "$REPO" --clobber \
+            "orange-cloud-${TAG}-source.zip"
+          gh release upload "$TAG" --repo "$REPO" --clobber \
+            "orange-cloud-${TAG}-source.tar.gz"
 
           echo "Release $TAG created successfully."
