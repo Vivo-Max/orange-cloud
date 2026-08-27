@@ -42,9 +42,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Web (OpenNext)
+      - name: Build Web
         working-directory: apps/web
-        run: pnpm exec open-next build
+        run: pnpm build
         env:
           NODE_ENV: production
           NEXT_TELEMETRY_DISABLED: '1'
@@ -56,10 +56,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: web-build-${{ env.VERSION }}
-          path: apps/web/.open-next/
+          path: apps/web/.next/
           retention-days: 30
           overwrite: true
           if-no-files-found: warn
+          include-hidden-files: true   # 关键：.next/ 是隐藏目录
 
   build-android:
     name: Build Android (OSS Only)
@@ -173,7 +174,7 @@ jobs:
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 上传 Android APK（artifact 保留了从 outputs/ 开始的子目录结构）
+          # 5. 上传 Android APK（artifact 保留了 outputs/ 下的子目录结构）
           echo "Uploading Android APK..."
           gh release upload "$TAG" --repo "$REPO" --clobber \
             artifacts/android/apk/oss/release/orange-cloud.apk
