@@ -126,34 +126,54 @@ jobs:
           name: android-build-${{ env.VERSION }}
           path: artifacts/android/
 
-      - name: Delete existing release and tag
+      # action-gh-release 并发上传多个 asset 时存在 race condition，
+      # 改用 gh CLI 串行处理：先删除旧 release，再创建新 release 并逐个上传。
+      - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG="v${{ env.VERSION }}"
-          gh release delete "$TAG" --repo "${{ github.repository }}" --yes 2>/dev/null || true
-          gh api -X DELETE "repos/${{ github.repository }}/git/refs/tags/$TAG" 2>/dev/null || true
+          REPO="${{ github.repository }}"
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ env.VERSION }}
-          name: Orange Cloud v${{ env.VERSION }}
-          body: |
-            ${{ github.event.inputs.release_notes }}
+          # 1. 彻底删除旧 release 和 tag
+          echo "Deleting existing release and tag: $TAG"
+          gh release delete "$TAG" --repo "$REPO" --yes 2>/dev/null || true
+          gh api -X DELETE "repos/$REPO/git/refs/tags/$TAG" 2>/dev/null || true
 
-            ## Build Artifacts
-            - **Android**: OSS APK (all Pro features unlocked at zero cost)
-            - **Web**: Next.js static output for Cloudflare Workers deployment
+          # 2. 等待 GitHub API 同步（避免删除后立即创建导致竞态）
+          sleep 5
 
-            ## Notes
-            - iOS build requires Apple Developer certificate and is not included in CI.
-            - Android OSS flavor has all Pro features enabled at zero cost.
-            - Web app requires your own Cloudflare OAuth Client and callback relay.
-          draft: false
-          prerelease: false
-          files: |
-            artifacts/android/**/*.apk
-            artifacts/web/**/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 3. 创建 release notes 文件
+          cat > /tmp/release_notes.md << 'EOF'
+          ${{ github.event.inputs.release_notes }}
+
+          ## Build Artifacts
+          - **Android**: OSS APK (all Pro features unlocked at zero cost)
+          - **Web**: Next.js static output for Cloudflare Workers deployment
+
+          ## Notes
+          - iOS build requires Apple Developer certificate and is not included in CI.
+          - Android OSS flavor has all Pro features enabled at zero cost.
+          - Web app requires your own Cloudflare OAuth Client and callback relay.
+          EOF
+
+          # 4. 创建 release（不带 asset，避免 create 时文件过多）
+          echo "Creating release: $TAG"
+          gh release create "$TAG"             --repo "$REPO"             --title "Orange Cloud ${TAG}"             --notes-file /tmp/release_notes.md
+
+          # 5. 逐个上传 Android APK（串行，避免 race condition）
+          echo "Uploading Android APKs..."
+          for f in artifacts/android/**/*.apk; do
+            [ -f "$f" ] || continue
+            echo "  Uploading: $f"
+            gh release upload "$TAG" --repo "$REPO" --clobber "$f"
+          done
+
+          # 6. 逐个上传 Web 产物（串行）
+          echo "Uploading Web artifacts..."
+          find artifacts/web -type f | while read -r f; do
+            echo "  Uploading: $f"
+            gh release upload "$TAG" --repo "$REPO" --clobber "$f"
+          done
+
+          echo "Release $TAG created successfully."
