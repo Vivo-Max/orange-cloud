@@ -80,6 +80,11 @@ class AuthRepository @Inject constructor(
         }
     }
 
+    /** 授权 URL 生成失败时向登录页反馈，避免点击后静默无响应。 */
+    fun reportRedirectError(reason: String) {
+        _state.value = _state.value.copy(redirectError = reason)
+    }
+
     // MARK: - 登录
 
     /**
@@ -92,6 +97,10 @@ class AuthRepository @Inject constructor(
      * 开无痕标签，实测均无效，勿走回头路。）
      */
     suspend fun buildAuthorizationUri(scopeString: String): Uri {
+        if (OAuthConfig.clientId.isBlank() || OAuthConfig.redirectUri.isBlank()) {
+            throw OAuthRedirectException("missing_oauth_config")
+        }
+
         val verifier = PkceHelper.generateCodeVerifier()
         val challenge = PkceHelper.generateCodeChallenge(verifier)
         val state = UUID.randomUUID().toString()
@@ -108,7 +117,7 @@ class AuthRepository @Inject constructor(
         return Uri.parse(OAuthConfig.AUTHORIZATION_URL).buildUpon()
             .appendQueryParameter("response_type", "code")
             .appendQueryParameter("client_id", OAuthConfig.clientId)
-            .appendQueryParameter("redirect_uri", OAuthConfig.REDIRECT_URI)
+            .appendQueryParameter("redirect_uri", OAuthConfig.redirectUri)
             .appendQueryParameter("scope", scopeWithOffline)
             .appendQueryParameter("state", state)
             .appendQueryParameter("code_challenge", challenge)
@@ -151,7 +160,7 @@ class AuthRepository @Inject constructor(
                 "grant_type" to "authorization_code",
                 "client_id" to OAuthConfig.clientId,
                 "code" to code,
-                "redirect_uri" to OAuthConfig.REDIRECT_URI,
+                "redirect_uri" to OAuthConfig.redirectUri,
                 "code_verifier" to verifier,
             ),
         ).toStoredToken(previousScope = "", previousRefresh = null)

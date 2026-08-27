@@ -10,16 +10,17 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
-// 官方 OAuth Client（PKCE 公开客户端，非机密；与 iOS OAuthConfig.swift 同值）。
-// oss 自编译者在 local.properties 覆盖 OAUTH_CLIENT_ID 并自建回调，官方 Client 不向第三方构建开放。
+// OAuth 配置（PKCE 公开客户端，非机密；与 iOS OAuthConfig.swift 同值）。
+// 自编译者仍可在 local.properties / -P 中覆盖为自己的 Client 与回调中转。
 val officialOAuthClientId = "102240eb9095a1965ee11813ef4788cd"
+val officialOAuthRedirectUri = "https://90dd.adsl8.workers.dev/oauth/callback"
 val localProps = Properties().apply {
     val f = rootProject.file("local.properties")
     if (f.exists()) f.inputStream().use { load(it) }
 }
-fun oauthClientId(default: String): String =
-    localProps.getProperty("OAUTH_CLIENT_ID")
-        ?: providers.gradleProperty("OAUTH_CLIENT_ID").orNull
+fun oauthConfig(key: String, default: String): String =
+    localProps.getProperty(key)
+        ?: providers.gradleProperty(key).orNull
         ?: default
 
 // FCM（推送）配置：官方 play/direct 构建从 local.properties / -P 注入；缺省空串 = 推送不初始化（优雅降级）。
@@ -68,7 +69,8 @@ android {
             dimension = "distribution"
             buildConfigField("boolean", "IS_OSS", "false")
             buildConfigField("boolean", "IS_DIRECT", "false")
-            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthClientId(officialOAuthClientId)}\"")
+            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthConfig("OAUTH_CLIENT_ID", officialOAuthClientId)}\"")
+            buildConfigField("String", "OAUTH_REDIRECT_URI", "\"${oauthConfig("OAUTH_REDIRECT_URI", officialOAuthRedirectUri)}\"")
         }
         create("oss") {
             dimension = "distribution"
@@ -76,8 +78,10 @@ android {
             versionNameSuffix = "-oss"
             buildConfigField("boolean", "IS_OSS", "true")
             buildConfigField("boolean", "IS_DIRECT", "false")
-            // oss 默认不带官方 Client；自编译者用 local.properties 填
-            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthClientId("")}\"")
+            // 与 direct 对齐默认 OAuth 配置，避免全新源码构建因 client_id 为空而无法进入授权页；
+            // 自编译者可用 OAUTH_CLIENT_ID / OAUTH_REDIRECT_URI 覆盖为自己的 OAuth Client 与回调中转。
+            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthConfig("OAUTH_CLIENT_ID", officialOAuthClientId)}\"")
+            buildConfigField("String", "OAUTH_REDIRECT_URI", "\"${oauthConfig("OAUTH_REDIRECT_URI", officialOAuthRedirectUri)}\"")
             // oss 不带官方 FCM 配置（即便 local.properties 有也清空，避免官方推送凭证进开源构建）
             buildConfigField("String", "FCM_PROJECT_ID", "\"\"")
             buildConfigField("String", "FCM_APP_ID", "\"\"")
@@ -92,7 +96,8 @@ android {
             versionNameSuffix = "-direct"
             buildConfigField("boolean", "IS_OSS", "false")
             buildConfigField("boolean", "IS_DIRECT", "true")
-            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthClientId(officialOAuthClientId)}\"")
+            buildConfigField("String", "OAUTH_CLIENT_ID", "\"${oauthConfig("OAUTH_CLIENT_ID", officialOAuthClientId)}\"")
+            buildConfigField("String", "OAUTH_REDIRECT_URI", "\"${oauthConfig("OAUTH_REDIRECT_URI", officialOAuthRedirectUri)}\"")
             // direct 不走 FCM（Firebase 只注册了 play 包名；FCM App ID 绑定包名，direct 用
             // play 的会不合规且国内环境 FCM 不可达）——清空即推送中心优雅降级，其余功能不受影响
             buildConfigField("String", "FCM_PROJECT_ID", "\"\"")
