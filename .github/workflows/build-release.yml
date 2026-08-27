@@ -79,12 +79,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up JDK 21
+      - name: Set up JDK 21 (强制使用 runner 自带 JDK，彻底解决 toolchain 下载错误)
         uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "21"
           cache: gradle
+          cache-dependency-path: apps/android/build.gradle*
 
       - name: Make Gradle Wrapper executable
         run: chmod +x apps/android/gradlew
