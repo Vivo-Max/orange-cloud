@@ -60,7 +60,7 @@ jobs:
           retention-days: 30
           overwrite: true
           if-no-files-found: warn
-          include-hidden-files: true   # 关键：.next/ 是隐藏目录
+          include-hidden-files: true
 
   build-android:
     name: Build Android (OSS Only)
@@ -85,12 +85,30 @@ jobs:
         run: |
           echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > local.properties
 
+      # OSS Release 必须签名，否则 Android 系统拒绝安装
+      - name: Generate release keystore
+        working-directory: apps/android
+        run: |
+          keytool -genkey -v \
+            -keystore ci-release.keystore \
+            -alias ci \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass password \
+            -keypass password \
+            -dname "CN=Orange Cloud, OU=CI, O=Open Source, L=Unknown, ST=Unknown, C=US"
+
       - name: Build OSS release APK
         working-directory: apps/android
         run: |
           ./gradlew assembleOssRelease \
             -PversionName="${{ env.VERSION }}" \
             -PversionCode="${{ github.run_number }}" \
+            -Pandroid.injected.signing.store.file=ci-release.keystore \
+            -Pandroid.injected.signing.store.password=password \
+            -Pandroid.injected.signing.key.alias=ci \
+            -Pandroid.injected.signing.key.password=password \
             --parallel \
             --build-cache \
             --configure-on-demand \
@@ -126,17 +144,15 @@ jobs:
           name: android-build-${{ env.VERSION }}
           path: artifacts/android/
 
-      - name: Download Web artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: web-build-${{ env.VERSION }}
-          path: artifacts/web/
-
-      - name: Archive source code
+      # 调试用：确认 APK 确实是 OSS 版本（包名 .oss / 版本号 -oss）
+      - name: Verify APK
         run: |
-          TAG="v${{ env.VERSION }}"
-          git archive --format=zip --output="orange-cloud-${TAG}-source.zip" HEAD
-          git archive --format=tar.gz --output="orange-cloud-${TAG}-source.tar.gz" HEAD
+          sudo apt-get update -qq && sudo apt-get install -y -qq aapt 2>/dev/null || true
+          APK="artifacts/android/apk/oss/release/orange-cloud.apk"
+          echo "=== APK file ==="
+          ls -la "$APK"
+          echo "=== APK metadata ==="
+          aapt dump badging "$APK" 2>/dev/null | head -5 || echo "aapt not available, skipping"
 
       - name: Create GitHub Release
         env:
@@ -153,37 +169,31 @@ jobs:
           # 2. 等待 GitHub API 同步
           sleep 5
 
-          # 3. 创建 release notes
-          cat > /tmp/release_notes.md << 'EOF'
-          ${{ github.event.inputs.release_notes }}
+          # 3. 生成 release notes
+          NOTES="${{ github.event.inputs.release_notes }}"
+          {
+            [ -n "$NOTES" ] && echo "$NOTES" && echo ""
+            echo "## Build Artifacts"
+            echo "- **Android**: OSS APK (all Pro features unlocked at zero cost)"
+            echo ""
+            echo "## Notes"
+            echo "- iOS build requires Apple Developer certificate and is not included in CI."
+            echo "- Android OSS flavor has all Pro features enabled at zero cost."
+            echo "- Web app requires your own Cloudflare OAuth Client and callback relay."
+          } > /tmp/release_notes.md
 
-          ## Build Artifacts
-          - **Android**: OSS APK (all Pro features unlocked at zero cost)
-          - **Source Code**: Full source archive
-
-          ## Notes
-          - iOS build requires Apple Developer certificate and is not included in CI.
-          - Android OSS flavor has all Pro features enabled at zero cost.
-          - Web app requires your own Cloudflare OAuth Client and callback relay.
-          EOF
-
-          # 4. 创建 release
+          # 4. 创建 release（先不带附件，页面干净）
           echo "Creating release: $TAG"
           gh release create "$TAG" \
             --repo "$REPO" \
             --title "Orange Cloud ${TAG}" \
             --notes-file /tmp/release_notes.md
 
-          # 5. 上传 Android APK（artifact 保留了 outputs/ 下的子目录结构）
+          # 5. 只上传一个带版本号的 APK，不上传任何其他零散文件
           echo "Uploading Android APK..."
+          cp artifacts/android/apk/oss/release/orange-cloud.apk \
+            orange-cloud-${TAG}-oss.apk
           gh release upload "$TAG" --repo "$REPO" --clobber \
-            artifacts/android/apk/oss/release/orange-cloud.apk
-
-          # 6. 上传源码压缩包
-          echo "Uploading source code archives..."
-          gh release upload "$TAG" --repo "$REPO" --clobber \
-            "orange-cloud-${TAG}-source.zip"
-          gh release upload "$TAG" --repo "$REPO" --clobber \
-            "orange-cloud-${TAG}-source.tar.gz"
+            orange-cloud-${TAG}-oss.apk
 
           echo "Release $TAG created successfully."
