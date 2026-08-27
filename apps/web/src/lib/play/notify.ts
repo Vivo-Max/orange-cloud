@@ -108,7 +108,7 @@ export async function notifyPlayEvent(
 		title: msg.title,
 		body: msg.body,
 		group: msg.group,
-		icon: "https://o-c.do/icons/icon-64.png",
+		icon: "https://90dd.adsl8.workers.dev/icons/icon-64.png",
 		level: msg.level,
 		...(msg.level === "timeSensitive" ? { sound: "paymentsuccess" } : {}),
 	};

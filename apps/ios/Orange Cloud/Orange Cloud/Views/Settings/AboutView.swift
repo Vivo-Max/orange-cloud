@@ -75,8 +75,8 @@ struct AboutView: View {
 
             // ── 法律 ──
             Section {
-                aboutLink(String(localized: "隐私政策"), icon: "doc.text", url: "https://o-c.do/privacy")
-                aboutLink(String(localized: "使用条款"), icon: "doc.plaintext", url: "https://o-c.do/terms")
+                aboutLink(String(localized: "隐私政策"), icon: "doc.text", url: "https://90dd.adsl8.workers.dev/privacy")
+                aboutLink(String(localized: "使用条款"), icon: "doc.plaintext", url: "https://90dd.adsl8.workers.dev/terms")
             } header: {
                 Text("法律")
             } footer: {

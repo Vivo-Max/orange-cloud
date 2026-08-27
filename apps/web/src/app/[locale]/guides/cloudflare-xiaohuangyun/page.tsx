@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import ProxyToggle from "@/components/guides/ProxyToggle";
 import { guideBySlug, guidePath, GUIDE_LOCALE_ZH } from "@/lib/guides/guides";
 
-const SITE_URL = "https://o-c.do";
+const SITE_URL = "https://90dd.adsl8.workers.dev";
 const guide = guideBySlug("cloudflare-xiaohuangyun", GUIDE_LOCALE_ZH);
 const PATH = guidePath(GUIDE_LOCALE_ZH, `/guides/${guide.slug}`);
 

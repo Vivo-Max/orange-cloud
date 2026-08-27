@@ -40,7 +40,7 @@ WORKERS
 
 تُفوتر الاشتراكات عبر Google Play وتتجدد تلقائيًا ما لم يتم إلغاؤها قبل 24 ساعة على الأقل من نهاية الفترة الحالية. أدِرها أو ألغِها في أي وقت من Google Play.
 
-سياسة الخصوصية: https://o-c.do/privacy
-شروط الاستخدام: https://o-c.do/terms
+سياسة الخصوصية: https://90dd.adsl8.workers.dev/privacy
+شروط الاستخدام: https://90dd.adsl8.workers.dev/terms
 
 Orange Cloud عميل مستقل من طرف ثالث وليس تابعًا لـ Cloudflare, Inc. ولا معتمدًا أو مدعومًا منها. Cloudflare علامة تجارية لـ Cloudflare, Inc.

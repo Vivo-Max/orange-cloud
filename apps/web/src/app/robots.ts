@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
 			// @ts-expect-error: 允许自定义 content-signal 字段
 			{ userAgent: "*", allow: "/", disallow: "/oauth/", "content-signal": "ai-train=yes, search=yes, ai-input=yes" }
 		],
-		sitemap: "https://o-c.do/sitemap.xml",
+		sitemap: "https://90dd.adsl8.workers.dev/sitemap.xml",
 	};
 }

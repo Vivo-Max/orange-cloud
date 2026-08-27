@@ -1,5 +1,5 @@
 // 发码邮件：Cloudflare Email Service（send_email 绑定，无需 API key）。
-// 发件域名须先 onboard（CF 控制台已为 o-c.do 配好）。
+// 发件域名须先 onboard（CF 控制台已为 90dd.adsl8.workers.dev 配好）。
 // 未配置绑定（本地 dev）或无收件人则静默跳过。事务邮件，非营销。
 //
 // 三类邮件共用同一排版（购买 / 找回 / 评测邀请），仅 subject + intro 不同；
@@ -17,10 +17,10 @@ export interface EmailBinding {
 	}): Promise<unknown>;
 }
 
-const FROM = { email: "noreply@o-c.do", name: "Orange Cloud" } as const;
+const FROM = { email: "noreply@90dd.adsl8.workers.dev", name: "Orange Cloud" } as const;
 
 // 激活码面向中国大陆 direct（sideload）渠道，故下载指向官网 APK。
-const SITE = "https://o-c.do";
+const SITE = "https://90dd.adsl8.workers.dev";
 const APK_URL = `${SITE}/orange-cloud.apk`;
 
 function codesText(cores: string[]): string {
@@ -74,7 +74,7 @@ async function sendCodes(
       <a href="${APK_URL}" style="display:inline-block;padding:13px 30px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none">下载 Android App</a>
     </td></tr>
   </table>
-  <p style="margin:0 0 6px;color:#8e8e93;font-size:13px">官网 <a href="${SITE}" style="color:#F48120;text-decoration:none">o-c.do</a></p>
+  <p style="margin:0 0 6px;color:#8e8e93;font-size:13px">官网 <a href="${SITE}" style="color:#F48120;text-decoration:none">90dd.adsl8.workers.dev</a></p>
   <p style="margin:0 0 16px;color:#8e8e93;font-size:13px"><a href="${SITE}/buy/recover" style="color:#F48120;text-decoration:none">找回激活码</a> · <a href="${SITE}/buy/reset" style="color:#F48120;text-decoration:none">重置已绑定设备</a></p>
   <p style="margin:0;color:#8e8e93;font-size:13px">请妥善保管本邮件以便日后找回。</p>
 </div>`;

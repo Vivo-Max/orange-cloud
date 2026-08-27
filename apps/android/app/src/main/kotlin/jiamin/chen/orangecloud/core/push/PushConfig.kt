@@ -13,7 +13,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 /** 官方中继默认端点（可在设置里改成自托管）。 */
-const val DEFAULT_PUSH_SERVER = "https://push.o-c.do"
+const val DEFAULT_PUSH_SERVER = "https://push.90dd.adsl8.workers.dev"
 
 private val Context.pushDataStore by preferencesDataStore("orange_cloud_push")
 
@@ -23,7 +23,7 @@ private object PushKeys {
     val ENABLED = booleanPreferencesKey("enabled")
 }
 
-/** 推送配置：server URL（默认 push.o-c.do）/ device_key（端点凭证）/ 是否启用。device_key 非机密，存普通 DataStore。 */
+/** 推送配置：server URL（默认 push.90dd.adsl8.workers.dev）/ device_key（端点凭证）/ 是否启用。device_key 非机密，存普通 DataStore。 */
 @Singleton
 class PushPrefs @Inject constructor(@ApplicationContext private val context: Context) {
 

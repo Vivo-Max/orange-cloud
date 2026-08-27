@@ -13,7 +13,7 @@ object OAuthConfig {
 
     const val CALLBACK_SCHEME = "orangecloud"
     const val CALLBACK_HOST = "oauth"
-    const val REDIRECT_URI = "https://o-c.do/oauth/callback"
+    const val REDIRECT_URI = "https://90dd.adsl8.workers.dev/oauth/callback"
 
     const val AUTHORIZATION_URL = "https://dash.cloudflare.com/oauth2/auth"
     /** 网页登出端点：添加账号时先登出再续跳授权页，避免复用上一个登录态（支持 ?to= 续跳）。 */

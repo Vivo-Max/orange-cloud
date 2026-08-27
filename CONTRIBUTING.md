@@ -32,7 +32,7 @@ be merged — no exceptions, however small the change.
 2. **OAuth client**: `Core/Auth/OAuthConfig.swift` ships with the
    official client ID. Under OAuth PKCE this is a public identifier,
    not a secret — but the official client and the
-   `o-c.do` callback relay are **not for third-party
+   `90dd.adsl8.workers.dev` callback relay are **not for third-party
    builds**: create your own Cloudflare OAuth client and deploy your
    own callback relay (see [`apps/web/`](apps/web/README.md)), then
    replace the client ID and redirect URI in `OAuthConfig.swift`.
@@ -101,7 +101,7 @@ build matrix and architecture.
 1. Xcode 26+，打开 `apps/ios/Orange Cloud/Orange Cloud.xcodeproj`。
 2. **OAuth Client**：`OAuthConfig.swift` 内置官方 Client ID——OAuth
    PKCE 下它是公开标识符而非机密，但官方 Client 与
-   `o-c.do` 回调中转**不向第三方构建开放**：请自建
+   `90dd.adsl8.workers.dev` 回调中转**不向第三方构建开放**：请自建
    Cloudflare OAuth Client 并部署自己的回调中转（见
    [`apps/web/`](apps/web/README.md)），然后在 `OAuthConfig.swift`
    中替换为你自己的 Client ID 与 redirect URI。

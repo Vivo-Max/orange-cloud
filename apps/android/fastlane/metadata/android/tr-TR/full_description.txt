@@ -40,7 +40,7 @@ Orange Cloud Pro; birden çok hesabı, tüm Depolama sekmesini (R2 / D1 / KV), c
 
 Abonelikler Google Play üzerinden faturalandırılır ve mevcut dönemin bitiminden en az 24 saat önce iptal edilmedikçe otomatik yenilenir. Google Play'de istediğiniz zaman yönetin veya iptal edin.
 
-Gizlilik Politikası: https://o-c.do/privacy
-Kullanım Koşulları: https://o-c.do/terms
+Gizlilik Politikası: https://90dd.adsl8.workers.dev/privacy
+Kullanım Koşulları: https://90dd.adsl8.workers.dev/terms
 
 Orange Cloud bağımsız bir üçüncü taraf istemcidir; Cloudflare, Inc. ile bağlantılı, onun tarafından onaylanmış veya desteklenmiş değildir. Cloudflare, Cloudflare, Inc.'in ticari markasıdır.

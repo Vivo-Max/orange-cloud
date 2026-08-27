@@ -69,32 +69,32 @@ function stubFetch(status: number | Record<string, number>) {
 }
 
 describe("URL 清单", () => {
-	it("全是 o-c.do 的绝对 URL，且不重复", () => {
+	it("全是 90dd.adsl8.workers.dev 的绝对 URL，且不重复", () => {
 		const urls = indexableUrls().map((e) => e.url);
 		expect(urls.length).toBeGreaterThan(0);
-		for (const url of urls) expect(url.startsWith("https://o-c.do")).toBe(true);
+		for (const url of urls) expect(url.startsWith("https://90dd.adsl8.workers.dev")).toBe(true);
 		expect(new Set(urls).size).toBe(urls.length);
 	});
 
 	it("静态页摊平成各语言版本，默认语言无前缀", () => {
 		const urls = indexableUrls().map((e) => e.url);
-		expect(urls).toContain("https://o-c.do/privacy");
-		expect(urls).toContain("https://o-c.do/ja/privacy");
-		expect(urls).not.toContain("https://o-c.do/en/privacy");
+		expect(urls).toContain("https://90dd.adsl8.workers.dev/privacy");
+		expect(urls).toContain("https://90dd.adsl8.workers.dev/ja/privacy");
+		expect(urls).not.toContain("https://90dd.adsl8.workers.dev/en/privacy");
 	});
 
 	it("指南两套语言各自成条，中文带 /zh-Hans 前缀", () => {
 		const urls = indexableUrls().map((e) => e.url);
-		expect(urls).toContain("https://o-c.do/guides");
-		expect(urls).toContain("https://o-c.do/zh-Hans/guides");
-		expect(urls.some((u) => u.startsWith("https://o-c.do/guides/"))).toBe(true);
-		expect(urls.some((u) => u.startsWith("https://o-c.do/zh-Hans/guides/"))).toBe(true);
+		expect(urls).toContain("https://90dd.adsl8.workers.dev/guides");
+		expect(urls).toContain("https://90dd.adsl8.workers.dev/zh-Hans/guides");
+		expect(urls.some((u) => u.startsWith("https://90dd.adsl8.workers.dev/guides/"))).toBe(true);
+		expect(urls.some((u) => u.startsWith("https://90dd.adsl8.workers.dev/zh-Hans/guides/"))).toBe(true);
 	});
 
 	it("指南索引页的 lastmod 取最新一篇，不是清单里的第一篇", () => {
-		const index = siteUrls().find((e) => e.url === "https://o-c.do/guides")!;
+		const index = siteUrls().find((e) => e.url === "https://90dd.adsl8.workers.dev/guides")!;
 		const articles = siteUrls()
-			.filter((e) => e.url.startsWith("https://o-c.do/guides/"))
+			.filter((e) => e.url.startsWith("https://90dd.adsl8.workers.dev/guides/"))
 			.map((e) => e.updated);
 		expect(index.updated).toBe(articles.reduce((a, b) => (a > b ? a : b)));
 	});
@@ -102,8 +102,8 @@ describe("URL 清单", () => {
 
 describe("变更判定", () => {
 	const entries = [
-		{ url: "https://o-c.do/a", updated: "2026-08-01" },
-		{ url: "https://o-c.do/b", updated: "2026-08-02" },
+		{ url: "https://90dd.adsl8.workers.dev/a", updated: "2026-08-01" },
+		{ url: "https://90dd.adsl8.workers.dev/b", updated: "2026-08-02" },
 	];
 
 	it("台账里没有 → 需要推", () => {
@@ -112,10 +112,10 @@ describe("变更判定", () => {
 
 	it("版本一致 → 跳过；版本变了 → 重推", () => {
 		const known = new Map([
-			["https://o-c.do/a", "2026-08-01"],
-			["https://o-c.do/b", "2026-07-01"],
+			["https://90dd.adsl8.workers.dev/a", "2026-08-01"],
+			["https://90dd.adsl8.workers.dev/b", "2026-07-01"],
 		]);
-		expect(pendingEntries(entries, known).map((e) => e.url)).toEqual(["https://o-c.do/b"]);
+		expect(pendingEntries(entries, known).map((e) => e.url)).toEqual(["https://90dd.adsl8.workers.dev/b"]);
 	});
 
 	it("force 无视台账全量重推", () => {
@@ -127,15 +127,15 @@ describe("变更判定", () => {
 describe("提交载荷", () => {
 	it("默认打 bing 端点，带 host/key/keyLocation/urlList", async () => {
 		const calls = stubFetch(200);
-		const result = await submitUrls(["https://o-c.do/guides"]);
+		const result = await submitUrls(["https://90dd.adsl8.workers.dev/guides"]);
 		expect(result.ok).toBe(true);
 		expect(calls).toHaveLength(1);
 		expect(calls[0].url).toBe("https://www.bing.com/indexnow");
 		expect(calls[0].body).toEqual({
-			host: "o-c.do",
+			host: "90dd.adsl8.workers.dev",
 			key: INDEXNOW_KEY,
-			keyLocation: `https://o-c.do/${INDEXNOW_KEY}.txt`,
-			urlList: ["https://o-c.do/guides"],
+			keyLocation: `https://90dd.adsl8.workers.dev/${INDEXNOW_KEY}.txt`,
+			urlList: ["https://90dd.adsl8.workers.dev/guides"],
 		});
 	});
 
@@ -147,14 +147,14 @@ describe("提交载荷", () => {
 
 	it("2xx 都算收下：202（密钥待校验）与 bing 的 203", async () => {
 		stubFetch(202);
-		expect((await submitUrls(["https://o-c.do/"])).ok).toBe(true);
+		expect((await submitUrls(["https://90dd.adsl8.workers.dev/"])).ok).toBe(true);
 		stubFetch(203);
-		expect((await submitUrls(["https://o-c.do/"])).ok).toBe(true);
+		expect((await submitUrls(["https://90dd.adsl8.workers.dev/"])).ok).toBe(true);
 	});
 
 	it("429 换下一个端点，直到有人收下", async () => {
 		const calls = stubFetch({ "bing.com": 429, "api.indexnow.org": 429, "yandex.com": 202 });
-		const result = await submitUrls(["https://o-c.do/"]);
+		const result = await submitUrls(["https://90dd.adsl8.workers.dev/"]);
 		expect(result.ok).toBe(true);
 		expect(calls.map((c) => new URL(c.url).host)).toEqual([
 			"www.bing.com",
@@ -165,7 +165,7 @@ describe("提交载荷", () => {
 
 	it("全部端点 429 才算失败", async () => {
 		stubFetch(429);
-		const result = await submitUrls(["https://o-c.do/"]);
+		const result = await submitUrls(["https://90dd.adsl8.workers.dev/"]);
 		expect(result.ok).toBe(false);
 		expect(result.attempts).toHaveLength(3);
 		expect(result.message).toContain("限流");
@@ -173,7 +173,7 @@ describe("提交载荷", () => {
 
 	it("403（密钥不对）立刻失败，不拿同样的错去烦别的端点", async () => {
 		const calls = stubFetch(403);
-		const result = await submitUrls(["https://o-c.do/"]);
+		const result = await submitUrls(["https://90dd.adsl8.workers.dev/"]);
 		expect(result.ok).toBe(false);
 		expect(calls).toHaveLength(1);
 		expect(result.message).toContain("密钥");
@@ -191,7 +191,7 @@ describe("提交载荷", () => {
 				return new Response("", { status: 200 });
 			}),
 		);
-		const result = await submitUrls(["https://o-c.do/"]);
+		const result = await submitUrls(["https://90dd.adsl8.workers.dev/"]);
 		expect(result.ok).toBe(true);
 		expect(result.attempts[0].status).toBe(null);
 	});
@@ -226,9 +226,9 @@ describe("同步与台账（真实 SQL）", () => {
 	});
 
 	it("同一 URL 版本变化后覆盖记账", async () => {
-		await recordSubmitted(db as never, [{ url: "https://o-c.do/x", updated: "2026-08-01" }], 1);
-		await recordSubmitted(db as never, [{ url: "https://o-c.do/x", updated: "2026-08-09" }], 2);
+		await recordSubmitted(db as never, [{ url: "https://90dd.adsl8.workers.dev/x", updated: "2026-08-01" }], 1);
+		await recordSubmitted(db as never, [{ url: "https://90dd.adsl8.workers.dev/x", updated: "2026-08-09" }], 2);
 		const rows = raw.prepare("SELECT url, signature, submitted_at FROM indexnow_urls").all();
-		expect(rows).toEqual([{ url: "https://o-c.do/x", signature: "2026-08-09", submitted_at: 2 }]);
+		expect(rows).toEqual([{ url: "https://90dd.adsl8.workers.dev/x", signature: "2026-08-09", submitted_at: 2 }]);
 	});
 });

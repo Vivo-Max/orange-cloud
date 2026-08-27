@@ -12,12 +12,12 @@ Key facts:
 
 ## Pages
 
-- [Home](https://o-c.do/): product overview, feature tour, screenshots, free vs Pro comparison
-- [Privacy Policy](https://o-c.do/privacy): what data the app touches and what never leaves the device
-- [Terms of Service](https://o-c.do/terms): usage terms for the official build
-- [Contact](https://o-c.do/contact): support contact
+- [Home](https://90dd.adsl8.workers.dev/): product overview, feature tour, screenshots, free vs Pro comparison
+- [Privacy Policy](https://90dd.adsl8.workers.dev/privacy): what data the app touches and what never leaves the device
+- [Terms of Service](https://90dd.adsl8.workers.dev/terms): usage terms for the official build
+- [Contact](https://90dd.adsl8.workers.dev/contact): support contact
 
-Localized versions are served under locale prefixes, e.g. https://o-c.do/zh-Hans (简体中文), /zh-Hant (繁體中文・台灣), /zh-HK (繁體中文・香港), /ja (日本語). English is the default at the root path.
+Localized versions are served under locale prefixes, e.g. https://90dd.adsl8.workers.dev/zh-Hans (简体中文), /zh-Hant (繁體中文・台灣), /zh-HK (繁體中文・香港), /ja (日本語). English is the default at the root path.
 
 ## Project
 

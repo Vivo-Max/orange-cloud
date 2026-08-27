@@ -10,7 +10,7 @@ import { sendCodeEmail, type EmailBinding } from "@/lib/notify/email";
 // 真正到账走 checkout.session.async_payment_succeeded。故只在 payment_status==='paid' 发码，
 // 且两类事件都监听。退款 charge.refunded -> 撤销对应码。
 //
-// 在 Stripe Dashboard 配置 endpoint：https://o-c.do/api/stripe/webhook
+// 在 Stripe Dashboard 配置 endpoint：https://90dd.adsl8.workers.dev/api/stripe/webhook
 //   勾选事件：checkout.session.completed / checkout.session.async_payment_succeeded / charge.refunded
 
 export const dynamic = "force-dynamic";

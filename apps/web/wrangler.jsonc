@@ -69,11 +69,11 @@
 			"custom_domain": true
 		},
 		{
-			"pattern": "o-c.do",
+			"pattern": "90dd.adsl8.workers.dev",
 			"custom_domain": true,
 		},
 		{
-			"pattern": "www.o-c.do",
+			"pattern": "www.90dd.adsl8.workers.dev",
 			"custom_domain": true,
 		}
 	]

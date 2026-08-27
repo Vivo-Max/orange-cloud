@@ -9,7 +9,7 @@ import { moneyToMillis, type DeveloperNotification, type PlayEnrichment } from "
 import { isRetryableStatus, parseServiceAccount } from "./api";
 
 const PACKAGE = "jiamin.chen.orangecloud";
-const AUDIENCE = "https://o-c.do/api/play/notifications";
+const AUDIENCE = "https://90dd.adsl8.workers.dev/api/play/notifications";
 const SA_EMAIL = "play-rtdn@example.iam.gserviceaccount.com";
 
 function envelope(n: DeveloperNotification, messageId = "m1") {

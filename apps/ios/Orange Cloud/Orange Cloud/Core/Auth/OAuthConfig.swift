@@ -20,7 +20,7 @@ nonisolated enum OAuthConfig {
 //    #if DEBUG
 //    static let redirectURI = "http://localhost:3000/oauth/callback"
 //    #else
-    static let redirectURI = "https://o-c.do/oauth/callback"
+    static let redirectURI = "https://90dd.adsl8.workers.dev/oauth/callback"
 //    #endif
 
     // Cloudflare OAuth 端点

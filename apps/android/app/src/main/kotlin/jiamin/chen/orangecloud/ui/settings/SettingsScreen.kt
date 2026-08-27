@@ -279,9 +279,9 @@ fun SettingsScreen(
                 RowDivider(indent = true)
                 LinkRow(Icons.Outlined.Code, cs.onSurfaceVariant, stringResource(R.string.settings_github)) { openUrl("https://github.com/chen2he/orange-cloud") }
                 RowDivider(indent = true)
-                LinkRow(Icons.Outlined.PrivacyTip, cs.onSurfaceVariant, stringResource(R.string.settings_privacy)) { openUrl("https://o-c.do/privacy") }
+                LinkRow(Icons.Outlined.PrivacyTip, cs.onSurfaceVariant, stringResource(R.string.settings_privacy)) { openUrl("https://90dd.adsl8.workers.dev/privacy") }
                 RowDivider(indent = true)
-                LinkRow(Icons.Outlined.Description, cs.onSurfaceVariant, stringResource(R.string.settings_terms)) { openUrl("https://o-c.do/terms") }
+                LinkRow(Icons.Outlined.Description, cs.onSurfaceVariant, stringResource(R.string.settings_terms)) { openUrl("https://90dd.adsl8.workers.dev/terms") }
             }
 
             Text(

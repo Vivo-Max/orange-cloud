@@ -8,8 +8,8 @@
 import { routing } from "../../i18n/routing";
 import { GUIDE_LOCALES, guidePath, guidesFor } from "../guides/guides";
 
-export const SITE_URL = "https://o-c.do";
-export const SITE_HOST = "o-c.do";
+export const SITE_URL = "https://90dd.adsl8.workers.dev";
+export const SITE_HOST = "90dd.adsl8.workers.dev";
 
 export type SiteUrlEntry = {
 	url: string;

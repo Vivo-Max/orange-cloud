@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import DnsCacheLayers from "@/components/guides/DnsCacheLayers";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://o-c.do";
+const SITE_URL = "https://90dd.adsl8.workers.dev";
 const guide = guideBySlug("why-is-my-cloudflare-dns-change-not-working");
 const PATH = `/guides/${guide.slug}`;
 

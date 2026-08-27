@@ -73,7 +73,7 @@ nonisolated enum PushInbox {
 // MARK: - 端点配置 + E2E 密钥
 
 nonisolated enum PushConfig {
-    static let defaultServer = "https://push.o-c.do"
+    static let defaultServer = "https://push.90dd.adsl8.workers.dev"
     private static let serverKey = "push.serverURL"
     private static let keyKey = "push.deviceKey"
     private static let e2eKeyKey = "push.e2eKey"

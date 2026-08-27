@@ -40,7 +40,7 @@ Orange Cloud Pro débloque les comptes multiples, tout l'onglet Stockage (R2 / D
 
 Les abonnements sont facturés via Google Play et se renouvellent automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours. Gérez ou annulez à tout moment dans Google Play.
 
-Politique de confidentialité : https://o-c.do/privacy
-Conditions d'utilisation : https://o-c.do/terms
+Politique de confidentialité : https://90dd.adsl8.workers.dev/privacy
+Conditions d'utilisation : https://90dd.adsl8.workers.dev/terms
 
 Orange Cloud est un client tiers indépendant, non affilié à Cloudflare, Inc., ni approuvé ni sponsorisé par elle. Cloudflare est une marque de Cloudflare, Inc.

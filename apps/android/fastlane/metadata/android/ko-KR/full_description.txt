@@ -40,7 +40,7 @@ Orange Cloud Pro는 다중 계정, 전체 스토리지 탭(R2 / D1 / KV), 실시
 
 구독은 Google Play를 통해 청구되며 현재 기간 종료 최소 24시간 전에 취소하지 않으면 자동으로 갱신됩니다. Google Play에서 언제든지 관리하거나 취소하세요.
 
-개인정보처리방침: https://o-c.do/privacy
-이용약관: https://o-c.do/terms
+개인정보처리방침: https://90dd.adsl8.workers.dev/privacy
+이용약관: https://90dd.adsl8.workers.dev/terms
 
 Orange Cloud는 독립적인 제3자 클라이언트이며 Cloudflare, Inc.와 제휴, 보증 또는 후원 관계가 없습니다. Cloudflare는 Cloudflare, Inc.의 상표입니다.

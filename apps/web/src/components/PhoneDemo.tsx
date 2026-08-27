@@ -213,7 +213,7 @@ export default function PhoneDemo({ locale, s }: { locale: string; s: PhoneStrin
 					</div>
 					<div className="glass r-chip mt-1.5 overflow-hidden">
 						{[
-							{ initial: "O", color: "#3D86E0", name: "o-c.do", plan: "Pro", total: "412K", spark: "0,11 8,9.5 16,10 24,7.5 32,6.5 40,4 46,2.5" },
+							{ initial: "O", color: "#3D86E0", name: "90dd.adsl8.workers.dev", plan: "Pro", total: "412K", spark: "0,11 8,9.5 16,10 24,7.5 32,6.5 40,4 46,2.5" },
 							{ initial: "M", color: "#E8743B", name: "mooncake.dev", plan: "Free", total: "86K", spark: "0,8 8,10.5 16,6 24,9 32,5.5 40,8.5 46,6" },
 						].map((zone, i) => (
 							<div
