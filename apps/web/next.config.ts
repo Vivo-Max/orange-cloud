@@ -15,7 +15,11 @@ const nextConfig: NextConfig = {
 
 export default withNextIntl(nextConfig);
 
-// Enable calling `getCloudflareContext()` in `next dev`.
-// See https://opennext.js.org/cloudflare/bindings#local-access-to-bindings.
-import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
-initOpenNextCloudflareForDev();
+// 仅在 `next dev` 阶段初始化 OpenNext Cloudflare 开发代理（用于 getCloudflareContext）。
+// `next build` 阶段（含 CI）没有 Cloudflare 凭证，若在此处调用会启动 wrangler 远程代理
+// 并因未登录导致构建失败。通过 NEXT_PHASE 判断，确保构建期不会触发远程代理。
+// See https://opennext.js.org/cloudflare/bindings#local-access-to-bindings
+if (process.env.NEXT_PHASE === "phase-development-server") {
+	const { initOpenNextCloudflareForDev } = require("@opennextjs/cloudflare");
+	initOpenNextCloudflareForDev();
+}
