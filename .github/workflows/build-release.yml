@@ -176,8 +176,8 @@ jobs:
             - Web: Next.js production build validation
             - Android: OSS and Direct Release APKs
             ## Notes
-            - iOS build has been removed (no longer needed).
-            - TestFlight/App Store release requires a separate archive/export workflow with Apple signing certificates, provisioning profiles, and an App Store Connect API key.
+            - iOS build removed.
+            - TestFlight/App Store requires separate Apple signing workflow.
             - Android OSS flavor has all Pro features enabled.
           draft: false
           prerelease: false
