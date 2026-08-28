@@ -440,6 +440,7 @@
     <string name="settings_github">Ver el código en GitHub</string>
     <string name="settings_privacy">Política de privacidad</string>
     <string name="settings_terms">Términos de uso</string>
+    <string name="settings_deploy_guide">Guía de autohospedaje y compilación</string>
     <string name="settings_about_footer">Orange Cloud · cliente de Cloudflare de terceros</string>
 
     <string name="identity_title">Cuenta</string>

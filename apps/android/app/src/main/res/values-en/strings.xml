@@ -459,6 +459,7 @@
     <string name="settings_github">View source on GitHub</string>
     <string name="settings_privacy">Privacy Policy</string>
     <string name="settings_terms">Terms of Use</string>
+    <string name="settings_deploy_guide">Self-hosting &amp; build guide</string>
     <string name="settings_about_footer">Orange Cloud · third-party Cloudflare client</string>
 
     <!-- Account detail -->

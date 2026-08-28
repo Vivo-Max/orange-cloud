@@ -439,6 +439,7 @@
     <string name="settings_github">GitHub でソースを見る</string>
     <string name="settings_privacy">プライバシーポリシー</string>
     <string name="settings_terms">利用規約</string>
+    <string name="settings_deploy_guide">セルフホスト・ビルドガイド</string>
     <string name="settings_about_footer">Orange Cloud · サードパーティ製 Cloudflare クライアント</string>
 
     <string name="identity_title">アカウント</string>

@@ -556,6 +556,7 @@
     <string name="settings_github">عرض المصدر على GitHub</string>
     <string name="settings_privacy">سياسة الخصوصية</string>
     <string name="settings_terms">شروط الاستخدام</string>
+    <string name="settings_deploy_guide">دليل النشر والبناء الذاتي</string>
     <string name="settings_about_footer">Orange Cloud · عميل Cloudflare من طرف ثالث</string>
     <string name="identity_title">الحساب</string>
     <string name="identity_not_found">هذا الحساب لم يعد موجودًا</string>

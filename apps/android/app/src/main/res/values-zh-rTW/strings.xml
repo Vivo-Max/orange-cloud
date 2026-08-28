@@ -439,6 +439,7 @@
     <string name="settings_github">在 GitHub 上查看原始碼</string>
     <string name="settings_privacy">隱私權政策</string>
     <string name="settings_terms">使用條款</string>
+    <string name="settings_deploy_guide">部署與自建指南</string>
     <string name="settings_about_footer">Orange Cloud · 第三方 Cloudflare 用戶端</string>
 
     <string name="identity_title">帳號</string>

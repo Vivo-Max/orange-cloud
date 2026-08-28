@@ -277,11 +277,13 @@ fun SettingsScreen(
                         .onFailure { openUrl("https://play.google.com/store/apps/details?id=jiamin.chen.orangecloud") }
                 }
                 RowDivider(indent = true)
-                LinkRow(Icons.Outlined.Code, cs.onSurfaceVariant, stringResource(R.string.settings_github)) { openUrl("https://github.com/chen2he/orange-cloud") }
+                LinkRow(Icons.Outlined.Code, cs.onSurfaceVariant, stringResource(R.string.settings_github)) { openUrl("https://github.com/Vivo-Max/orange-cloud") }
                 RowDivider(indent = true)
-                LinkRow(Icons.Outlined.PrivacyTip, cs.onSurfaceVariant, stringResource(R.string.settings_privacy)) { openUrl("https://oss.omail.us.kg/privacy") }
+                LinkRow(Icons.Outlined.PrivacyTip, cs.onSurfaceVariant, stringResource(R.string.settings_privacy)) { openUrl("https://o-c.do/privacy") }
                 RowDivider(indent = true)
-                LinkRow(Icons.Outlined.Description, cs.onSurfaceVariant, stringResource(R.string.settings_terms)) { openUrl("https://oss.omail.us.kg/terms") }
+                LinkRow(Icons.Outlined.Description, cs.onSurfaceVariant, stringResource(R.string.settings_terms)) { openUrl("https://o-c.do/terms") }
+                RowDivider(indent = true)
+                LinkRow(Icons.Outlined.Build, cs.onSurfaceVariant, stringResource(R.string.settings_deploy_guide)) { openUrl("https://github.com/Vivo-Max/orange-cloud/blob/main/docs/SELF_HOSTING.md") }
             }
 
             Text(

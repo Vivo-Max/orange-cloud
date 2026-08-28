@@ -14,7 +14,7 @@ import javax.inject.Singleton
 
 /**
  * 设备门禁：登录链路经自建 Worker 上报设备 ID 并查询封禁状态。
- * - 机器码取 ANDROID_ID（16 位十六进制，同设备同签名稳定）；
+ * - 机器码取 Widevine DRM 设备唯一 ID（SHA-256 前 16 位十六进制，跨签名版本稳定、同型号设备互异）；
  * - 所有请求 fail-open：网络失败一律放行，避免 Worker 故障误伤正常用户；
  * - 被封禁时 App 只报通用登录失败，不暴露封禁语义。
  */

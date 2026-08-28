@@ -556,6 +556,7 @@
     <string name="settings_github">Quellcode auf GitHub ansehen</string>
     <string name="settings_privacy">Datenschutzerklärung</string>
     <string name="settings_terms">Nutzungsbedingungen</string>
+    <string name="settings_deploy_guide">Anleitung für Self-Hosting und Build</string>
     <string name="settings_about_footer">Orange Cloud · Cloudflare-Client von Drittanbietern</string>
     <string name="identity_title">Konto</string>
     <string name="identity_not_found">Dieses Konto existiert nicht mehr</string>

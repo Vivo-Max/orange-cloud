@@ -439,6 +439,7 @@
     <string name="settings_github">GitHub에서 소스 보기</string>
     <string name="settings_privacy">개인정보 처리방침</string>
     <string name="settings_terms">이용약관</string>
+    <string name="settings_deploy_guide">셀프 호스팅 및 빌드 가이드</string>
     <string name="settings_about_footer">Orange Cloud · 서드파티 Cloudflare 클라이언트</string>
 
     <string name="identity_title">계정</string>
