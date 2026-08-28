@@ -3,6 +3,9 @@ package jiamin.chen.orangecloud.ui.root
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.BackHandler
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.icons.Icons
@@ -27,6 +30,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.runtime.rememberCoroutineScope
+import kotlinx.coroutines.launch
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
@@ -416,7 +423,72 @@ private fun MainScaffold(onOpenToolbox: () -> Unit) {
             }
         },
     ) {
-        NavHost(navController = navController, startDestination = Dest.DASHBOARD) {
+        // 顶级标签页左右滑动切换：手指拖动时内容跟手平移，松手后按位移/速度决定翻页或回弹。
+        // 仅在顶级起点页生效（下钻页横滑交给页面自身，如返回手势），避免与子路由冲突。
+        val scope = rememberCoroutineScope()
+        val swipeOffset = remember { Animatable(0f) } // 屏宽比例，负 = 向左滑
+        val topRoutes = remember { TopDestination.entries.map { Dest.startRoute(it) }.toSet() }
+        val swipeTo: (TopDestination) -> Unit = { dest ->
+            navController.navigate(Dest.startRoute(dest)) {
+                popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                launchSingleTop = true
+                restoreState = true
+            }
+        }
+        Box(
+            Modifier
+                .fillMaxSize()
+                .graphicsLayer { translationX = swipeOffset.value * size.width }
+                .pointerInput(currentRoute) {
+                    if (currentRoute !in topRoutes) return@pointerInput
+                    val entries = TopDestination.entries
+                    val idx = entries.indexOf(Dest.topOf(currentRoute))
+                    val widthPx = { size.width.toFloat().coerceAtLeast(1f) }
+                    var velocity = 0f // px/s，供快速轻扫（flick）判定
+                    detectHorizontalDragGestures(
+                        onDragStart = {
+                            velocity = 0f
+                            scope.launch { swipeOffset.stop() }
+                        },
+                        onDragCancel = { scope.launch { swipeOffset.animateTo(0f, tween(180)) } },
+                        onDragEnd = {
+                            val off = swipeOffset.value
+                            val v = velocity / widthPx() // 换算成屏宽/s
+                            scope.launch {
+                                when {
+                                    // 左滑超过阈值或快速轻扫 → 下一标签
+                                    (off < -0.30f || v < -1.5f) && off <= 0f && idx < entries.lastIndex -> {
+                                        swipeOffset.animateTo(-1f, tween(160))
+                                        swipeTo(entries[idx + 1])
+                                        swipeOffset.snapTo(1f)
+                                        swipeOffset.animateTo(0f, tween(160))
+                                    }
+                                    (off > 0.30f || v > 1.5f) && off >= 0f && idx > 0 -> {
+                                        swipeOffset.animateTo(1f, tween(160))
+                                        swipeTo(entries[idx - 1])
+                                        swipeOffset.snapTo(-1f)
+                                        swipeOffset.animateTo(0f, tween(160))
+                                    }
+                                    else -> swipeOffset.animateTo(0f, tween(180))
+                                }
+                            }
+                        },
+                    ) { change, dragAmount ->
+                        change.consume()
+                        val dt = change.uptimeMillis - change.previousUptimeMillis
+                        if (dt > 0) velocity = dragAmount / (dt / 1000f)
+                        // 首尾两端的越界拖动施加阻尼（橡皮筋），提示已到边界
+                        val next = swipeOffset.value + dragAmount / widthPx()
+                        val clamped = when {
+                            idx <= 0 && next > 0f -> next * 0.25f
+                            idx >= entries.lastIndex && next < 0f -> next * 0.25f
+                            else -> next.coerceIn(-1f, 1f)
+                        }
+                        scope.launch { swipeOffset.snapTo(clamped) }
+                    }
+                },
+        ) {
+            NavHost(navController = navController, startDestination = Dest.DASHBOARD) {
             composable(Dest.DASHBOARD) {
                 DashboardScreen(
                     onOpenTunnels = { navController.navigate(Dest.TUNNELS) },
@@ -957,6 +1029,7 @@ private fun MainScaffold(onOpenToolbox: () -> Unit) {
             }
             composable(Dest.ALERTING) {
                 CFAlertingScreen(onBack = { navController.popBackStack() })
+            }
             }
         }
     }

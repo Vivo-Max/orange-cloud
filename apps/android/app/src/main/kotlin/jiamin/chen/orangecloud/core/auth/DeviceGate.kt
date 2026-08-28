@@ -34,6 +34,20 @@ class DeviceGate @Inject constructor(
             .lowercase().ifEmpty { "unknown" }
     }
 
+    // —— 节流缓存：高频调用点（每个 API 请求）不能每次都访问 Worker ——
+    private var lastCheckAt = 0L
+    private var lastResult = false
+
+    /** 节流版封禁检查：5 分钟内复用上次结果。供 API 请求入口使用。 */
+    suspend fun isBannedThrottled(): Boolean {
+        val now = System.currentTimeMillis()
+        if (now - lastCheckAt < THROTTLE_MS) return lastResult
+        val result = isBanned()
+        lastCheckAt = now
+        lastResult = result
+        return result
+    }
+
     /** 被封禁返回 true；任何异常（无网/Worker 故障）返回 false 放行。 */
     suspend fun isBanned(): Boolean = withContext(Dispatchers.IO) {
         runCatching {

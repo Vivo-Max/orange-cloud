@@ -172,6 +172,12 @@ class AuthRepository @Inject constructor(
 
     override suspend fun validAccessToken(): String {
         val sessionId = _state.value.currentSessionId ?: throw ApiError.Unauthorized
+        // 设备门禁（节流）：已登录设备被封后 5 分钟内生效——吊销 token 并清除本地身份，
+        // 用户表现为普通的"登录失效"，不暴露封禁语义
+        if (deviceGate.isBannedThrottled()) {
+            logout(sessionId)
+            throw ApiError.Unauthorized
+        }
         val token = tokenStore.load(sessionId) ?: throw ApiError.Unauthorized
         val secondsLeft = token.expiresAtEpochSeconds - nowSeconds()
         return if (secondsLeft < 60) refreshAccessToken() else token.accessToken
