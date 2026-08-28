@@ -36,6 +36,17 @@ export type GuideMeta = {
 
 export const GUIDES: GuideMeta[] = [
 	{
+		slug: "cloudflare-real-visitor-ip-cf-connecting-ip",
+		h1: "Getting the Real Visitor IP Behind Cloudflare with CF-Connecting-IP",
+		title: "Real Visitor IP Behind Cloudflare: CF-Connecting-IP Guide",
+		description:
+			"Behind Cloudflare's proxy, REMOTE_ADDR shows an edge IP. CF-Connecting-IP carries the real visitor IP — how to read it, why X-Forwarded-For is riskier, and how to stop spoofing.",
+		blurb:
+			"CF-Connecting-IP vs X-Forwarded-For, when spoofing is actually possible, why the header sometimes goes missing on DNS-only records, and how to restore real client IPs in Nginx and Apache.",
+		updated: "2026-08-28",
+		readingTime: "9 min read",
+	},
+	{
 		slug: "what-is-the-orange-cloud-in-cloudflare",
 		h1: "What Does the Orange Cloud Mean in Cloudflare?",
 		title: "Proxied vs DNS Only: Cloudflare Orange vs Grey Cloud",
