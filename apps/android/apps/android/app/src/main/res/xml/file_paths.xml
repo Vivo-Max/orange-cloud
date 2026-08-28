@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <!-- R2 对象下载到缓存目录，经 FileProvider 授权给其他应用打开 -->
-    <cache-path name="r2_cache" path="r2/" />
-    <!-- 诊断日志导出文件，作反馈邮件附件授权给邮件应用 -->
-    <cache-path name="logs" path="logs/" />
-    <!-- D1 查询结果 CSV 导出，经系统分享给其它应用 -->
-    <cache-path name="exports" path="exports/" />
-</paths>

@@ -1,3 +1,0 @@
-• Caja de herramientas para desarrolladores sin iniciar sesión
-• Centro de notificaciones
-• Alertas de Cloudflare en tu teléfono
