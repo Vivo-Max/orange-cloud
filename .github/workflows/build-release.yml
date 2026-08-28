@@ -86,17 +86,29 @@ jobs:
           echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID || vars.OAUTH_CLIENT_ID }}" > local.properties
           echo "OAUTH_REDIRECT_URI=${{ vars.OAUTH_REDIRECT_URI || 'https://oss.omail.us.kg/oauth/callback' }}" >> local.properties
 
-      - name: Generate release keystore
+      - name: Prepare release keystore
         run: |
-          keytool -genkey -v \
-            -keystore ${{ github.workspace }}/apps/android/ci-release.keystore \
-            -alias ci \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -storepass password \
-            -keypass password \
-            -dname "CN=Orange Cloud, OU=CI, O=Open Source, L=Unknown, ST=Unknown, C=US"
+          # 优先使用 Secrets 里的固定签名密钥（保证各版本签名一致、可覆盖安装）；
+          # 未配置时回退为临时密钥（仅适合一次性构建，跨版本无法覆盖安装）。
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > ${{ github.workspace }}/apps/android/ci-release.keystore
+            echo "KS_ALIAS=${{ secrets.KEYSTORE_ALIAS }}" >> "$GITHUB_ENV"
+            echo "KS_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> "$GITHUB_ENV"
+            echo "Using fixed release keystore from secrets"
+          else
+            keytool -genkey -v \
+              -keystore ${{ github.workspace }}/apps/android/ci-release.keystore \
+              -alias ci \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -storepass password \
+              -keypass password \
+              -dname "CN=Orange Cloud, OU=CI, O=Open Source, L=Unknown, ST=Unknown, C=US"
+            echo "KS_ALIAS=ci" >> "$GITHUB_ENV"
+            echo "KS_PASSWORD=password" >> "$GITHUB_ENV"
+            echo "WARNING: using ephemeral keystore - upgrades will NOT install over previous builds"
+          fi
 
       - name: Build OSS release APK
         working-directory: apps/android
@@ -107,9 +119,9 @@ jobs:
             -POAUTH_CLIENT_ID="${{ secrets.OAUTH_CLIENT_ID || vars.OAUTH_CLIENT_ID }}" \
             -POAUTH_REDIRECT_URI="${{ vars.OAUTH_REDIRECT_URI || 'https://oss.omail.us.kg/oauth/callback' }}" \
             -Pandroid.injected.signing.store.file=${{ github.workspace }}/apps/android/ci-release.keystore \
-            -Pandroid.injected.signing.store.password=password \
-            -Pandroid.injected.signing.key.alias=ci \
-            -Pandroid.injected.signing.key.password=password \
+            -Pandroid.injected.signing.store.password="$KS_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$KS_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KS_PASSWORD" \
             --parallel \
             --build-cache \
             --configure-on-demand \

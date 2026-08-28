@@ -16,6 +16,10 @@ xcuserdata/
 .env.local
 .env*.local
 
+orange-cloud-key.jks
+orange-cloud-key.txt
+keystore.b64
+
 # OS
 .DS_Store
 
@@ -30,6 +34,8 @@ CLAUDE.md
 apps/ios/fastlane
 
 *.storekit
+ScanTest-key.jks
+ScanTest-key.txt
 
 videos/
 skills-lock.json
