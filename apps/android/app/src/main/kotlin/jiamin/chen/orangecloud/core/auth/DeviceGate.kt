@@ -62,7 +62,7 @@ class DeviceGate @Inject constructor(
         }
     }.getOrNull()
 
-    @get:SuppressLint("HardwareIds")
+    @SuppressLint("HardwareIds")
     private fun androidId(): String {
         val raw = Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID)
         return if (raw.isNullOrBlank()) "unknown" else sha256hex16(raw.lowercase().toByteArray())
