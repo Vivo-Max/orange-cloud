@@ -138,6 +138,17 @@ export const GUIDES: GuideMeta[] = [
 
 export const GUIDES_ZH: GuideMeta[] = [
 	{
+		slug: "cloudflare-dns-jiexi-bu-shengxiao",
+		h1: "Cloudflare DNS 解析不生效？改完记录没反应查什么",
+		title: "Cloudflare DNS 解析不生效：原因与排查顺序",
+		description:
+			"改完 DNS 记录没生效，先分清是记录本身没建对、代理状态不对，还是本地/运营商递归缓存还没过期。按记录状态、TTL、缓存三层排查。",
+		blurb:
+			"改了记录 ping 还是旧 IP？多数情况不是 Cloudflare 没生效，而是递归缓存、hosts 绑定或代理状态在作怪。一份按顺序排查的清单。",
+		updated: "2026-08-28",
+		readingTime: "约 8 分钟",
+	},
+	{
 		slug: "cloudflare-huancun-mingzhonglv",
 		h1: "Cloudflare 到底缓存了什么？为什么命中率一直上不去",
 		title: "Cloudflare 缓存了什么：命中率为什么上不去",
