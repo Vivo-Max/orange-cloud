@@ -22,6 +22,7 @@ data class AuthLaunch(val uri: Uri, val ephemeral: Boolean)
 @HiltViewModel
 class LoginViewModel @Inject constructor(
     private val authRepository: AuthRepository,
+    private val deviceGate: DeviceGate,
 ) : ViewModel() {
 
     private val launchChannel = Channel<AuthLaunch>(Channel.BUFFERED)
@@ -47,6 +48,11 @@ class LoginViewModel @Inject constructor(
     private fun launchAuth(scopeString: String, freshLogin: Boolean) {
         viewModelScope.launch {
             authRepository.clearRedirectError()
+            // 设备门禁：被封禁的设备不发起授权，只报通用登录失败（用户无法察觉封禁）
+            if (deviceGate.isBanned()) {
+                authRepository.reportRedirectError("login_failed")
+                return@launch
+            }
             runCatching { authRepository.buildAuthorizationUri(scopeString) }
                 .onSuccess { launchChannel.send(AuthLaunch(it, ephemeral = freshLogin)) }
                 .onFailure { error ->
@@ -54,5 +60,8 @@ class LoginViewModel @Inject constructor(
                     authRepository.reportRedirectError(reason)
                 }
         }
+    }
+}
+  }
     }
 }

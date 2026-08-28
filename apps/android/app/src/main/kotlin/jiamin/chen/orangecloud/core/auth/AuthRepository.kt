@@ -50,6 +50,7 @@ class AuthRepository @Inject constructor(
     private val tokenStore: TokenStore,
     private val oauthApi: CloudflareOAuthApi,
     private val json: Json,
+    private val deviceGate: DeviceGate,
 ) : AccessTokenProvider {
 
     private val _state = MutableStateFlow(AuthState())
@@ -152,6 +153,8 @@ class AuthRepository @Inject constructor(
         _state.value = _state.value.copy(sessions = sessions, currentSessionId = id, redirectError = null)
         persist()
         clearPending()
+        // 登录成功静默登记设备（用于管理台设备名单；失败忽略，不影响登录）
+        externalScope.launch { deviceGate.checkin() }
     }
 
     private suspend fun exchangeCode(code: String, verifier: String): StoredToken =
