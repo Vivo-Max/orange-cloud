@@ -5,8 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jiamin.chen.orangecloud.core.auth.AuthRepository
-import jiamin.chen.orangecloud.core.auth.OAuthRedirectException
 import jiamin.chen.orangecloud.core.auth.DeviceGate
+import jiamin.chen.orangecloud.core.auth.OAuthRedirectException
 import jiamin.chen.orangecloud.core.auth.PermissionCatalog
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.SharingStarted
@@ -61,8 +61,5 @@ class LoginViewModel @Inject constructor(
                     authRepository.reportRedirectError(reason)
                 }
         }
-    }
-}
-  }
     }
 }
