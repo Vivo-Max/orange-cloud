@@ -91,10 +91,20 @@ jobs:
           # 优先使用 Secrets 里的固定签名密钥（保证各版本签名一致、可覆盖安装）；
           # 未配置时回退为临时密钥（仅适合一次性构建，跨版本无法覆盖安装）。
           if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
-            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > ${{ github.workspace }}/apps/android/ci-release.keystore
+            # -i 忽略换行等杂散字符，容忍粘贴时带入的 CRLF
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -di > ${{ github.workspace }}/apps/android/ci-release.keystore
             echo "KS_ALIAS=${{ secrets.KEYSTORE_ALIAS }}" >> "$GITHUB_ENV"
             echo "KS_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> "$GITHUB_ENV"
-            echo "Using fixed release keystore from secrets"
+            # 解码后立即校验：文件无效或密码/别名不对时在此直接报明确错误
+            if ! keytool -list -keystore ${{ github.workspace }}/apps/android/ci-release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" > /dev/null 2>&1; then
+              echo "::error::KEYSTORE_BASE64 解码后不是有效密钥库，或 KEYSTORE_PASSWORD 不匹配。请用脚本选项7从 .jks 重新生成 b64，并核对三个 Secret 属于同一套密钥。"
+              exit 1
+            fi
+            if ! keytool -list -keystore ${{ github.workspace }}/apps/android/ci-release.keystore -storepass "${{ secrets.KEYSTORE_PASSWORD }}" -alias "${{ secrets.KEYSTORE_ALIAS }}" > /dev/null 2>&1; then
+              echo "::error::密钥库里没有别名 '${{ secrets.KEYSTORE_ALIAS }}'。别名必须是生成密钥时的基础文件名（可用 keytool -list 查看）。"
+              exit 1
+            fi
+            echo "Using fixed release keystore from secrets (verified OK)"
           else
             keytool -genkey -v \
               -keystore ${{ github.workspace }}/apps/android/ci-release.keystore \
