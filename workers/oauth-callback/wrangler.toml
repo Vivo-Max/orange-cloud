@@ -1,0 +1,20 @@
+name = "orange-cloud-oauth-callback"
+main = "worker.js"
+compatibility_date = "2026-08-28"
+workers_dev = false
+
+routes = [
+  { pattern = "", custom_domain = true }
+]
+
+# 设备名单存储。先执行：npx wrangler kv namespace create DEVICES
+# 把输出的 id 填到下面，再 deploy。
+[[kv_namespaces]]
+binding = "DEVICES"
+id = "在此填入_kv_namespace_id"
+
+# 管理面板密码：npx wrangler secret put ADMIN_PASSWORD
+# （不要写在本文件里，用 secret 注入）
+
+[observability]
+enabled = true
