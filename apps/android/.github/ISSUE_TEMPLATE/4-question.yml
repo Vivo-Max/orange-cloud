@@ -1,0 +1,29 @@
+name: ❓ 使用问题 / Question
+description: 用法咨询，或不确定是不是 bug / Ask a usage question, or when unsure it's a bug
+labels: ["question"]
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提问前可以先看下 README 和 docs/ 里的文档，也许已有答案。
+        Before asking, the README and docs/ folder may already have the answer.
+  - type: textarea
+    id: question
+    attributes:
+      label: 你的问题 / Your question
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台 / Platform（可选 / optional）
+      options:
+        - iOS
+        - iPadOS
+        - watchOS
+        - Android
+        - Web 网页 / Web
+        - 其他 / Other
+    validations:
+      required: false

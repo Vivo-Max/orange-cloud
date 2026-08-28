@@ -40,7 +40,7 @@ O Orange Cloud Pro desbloqueia várias contas, toda a aba de Armazenamento (R2 /
 
 As assinaturas são cobradas pelo Google Play e renovam automaticamente, salvo cancelamento com pelo menos 24 horas de antecedência ao fim do período atual. Gerencie ou cancele quando quiser no Google Play.
 
-Política de Privacidade: https://90dd.adsl8.workers.dev/privacy
-Termos de Uso: https://90dd.adsl8.workers.dev/terms
+Política de Privacidade: https://oss.omail.us.kg/privacy
+Termos de Uso: https://oss.omail.us.kg/terms
 
 Orange Cloud é um cliente independente de terceiros e não é afiliado, endossado nem patrocinado pela Cloudflare, Inc. Cloudflare é uma marca da Cloudflare, Inc.

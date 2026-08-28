@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">고정됨</string>
+    <string name="hub_pin">고정</string>
+    <string name="hub_unpin">고정 해제</string>
+    <string name="hub_unresolved">리소스를 사용할 수 없음</string>
+    <string name="hub_search">리소스 검색</string>
+    <string name="hub_search_hint">도메인, Worker, 버킷 검색…</string>
+    <string name="hub_search_empty">일치하는 리소스가 없습니다</string>
+    <string name="hub_type_zone">도메인</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">버킷</string>
+    <string name="hub_type_d1">D1 데이터베이스</string>
+    <string name="hub_type_kv">KV 네임스페이스</string>
+    <string name="hub_type_tunnel">터널</string>
+    <string name="hub_alerts">알림 센터</string>
+    <string name="hub_alert_all_clear">알림이 없습니다</string>
+    <string name="hub_alert_all_clear_sub">도메인, 터널, Worker 모두 정상입니다</string>
+    <string name="hub_alert_zone_inactive">도메인이 활성화되지 않음: %1$s</string>
+    <string name="hub_alert_tunnel">터널 이상: %1$s</string>
+    <string name="hub_alert_no_workers">아직 Worker가 없습니다</string>
+    <string name="hub_alert_no_workers_sub">이 계정에 Worker 스크립트가 없습니다</string>
+</resources>

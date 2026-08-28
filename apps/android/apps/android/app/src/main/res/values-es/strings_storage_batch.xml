@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Vista previa</string>
+    <string name="r2_preview_loading">Cargando vista previa…</string>
+    <string name="r2_preview_json_formatted">JSON formateado</string>
+    <string name="r2_preview_truncated">El contenido es largo; solo se muestran los primeros %1$d caracteres</string>
+    <string name="r2_preview_too_large">El objeto es grande (%1$s); usa “Descargar y abrir”</string>
+    <string name="r2_preview_unsupported">Este tipo de archivo no se puede ver en la app; usa “Descargar y abrir”</string>
+    <string name="r2_preview_failed">No se pudo cargar la vista previa</string>
+    <string name="r2_preview_search">Buscar en la vista previa</string>
+    <string name="r2_preview_matches">%1$d coincidencias</string>
+    <string name="r2_preview_no_match">Sin coincidencias</string>
+    <string name="d1_history">Ejecuciones recientes</string>
+    <string name="d1_favorites">Favoritos</string>
+    <string name="d1_favorite_add">Guardar en favoritos</string>
+    <string name="d1_favorite_remove">Quitar de favoritos</string>
+    <string name="d1_favorite_too_long">La sentencia es muy larga para guardarla</string>
+    <string name="d1_favorite_full">Favoritos llenos (máximo %1$d)</string>
+    <string name="d1_export_csv">Exportar CSV</string>
+    <string name="d1_export_hint">Solo exporta los resultados ya cargados; no vuelve a consultar</string>
+    <string name="d1_export_share">Compartir resultados</string>
+    <string name="d1_export_failed">Falló la exportación</string>
+    <string name="d1_index_section">Índices</string>
+    <string name="d1_index_empty">Esta tabla no tiene índices</string>
+    <string name="d1_index_unique">Único</string>
+    <string name="d1_index_origin_pk">Clave primaria</string>
+    <string name="d1_index_origin_unique">Restricción UNIQUE</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

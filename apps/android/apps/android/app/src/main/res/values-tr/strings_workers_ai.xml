@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">Günlük içeriğinde ara</string>
+    <string name="tail_search_clear">Aramayı temizle</string>
+    <string name="tail_filter_empty">Geçerli filtrelere uyan günlük yok</string>
+    <string name="tail_copied">Günlük satırı kopyalandı</string>
+    <string name="tail_level_all">Tümü</string>
+    <string name="tail_level_event">İstekler</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">Günlük ayrıntıları</string>
+    <string name="tail_detail_close">Kapat</string>
+    <string name="tail_detail_copy_all">Tümünü kopyala</string>
+    <string name="tail_detail_level">Düzey</string>
+    <string name="tail_detail_time">Zaman</string>
+    <string name="tail_detail_method">İstek yöntemi</string>
+    <string name="tail_detail_url">İstek adresi</string>
+    <string name="tail_detail_cron">Cron ifadesi</string>
+    <string name="tail_detail_outcome">Sonuç</string>
+    <string name="tail_detail_exception">İstisna</string>
+    <string name="tail_detail_body">Tam içerik</string>
+    <string name="tail_detail_select_hint">Bir bölümü seçip kopyalamak için uzun basın</string>
+    <string name="tail_row_hint">Ayrıntı için dokunun, satırı kopyalamak için uzun basın</string>
+    <string name="dev_ai_image_playground">Metinden görsel denemesi</string>
+    <string name="dev_ai_image_prompt">Görsel istemi</string>
+    <string name="dev_ai_image_generate">Görsel oluştur</string>
+    <string name="dev_ai_image_run_note">Oluşturma modeli çağırır ve hesabın Workers AI kullanımına sayılır.</string>
+    <string name="dev_ai_image_result">Oluşturulan görsel</string>
+    <string name="dev_ai_image_decoding">Görsel işleniyor…</string>
+    <string name="dev_ai_image_share">Görseli paylaş</string>
+    <string name="dev_ai_image_share_failed">Paylaşım başarısız, görseli alabilecek uygulama yok.</string>
+    <string name="dev_ai_image_not_image">Model görsel döndürmedi. Ham yanıt:</string>
+    <string name="tail_paused">Duraklatıldı</string>
+    <string name="tail_paused_new_count">Duraklatıldı · %1$d yeni</string>
+</resources>

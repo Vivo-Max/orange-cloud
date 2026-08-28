@@ -1,0 +1,7 @@
+• Robots d’IA : trois niveaux de blocage et deux réglages de contenu
+• Contrôles d’intégrité : état de l’origine, alertes de Cloudflare
+• Bureau d’enregistrement : expiration, renouvellement auto, verrou
+• Traçage de requêtes : voyez quelles règles s’appliquent
+• DNS : DNSSEC et enregistrement DS, aplatissement CNAME, serveurs de noms
+• Historique des builds Worker, avec alerte en cas d’échec
+• Ajoute R2 Data Catalog, en-têtes gérés, analyse d’URL, suppression Email ; historique d’audit

@@ -292,8 +292,8 @@ struct PaywallView: View {
                 .multilineTextAlignment(.center)
 
             HStack(spacing: 16) {
-                Link("隐私政策", destination: URL(string: "https://90dd.adsl8.workers.dev/privacy")!)
-                Link("使用条款", destination: URL(string: "https://90dd.adsl8.workers.dev/terms")!)
+                Link("隐私政策", destination: URL(string: "https://oss.omail.us.kg/privacy")!)
+                Link("使用条款", destination: URL(string: "https://oss.omail.us.kg/terms")!)
             }
             .font(.caption2)
             .foregroundStyle(.secondary)

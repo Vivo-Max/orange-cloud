@@ -110,7 +110,7 @@ export async function notifyAppleEvent(
 		title: msg.title,
 		body: msg.body,
 		group: msg.group,
-		icon: "https://90dd.adsl8.workers.dev/icons/icon-64.png",
+		icon: "https://oss.omail.us.kg/icons/icon-64.png",
 		// 级别在 buildBarkMessage 里决定：仅「入账且金额>0」穿透专注模式。
 		level: msg.level,
 		// 只有入账（== timeSensitive）才响，其余（退款申请 / 到期 / 沙盒…）一律静默。

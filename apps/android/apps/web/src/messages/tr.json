@@ -1,0 +1,243 @@
+{
+	"rank": {
+		"badge": "Geliştirici Araçları’nda #{rank}",
+		"ariaLabel": "App Store sıralaması"
+	},
+	"meta": {
+		"title": "Orange Cloud — Cloudflare’iniz bir bakışta",
+		"description": "Cloudflare için yerel bir istemci: resmi OAuth oturum açma, alan adları, DNS, trafik analizi, canlı Workers günlükleri ve iPhone, iPad ve Android’de R2 · D1 · KV depolama.",
+		"keywords": "cloudflare,dns,domain,workers,cdn,waf,r2,serverless,analytics,ssl,tunnel,website,devops,kv,d1"
+	},
+	"header": {
+		"language": "Dil",
+		"support": "Destekle",
+		"download": "App Store",
+		"downloadComing": "İncelemede"
+	},
+	"badge": {
+		"line1": "İndir:",
+		"line2": "App Store",
+		"comingLine1": "İncelemede",
+		"comingLine2": "App Store",
+		"alt": "App Store’dan indir",
+		"comingLabel": "App Store incelemesinde"
+	},
+	"productHunt": {
+		"alt": "Orange Cloud — ileri kullanıcılar için açık kaynaklı Cloudflare yardımcısı | Product Hunt"
+	},
+	"hero": {
+		"kicker": "iPhone, iPad ve Android için yerel",
+		"title1": "Cloudflare’iniz,",
+		"title2": "bir bakışta",
+		"sub": "Alan adları, DNS, analizler, Workers günlükleri ve depolama; günün saatini izleyen bir gökyüzünde. Resmi OAuth oturum açma — API anahtarı yapıştırmak yok.",
+		"note": "iOS 17.0+ / Android 9+ · Ücretsiz indirme, isteğe bağlı Pro"
+	},
+	"phone": {
+		"greetMorning": "Günaydın, Jiamin",
+		"greetAfternoon": "İyi günler, Jiamin",
+		"greetEvening": "İyi akşamlar, Jiamin",
+		"health": "6 alan adının tümü sağlıklı",
+		"statZones": "Alan adları",
+		"statZonesSub": "6 etkin",
+		"statWorkers": "Workers",
+		"statWorkersSub": "Dağıtılan betikler",
+		"statDNS": "DNS kayıtları",
+		"statDNSSub": "Eşitlenen alan adları",
+		"statR2": "R2",
+		"statR2Sub": "Bucket’lar",
+		"usage": "Kullanım",
+		"tileWorkers": "Workers · İstekler",
+		"tileR2": "R2 · B Sınıfı",
+		"zonesSection": "Alan adları",
+		"all": "Tümü",
+		"zoneActive": "Etkin",
+		"tabs": [
+			"Genel bakış",
+			"Alan adları",
+			"Workers",
+			"Depolama",
+			"Ayarlar"
+		]
+	},
+	"trust": {
+		"title": "Anahtarlarınızı vermeden oturum açın",
+		"sub": "Veri toplama yok, aradaki sunucular yok — yalnızca size ait bir konsol.",
+		"cards": [
+			{
+				"t": "API anahtarı yok",
+				"b": "Resmi Cloudflare OAuth 2.0 + PKCE. İstediğiniz kapsamları tam olarak seçin, panelden istediğiniz zaman iptal edin."
+			},
+			{
+				"t": "Anahtarlar Keychain’de yaşar",
+				"b": "Kimlik bilgileri yalnızca cihazınızın Keychain’inde saklanır — asla yüklenmez, üçüncü taraf sunucularda bulunmaz."
+			},
+			{
+				"t": "Yalnızca cihazdan Cloudflare’a",
+				"b": "Her istek doğrudan api.cloudflare.com’a gider. Bu site yalnızca OAuth geri çağrısını iletir ve hiçbir şey saklamaz."
+			}
+		]
+	},
+	"gallery": {
+		"title": "Şafaktan gece yarısına kaydırın",
+		"sub": "Sekiz ekran tek bir sürekli gökyüzünü paylaşır — sağa kaydırın, güneş gün boyunca sizin için yürüsün.",
+		"alts": [
+			"Genel bakış: alan adları, Workers, DNS ve kullanım tek ekranda",
+			"Analitik: istekler, bant genişliği, önbellek isabetleri ve tehditler",
+			"DNS kayıt listesi ve düzenleme",
+			"Depolama: R2, D1 ve KV",
+			"Açık ve koyu: tek gökyüzü, gece ve gündüz",
+			"Canlı Workers günlükleri",
+			"Gökyüzünü izleyen ana ekran widget’ları",
+			"Resmi OAuth oturum açma"
+		]
+	},
+	"features": {
+		"title": "Tüm Cloudflare araç seti avucunuzda",
+		"sub": "DNS’ten uç depolamaya, her günlük işlem kapsanır.",
+		"items": [
+			{
+				"t": "Alan adları ve DNS",
+				"b": "Tek dokunuşla proxy anahtarı ve hızlı aramayla kayıt oluşturun, düzenleyin ve silin."
+			},
+			{
+				"t": "Trafik analizi",
+				"b": "İstekler, bant genişliği, önbellek isabetleri ve engellenen tehditler, Swift Charts ile çizilir."
+			},
+			{
+				"t": "Canlı Workers günlükleri",
+				"b": "Doğrudan WebSocket tail’i, Dynamic Island ve Canlı Etkinliklere aktarılır."
+			},
+			{
+				"t": "R2 · D1 · KV",
+				"b": "Nesnelere göz atın, SQL çalıştırın, anahtar-değer çiftlerini yönetin — üçü için tek Depolama sekmesi."
+			},
+			{
+				"t": "WAF özel kuralları",
+				"b": "En önemli anda güvenlik duvarı kurallarını inceleyin ve değiştirin."
+			},
+			{
+				"t": "Cloudflare Tunnel",
+				"b": "Tünel durumu ve etkin bağlantılar bir bakışta."
+			},
+			{
+				"t": "Widget’lar ve Siri",
+				"b": "Gökyüzünü izleyen ana ekran widget’ları, tek bir cümlelik kısayollar."
+			},
+			{
+				"t": "Çoklu hesap",
+				"b": "Birden çok Cloudflare hesabını yan yana tutun ve tek dokunuşla geçin."
+			}
+		]
+	},
+	"ipad": {
+		"title": "İki sütun, iPad için tasarlandı",
+		"body": "Bir NavigationSplitView düzeni liste ile ayrıntıyı yan yana tutar — büyük ekran artık gerilmiş bir telefon değil."
+	},
+	"pro": {
+		"title": "Önemli yerde ücretsiz, ölçeklenen yerde Pro",
+		"sub": "Temel yönetim sonsuza dek ücretsiz. Güçlü özellikler Pro ile gelir — abone olun veya bir kez satın alıp koruyun.",
+		"freeName": "Ücretsiz",
+		"freeItems": [
+			"Tek hesap",
+			"Tam alan adları ve DNS",
+			"24 saatlik analitik",
+			"Tüm widget’lar ve Siri kısayolları"
+		],
+		"proName": "Pro",
+		"proItems": [
+			"Çoklu hesap",
+			"R2 · D1 · KV depolama",
+			"Canlı Workers günlükleri",
+			"WAF ve Tünel",
+			"7 günlük / 30 günlük analitik"
+		],
+		"note": "Orange Cloud açık kaynaktır (AGPL-3.0) — kendiniz de derleyebilirsiniz."
+	},
+	"cta": {
+		"title": "Cloudflare’i cebinize koyun",
+		"sub": "Bu geceki gökyüzü uygulamada sizi bekliyor.",
+		"requirement": "iOS 17.0+ veya Android 9+ gerektirir · iPhone, iPad ve Android"
+	},
+	"sibling": {
+		"eyebrow": "Aynı geliştiricinin bir diğer uygulaması",
+		"name": "Apolu",
+		"tagline": "175 ülkede App Store sıralamaları",
+		"body": "Bir uygulamanın ücretsiz ve ücretli listelerdeki sırasını izleyin, sıra değiştiği anda bildirim alın ve geliri üçüncü taraf tahmini yerine doğrudan kendi App Store Connect hesabınızdan görün. iPhone, iPad ve Mac için.",
+		"cta": "Bir göz atın"
+	},
+	"changelog": {
+		"title": "Sürüm geçmişi",
+		"sub": "Orange Cloud artık App Store’da. İşte sürüm geçmişi — veya yaklaşan sürümlere erken erişim için TestFlight’a katılın.",
+		"tfButton": "TestFlight’a katıl",
+		"tfNote": "iOS 17.0 veya üzeri gerektirir · yalnızca Apple cihazları",
+		"androidSoon": "Android uygulaması yakında Google Play’de",
+		"statusInReview": "İncelemede"
+	},
+	"footer": {
+		"privacy": "Gizlilik politikası",
+		"terms": "Hizmet koşulları",
+		"contact": "İletişim",
+		"copyright": "© 2026 Orange Cloud",
+		"disclaimer": "Orange Cloud bağımsız bir üçüncü taraf istemcidir; Cloudflare, Inc. ile bağlantılı, onun tarafından onaylanmış veya desteklenmiş değildir. Cloudflare, Cloudflare, Inc.’in ticari markasıdır."
+	},
+	"contact": {
+		"title": "Bize ulaşın",
+		"intro": "Bir soru, geri bildirim veya bildirilecek bir hata mı var? Doğrudan geliştiriciye e-posta gönderin — her mesajı okuyoruz.",
+		"emailLabel": "E-posta",
+		"emailHint": "En kısa sürede, genellikle birkaç gün içinde yanıtlıyoruz.",
+		"cards": [
+			{
+				"h": "Geri bildirim ve fikirler",
+				"p": "Neyin işe yaradığını, neyin yaramadığını ve sırada ne görmek istediğinizi bize söyleyin."
+			},
+			{
+				"h": "Hata bildirimleri",
+				"p": "Bozuk bir şeyle mi karşılaştınız? Yeniden oluşturma adımları ve cihaz bilgileriniz onu bulmamıza yardımcı olur."
+			},
+			{
+				"h": "Gizlilik ve güvenlik",
+				"p": "Bir güvenlik sorunu mu buldunuz? Ayrıntıları bize e-postayla gönderin, hemen yanıtlayalım."
+			}
+		]
+	},
+	"privacy": {
+		"title": "Gizlilik politikası",
+		"updated": "Son güncelleme: Haziran 2026",
+		"sections": [
+			{
+				"h": "Veri toplama",
+				"p": "Orange Cloud, sunucularımıza herhangi bir kişisel veri toplamaz, saklamaz veya iletmez. Cloudflare OAuth anahtarlarınız yalnızca cihazınızın yerel Keychain’inde saklanır. Tüm API istekleri doğrudan api.cloudflare.com’a gönderilir."
+			},
+			{
+				"h": "Kimlik doğrulama",
+				"p": "Orange Cloud, Cloudflare’in resmi OAuth 2.0 yetkilendirme akışını kullanır. Cloudflare parolanızı veya kalıcı API anahtarlarınızı asla görmez veya saklamayız. Bu sitedeki OAuth geri çağırma uç noktası, geçici yetkilendirme kodunu saklamadan uygulamaya iletir."
+			},
+			{
+				"h": "Üçüncü taraf hizmetleri",
+				"p": "Orange Cloud yalnızca Cloudflare’in resmi API uç noktalarıyla (api.cloudflare.com ve dash.cloudflare.com) iletişim kurar. Başka hiçbir üçüncü taraf hizmeti kullanılmaz."
+			}
+		]
+	},
+	"terms": {
+		"title": "Hizmet koşulları",
+		"updated": "Son güncelleme: Haziran 2026",
+		"sections": [
+			{
+				"h": "Koşulların kabulü",
+				"p": "Orange Cloud’u kullanarak bu koşulları kabul edersiniz. Orange Cloud, Cloudflare için bağımsız bir üçüncü taraf istemcidir; Cloudflare, Inc. ile bağlantılı, onaylanmış veya desteklenmiş değildir."
+			},
+			{
+				"h": "Hizmetin kullanımı",
+				"p": "Orange Cloud, kendi Cloudflare kaynaklarınızı Cloudflare’in resmi API’si üzerinden yönetmenizi sağlar. Uygulama üzerinden Cloudflare hesabınızda yapılan tüm değişikliklerden ve Cloudflare’in hizmet koşullarına uymaktan siz sorumlusunuz."
+			},
+			{
+				"h": "Garanti reddi",
+				"p": "Orange Cloud, hiçbir tür garanti olmaksızın “olduğu gibi” sağlanır. DNS yanlış yapılandırması veya hizmet kesintisi dahil ancak bunlarla sınırlı olmamak üzere, uygulamanın kullanımından doğan hiçbir zarardan sorumlu değiliz."
+			},
+			{
+				"h": "Erişimi iptal etme",
+				"p": "Orange Cloud’un Cloudflare hesabınıza erişimini istediğiniz zaman Cloudflare panelinden veya uygulamada çıkış yaparak iptal edebilirsiniz."
+			}
+		]
+	}
+}

@@ -10,17 +10,17 @@ plugins {
     alias(libs.plugins.hilt)
 }
 
-// OAuth 配置（PKCE 公开客户端，非机密；与 iOS OAuthConfig.swift 同值）。
-// 自编译者仍可在 local.properties / -P 中覆盖为自己的 Client 与回调中转。
-val officialOAuthClientId = "102240eb9095a1965ee11813ef4788cd"
-val officialOAuthRedirectUri = "https://90dd.adsl8.workers.dev/oauth/callback"
+// OAuth 配置（PKCE 公开客户端，非机密）。默认值对应当前仓库的自建 Client 与回调中转；
+// 仍可在 local.properties / -P 中覆盖。
+val officialOAuthClientId = "3f07f9b06b058b655d5e7c031f965347"
+val officialOAuthRedirectUri = "https://oss.omail.us.kg/oauth/callback"
 val localProps = Properties().apply {
     val f = rootProject.file("local.properties")
     if (f.exists()) f.inputStream().use { load(it) }
 }
 fun oauthConfig(key: String, default: String): String =
-    localProps.getProperty(key)
-        ?: providers.gradleProperty(key).orNull
+    localProps.getProperty(key)?.trim()?.takeIf { it.isNotEmpty() }
+        ?: providers.gradleProperty(key).orNull?.trim()?.takeIf { it.isNotEmpty() }
         ?: default
 
 // FCM（推送）配置：官方 play/direct 构建从 local.properties / -P 注入；缺省空串 = 推送不初始化（优雅降级）。

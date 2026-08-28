@@ -1,0 +1,4 @@
+• Yeni hesap kullanımı özeti: Workers, R2, D1 ve KV kullanımını kotalara göre tek bakışta görün.
+• Worker dağıtım geçmişi ve yönetimi: geçmiş dağıtımları görün; Worker oluşturun, kodu düzenleyin ve silin.
+• Daha fazla depolama yönetimi: KV ad alanları, R2 paketleri ve D1 tablolarını oluşturun/silin; ayrıca Pages dağıtım yönetimi.
+• Çeşitli kararlılık ve deneyim iyileştirmeleri.

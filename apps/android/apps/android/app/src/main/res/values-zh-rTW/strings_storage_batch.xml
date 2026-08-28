@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">預覽</string>
+    <string name="r2_preview_loading">正在載入預覽…</string>
+    <string name="r2_preview_json_formatted">JSON 已格式化</string>
+    <string name="r2_preview_truncated">內容較長，僅顯示前 %1$d 個字元</string>
+    <string name="r2_preview_too_large">物件較大（%1$s），請改用「下載並開啟」</string>
+    <string name="r2_preview_unsupported">此檔案類型無法在應用程式內預覽，請改用「下載並開啟」</string>
+    <string name="r2_preview_failed">預覽載入失敗</string>
+    <string name="r2_preview_search">在預覽中搜尋</string>
+    <string name="r2_preview_matches">%1$d 處相符</string>
+    <string name="r2_preview_no_match">沒有相符項目</string>
+    <string name="d1_history">最近執行</string>
+    <string name="d1_favorites">收藏</string>
+    <string name="d1_favorite_add">收藏此陳述式</string>
+    <string name="d1_favorite_remove">取消收藏</string>
+    <string name="d1_favorite_too_long">陳述式過長，未加入收藏</string>
+    <string name="d1_favorite_full">收藏已滿（上限 %1$d 筆）</string>
+    <string name="d1_export_csv">匯出 CSV</string>
+    <string name="d1_export_hint">僅匯出目前已載入的結果，不會重新查詢</string>
+    <string name="d1_export_share">分享查詢結果</string>
+    <string name="d1_export_failed">匯出失敗</string>
+    <string name="d1_index_section">索引</string>
+    <string name="d1_index_empty">此資料表沒有索引</string>
+    <string name="d1_index_unique">唯一</string>
+    <string name="d1_index_origin_pk">主鍵</string>
+    <string name="d1_index_origin_unique">UNIQUE 條件約束</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

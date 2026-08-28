@@ -1,0 +1,7 @@
+• AI crawlers: three blocking modes, plus two AI content switches
+• Standalone health checks: origin status at a glance, alerts from Cloudflare
+• Registrar: expiry date, auto-renew, transfer lock
+• Request tracing: see which rules a request hits
+• DNS settings: DNSSEC and DS record, CNAME flattening, nameserver type
+• Worker build history, with alerts on failed builds
+• Adds R2 Data Catalog, managed headers, URL scanning, Email suppression; audit change history; tunnel fix

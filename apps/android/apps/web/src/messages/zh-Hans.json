@@ -1,0 +1,199 @@
+{
+	"rank": {
+		"badge": "开发者工具榜第 {rank} 名",
+		"ariaLabel": "App Store 排名"
+	},
+	"meta": {
+		"title": "Orange Cloud — 一眼看清你的 Cloudflare",
+		"description": "原生 Cloudflare 管理客户端：官方 OAuth 安全登录，域名、DNS、流量分析、Workers 实时日志与 R2 · D1 · KV 存储，iPhone、iPad 与 Android 皆可。",
+		"keywords": "cloudflare,dns,域名,解析,cdn,workers,加速,防火墙,建站,服务器,waf,r2,d1,kv,隧道,分析,ssl,证书,运维"
+	},
+	"header": {
+		"language": "语言",
+		"support": "赞助",
+		"download": "App Store",
+		"downloadComing": "审核中"
+	},
+	"badge": {
+		"line1": "在 App Store",
+		"line2": "下载",
+		"comingLine1": "审核中",
+		"comingLine2": "App Store",
+		"alt": "在 App Store 下载",
+		"comingLabel": "App Store 审核中"
+	},
+	"productHunt": {
+		"alt": "Orange Cloud — 为高级用户打造的开源 Cloudflare 助手 | Product Hunt"
+	},
+	"hero": {
+		"kicker": "为 iPhone、iPad 与 Android 原生打造",
+		"title1": "一眼看清你的",
+		"title2": "Cloudflare",
+		"sub": "域名、DNS、流量分析、Workers 日志与存储，装进一片随晨昏变化的天。官方 OAuth 登录，无需粘贴 API Token。",
+		"note": "iOS 17.0+ / Android 9+ · 免费下载，Pro 进阶可选"
+	},
+	"phone": {
+		"greetMorning": "早上好，Jiamin",
+		"greetAfternoon": "下午好，Jiamin",
+		"greetEvening": "晚上好，Jiamin",
+		"health": "6 个域名全部正常",
+		"statZones": "域名",
+		"statZonesSub": "6 已启用",
+		"statWorkers": "Workers",
+		"statWorkersSub": "已部署脚本",
+		"statDNS": "DNS 记录",
+		"statDNSSub": "已同步域名",
+		"statR2": "R2",
+		"statR2Sub": "存储桶",
+		"usage": "用量",
+		"tileWorkers": "Workers · 请求 · 账期",
+		"tileR2": "R2 · B 类 · 账期",
+		"zonesSection": "域名",
+		"all": "全部",
+		"zoneActive": "已启用",
+		"tabs": ["概览", "域名", "Workers", "存储", "设置"]
+	},
+	"trust": {
+		"title": "登录，不必交出钥匙",
+		"sub": "不收集数据，不经停服务器——这是一台只属于你的控制台。",
+		"cards": [
+			{
+				"t": "无需 API Token",
+				"b": "使用 Cloudflare 官方 OAuth 2.0 + PKCE 授权，权限范围自己挑，随时可在 Dashboard 撤销。"
+			},
+			{
+				"t": "Token 只存钥匙串",
+				"b": "凭证只写入设备本地钥匙串，绝不上传，也绝不落入第三方服务器。"
+			},
+			{
+				"t": "设备直连 Cloudflare",
+				"b": "所有请求由设备直达 api.cloudflare.com，本站只做 OAuth 回调中转，不存储任何授权码。"
+			}
+		]
+	},
+	"gallery": {
+		"title": "从清晨，滑到深夜",
+		"sub": "八张截图共用同一片天——往右滑，太阳会替你走完这一天。",
+		"alts": [
+			"概览页：域名、Workers、DNS 与用量一屏总览",
+			"流量分析：请求、带宽、缓存命中与拦截威胁",
+			"DNS 记录列表与编辑",
+			"存储：R2、D1 与 KV",
+			"亮暗主题：同一片天的昼与夜",
+			"Workers 实时日志",
+			"桌面小组件随天色变化",
+			"官方 OAuth 安全登录"
+		]
+	},
+	"features": {
+		"title": "整套 Cloudflare，都在掌心",
+		"sub": "从 DNS 到边缘存储，常用操作一个不缺。",
+		"items": [
+			{ "t": "域名与 DNS", "b": "记录增删改查、代理一键开关，搜索与筛选全都顺手。" },
+			{ "t": "流量分析", "b": "请求、带宽、缓存命中与拦截威胁，Swift Charts 流畅绘制。" },
+			{ "t": "Workers 实时日志", "b": "WebSocket 直连 tail，日志流进灵动岛与锁屏实时活动。" },
+			{ "t": "R2 · D1 · KV", "b": "对象浏览、SQL 控制台、键值管理，存储三件套一站打理。" },
+			{ "t": "WAF 自定义规则", "b": "查看与启停防火墙规则，关键时刻先把闸门拉上。" },
+			{ "t": "Cloudflare Tunnel", "b": "隧道状态与活跃连接，一目了然。" },
+			{ "t": "小组件与 Siri", "b": "桌面小组件随天色变化，常用操作一句 Siri 直达。" },
+			{ "t": "多账号切换", "b": "多个 Cloudflare 账号并存，一键切换身份。" }
+		]
+	},
+	"ipad": {
+		"title": "双栏，为 iPad 而生",
+		"body": "NavigationSplitView 双栏布局，列表与详情同屏在握——大屏不再是放大的手机。"
+	},
+	"pro": {
+		"title": "免费够用，Pro 更远",
+		"sub": "核心功能免费用，进阶能力交给 Pro——订阅或一次性买断都行。",
+		"freeName": "免费",
+		"freeItems": ["单账号登录", "域名与 DNS 全功能", "24 小时流量分析", "全部小组件与 Siri 捷径"],
+		"proName": "Pro",
+		"proItems": [
+			"多账号切换",
+			"R2 · D1 · KV 存储",
+			"Workers 实时日志",
+			"WAF 与 Tunnel",
+			"7 天 / 30 天流量分析"
+		],
+		"note": "Orange Cloud 是开源软件（AGPL-3.0），亦可自行编译使用。"
+	},
+	"cta": {
+		"title": "把 Cloudflare 装进口袋",
+		"sub": "今晚的天，已经在 App 里等你。",
+		"requirement": "需要 iOS 17.0+ 或 Android 9+ · 支持 iPhone、iPad 与 Android"
+	},
+	"sibling": {
+		"eyebrow": "同一个开发者的另一款",
+		"name": "Apolu",
+		"tagline": "175 个国家和地区的 App Store 排名",
+		"body": "跟踪一款 App 在免费榜与付费榜上的名次，排名一有变动就推送；收入数字直接读自你自己的 App Store Connect，不是第三方估算。支持 iPhone、iPad 和 Mac。",
+		"cta": "去看看"
+	},
+	"changelog": {
+		"title": "更新历史",
+		"sub": "Orange Cloud 已在 App Store 上线。下面是历次更新——也可加入 TestFlight 抢先体验后续版本。",
+		"tfButton": "加入 TestFlight",
+		"tfNote": "需要 iOS 17.0 或更高版本 · 仅限 Apple 设备",
+		"androidSoon": "Android 版即将登陆 Google Play",
+		"statusInReview": "审核中"
+	},
+	"footer": {
+		"privacy": "隐私政策",
+		"terms": "使用条款",
+		"contact": "联系我们",
+		"copyright": "© 2026 Orange Cloud",
+		"disclaimer": "Orange Cloud 是独立的第三方客户端，与 Cloudflare, Inc. 无隶属、背书或赞助关系。Cloudflare 是 Cloudflare, Inc. 的商标。"
+	},
+	"contact": {
+		"title": "联系我们",
+		"intro": "有疑问、建议，或想报告一个问题？直接发邮件给开发者，每一封我们都会读。",
+		"emailLabel": "电子邮件",
+		"emailHint": "我们会尽快回复——通常在几天之内。",
+		"cards": [
+			{ "h": "反馈与建议", "p": "告诉我们哪里好用、哪里别扭，以及你接下来想看到什么。" },
+			{ "h": "问题报告", "p": "遇到异常或崩溃？附上复现步骤与设备信息，能帮我们更快定位。" },
+			{ "h": "隐私与安全", "p": "发现安全隐患，请邮件告知细节，我们会优先处理。" }
+		]
+	},
+	"privacy": {
+		"title": "隐私政策",
+		"updated": "最后更新：2026 年 6 月",
+		"sections": [
+			{
+				"h": "数据收集",
+				"p": "Orange Cloud 不收集、不存储、也不向我们的服务器传输任何个人数据。你的 Cloudflare OAuth Token 只保存在设备本地钥匙串中，所有 API 请求均直接发送至 api.cloudflare.com。"
+			},
+			{
+				"h": "身份认证",
+				"p": "Orange Cloud 使用 Cloudflare 官方 OAuth 2.0 授权流程。我们绝不会接触或存储你的 Cloudflare 密码或永久 API Token。本站的 OAuth 回调端点只负责把临时授权码转交给 App，不做任何存储。"
+			},
+			{
+				"h": "第三方服务",
+				"p": "Orange Cloud 仅与 Cloudflare 官方 API 端点（api.cloudflare.com 与 dash.cloudflare.com）通信，不使用任何其他第三方服务。"
+			}
+		]
+	},
+	"terms": {
+		"title": "使用条款",
+		"updated": "最后更新：2026 年 6 月",
+		"sections": [
+			{
+				"h": "条款的接受",
+				"p": "使用 Orange Cloud 即表示你同意本条款。Orange Cloud 是独立的第三方 Cloudflare 客户端，与 Cloudflare, Inc. 无隶属、背书或赞助关系。"
+			},
+			{
+				"h": "服务的使用",
+				"p": "Orange Cloud 让你通过 Cloudflare 官方 API 管理自己的 Cloudflare 资源。你须对通过本 App 对账户所做的全部更改负责，并遵守 Cloudflare 自身的服务条款。"
+			},
+			{
+				"h": "免责声明",
+				"p": "Orange Cloud 按「现状」提供，不附带任何形式的保证。对因使用本 App 而产生的任何损失（包括但不限于 DNS 配置错误或服务中断），我们概不负责。"
+			},
+			{
+				"h": "撤销授权",
+				"p": "你可以随时在 Cloudflare Dashboard 撤销 Orange Cloud 的访问权限，或在 App 内退出登录。"
+			}
+		]
+	}
+}

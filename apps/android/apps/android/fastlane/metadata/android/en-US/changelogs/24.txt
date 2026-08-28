@@ -1,0 +1,4 @@
+• Turnstile management: browse and create widgets, edit domains and modes, rotate secrets with an optional 2-hour grace period
+• R2 SQL console: query Iceberg tables in your Data Catalog, tap a table to start (10 GB free per month)
+• Workers variables and secrets: paste JSON to bulk-import via the new atomic bulk endpoint
+• Cache Rules quick-insert chips add JA3/JA4 fingerprints; rules using Vary caching turn read-only to protect that config

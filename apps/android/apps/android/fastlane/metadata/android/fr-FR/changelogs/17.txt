@@ -1,0 +1,4 @@
+• Nouvel aperçu de l’utilisation du compte : usage de Workers, R2, D1 et KV par rapport aux quotas d’un coup d’œil.
+• Historique et gestion des déploiements Worker : consultez les déploiements passés ; créez, modifiez le code et supprimez des Workers.
+• Gestion du stockage étendue : créez/supprimez des namespaces KV, des buckets R2 et des tables D1, plus la gestion des déploiements Pages.
+• Diverses améliorations de stabilité et d’expérience.

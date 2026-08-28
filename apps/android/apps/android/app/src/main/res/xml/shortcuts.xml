@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面图标长按静态快捷方式（对应 iOS App Shortcuts；直达主 Tab）。
+     用隐式 intent（action+data），靠 manifest 的 orangecloud://open intent-filter
+     解析到本应用 MainActivity，与风味 applicationId 无关。 -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="zones"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/nav_zones">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="orangecloud://open/zones" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="workers"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/nav_workers">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="orangecloud://open/workers" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="storage"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:shortcutShortLabel="@string/nav_storage">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="orangecloud://open/storage" />
+    </shortcut>
+</shortcuts>

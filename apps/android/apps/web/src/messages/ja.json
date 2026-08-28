@@ -1,0 +1,199 @@
+{
+	"rank": {
+		"badge": "デベロッパツール {rank} 位",
+		"ariaLabel": "App Store ランキング"
+	},
+	"meta": {
+		"title": "Orange Cloud — Cloudflare を、ひと目で",
+		"description": "Cloudflare のための iOS ネイティブクライアント。公式 OAuth ログイン、ドメイン・DNS・トラフィック分析・Workers ライブログ・R2 / D1 / KV ストレージを iPhone と iPad で。",
+		"keywords": "cloudflare,dns,ドメイン,cdn,workers,サーバー,セキュリティ,waf,r2,d1,kv,トンネル,分析,キャッシュ,開発"
+	},
+	"header": {
+		"language": "言語",
+		"support": "支援",
+		"download": "App Store",
+		"downloadComing": "審査中"
+	},
+	"badge": {
+		"line1": "App Storeで",
+		"line2": "ダウンロード",
+		"comingLine1": "審査中",
+		"comingLine2": "App Store",
+		"alt": "App Store でダウンロード",
+		"comingLabel": "App Store 審査中"
+	},
+	"productHunt": {
+		"alt": "Orange Cloud — パワーユーザーのためのオープンソース Cloudflare コンパニオン | Product Hunt"
+	},
+	"hero": {
+		"kicker": "iPhone・iPad・Android のためのネイティブアプリ",
+		"title1": "Cloudflare を、",
+		"title2": "ひと目で",
+		"sub": "ドメイン、DNS、分析、Workers ログ、ストレージ。空の色とともに移ろう UI に、すべてが収まる。公式 OAuth ログインで API トークンの貼り付けは不要。",
+		"note": "iOS 17.0+ / Android 9+ · 無料ダウンロード、Pro はお好みで"
+	},
+	"phone": {
+		"greetMorning": "おはようございます",
+		"greetAfternoon": "こんにちは",
+		"greetEvening": "こんばんは",
+		"health": "6 件のドメインすべて正常",
+		"statZones": "ドメイン",
+		"statZonesSub": "6 件有効",
+		"statWorkers": "Workers",
+		"statWorkersSub": "デプロイ済み",
+		"statDNS": "DNS レコード",
+		"statDNSSub": "同期済み",
+		"statR2": "R2",
+		"statR2Sub": "バケット",
+		"usage": "使用量",
+		"tileWorkers": "Workers · リクエスト",
+		"tileR2": "R2 · クラス B",
+		"zonesSection": "ドメイン",
+		"all": "すべて",
+		"zoneActive": "有効",
+		"tabs": ["概要", "ドメイン", "Workers", "ストレージ", "設定"]
+	},
+	"trust": {
+		"title": "鍵を渡さないログイン",
+		"sub": "データ収集なし、中継サーバーなし。あなただけのコンソール。",
+		"cards": [
+			{
+				"t": "API トークン不要",
+				"b": "Cloudflare 公式の OAuth 2.0 + PKCE。スコープは自分で選び、いつでもダッシュボードから取り消せます。"
+			},
+			{
+				"t": "トークンはキーチェーンのみ",
+				"b": "認証情報は端末のキーチェーンにのみ保存。アップロードも、第三者サーバーへの保存も一切ありません。"
+			},
+			{
+				"t": "端末から Cloudflare へ直結",
+				"b": "すべてのリクエストは api.cloudflare.com へ直接送信。本サイトは OAuth コールバックを中継するだけで、何も保存しません。"
+			}
+		]
+	},
+	"gallery": {
+		"title": "朝から深夜まで、スワイプで",
+		"sub": "8 枚のスクリーンショットがひとつの空を共有。右へスワイプすると、太陽が一日を歩きます。",
+		"alts": [
+			"概要：ドメイン、Workers、DNS、使用量をひと画面で",
+			"分析：リクエスト、帯域、キャッシュヒット、脅威",
+			"DNS レコードの一覧と編集",
+			"ストレージ：R2、D1、KV",
+			"ライト / ダーク：同じ空の昼と夜",
+			"Workers ライブログ",
+			"空の色とともに変わるウィジェット",
+			"公式 OAuth ログイン"
+		]
+	},
+	"features": {
+		"title": "Cloudflare のすべてを、手のひらに",
+		"sub": "DNS からエッジストレージまで、日々の操作をもれなく。",
+		"items": [
+			{ "t": "ドメインと DNS", "b": "レコードの作成・編集・削除。プロキシはワンタップで切替、検索も自在。" },
+			{ "t": "トラフィック分析", "b": "リクエスト・帯域・キャッシュヒット・脅威ブロックを Swift Charts で描画。" },
+			{ "t": "Workers ライブログ", "b": "WebSocket 直結の tail。Dynamic Island とライブアクティビティに同期。" },
+			{ "t": "R2 · D1 · KV", "b": "オブジェクト閲覧、SQL コンソール、キー値管理をひとつのタブで。" },
+			{ "t": "WAF カスタムルール", "b": "ファイアウォールルールの確認と切替を、いざという時に。" },
+			{ "t": "Cloudflare Tunnel", "b": "トンネルの状態とアクティブな接続をひと目で。" },
+			{ "t": "ウィジェットと Siri", "b": "空の色とともに変わるウィジェット。ひと言で届くショートカット。" },
+			{ "t": "複数アカウント", "b": "複数の Cloudflare アカウントを並べて、ワンタップで切替。" }
+		]
+	},
+	"ipad": {
+		"title": "iPad のための 2 カラム",
+		"body": "NavigationSplitView でリストと詳細をひと画面に。大画面は、もう引き伸ばした iPhone ではありません。"
+	},
+	"pro": {
+		"title": "基本は無料、その先は Pro",
+		"sub": "コアな管理機能はずっと無料。パワー機能は Pro で——サブスクでも、買い切りでも。",
+		"freeName": "無料",
+		"freeItems": ["1 アカウント", "ドメインと DNS の全機能", "24 時間の分析", "全ウィジェットと Siri ショートカット"],
+		"proName": "Pro",
+		"proItems": [
+			"複数アカウント切替",
+			"R2 · D1 · KV ストレージ",
+			"Workers ライブログ",
+			"WAF と Tunnel",
+			"7 日 / 30 日の分析"
+		],
+		"note": "Orange Cloud はオープンソース（AGPL-3.0）。自分でビルドすることもできます。"
+	},
+	"cta": {
+		"title": "Cloudflare をポケットに",
+		"sub": "今夜の空は、もうアプリの中で待っています。",
+		"requirement": "iOS 17.0+ または Android 9+ が必要 · iPhone / iPad / Android 対応"
+	},
+	"sibling": {
+		"eyebrow": "同じ開発者のもうひとつの App",
+		"name": "Apolu",
+		"tagline": "175 の国と地域の App Store ランキング",
+		"body": "App の無料・有料ランキングでの順位を追いかけ、動いた瞬間に通知。売上は第三者の推計ではなく、あなた自身の App Store Connect から直接読み込みます。iPhone・iPad・Mac に対応。",
+		"cta": "見てみる"
+	},
+	"changelog": {
+		"title": "リリース履歴",
+		"sub": "Orange Cloud は App Store で公開中です。これまでのリリース履歴をどうぞ。今後のビルドを試すには TestFlight にもご参加いただけます。",
+		"tfButton": "TestFlight に参加",
+		"tfNote": "iOS 17.0 以降が必要 · Apple デバイス限定",
+		"androidSoon": "Android 版は近日 Google Play に登場します",
+		"statusInReview": "審査中"
+	},
+	"footer": {
+		"privacy": "プライバシーポリシー",
+		"terms": "利用規約",
+		"contact": "お問い合わせ",
+		"copyright": "© 2026 Orange Cloud",
+		"disclaimer": "Orange Cloud は独立した第三者クライアントであり、Cloudflare, Inc. との提携・承認・後援関係はありません。Cloudflare は Cloudflare, Inc. の商標です。"
+	},
+	"contact": {
+		"title": "お問い合わせ",
+		"intro": "ご質問、ご意見、不具合のご報告は、開発者へ直接メールでどうぞ。すべて目を通しています。",
+		"emailLabel": "メール",
+		"emailHint": "できるだけ早く、通常は数日以内に返信します。",
+		"cards": [
+			{ "h": "ご意見・ご要望", "p": "使いやすい点、気になる点、次に見たい機能をお聞かせください。" },
+			{ "h": "不具合の報告", "p": "おかしな動作やクラッシュがあれば、再現手順と端末情報を添えていただけると助かります。" },
+			{ "h": "プライバシーと安全", "p": "セキュリティの問題を見つけたら、詳細をメールでお知らせください。優先して対応します。" }
+		]
+	},
+	"privacy": {
+		"title": "プライバシーポリシー",
+		"updated": "最終更新：2026 年 6 月",
+		"sections": [
+			{
+				"h": "データの収集",
+				"p": "Orange Cloud は、いかなる個人データも収集・保存せず、当方のサーバーへ送信することもありません。Cloudflare の OAuth トークンは端末のキーチェーンにのみ保存され、すべての API リクエストは api.cloudflare.com へ直接送信されます。"
+			},
+			{
+				"h": "認証",
+				"p": "Orange Cloud は Cloudflare 公式の OAuth 2.0 認可フローを使用します。Cloudflare のパスワードや永続 API トークンを閲覧・保存することは一切ありません。本サイトの OAuth コールバックエンドポイントは、一時的な認可コードをアプリへ転送するだけで、保存は行いません。"
+			},
+			{
+				"h": "第三者サービス",
+				"p": "Orange Cloud は Cloudflare 公式 API エンドポイント（api.cloudflare.com および dash.cloudflare.com）とのみ通信し、その他の第三者サービスは使用しません。"
+			}
+		]
+	},
+	"terms": {
+		"title": "利用規約",
+		"updated": "最終更新：2026 年 6 月",
+		"sections": [
+			{
+				"h": "規約への同意",
+				"p": "Orange Cloud を使用することで、本規約に同意したものとみなされます。Orange Cloud は独立した第三者 Cloudflare クライアントであり、Cloudflare, Inc. との提携・承認・後援関係はありません。"
+			},
+			{
+				"h": "サービスの利用",
+				"p": "Orange Cloud では、Cloudflare 公式 API を通じてご自身の Cloudflare リソースを管理できます。本アプリを通じてアカウントに加えたすべての変更、および Cloudflare 自身の利用規約の遵守は、利用者の責任となります。"
+			},
+			{
+				"h": "保証の否認",
+				"p": "Orange Cloud は「現状有姿」で提供され、いかなる保証も伴いません。DNS の設定ミスやサービスの中断を含め、本アプリの使用に起因する損害について、当方は責任を負いません。"
+			},
+			{
+				"h": "アクセスの取り消し",
+				"p": "Cloudflare ダッシュボードから、またはアプリ内でログアウトすることで、Orange Cloud のアクセス権はいつでも取り消せます。"
+			}
+		]
+	}
+}

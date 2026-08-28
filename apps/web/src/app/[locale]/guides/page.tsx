@@ -14,7 +14,7 @@ import {
 	isGuideLocale,
 } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 
 /** 索引页两语并列，文章不互译，故只有这一页写 hreflang */
 const INDEX_LANGUAGES = {

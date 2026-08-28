@@ -83,7 +83,8 @@ jobs:
       - name: Generate local.properties
         working-directory: apps/android
         run: |
-          echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID }}" > local.properties
+          echo "OAUTH_CLIENT_ID=${{ secrets.OAUTH_CLIENT_ID || vars.OAUTH_CLIENT_ID }}" > local.properties
+          echo "OAUTH_REDIRECT_URI=${{ vars.OAUTH_REDIRECT_URI || 'https://oss.omail.us.kg/oauth/callback' }}" >> local.properties
 
       - name: Generate release keystore
         run: |
@@ -103,7 +104,8 @@ jobs:
           ./gradlew assembleOssRelease \
             -PversionName="${{ env.VERSION }}" \
             -PversionCode="${{ github.run_number }}" \
-            -POAUTH_CLIENT_ID="${{ secrets.OAUTH_CLIENT_ID }}" \
+            -POAUTH_CLIENT_ID="${{ secrets.OAUTH_CLIENT_ID || vars.OAUTH_CLIENT_ID }}" \
+            -POAUTH_REDIRECT_URI="${{ vars.OAUTH_REDIRECT_URI || 'https://oss.omail.us.kg/oauth/callback' }}" \
             -Pandroid.injected.signing.store.file=${{ github.workspace }}/apps/android/ci-release.keystore \
             -Pandroid.injected.signing.store.password=password \
             -Pandroid.injected.signing.key.alias=ci \

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Önizleme</string>
+    <string name="r2_preview_loading">Önizleme yükleniyor…</string>
+    <string name="r2_preview_json_formatted">JSON biçimlendirildi</string>
+    <string name="r2_preview_truncated">İçerik uzun, yalnızca ilk %1$d karakter gösteriliyor</string>
+    <string name="r2_preview_too_large">Nesne büyük (%1$s), bunun yerine “İndir ve aç”ı kullanın</string>
+    <string name="r2_preview_unsupported">Bu dosya türü uygulama içinde önizlenemez, “İndir ve aç”ı kullanın</string>
+    <string name="r2_preview_failed">Önizleme yüklenemedi</string>
+    <string name="r2_preview_search">Önizlemede ara</string>
+    <string name="r2_preview_matches">%1$d eşleşme</string>
+    <string name="r2_preview_no_match">Eşleşme yok</string>
+    <string name="d1_history">Son çalıştırmalar</string>
+    <string name="d1_favorites">Favoriler</string>
+    <string name="d1_favorite_add">Bu sorguyu favorilere ekle</string>
+    <string name="d1_favorite_remove">Favorilerden çıkar</string>
+    <string name="d1_favorite_too_long">Sorgu çok uzun, favorilere eklenmedi</string>
+    <string name="d1_favorite_full">Favoriler dolu (en fazla %1$d)</string>
+    <string name="d1_export_csv">CSV dışa aktar</string>
+    <string name="d1_export_hint">Yalnızca yüklenmiş sonuçlar dışa aktarılır, sorgu yeniden çalıştırılmaz</string>
+    <string name="d1_export_share">Sonuçları paylaş</string>
+    <string name="d1_export_failed">Dışa aktarma başarısız</string>
+    <string name="d1_index_section">Dizinler</string>
+    <string name="d1_index_empty">Bu tabloda dizin yok</string>
+    <string name="d1_index_unique">Benzersiz</string>
+    <string name="d1_index_origin_pk">Birincil anahtar</string>
+    <string name="d1_index_origin_unique">UNIQUE kısıtı</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

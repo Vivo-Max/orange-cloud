@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">搜索日誌內容</string>
+    <string name="tail_search_clear">清除搜索</string>
+    <string name="tail_filter_empty">沒有符合目前篩選條件的日誌</string>
+    <string name="tail_copied">已複製該行日誌</string>
+    <string name="tail_level_all">全部</string>
+    <string name="tail_level_event">請求</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">日誌詳情</string>
+    <string name="tail_detail_close">關閉</string>
+    <string name="tail_detail_copy_all">複製全部</string>
+    <string name="tail_detail_level">級別</string>
+    <string name="tail_detail_time">時間</string>
+    <string name="tail_detail_method">請求方法</string>
+    <string name="tail_detail_url">請求地址</string>
+    <string name="tail_detail_cron">定時表達式</string>
+    <string name="tail_detail_outcome">結果</string>
+    <string name="tail_detail_exception">異常</string>
+    <string name="tail_detail_body">完整內容</string>
+    <string name="tail_detail_select_hint">長按可選中其中的片段單獨複製</string>
+    <string name="tail_row_hint">輕觸查看詳情，長按複製整行</string>
+    <string name="dev_ai_image_playground">文生圖試運行</string>
+    <string name="dev_ai_image_prompt">圖像提示詞</string>
+    <string name="dev_ai_image_generate">生成圖像</string>
+    <string name="dev_ai_image_run_note">生成會調用該模型並計入帳戶的 Workers AI 用量。</string>
+    <string name="dev_ai_image_result">生成的圖像</string>
+    <string name="dev_ai_image_decoding">正在處理圖像…</string>
+    <string name="dev_ai_image_share">分享圖像</string>
+    <string name="dev_ai_image_share_failed">分享失敗，沒有可以接收圖像的應用。</string>
+    <string name="dev_ai_image_not_image">該模型返回的不是圖像內容，以下是原始回應：</string>
+    <string name="tail_paused">已暫停</string>
+    <string name="tail_paused_new_count">已暫停 · 新增 %1$d 條</string>
+</resources>

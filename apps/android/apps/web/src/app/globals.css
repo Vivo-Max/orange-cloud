@@ -1,0 +1,541 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Orange Cloud · 落地页「晨昏」设计语言
+   色值逐一取自 iOS 端 Shared/SkyPhase.swift 与 Views/Components/Daybreak.swift
+   （与 App Store 截图流水线 shared/daybreak.css 同源）
+   ============================================================ */
+
+:root {
+	--oc-orange: #f48120;
+	--oc-orange-pressed: #d96d0e;
+	--radius-island: 20px; /* OCLayout.islandRadius */
+	--radius-chip: 16px; /* OCLayout.chipRadius */
+}
+
+@theme inline {
+	--color-oc: var(--oc-orange);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family:
+		-apple-system, "SF Pro Text", system-ui, "PingFang SC", "PingFang TC", "PingFang HK",
+		"Hiragino Sans", "Noto Sans CJK SC", "Noto Sans CJK TC", "Noto Sans CJK JP", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #0a0a0e; /* 页尾夜色，过滚动边界时不露白 */
+	overscroll-behavior-y: none;
+}
+
+::selection {
+	background: rgba(244, 129, 32, 0.3);
+}
+
+/* 标题用 ui-rounded：对应 App 内 SF Pro Rounded 的问候头部与数字 */
+.f-display {
+	font-family: ui-rounded, -apple-system, system-ui, sans-serif;
+	letter-spacing: 0.2px;
+}
+/* 中文标题只在空格 / 标点处断行，避免词被拆开（如「口袋」）；日文不适用 */
+.f-display:lang(zh) {
+	word-break: keep-all;
+	text-wrap: balance;
+}
+.f-mono {
+	font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+.tabular {
+	font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 主题文本色（亮 = 昼，暗 = 夜） ---------- */
+
+.theme-light {
+	--t-primary: rgba(0, 0, 0, 0.88);
+	--t-secondary: rgba(60, 60, 67, 0.62);
+	--t-tertiary: rgba(60, 60, 67, 0.32);
+	--t-quaternary: rgba(60, 60, 67, 0.14);
+	--glass-bg: rgba(252, 250, 247, 0.6);
+	--glass-border: rgba(255, 255, 255, 0.5);
+	--glass-inset: rgba(255, 255, 255, 0.4);
+	--glass-shadow: 0 5px 12px rgba(0, 0, 0, 0.07);
+	--divider: rgba(60, 60, 67, 0.14);
+	color: var(--t-primary);
+}
+.theme-dark {
+	--t-primary: rgba(255, 255, 255, 0.92);
+	--t-secondary: rgba(235, 235, 245, 0.62);
+	--t-tertiary: rgba(235, 235, 245, 0.32);
+	--t-quaternary: rgba(235, 235, 245, 0.14);
+	--glass-bg: rgba(46, 42, 40, 0.52);
+	--glass-border: rgba(255, 255, 255, 0.1);
+	--glass-inset: rgba(255, 255, 255, 0.09);
+	--glass-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+	--divider: rgba(235, 235, 245, 0.13);
+	color: var(--t-primary);
+}
+
+.t-primary {
+	color: var(--t-primary);
+}
+.t-secondary {
+	color: var(--t-secondary);
+}
+.t-tertiary {
+	color: var(--t-tertiary);
+}
+
+/* ---------- 玻璃岛 ---------- */
+
+.glass {
+	background: var(--glass-bg);
+	-webkit-backdrop-filter: blur(22px) saturate(1.7);
+	backdrop-filter: blur(22px) saturate(1.7);
+	border: 0.5px solid var(--glass-border);
+	box-shadow:
+		inset 0 1px 0 var(--glass-inset),
+		var(--glass-shadow);
+}
+/* 「同一个开发者」外链卡：hover 描边染橙 + 焦点可见。
+   写在这里而不是 Tailwind 工具类——`.glass` 是未分层 CSS，会盖掉 @layer utilities 里的
+   border-color 工具类；同为未分层且在其后，才改得动它。 */
+.sibling-card:hover {
+	border-color: rgba(244, 129, 32, 0.45);
+}
+.sibling-card:focus-visible {
+	outline: 2px solid var(--oc-orange);
+	outline-offset: 3px;
+}
+
+.r-island {
+	border-radius: var(--radius-island);
+}
+.r-chip {
+	border-radius: var(--radius-chip);
+}
+
+/* ---------- 天色（SkyPhase 五相，整页一天：晨 → 昼 → 黄昏 → 入夜 → 深夜）
+   相邻区段首尾色一致，拼成一片连续的天 ---------- */
+
+.sky-band {
+	position: relative;
+}
+.band-dawn {
+	background: linear-gradient(180deg, #ffe8d1 0%, #f9f3ea 100%);
+}
+.band-morning {
+	background: linear-gradient(180deg, #f9f3ea 0%, #fcf2e3 100%);
+}
+.band-day {
+	background: linear-gradient(180deg, #fcf2e3 0%, #f2f2f2 100%);
+}
+.band-dusk {
+	background: linear-gradient(180deg, #f2f2f2 0%, #ffdebf 78%, #f0edf2 100%);
+}
+.band-sunset {
+	/* 日落缝：从黄昏天直落入夜，发光的地平线在中段 */
+	background: linear-gradient(
+		180deg,
+		#f0edf2 0%,
+		#fbc88e 30%,
+		#e88d3f 46%,
+		#8a4520 60%,
+		#33190b 76%,
+		#1f1208 100%
+	);
+}
+.band-ember {
+	background: linear-gradient(180deg, #1f1208 0%, #0f0e13 70%, #0c0b10 100%);
+}
+.band-night {
+	background: linear-gradient(180deg, #0c0b10 0%, #120d0a 40%, #0a0a0e 100%);
+}
+
+/* 相邻天色区段首尾色一致，再上提 1px 盖掉子像素渲染缝 */
+.band-morning,
+.band-day,
+.band-dusk,
+.band-sunset,
+.band-ember,
+.band-night {
+	margin-top: -1px;
+}
+
+/* 顶部光源（dawn 的 RadialGradient，对应 SkyPhase.glow） */
+.dawn-glow::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -15%;
+	width: min(1040px, 160vw);
+	aspect-ratio: 1;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(255, 176, 102, 0.5) 0%, rgba(255, 176, 102, 0) 70%);
+	pointer-events: none;
+}
+
+/* ---------- 地平线弧（HorizonArc 复刻） ---------- */
+
+.arc-dash {
+	stroke: rgba(244, 129, 32, 0.35);
+	stroke-dasharray: 3 4;
+	fill: none;
+	stroke-width: 1;
+}
+.theme-dark .arc-dash {
+	stroke: rgba(255, 255, 255, 0.16);
+}
+
+/* ---------- 玻璃岛错峰浮现（islandReveal 复刻） ---------- */
+
+.reveal {
+	opacity: 0;
+	transform: translateY(14px);
+	transition:
+		opacity 0.5s cubic-bezier(0.32, 0.72, 0, 1),
+		transform 0.5s cubic-bezier(0.32, 0.72, 0, 1);
+	transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.shown {
+	opacity: 1;
+	transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+	.reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+	.star {
+		animation: none !important;
+	}
+}
+
+/* ---------- 日轨画廊 ---------- */
+
+.gallery {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+	scroll-snap-type: x proximity;
+	padding: 8px max(calc((100vw - 1120px) / 2 + 24px), 24px) 28px;
+	scrollbar-width: none;
+}
+.gallery::-webkit-scrollbar {
+	display: none;
+}
+.gallery .shot {
+	flex: none;
+	scroll-snap-align: center;
+	width: 300px;
+	border-radius: 24px;
+	overflow: hidden;
+	box-shadow:
+		0 18px 44px rgba(31, 18, 8, 0.18),
+		inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.gallery .shot img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* ---------- 星星（夜幕） ---------- */
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+	background: #fff;
+	animation: twinkle 3.6s ease-in-out infinite;
+}
+@keyframes twinkle {
+	0%,
+	100% {
+		opacity: 0.25;
+	}
+	50% {
+		opacity: 0.9;
+	}
+}
+
+/* ---------- 链接 / 按钮 ---------- */
+
+.cta-store {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px 26px;
+	border-radius: 999px;
+	background: var(--oc-orange);
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+	box-shadow: 0 8px 22px rgba(244, 129, 32, 0.34);
+	transition:
+		background 0.2s ease,
+		transform 0.15s cubic-bezier(0.32, 0.72, 0, 1);
+}
+.cta-store:hover {
+	background: var(--oc-orange-pressed);
+}
+.cta-store:active {
+	transform: scale(0.97);
+}
+
+.link-quiet {
+	color: var(--t-secondary);
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+.link-quiet:hover {
+	color: var(--t-primary);
+}
+
+/* 语言切换（玻璃胶囊 select） */
+.locale-select {
+	appearance: none;
+	-webkit-appearance: none;
+	background: var(--glass-bg);
+	-webkit-backdrop-filter: blur(22px) saturate(1.7);
+	backdrop-filter: blur(22px) saturate(1.7);
+	border: 0.5px solid var(--glass-border);
+	border-radius: 999px;
+	color: var(--t-primary);
+	font-size: 13px;
+	font-weight: 500;
+	padding: 7px 30px 7px 14px;
+	cursor: pointer;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+}
+
+/* ---------- 手机演示（hero 的 DOM 复刻，比例取自 daybreak.css 设备框） ---------- */
+
+.demo-device {
+	position: relative;
+	width: 316px;
+	height: 662px;
+	border-radius: 51px;
+	background: #000;
+	padding: 10px;
+	box-shadow:
+		0 0 0 3px #4a4a4e,
+		0 0 0 3.5px rgba(255, 255, 255, 0.28),
+		0 30px 70px rgba(31, 18, 8, 0.32);
+}
+.demo-device .screen {
+	position: relative;
+	overflow: hidden;
+	width: 296px;
+	height: 642px;
+	border-radius: 41px;
+	background: #000;
+}
+.demo-device .dynamic-island {
+	position: absolute;
+	left: 50%;
+	top: 9px;
+	transform: translateX(-50%);
+	width: 92px;
+	height: 27px;
+	border-radius: 14px;
+	background: #000;
+	z-index: 60;
+}
+.demo-sky {
+	position: absolute;
+	inset: 0;
+}
+.demo-sky::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -15%;
+	width: 760px;
+	height: 760px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	pointer-events: none;
+	background: var(--demo-glow);
+}
+.demo-sky.p-dawn {
+	background: linear-gradient(180deg, #ffe8d1 0%, #f5f2ed 100%);
+	--demo-glow: radial-gradient(circle, rgba(255, 176, 102, 0.5) 0%, rgba(255, 176, 102, 0) 70%);
+}
+.demo-sky.p-day {
+	background: linear-gradient(180deg, #fcf2e3 0%, #f2f2f2 100%);
+	--demo-glow: radial-gradient(circle, rgba(244, 129, 32, 0.2) 0%, rgba(244, 129, 32, 0) 70%);
+}
+.demo-sky.p-dusk {
+	background: linear-gradient(180deg, #ffdebf 0%, #f0edf2 100%);
+	--demo-glow: radial-gradient(circle, rgba(245, 133, 66, 0.42) 0%, rgba(245, 133, 66, 0) 70%);
+}
+.demo-sky.p-ember {
+	background: linear-gradient(180deg, #1f1208 0%, #0f0e13 55%, #0a0a0f 100%);
+	--demo-glow: radial-gradient(circle, rgba(244, 129, 32, 0.3) 0%, rgba(244, 129, 32, 0) 70%);
+}
+.demo-sky.p-night {
+	background: linear-gradient(180deg, #120d0a 0%, #0a0a0e 100%);
+	--demo-glow: radial-gradient(circle, rgba(244, 129, 32, 0.15) 0%, rgba(244, 129, 32, 0) 70%);
+}
+
+/* ---------- 指南长文排版（/guides）
+   正文按长文阅读优化：行宽 ~68 字符、层级清晰、表格与代码块自带横滚。
+   颜色全部走主题 token，亮/暗两套都成立 ---------- */
+
+.prose {
+	font-size: 17px;
+	line-height: 1.72;
+	color: var(--t-primary);
+}
+.prose > * + * {
+	margin-top: 1.1em;
+}
+.prose h2 {
+	font-family: ui-rounded, -apple-system, system-ui, sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	line-height: 1.28;
+	margin-top: 2.1em;
+	scroll-margin-top: 88px;
+}
+.prose h3 {
+	font-size: 19px;
+	font-weight: 650;
+	line-height: 1.4;
+	margin-top: 1.9em;
+}
+.prose h2 + *,
+.prose h3 + * {
+	margin-top: 0.7em;
+}
+.prose strong {
+	font-weight: 650;
+}
+.prose ul,
+.prose ol {
+	padding-inline-start: 1.3em;
+}
+.prose ul {
+	list-style: disc;
+}
+.prose ol {
+	list-style: decimal;
+}
+.prose li + li {
+	margin-top: 0.5em;
+}
+.prose li::marker {
+	color: var(--oc-orange);
+}
+.prose a {
+	color: var(--link);
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 0.06em;
+	text-decoration-color: color-mix(in srgb, var(--link) 45%, transparent);
+}
+.prose a:hover {
+	text-decoration-color: var(--link);
+}
+.theme-light {
+	/* 品牌橙原色在浅底上仅 ~2.4:1，正文链接改用同色系深值（≥4.5:1） */
+	--link: #a85a08;
+	--code-bg: rgba(31, 18, 8, 0.06);
+}
+.theme-dark {
+	--link: #ffa657;
+	--code-bg: rgba(255, 255, 255, 0.08);
+}
+.prose code {
+	font-family: ui-monospace, "SF Mono", Menlo, monospace;
+	font-size: 0.88em;
+	background: var(--code-bg);
+	border-radius: 6px;
+	padding: 0.12em 0.4em;
+}
+.prose pre {
+	overflow-x: auto;
+	background: var(--code-bg);
+	border-radius: 14px;
+	padding: 16px 18px;
+	font-size: 13.5px;
+	line-height: 1.6;
+}
+.prose pre code {
+	background: none;
+	padding: 0;
+	font-size: inherit;
+}
+.prose blockquote {
+	border-inline-start: 2px solid var(--oc-orange);
+	padding-inline-start: 16px;
+	color: var(--t-secondary);
+}
+
+/* 表格：整体横向可滚，避免窄屏撑破版心 */
+.table-wrap {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.prose table {
+	width: 100%;
+	min-width: 480px;
+	border-collapse: collapse;
+	font-size: 15px;
+	line-height: 1.5;
+}
+.prose th,
+.prose td {
+	text-align: start;
+	vertical-align: top;
+	padding: 11px 14px;
+	border-bottom: 0.5px solid var(--divider);
+}
+.prose thead th {
+	font-weight: 650;
+	border-bottom: 1px solid var(--divider);
+	white-space: nowrap;
+}
+.prose tbody th {
+	font-weight: 600;
+}
+.prose tbody tr:last-child th,
+.prose tbody tr:last-child td {
+	border-bottom: none;
+}
+.prose .table-wrap table {
+	margin: 0;
+}
+
+/* 文内玻璃岛（答案框 / 提示） */
+.prose .note {
+	font-size: 15.5px;
+	line-height: 1.65;
+}
+.prose .note > * + * {
+	margin-top: 0.7em;
+}
+
+/* 键盘焦点在天色背景上始终可见（只作用于指南板块，不动既有页面） */
+.guides a:focus-visible,
+.guides button:focus-visible {
+	outline: 2px solid var(--oc-orange);
+	outline-offset: 2px;
+	border-radius: 4px;
+}

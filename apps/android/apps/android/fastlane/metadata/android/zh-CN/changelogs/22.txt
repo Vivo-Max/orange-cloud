@@ -1,0 +1,1 @@
+• 新增「暂停 Cloudflare」：在域名设置页一键暂停或恢复代理。暂停后流量绕过 Cloudflare，WAF、缓存加速与源站 IP 隐藏都会失效，DNS 仍由 Cloudflare 解析；恢复同样一键完成，两者约 5 分钟生效。

@@ -1,0 +1,46 @@
+Orange Cloud est un client Cloudflare natif pour smartphones et tablettes Android. Connectez-vous avec l'OAuth officiel de Cloudflare, choisissez les autorisations à accorder et gérez vos domaines où que vous soyez. Aucun jeton d'API à créer, copier ou coller.
+
+SE CONNECTER EN TOUTE SÉCURITÉ
+- OAuth 2.0 officiel avec PKCE : autorisation dans le navigateur, comme sur le web
+- Vous choisissez les portées ; l'app n'obtient que ce que vous accordez
+- Les jetons sont stockés dans l'Android Keystore et ne quittent jamais votre appareil
+- Les requêtes API vont directement de votre appareil à Cloudflare. Aucun serveur intermédiaire, aucune collecte de données
+
+DOMAINES & DNS
+- Chaque domaine en un coup d'œil, avec statut et forfait
+- Gestion DNS complète : ajouter, modifier, supprimer, rechercher
+- Bascule proxy en un geste (le nuage orange lui-même)
+
+ANALYTIQUE
+- Requêtes, bande passante, taux de cache et menaces bloquées
+- Graphiques clairs : les dernières 24 heures gratuites, plages 7 jours et 30 jours avec Pro
+
+WORKERS
+- Parcourez les scripts déployés, les détails et les métriques
+- Pro : diffusez les journaux en direct via WebSocket avec une notification persistante
+
+STOCKAGE (PRO)
+- R2 : parcourez buckets et objets, téléversez et téléchargez
+- D1 : exécutez des requêtes dans une console SQL intégrée, parcourez et modifiez les lignes
+- KV : lisez, écrivez et supprimez des clés
+
+SÉCURITÉ & RÉSEAU (PRO)
+- Règles WAF personnalisées : examinez, créez et activez en déplacement
+- Cloudflare Tunnel : vérifiez le statut et les connexions actives
+
+CONÇU POUR ANDROID
+- Thème jour-nuit qui suit l'heure du jour, avec couleur dynamique Material You
+- Mise en page adaptative à deux volets pour tablettes et pliables
+- Raccourcis d'écran d'accueil (appui long sur l'icône) et tuile Réglages rapides
+- Retour prédictif et langue par application
+
+GRATUIT VS PRO
+Gratuit, pour toujours : un compte, gestion complète des domaines et du DNS, et analytique sur 24 heures.
+Orange Cloud Pro débloque les comptes multiples, tout l'onglet Stockage (R2 / D1 / KV), les journaux Workers en direct, les règles WAF, Tunnel et l'analytique 7 jours / 30 jours. Disponible en abonnement mensuel ou annuel (l'annuel inclut un essai gratuit de 7 jours) ou en achat unique à vie.
+
+Les abonnements sont facturés via Google Play et se renouvellent automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours. Gérez ou annulez à tout moment dans Google Play.
+
+Politique de confidentialité : https://90dd.adsl8.workers.dev/privacy
+Conditions d'utilisation : https://90dd.adsl8.workers.dev/terms
+
+Orange Cloud est un client tiers indépendant, non affilié à Cloudflare, Inc., ni approuvé ni sponsorisé par elle. Cloudflare est une marque de Cloudflare, Inc.

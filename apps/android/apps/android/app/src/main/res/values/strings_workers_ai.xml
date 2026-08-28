@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本批新增文案（Worker 实时日志过滤/复制 + Workers AI 文生图），待统一补译多语 -->
+<resources>
+
+    <!-- Worker 实时日志：搜索 / 级别过滤 / 复制 -->
+    <string name="tail_search_hint">搜索日志内容</string>
+    <string name="tail_search_clear">清除搜索</string>
+    <string name="tail_filter_empty">没有符合当前筛选条件的日志</string>
+    <string name="tail_copied">已复制该行日志</string>
+    <string name="tail_level_all">全部</string>
+    <string name="tail_level_event">请求</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+
+    <!-- Worker 实时日志：单行详情（可框选） -->
+    <string name="tail_detail_title">日志详情</string>
+    <string name="tail_detail_close">关闭</string>
+    <string name="tail_detail_copy_all">复制全部</string>
+    <string name="tail_detail_level">级别</string>
+    <string name="tail_detail_time">时间</string>
+    <string name="tail_detail_method">请求方法</string>
+    <string name="tail_detail_url">请求地址</string>
+    <string name="tail_detail_cron">定时表达式</string>
+    <string name="tail_detail_outcome">结果</string>
+    <string name="tail_detail_exception">异常</string>
+    <string name="tail_detail_body">完整内容</string>
+    <string name="tail_detail_select_hint">长按可选中其中的片段单独复制</string>
+    <string name="tail_row_hint">轻点查看详情，长按复制整行</string>
+
+    <!-- Workers AI 文生图 -->
+    <string name="dev_ai_image_playground">文生图试运行</string>
+    <string name="dev_ai_image_prompt">图像提示词</string>
+    <string name="dev_ai_image_generate">生成图像</string>
+    <string name="dev_ai_image_run_note">生成会调用该模型并计入账号的 Workers AI 用量。</string>
+    <string name="dev_ai_image_result">生成的图像</string>
+    <string name="dev_ai_image_decoding">正在处理图像…</string>
+    <string name="dev_ai_image_share">分享图像</string>
+    <string name="dev_ai_image_share_failed">分享失败，没有可以接收图像的应用。</string>
+    <string name="dev_ai_image_not_image">该模型返回的不是图像内容，以下是原始响应：</string>
+
+    <string name="tail_paused">已暂停</string>
+    <string name="tail_paused_new_count">已暂停 · 新增 %1$d 条</string>
+
+</resources>

@@ -65,16 +65,8 @@
 	},
 	"routes": [
 		{
-			"pattern": "orange-cloud.chatiro.app",
+			"pattern": "oss.omail.us.kg",
 			"custom_domain": true
-		},
-		{
-			"pattern": "90dd.adsl8.workers.dev",
-			"custom_domain": true,
-		},
-		{
-			"pattern": "www.90dd.adsl8.workers.dev",
-			"custom_domain": true,
 		}
 	]
 }

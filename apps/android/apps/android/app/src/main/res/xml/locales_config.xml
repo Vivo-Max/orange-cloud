@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 13+ 每应用语言（设置 → 应用 → Orange Cloud → 语言）。默认 values/ = zh-Hans。 -->
+<locale-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <locale android:name="zh-Hans"/>
+    <locale android:name="en"/>
+    <locale android:name="ja"/>
+    <locale android:name="zh-Hant-TW"/>
+    <locale android:name="zh-Hant-HK"/>
+    <locale android:name="es"/>
+    <locale android:name="ko"/>
+    <locale android:name="pt-BR"/>
+    <locale android:name="pt-PT"/>
+    <locale android:name="de"/>
+    <locale android:name="fr"/>
+    <locale android:name="ar"/>
+    <locale android:name="tr"/>
+</locale-config>

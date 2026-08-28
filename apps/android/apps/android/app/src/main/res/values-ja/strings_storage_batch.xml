@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">プレビュー</string>
+    <string name="r2_preview_loading">プレビューを読み込み中…</string>
+    <string name="r2_preview_json_formatted">JSON を整形しました</string>
+    <string name="r2_preview_truncated">内容が長いため、先頭 %1$d 文字のみ表示しています</string>
+    <string name="r2_preview_too_large">オブジェクトが大きいため（%1$s）、「ダウンロードして開く」をご利用ください</string>
+    <string name="r2_preview_unsupported">このファイル形式はアプリ内でプレビューできません。「ダウンロードして開く」をご利用ください</string>
+    <string name="r2_preview_failed">プレビューを読み込めませんでした</string>
+    <string name="r2_preview_search">プレビュー内を検索</string>
+    <string name="r2_preview_matches">%1$d 件一致</string>
+    <string name="r2_preview_no_match">一致なし</string>
+    <string name="d1_history">最近の実行</string>
+    <string name="d1_favorites">お気に入り</string>
+    <string name="d1_favorite_add">この文をお気に入りに追加</string>
+    <string name="d1_favorite_remove">お気に入りから削除</string>
+    <string name="d1_favorite_too_long">文が長すぎるため追加できません</string>
+    <string name="d1_favorite_full">お気に入りが上限に達しました（最大 %1$d 件）</string>
+    <string name="d1_export_csv">CSV をエクスポート</string>
+    <string name="d1_export_hint">読み込み済みの結果のみをエクスポートします。再クエリは行いません</string>
+    <string name="d1_export_share">クエリ結果を共有</string>
+    <string name="d1_export_failed">エクスポートに失敗しました</string>
+    <string name="d1_index_section">インデックス</string>
+    <string name="d1_index_empty">このテーブルにインデックスはありません</string>
+    <string name="d1_index_unique">一意</string>
+    <string name="d1_index_origin_pk">主キー</string>
+    <string name="d1_index_origin_unique">UNIQUE 制約</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

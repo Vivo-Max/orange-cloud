@@ -1,0 +1,6 @@
+• Her şeyi tek aramada bulun: alan adları, Workers, R2, D1, KV ve tüneller; kaynakları sabitleyin.
+• Uyarı merkezi: dikkat gerektiren kaynaklar genel görünümde.
+• Canlı günlükler: arama, düzey filtreleri, yalnızca görüntüyü donduran duraklatma.
+• D1: sorgu geçmişi, veritabanı başına sık kullanılanlar, CSV aktarma.
+• R2 nesnelerini önizleyin; R2 / D1 / KV'yi bir Worker'a bağlayın; Workers AI ile görsel.
+• Varsayılan hesabınızı hatırlar; hesap menüsü ve uzun betik düzeltmeleri.

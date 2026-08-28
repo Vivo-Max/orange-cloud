@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import O2OFlow from "@/components/guides/O2OFlow";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("cloudflare-orange-to-orange");
 const PATH = `/guides/${guide.slug}`;
 

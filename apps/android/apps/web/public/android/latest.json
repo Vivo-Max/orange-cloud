@@ -1,0 +1,7 @@
+{
+  "versionCode": 24,
+  "versionName": "2.1.0",
+  "minVersionCode": 1,
+  "url": "https://90dd.adsl8.workers.dev/orange-cloud.apk",
+  "note": "本次更新：Turnstile 人机验证管理（新建 / 编辑 / 密钥轮换）、R2 SQL 查询控制台、Workers 密钥批量导入，缓存规则新增 JA3/JA4 字段并保护 Vary 配置。"
+}

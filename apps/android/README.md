@@ -54,7 +54,7 @@ cd apps/android
   ```properties
   OAUTH_CLIENT_ID=你自建的_client_id
   ```
-  并部署自己的回调中转——官方 Client 与 `90dd.adsl8.workers.dev` 中转不向第三方构建开放，详见根目录 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。
+  并部署自己的回调中转——官方 Client 与 `oss.omail.us.kg` 中转不向第三方构建开放，详见根目录 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。
 
 ## 架构
 

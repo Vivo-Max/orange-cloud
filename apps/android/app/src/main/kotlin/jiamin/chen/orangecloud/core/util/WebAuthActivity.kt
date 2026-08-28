@@ -23,7 +23,7 @@ import jiamin.chen.orangecloud.core.auth.OAuthConfig
  * （借鉴 fork a422015028 的方案并按仓库规范重写。）
  *
  * 注意：默认 WebView UA 带 "Version/4.0" 标识，Cloudflare 登录页会将其判为嵌入式环境而拦截，
- * 须从 UA 中移除；授权回调（90dd.adsl8.workers.dev 中转 302 回 orangecloud://oauth/callback）在
+ * 须从 UA 中移除；授权回调（oss.omail.us.kg 中转 302 回 orangecloud://oauth/callback）在
  * shouldOverrideUrlLoading 截获后转投给主 Activity 的既有 deep link 处理。
  */
 class WebAuthActivity : Activity() {

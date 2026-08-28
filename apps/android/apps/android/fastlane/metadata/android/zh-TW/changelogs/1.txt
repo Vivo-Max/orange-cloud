@@ -1,0 +1,9 @@
+Orange Cloud 首個正式版本
+以 Cloudflare 官方 OAuth 安全登入，無需手動貼上 API Token：
+- 網域與 DNS 記錄管理
+- Workers 檢視 + 即時日誌
+- 流量分析圖表
+- R2 / D1 / KV 儲存瀏覽與編輯
+- WAF 規則與 Cloudflare Tunnel
+- 晨昏主題、平板雙欄、桌面捷徑
+歡迎回饋，我們會持續改進！

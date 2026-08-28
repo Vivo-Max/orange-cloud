@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import PurgeReach from "@/components/guides/PurgeReach";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("cloudflare-purge-cache-not-working");
 const PATH = `/guides/${guide.slug}`;
 

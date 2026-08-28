@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">미리보기</string>
+    <string name="r2_preview_loading">미리보기를 불러오는 중…</string>
+    <string name="r2_preview_json_formatted">JSON 서식 적용됨</string>
+    <string name="r2_preview_truncated">내용이 길어 처음 %1$d자만 표시합니다</string>
+    <string name="r2_preview_too_large">객체가 큽니다(%1$s). ‘다운로드 후 열기’를 이용하세요</string>
+    <string name="r2_preview_unsupported">이 파일 형식은 앱에서 미리 볼 수 없습니다. ‘다운로드 후 열기’를 이용하세요</string>
+    <string name="r2_preview_failed">미리보기를 불러오지 못했습니다</string>
+    <string name="r2_preview_search">미리보기에서 검색</string>
+    <string name="r2_preview_matches">%1$d개 일치</string>
+    <string name="r2_preview_no_match">일치 없음</string>
+    <string name="d1_history">최근 실행</string>
+    <string name="d1_favorites">즐겨찾기</string>
+    <string name="d1_favorite_add">이 구문 즐겨찾기</string>
+    <string name="d1_favorite_remove">즐겨찾기 해제</string>
+    <string name="d1_favorite_too_long">구문이 너무 길어 추가하지 못했습니다</string>
+    <string name="d1_favorite_full">즐겨찾기가 가득 찼습니다(최대 %1$d개)</string>
+    <string name="d1_export_csv">CSV 내보내기</string>
+    <string name="d1_export_hint">이미 불러온 결과만 내보내며 다시 조회하지 않습니다</string>
+    <string name="d1_export_share">쿼리 결과 공유</string>
+    <string name="d1_export_failed">내보내기 실패</string>
+    <string name="d1_index_section">인덱스</string>
+    <string name="d1_index_empty">이 테이블에는 인덱스가 없습니다</string>
+    <string name="d1_index_unique">고유</string>
+    <string name="d1_index_origin_pk">기본 키</string>
+    <string name="d1_index_origin_unique">UNIQUE 제약</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

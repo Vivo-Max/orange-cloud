@@ -1,0 +1,4 @@
+• Turnstile yönetimi: öğelere göz atın ve oluşturun, alan adı ve modları düzenleyin, 2 saatlik geçiş süresiyle anahtarları değiştirin
+• R2 SQL konsolu: Veri Kataloğu'ndaki Iceberg tablolarını doğrudan sorgulayın, tabloya dokunun (ayda 10 GB ücretsiz)
+• Workers değişken ve gizli anahtarları: JSON yapıştırıp yeni atomik toplu uç noktayla içe aktarın
+• Önbellek kuralı çiplerine JA3/JA4 eklendi; Vary kullanan kurallar yapılandırmayı korumak için salt okunur olur

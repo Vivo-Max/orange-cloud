@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">معاينة</string>
+    <string name="r2_preview_loading">جارٍ تحميل المعاينة…</string>
+    <string name="r2_preview_json_formatted">تم تنسيق JSON</string>
+    <string name="r2_preview_truncated">المحتوى طويل، يتم عرض أول %1$d حرف فقط</string>
+    <string name="r2_preview_too_large">الكائن كبير (%1$s)، استخدم «تنزيل وفتح»</string>
+    <string name="r2_preview_unsupported">لا يمكن معاينة هذا النوع من الملفات داخل التطبيق، استخدم «تنزيل وفتح»</string>
+    <string name="r2_preview_failed">تعذّر تحميل المعاينة</string>
+    <string name="r2_preview_search">البحث داخل المعاينة</string>
+    <string name="r2_preview_matches">%1$d تطابق</string>
+    <string name="r2_preview_no_match">لا يوجد تطابق</string>
+    <string name="d1_history">آخر عمليات التنفيذ</string>
+    <string name="d1_favorites">المفضلة</string>
+    <string name="d1_favorite_add">إضافة العبارة إلى المفضلة</string>
+    <string name="d1_favorite_remove">إزالة من المفضلة</string>
+    <string name="d1_favorite_too_long">العبارة طويلة جدًا ولم تُضَف</string>
+    <string name="d1_favorite_full">المفضلة ممتلئة (الحد %1$d)</string>
+    <string name="d1_export_csv">تصدير CSV</string>
+    <string name="d1_export_hint">يُصدَّر ما تم تحميله من نتائج فقط دون إعادة الاستعلام</string>
+    <string name="d1_export_share">مشاركة نتائج الاستعلام</string>
+    <string name="d1_export_failed">فشل التصدير</string>
+    <string name="d1_index_section">الفهارس</string>
+    <string name="d1_index_empty">لا توجد فهارس لهذا الجدول</string>
+    <string name="d1_index_unique">فريد</string>
+    <string name="d1_index_origin_pk">مفتاح أساسي</string>
+    <string name="d1_index_origin_unique">قيد UNIQUE</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Pré-visualização</string>
+    <string name="r2_preview_loading">Carregando pré-visualização…</string>
+    <string name="r2_preview_json_formatted">JSON formatado</string>
+    <string name="r2_preview_truncated">O conteúdo é longo; exibindo apenas os primeiros %1$d caracteres</string>
+    <string name="r2_preview_too_large">O objeto é grande (%1$s); use “Baixar e abrir”</string>
+    <string name="r2_preview_unsupported">Este tipo de arquivo não pode ser visualizado no app; use “Baixar e abrir”</string>
+    <string name="r2_preview_failed">Não foi possível carregar a pré-visualização</string>
+    <string name="r2_preview_search">Buscar na pré-visualização</string>
+    <string name="r2_preview_matches">%1$d correspondências</string>
+    <string name="r2_preview_no_match">Sem correspondências</string>
+    <string name="d1_history">Execuções recentes</string>
+    <string name="d1_favorites">Favoritos</string>
+    <string name="d1_favorite_add">Salvar nos favoritos</string>
+    <string name="d1_favorite_remove">Remover dos favoritos</string>
+    <string name="d1_favorite_too_long">A instrução é longa demais para salvar</string>
+    <string name="d1_favorite_full">Favoritos cheios (limite %1$d)</string>
+    <string name="d1_export_csv">Exportar CSV</string>
+    <string name="d1_export_hint">Exporta apenas os resultados já carregados; não refaz a consulta</string>
+    <string name="d1_export_share">Compartilhar resultados</string>
+    <string name="d1_export_failed">Falha na exportação</string>
+    <string name="d1_index_section">Índices</string>
+    <string name="d1_index_empty">Esta tabela não tem índices</string>
+    <string name="d1_index_unique">Único</string>
+    <string name="d1_index_origin_pk">Chave primária</string>
+    <string name="d1_index_origin_unique">Restrição UNIQUE</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

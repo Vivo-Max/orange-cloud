@@ -1,0 +1,23 @@
+name: 💬 体验反馈 / 建议 / Feedback
+description: 使用感受、文案、设计等主观反馈 / Share UX, copy, design or other feedback
+labels: ["feedback"]
+title: "[反馈] "
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 你的反馈 / Your feedback
+      description: 哪里好用、哪里别扭、想到的任何想法 / What works, what feels off, any thoughts
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 相关模块 / Area（可选 / optional）
+      options:
+        - 界面 / 设计 / UI & Design
+        - 文案 / 翻译 / Copy & Translation
+        - 性能 / Performance
+        - 其他 / Other
+    validations:
+      required: false

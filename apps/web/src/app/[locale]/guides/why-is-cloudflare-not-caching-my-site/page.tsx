@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import CacheDecision from "@/components/guides/CacheDecision";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("why-is-cloudflare-not-caching-my-site");
 const PATH = `/guides/${guide.slug}`;
 

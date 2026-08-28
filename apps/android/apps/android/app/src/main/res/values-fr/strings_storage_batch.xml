@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Aperçu</string>
+    <string name="r2_preview_loading">Chargement de l’aperçu…</string>
+    <string name="r2_preview_json_formatted">JSON formaté</string>
+    <string name="r2_preview_truncated">Contenu long — seuls les %1$d premiers caractères sont affichés</string>
+    <string name="r2_preview_too_large">Objet volumineux (%1$s). Utilisez « Télécharger &amp; ouvrir ».</string>
+    <string name="r2_preview_unsupported">Ce type de fichier ne peut pas être prévisualisé dans l’app. Utilisez « Télécharger &amp; ouvrir ».</string>
+    <string name="r2_preview_failed">Échec du chargement de l’aperçu</string>
+    <string name="r2_preview_search">Rechercher dans l’aperçu</string>
+    <string name="r2_preview_matches">%1$d correspondances</string>
+    <string name="r2_preview_no_match">Aucune correspondance</string>
+    <string name="d1_history">Exécutions récentes</string>
+    <string name="d1_favorites">Favoris</string>
+    <string name="d1_favorite_add">Ajouter aux favoris</string>
+    <string name="d1_favorite_remove">Retirer des favoris</string>
+    <string name="d1_favorite_too_long">Requête trop longue pour les favoris</string>
+    <string name="d1_favorite_full">Favoris pleins (max. %1$d)</string>
+    <string name="d1_export_csv">Exporter en CSV</string>
+    <string name="d1_export_hint">Exporte uniquement les résultats déjà chargés, sans relancer la requête</string>
+    <string name="d1_export_share">Partager les résultats</string>
+    <string name="d1_export_failed">Échec de l’export</string>
+    <string name="d1_index_section">Index</string>
+    <string name="d1_index_empty">Cette table n’a aucun index</string>
+    <string name="d1_index_unique">Unique</string>
+    <string name="d1_index_origin_pk">Clé primaire</string>
+    <string name="d1_index_origin_unique">Contrainte UNIQUE</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

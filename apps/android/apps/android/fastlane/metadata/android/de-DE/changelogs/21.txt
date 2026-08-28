@@ -1,0 +1,6 @@
+• Alles auf einmal suchen: Domains, Workers, R2, D1, KV und Tunnel; Ressourcen anpinnen.
+• Warnzentrale: Ressourcen, die Aufmerksamkeit brauchen, in der Übersicht.
+• Live-Logs: Stichwortsuche, Level-Filter, Pause friert nur die Ansicht ein.
+• D1: Abfrageverlauf, Favoriten je Datenbank, CSV-Export.
+• R2-Objekte ansehen; R2 / D1 / KV an einen Worker binden; Bilder mit Workers AI.
+• Merkt sich dein Standardkonto; Fixes für Kontomenü und lange Skripte.

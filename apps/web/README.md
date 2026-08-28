@@ -1,6 +1,6 @@
 # Orange Cloud Web
 
-The landing page and OAuth callback relay for [Orange Cloud](https://github.com/chen2he/orange-cloud), deployed at [90dd.adsl8.workers.dev](https://90dd.adsl8.workers.dev) on Cloudflare Workers.
+The landing page and OAuth callback relay for [Orange Cloud](https://github.com/chen2he/orange-cloud), deployed at [oss.omail.us.kg](https://oss.omail.us.kg) on Cloudflare Workers.
 
 ## What this app does
 
@@ -37,12 +37,12 @@ What's wired up:
   To push immediately after publishing (instead of waiting for the cron), with the admin password:
 
   ```bash
-  curl -X POST "https://90dd.adsl8.workers.dev/api/indexnow" -H "Authorization: Bearer $ADMIN_PASSWORD"
+  curl -X POST "https://oss.omail.us.kg/api/indexnow" -H "Authorization: Bearer $ADMIN_PASSWORD"
   ```
 
   `GET /api/indexnow` previews what would be submitted without sending anything; add `?force=1` to either to ignore the ledger and resubmit everything.
 
-One-time manual steps (dashboard accounts required): verify the domain in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), submit `https://90dd.adsl8.workers.dev/sitemap.xml` in both, and optionally list `llms.txt` at [directory.llmstxt.cloud](https://directory.llmstxt.cloud) / [llmstxt.site](https://llmstxt.site).
+One-time manual steps (dashboard accounts required): verify the domain in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), submit `https://oss.omail.us.kg/sitemap.xml` in both, and optionally list `llms.txt` at [directory.llmstxt.cloud](https://directory.llmstxt.cloud) / [llmstxt.site](https://llmstxt.site).
 
 ## Develop
 
@@ -67,4 +67,4 @@ pnpm cf-typegen   # regenerate cloudflare-env.d.ts after changing wrangler.jsonc
 pnpm deploy       # opennextjs-cloudflare build && deploy
 ```
 
-The official deployment uses the custom domain `90dd.adsl8.workers.dev` (configured in `wrangler.jsonc` `routes`). For your own fork: change the `name` and `routes` in [`wrangler.jsonc`](wrangler.jsonc), deploy under your own Cloudflare account, then register `https://<your-domain>/oauth/callback` as the redirect URI of **your own** Cloudflare OAuth client (see [CONTRIBUTING.md](../../CONTRIBUTING.md)).
+The official deployment uses the custom domain `oss.omail.us.kg` (configured in `wrangler.jsonc` `routes`). For your own fork: change the `name` and `routes` in [`wrangler.jsonc`](wrangler.jsonc), deploy under your own Cloudflare account, then register `https://<your-domain>/oauth/callback` as the redirect URI of **your own** Cloudflare OAuth client (see [CONTRIBUTING.md](../../CONTRIBUTING.md)).

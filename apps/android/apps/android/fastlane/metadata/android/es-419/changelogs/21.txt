@@ -1,0 +1,6 @@
+• Busca todo de una vez: dominios, Workers, R2, D1, KV y túneles; fija tus recursos.
+• Centro de alertas: los recursos que requieren atención, en el resumen.
+• Registros en vivo: búsqueda, filtros por nivel y pausa que no detiene la recepción.
+• D1: historial de consultas, favoritos por base de datos y exportación a CSV.
+• Vista previa de objetos R2; vincula R2 / D1 / KV a un Worker; imágenes con Workers AI.
+• Recuerda tu cuenta predeterminada; correcciones en cuentas y edición de código.

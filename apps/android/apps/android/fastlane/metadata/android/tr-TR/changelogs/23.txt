@@ -1,0 +1,7 @@
+• Yapay zekâ tarayıcıları: üç engelleme modu ve iki içerik anahtarı
+• Bağımsız sağlık kontrolleri: kaynak durumu ve Cloudflare uyarıları
+• Kayıt kuruluşu: bitiş tarihi, otomatik yenileme, transfer kilidi
+• İstek izleme: hangi kuralların uygulandığını görün
+• DNS: DNSSEC ve DS kaydı, CNAME düzleştirme, ad sunucusu türü
+• Worker derleme geçmişi ve başarısız derlemelerde bildirim
+• R2 Data Catalog, yönetilen başlıklar, URL taraması, E-posta engelleme; denetim geçmişi

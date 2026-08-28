@@ -1,6 +1,6 @@
 // IndexNow 客户端：把变更的 URL 推给搜索引擎（Bing / Yandex / Seznam / Naver / Yep 共用同一协议）。
 //
-// 鉴权就是一个公开的密钥文件：https://90dd.adsl8.workers.dev/<key>.txt 里放着同一串 key，
+// 鉴权就是一个公开的密钥文件：https://oss.omail.us.kg/<key>.txt 里放着同一串 key，
 // 搜索引擎回抓这个文件确认「提交者确实控制这个域名」。文件在 public/，别删。
 
 import { SITE_HOST, SITE_URL } from "../site/urls";

@@ -1,0 +1,47 @@
+{
+	"name": "web",
+	"version": "0.1.0",
+	"private": true,
+	"author": "chen2he <z@hz.do>",
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chen2he/orange-cloud.git",
+		"directory": "apps/web"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "eslint .",
+		"test": "vitest run",
+		"deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+		"upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+		"preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+		"cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+	},
+	"dependencies": {
+		"@next/third-parties": "^16.2.9",
+		"@opennextjs/cloudflare": "^1.19.9",
+		"@orange-cloud/changelog": "workspace:*",
+		"@peculiar/x509": "^1.14.3",
+		"jose": "^6.2.3",
+		"next": "16.2.11",
+		"next-intl": "^4.13.0",
+		"react": "^19.1.7",
+		"react-dom": "^19.1.7"
+	},
+	"devDependencies": {
+		"@eslint/eslintrc": "^3",
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19.1.7",
+		"@types/react-dom": "^19.1.7",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.11",
+		"tailwindcss": "^4",
+		"typescript": "^5.7.4",
+		"vitest": "^4.1.9",
+		"wrangler": "^4.86.0"
+	}
+}

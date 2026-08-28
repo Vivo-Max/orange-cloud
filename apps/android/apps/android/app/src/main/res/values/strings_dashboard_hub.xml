@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dashboard 三合一（跨资源置顶 / 命令搜索 / 告警中心）新增文案。源语言 zh-Hans。 -->
+<resources>
+    <!-- 置顶 -->
+    <string name="hub_pinned">已固定</string>
+    <string name="hub_pin">置顶</string>
+    <string name="hub_unpin">取消置顶</string>
+    <string name="hub_unresolved">资源不可用</string>
+
+    <!-- 命令搜索 -->
+    <string name="hub_search">搜索资源</string>
+    <string name="hub_search_hint">搜索域名、Worker、存储桶…</string>
+    <string name="hub_search_empty">没有匹配的资源</string>
+
+    <!-- 资源类型 -->
+    <string name="hub_type_zone">域名</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">存储桶</string>
+    <string name="hub_type_d1">D1 数据库</string>
+    <string name="hub_type_kv">KV 命名空间</string>
+    <string name="hub_type_tunnel">隧道</string>
+
+    <!-- 告警中心 -->
+    <string name="hub_alerts">告警中心</string>
+    <string name="hub_alert_all_clear">暂无告警</string>
+    <string name="hub_alert_all_clear_sub">域名、隧道与 Worker 一切正常</string>
+    <string name="hub_alert_zone_inactive">域名未激活：%1$s</string>
+    <string name="hub_alert_tunnel">隧道异常：%1$s</string>
+    <string name="hub_alert_no_workers">还没有 Worker</string>
+    <string name="hub_alert_no_workers_sub">当前账号下没有 Worker 脚本</string>
+</resources>

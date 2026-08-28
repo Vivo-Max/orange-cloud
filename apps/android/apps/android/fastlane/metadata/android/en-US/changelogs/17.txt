@@ -1,0 +1,4 @@
+• New account usage overview: Workers, R2, D1 and KV usage against their quotas at a glance.
+• Worker deployment history & management: view past deployments; create, edit code, and delete Workers.
+• More storage management: create/delete KV namespaces, R2 buckets and D1 tables, plus Pages deployment management.
+• Various stability and experience improvements.

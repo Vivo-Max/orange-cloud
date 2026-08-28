@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 启动窗主题：Compose 接管前的窗背景。Material 平台主题作父，免引 MDC。 -->
+    <style name="Theme.OrangeCloud" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/oc_window_light</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

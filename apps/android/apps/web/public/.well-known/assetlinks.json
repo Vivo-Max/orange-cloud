@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "jiamin.chen.orangecloud",
+      "sha256_cert_fingerprints": [
+        "CA:1A:6E:03:00:BE:90:48:DF:A5:3A:34:CC:6B:00:C6:3C:7D:D1:B9:6C:25:59:E0:E1:67:04:4B:9F:A3:9D:9F"
+      ]
+    }
+  }
+]

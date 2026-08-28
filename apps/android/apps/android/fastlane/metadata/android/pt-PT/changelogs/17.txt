@@ -1,0 +1,4 @@
+• Nova visão geral da utilização da conta: uso de Workers, R2, D1 e KV face às quotas num relance.
+• Histórico e gestão de implementações do Worker: veja implementações anteriores; crie, edite o código e elimine Workers.
+• Mais gestão de armazenamento: crie/elimine namespaces de KV, buckets de R2 e tabelas do D1, além da gestão de implementações do Pages.
+• Várias melhorias de estabilidade e experiência.

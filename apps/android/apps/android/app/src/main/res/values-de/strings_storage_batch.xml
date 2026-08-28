@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Vorschau</string>
+    <string name="r2_preview_loading">Vorschau wird geladen…</string>
+    <string name="r2_preview_json_formatted">JSON formatiert</string>
+    <string name="r2_preview_truncated">Der Inhalt ist lang – nur die ersten %1$d Zeichen werden angezeigt</string>
+    <string name="r2_preview_too_large">Objekt ist groß (%1$s). Nutze stattdessen „Herunterladen &amp; öffnen“.</string>
+    <string name="r2_preview_unsupported">Dieser Dateityp lässt sich in der App nicht anzeigen. Nutze „Herunterladen &amp; öffnen“.</string>
+    <string name="r2_preview_failed">Vorschau konnte nicht geladen werden</string>
+    <string name="r2_preview_search">In der Vorschau suchen</string>
+    <string name="r2_preview_matches">%1$d Treffer</string>
+    <string name="r2_preview_no_match">Keine Treffer</string>
+    <string name="d1_history">Zuletzt ausgeführt</string>
+    <string name="d1_favorites">Favoriten</string>
+    <string name="d1_favorite_add">Zu Favoriten hinzufügen</string>
+    <string name="d1_favorite_remove">Aus Favoriten entfernen</string>
+    <string name="d1_favorite_too_long">Anweisung ist zu lang für die Favoriten</string>
+    <string name="d1_favorite_full">Favoriten sind voll (max. %1$d)</string>
+    <string name="d1_export_csv">CSV exportieren</string>
+    <string name="d1_export_hint">Exportiert nur die bereits geladenen Ergebnisse; es wird nicht neu abgefragt</string>
+    <string name="d1_export_share">Ergebnisse teilen</string>
+    <string name="d1_export_failed">Export fehlgeschlagen</string>
+    <string name="d1_index_section">Indizes</string>
+    <string name="d1_index_empty">Diese Tabelle hat keine Indizes</string>
+    <string name="d1_index_unique">Eindeutig</string>
+    <string name="d1_index_origin_pk">Primärschlüssel</string>
+    <string name="d1_index_origin_unique">UNIQUE-Constraint</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

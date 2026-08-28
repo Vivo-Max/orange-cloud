@@ -40,7 +40,7 @@ Orange Cloud Pro unlocks multiple accounts, the entire Storage tab (R2 / D1 / KV
 
 Subscriptions are billed through Google Play and renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel anytime in Google Play.
 
-Privacy Policy: https://90dd.adsl8.workers.dev/privacy
-Terms of Use: https://90dd.adsl8.workers.dev/terms
+Privacy Policy: https://oss.omail.us.kg/privacy
+Terms of Use: https://oss.omail.us.kg/terms
 
 Orange Cloud is an independent third-party client and is not affiliated with, endorsed, or sponsored by Cloudflare, Inc. Cloudflare is a trademark of Cloudflare, Inc.

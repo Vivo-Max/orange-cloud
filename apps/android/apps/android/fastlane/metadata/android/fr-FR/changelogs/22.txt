@@ -1,0 +1,1 @@
+• Nouveau : mettre Cloudflare en pause. Suspendez ou réactivez le proxy depuis les réglages du domaine en un geste. En pause, le trafic contourne Cloudflare : WAF, mise en cache et masquage de l’IP d’origine cessent de fonctionner, le DNS restant résolu par Cloudflare. Environ 5 minutes.

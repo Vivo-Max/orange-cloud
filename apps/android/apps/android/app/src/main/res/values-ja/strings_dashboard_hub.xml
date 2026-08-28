@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">ピン留め済み</string>
+    <string name="hub_pin">ピン留め</string>
+    <string name="hub_unpin">ピン留めを解除</string>
+    <string name="hub_unresolved">リソースを利用できません</string>
+    <string name="hub_search">リソースを検索</string>
+    <string name="hub_search_hint">ドメイン、Worker、バケットを検索…</string>
+    <string name="hub_search_empty">一致するリソースがありません</string>
+    <string name="hub_type_zone">ドメイン</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">バケット</string>
+    <string name="hub_type_d1">D1 データベース</string>
+    <string name="hub_type_kv">KV 名前空間</string>
+    <string name="hub_type_tunnel">トンネル</string>
+    <string name="hub_alerts">アラートセンター</string>
+    <string name="hub_alert_all_clear">アラートはありません</string>
+    <string name="hub_alert_all_clear_sub">ドメイン、トンネル、Worker はすべて正常です</string>
+    <string name="hub_alert_zone_inactive">ドメインが有効ではありません：%1$s</string>
+    <string name="hub_alert_tunnel">トンネルに異常があります：%1$s</string>
+    <string name="hub_alert_no_workers">Worker がありません</string>
+    <string name="hub_alert_no_workers_sub">このアカウントに Worker スクリプトがありません</string>
+</resources>

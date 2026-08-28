@@ -40,7 +40,7 @@ Orange Cloud Pro 解鎖多帳號切換、整個儲存模組（R2 / D1 / KV）、
 
 訂閱透過 Google Play 計費，除非在目前訂閱期結束前至少 24 小時取消，否則將自動續訂。可隨時在 Google Play 管理或取消。
 
-隱私權政策：https://90dd.adsl8.workers.dev/privacy
-使用條款：https://90dd.adsl8.workers.dev/terms
+隱私權政策：https://oss.omail.us.kg/privacy
+使用條款：https://oss.omail.us.kg/terms
 
 Orange Cloud 是獨立的第三方用戶端，與 Cloudflare, Inc. 無關聯，亦未獲其背書或贊助。Cloudflare 是 Cloudflare, Inc. 的商標。

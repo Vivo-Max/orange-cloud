@@ -1,0 +1,7 @@
+# 关闭空白 issue，强制走表单，保证新 issue 都能被自动分类
+# Disable blank issues so every new issue goes through a form and gets auto-labeled
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Telegram 频道 / Channel
+    url: https://t.me/orange_cloud_channel
+    about: 版本动态与日常交流，不确定要不要提 issue 时先来这 / Updates & general chat — start here if unsure

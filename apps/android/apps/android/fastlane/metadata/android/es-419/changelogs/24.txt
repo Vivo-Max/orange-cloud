@@ -1,0 +1,4 @@
+• Gestión de Turnstile: explora y crea widgets, edita dominios y modos, rota secretos con gracia opcional de 2 horas
+• Consola R2 SQL: consulta tablas Iceberg de tu Data Catalog, toca una tabla para empezar (10 GB gratis al mes)
+• Variables y secretos de Workers: pega JSON para importar en lote con el nuevo endpoint atómico
+• Las reglas de caché suman huellas JA3/JA4; las reglas con caché por Vary pasan a solo lectura para proteger esa config

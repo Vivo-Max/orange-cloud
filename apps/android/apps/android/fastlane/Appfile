@@ -1,0 +1,9 @@
+# fastlane supply（Google Play）配置。在 apps/android 目录下运行 `fastlane <lane>`。
+#
+# 认证：Play Console → 设置 → API 访问 → 关联 Google Cloud 项目 → 建服务账号 →
+#   在 Play Console 授予该服务账号「发布管理」权限 → 下载 JSON 密钥放下方路径。
+#   JSON 密钥是机密，已 .gitignore，切勿入库。
+json_key_file("fastlane/play-service-account.json")
+
+# play 风味的 applicationId（oss 挂 .oss、debug 挂 .debug，发布包是无后缀的这个）。
+package_name("jiamin.chen.orangecloud")

@@ -40,7 +40,7 @@ Orange Cloud Pro では、複数アカウントの切り替え、ストレージ
 
 サブスクリプションは Google Play で課金され、現在の期間が終わる 24 時間以上前に解約しない限り自動更新されます。解約・管理は Google Play からいつでも可能です。
 
-プライバシーポリシー：https://90dd.adsl8.workers.dev/privacy
-利用規約：https://90dd.adsl8.workers.dev/terms
+プライバシーポリシー：https://oss.omail.us.kg/privacy
+利用規約：https://oss.omail.us.kg/terms
 
 Orange Cloud は独立したサードパーティ製クライアントであり、Cloudflare, Inc. とは提携・推奨・出資の関係にありません。Cloudflare は Cloudflare, Inc. の商標です。

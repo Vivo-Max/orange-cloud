@@ -1,0 +1,64 @@
+name: 🐛 Bug 报告 / Bug Report
+description: 报告崩溃、报错或功能不正常 / Report a crash, error, or broken behavior
+labels: ["bug"]
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量填写以下信息，便于快速定位问题。
+        Thanks for reporting! Please fill in as much as you can so we can reproduce it.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述 / What happened?
+      description: 发生了什么？你期望的是什么？/ What went wrong, and what did you expect?
+      placeholder: 打开 XX 页面后……  /  After opening the XX screen…
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      description: 一步步怎么触发的 / How can we reproduce it?
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台 / Platform
+      options:
+        - iOS
+        - iPadOS
+        - watchOS
+        - Android
+        - Web 网页 / Web
+        - 其他 / Other
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App 版本 / App version
+      description: 设置页底部可见 / Shown at the bottom of Settings
+      placeholder: "例如 / e.g. 1.2.2"
+    validations:
+      required: false
+  - type: input
+    id: os-version
+    attributes:
+      label: 系统版本 / OS version
+      placeholder: "例如 / e.g. iOS 18.5"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 诊断日志 / Diagnostic logs（可选 / optional）
+      description: 「设置 → 帮助与反馈」可导出诊断日志 / Export logs from Settings → Help & Feedback
+    validations:
+      required: false

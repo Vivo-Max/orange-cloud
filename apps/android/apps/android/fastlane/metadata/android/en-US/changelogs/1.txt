@@ -1,0 +1,9 @@
+Welcome to Orange Cloud
+Manage Cloudflare with official OAuth sign-in - no API tokens to copy and paste:
+- Domains & DNS record management
+- Workers with live log tailing
+- Traffic analytics charts
+- R2 / D1 / KV storage browsing & editing
+- WAF rules & Cloudflare Tunnel
+- Day-and-night theme, tablet two-pane, home-screen shortcuts
+Thanks for trying it - feedback welcome!

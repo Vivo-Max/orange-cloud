@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">Logs durchsuchen</string>
+    <string name="tail_search_clear">Suche löschen</string>
+    <string name="tail_filter_empty">Keine Logs für die aktuellen Filter</string>
+    <string name="tail_copied">Logzeile kopiert</string>
+    <string name="tail_level_all">Alle</string>
+    <string name="tail_level_event">Anfragen</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">Log-Details</string>
+    <string name="tail_detail_close">Schließen</string>
+    <string name="tail_detail_copy_all">Alles kopieren</string>
+    <string name="tail_detail_level">Level</string>
+    <string name="tail_detail_time">Zeit</string>
+    <string name="tail_detail_method">Methode</string>
+    <string name="tail_detail_url">URL</string>
+    <string name="tail_detail_cron">Cron-Ausdruck</string>
+    <string name="tail_detail_outcome">Ergebnis</string>
+    <string name="tail_detail_exception">Ausnahme</string>
+    <string name="tail_detail_body">Vollständiger Inhalt</string>
+    <string name="tail_detail_select_hint">Lange drücken, um einen Ausschnitt auszuwählen und zu kopieren</string>
+    <string name="tail_row_hint">Tippen für Details, lange drücken zum Kopieren der Zeile</string>
+    <string name="dev_ai_image_playground">Text-zu-Bild testen</string>
+    <string name="dev_ai_image_prompt">Bild-Prompt</string>
+    <string name="dev_ai_image_generate">Bild erzeugen</string>
+    <string name="dev_ai_image_run_note">Das Erzeugen ruft das Modell auf und zählt zur Workers-AI-Nutzung deines Kontos.</string>
+    <string name="dev_ai_image_result">Erzeugtes Bild</string>
+    <string name="dev_ai_image_decoding">Bild wird verarbeitet…</string>
+    <string name="dev_ai_image_share">Bild teilen</string>
+    <string name="dev_ai_image_share_failed">Teilen fehlgeschlagen – keine App kann das Bild empfangen.</string>
+    <string name="dev_ai_image_not_image">Das Modell hat kein Bild zurückgegeben. Rohantwort:</string>
+    <string name="tail_paused">Pausiert</string>
+    <string name="tail_paused_new_count">Pausiert · %1$d neu</string>
+</resources>

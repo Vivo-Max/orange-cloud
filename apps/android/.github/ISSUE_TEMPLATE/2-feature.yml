@@ -1,0 +1,40 @@
+name: ✨ 功能请求 / Feature Request
+description: 建议一个新功能或改进 / Suggest a new feature or improvement
+labels: ["enhancement"]
+title: "[功能] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决什么问题 / What problem does it solve?
+      description: 你遇到了什么不便，或希望达成什么 / What pain point or goal is behind this?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望的方案 / Proposed solution
+      description: 你设想它怎么工作 / How do you imagine it working?
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 涉及平台 / Platform
+      multiple: true
+      options:
+        - iOS
+        - iPadOS
+        - watchOS
+        - Android
+        - Web 网页 / Web
+        - 全部 / All
+        - 其他 / Other
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 其他考虑过的方案 / Alternatives considered（可选 / optional）
+    validations:
+      required: false

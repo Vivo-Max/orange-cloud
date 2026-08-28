@@ -1,0 +1,6 @@
+• Tout rechercher d'un coup : domaines, Workers, R2, D1, KV et tunnels ; épinglez vos ressources.
+• Centre d'alertes : les ressources à surveiller, sur la vue d'ensemble.
+• Journaux en direct : recherche, filtres par niveau, pause qui ne fige que l'affichage.
+• D1 : historique des requêtes, favoris par base, export CSV.
+• Aperçu des objets R2 ; liez R2 / D1 / KV à un Worker ; images avec Workers AI.
+• Retient votre compte par défaut ; corrections du menu de comptes et des longs scripts.

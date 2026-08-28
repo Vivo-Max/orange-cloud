@@ -1,0 +1,4 @@
+• Turnstile-Verwaltung: Widgets ansehen und anlegen, Domains und Modi ändern, Secrets mit optionaler 2-Stunden-Karenz rotieren
+• R2-SQL-Konsole: Iceberg-Tabellen im Data Catalog direkt abfragen, Tabelle antippen und los (10 GB pro Monat frei)
+• Workers-Variablen und -Secrets: JSON einfügen und über den neuen atomaren Bulk-Endpunkt im Stapel importieren
+• Cache-Regeln erhalten JA3/JA4-Fingerprints; Regeln mit Vary-Caching werden schreibgeschützt

@@ -1,0 +1,4 @@
+• Nuevo resumen de uso de la cuenta: uso de Workers, R2, D1 y KV frente a sus límites de un vistazo.
+• Historial y gestión de despliegues de Workers: consulta despliegues previos; crea, edita el código y elimina Workers.
+• Más gestión de almacenamiento: crea/elimina espacios de nombres KV, buckets R2 y tablas D1, además de la gestión de despliegues de Pages.
+• Varias mejoras de estabilidad y experiencia.

@@ -8,11 +8,11 @@
 
 <a href="https://apps.apple.com/app/id6779323783"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download Orange Cloud on the App Store" height="54" /></a>
 
-<a href="https://apps.apple.com/app/id6779323783"><img src="https://90dd.adsl8.workers.dev/api/ranks/badge" alt="Orange Cloud App Store rank" height="20" /></a>
+<a href="https://apps.apple.com/app/id6779323783"><img src="https://oss.omail.us.kg/api/ranks/badge" alt="Orange Cloud App Store rank" height="20" /></a>
 
 <a href="https://trendshift.io/repositories/53962" target="_blank"><img src="https://trendshift.io/api/badge/trendshift/repositories/53962/daily?language=Swift" alt="#3 Swift Repository Of The Day" height="20" /></a>
 
-[Website](https://90dd.adsl8.workers.dev) · [Privacy](https://90dd.adsl8.workers.dev/privacy) · [Terms](https://90dd.adsl8.workers.dev/terms) · [TestFlight (beta)](https://testflight.apple.com/join/ZGhbsphj) · [Telegram](https://t.me/orange_cloud_channel) · [Ko-fi](https://ko-fi.com/chen2he)
+[Website](https://oss.omail.us.kg) · [Privacy](https://oss.omail.us.kg/privacy) · [Terms](https://oss.omail.us.kg/terms) · [TestFlight (beta)](https://testflight.apple.com/join/ZGhbsphj) · [Telegram](https://t.me/orange_cloud_channel) · [Ko-fi](https://ko-fi.com/chen2he)
 
 [English](#english) | [中文](#中文)
 
@@ -82,7 +82,7 @@ If Orange Cloud is useful to you, you can support the project on [Ko-fi](https:/
 ### Building from source
 
 1. **Xcode 26 or later.** Open `apps/ios/Orange Cloud/Orange Cloud.xcodeproj`. The app targets iOS 17 and watchOS 10.6, with an embedded Apple Watch companion app.
-2. Create your own **Cloudflare OAuth client** and deploy your own callback relay (see [`apps/web/`](apps/web/README.md)) — the official client ID and the `90dd.adsl8.workers.dev` relay are not available to third-party builds.
+2. Create your own **Cloudflare OAuth client** and deploy your own callback relay (see [`apps/web/`](apps/web/README.md)) — the official client ID and the `oss.omail.us.kg` relay are not available to third-party builds.
 3. Add `OPENSOURCE_UNLOCKED` to the main target's `SWIFT_ACTIVE_COMPILATION_CONDITIONS` for the full feature set.
 4. Change the Bundle ID, App Group, and signing team to your own.
 
@@ -152,7 +152,7 @@ orange-cloud/
 ### 自行编译
 
 1. **Xcode 26 或更高版本**，打开 `apps/ios/Orange Cloud/Orange Cloud.xcodeproj`。App 面向 iOS 17 与 watchOS 10.6，并内嵌 Apple Watch 配套 App。
-2. 自建 **Cloudflare OAuth Client** 并部署你自己的回调中转（见 [`apps/web/`](apps/web/README.md)）——官方 Client ID 与 `90dd.adsl8.workers.dev` 中转不向第三方构建开放。
+2. 自建 **Cloudflare OAuth Client** 并部署你自己的回调中转（见 [`apps/web/`](apps/web/README.md)）——官方 Client ID 与 `oss.omail.us.kg` 中转不向第三方构建开放。
 3. 向主 target 的 `SWIFT_ACTIVE_COMPILATION_CONDITIONS` 添加 `OPENSOURCE_UNLOCKED` 以解锁全部功能。
 4. 将 Bundle ID、App Group 与签名团队改为你自己的。
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">مثبّت</string>
+    <string name="hub_pin">تثبيت</string>
+    <string name="hub_unpin">إلغاء التثبيت</string>
+    <string name="hub_unresolved">المورد غير متاح</string>
+    <string name="hub_search">البحث في الموارد</string>
+    <string name="hub_search_hint">ابحث في النطاقات وWorkers والحاويات…</string>
+    <string name="hub_search_empty">لا توجد موارد مطابقة</string>
+    <string name="hub_type_zone">نطاق</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">حاوية</string>
+    <string name="hub_type_d1">قاعدة بيانات D1</string>
+    <string name="hub_type_kv">مساحة أسماء KV</string>
+    <string name="hub_type_tunnel">نفق</string>
+    <string name="hub_alerts">مركز التنبيهات</string>
+    <string name="hub_alert_all_clear">لا توجد تنبيهات</string>
+    <string name="hub_alert_all_clear_sub">النطاقات والأنفاق وWorkers تعمل بشكل طبيعي</string>
+    <string name="hub_alert_zone_inactive">النطاق غير نشط: %1$s</string>
+    <string name="hub_alert_tunnel">خلل في النفق: %1$s</string>
+    <string name="hub_alert_no_workers">لا توجد Workers بعد</string>
+    <string name="hub_alert_no_workers_sub">لا توجد نصوص Worker في هذا الحساب</string>
+</resources>

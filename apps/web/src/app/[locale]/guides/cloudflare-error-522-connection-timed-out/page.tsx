@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import Error522Path from "@/components/guides/Error522Path";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("cloudflare-error-522-connection-timed-out");
 const PATH = `/guides/${guide.slug}`;
 

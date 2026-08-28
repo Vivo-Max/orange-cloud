@@ -1,0 +1,1 @@
+• New: Pause Cloudflare. Pause or resume the proxy from zone settings in one tap. While paused, traffic bypasses Cloudflare — WAF, caching and origin IP masking stop working, while DNS is still resolved by Cloudflare. Either change takes about 5 minutes.

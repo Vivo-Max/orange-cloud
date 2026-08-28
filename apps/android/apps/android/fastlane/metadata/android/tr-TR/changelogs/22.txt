@@ -1,0 +1,1 @@
+• Yeni: Cloudflare’i duraklatma. Proxy’yi alan adı ayarlarından tek dokunuşla duraklatın veya sürdürün. Duraklatıldığında trafik Cloudflare’i atlar; WAF, önbellek hızlandırma ve kaynak IP gizleme devre dışı kalır, DNS çözümlemesi Cloudflare’de sürer. Yaklaşık 5 dakikada etkili olur.

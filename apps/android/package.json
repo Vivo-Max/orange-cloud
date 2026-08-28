@@ -1,0 +1,27 @@
+{
+  "name": "orange-cloud",
+  "private": true,
+  "author": "chen2he <z@hz.do>",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://90dd.adsl8.workers.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen2he/orange-cloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chen2he/orange-cloud/issues"
+  },
+  "scripts": {
+    "dev": "turbo dev --filter=web",
+    "build": "turbo build",
+    "deploy:web": "turbo deploy --filter=web",
+    "preview:web": "turbo preview --filter=web",
+    "lint": "turbo lint",
+    "changelog:gen": "pnpm --filter @orange-cloud/changelog gen",
+    "changelog:check": "pnpm --filter @orange-cloud/changelog check"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0"
+  },
+  "packageManager": "pnpm@11.5.1"
+}

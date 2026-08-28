@@ -1,0 +1,1548 @@
+[
+  {
+    "version": "2.1.0",
+    "date": "2026.08.19",
+    "channel": "Google Play",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "checkmark.shield",
+        "title": {
+          "zh-Hans": "随手管理 Turnstile 人机验证",
+          "en": "Manage Turnstile from your pocket",
+          "zh-Hant": "隨手管理 Turnstile 人機驗證",
+          "zh-HK": "隨手管理 Turnstile 人機驗證",
+          "ja": "Turnstile をポケットから管理",
+          "es-MX": "Gestiona Turnstile desde el bolsillo",
+          "ko": "Turnstile을 주머니 속에서 관리",
+          "pt-BR": "Gerencie o Turnstile do bolso",
+          "pt-PT": "Faça a gestão do Turnstile no bolso",
+          "de": "Turnstile aus der Hosentasche verwalten",
+          "fr": "Gérez Turnstile depuis votre poche",
+          "ar": "أدر Turnstile من جيبك",
+          "tr": "Turnstile'ı cebinizden yönetin"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增 Turnstile 入口：查看全部组件，新建、改域名与模式，密钥一键轮换（可留 2 小时宽限平滑过渡），sitekey 和 secret 点按即复制。",
+          "en": "A new Turnstile entry on the overview: browse all widgets, create and edit domains and modes, rotate secrets with an optional 2-hour grace period, and tap to copy the sitekey or secret.",
+          "zh-Hant": "總覽頁新增 Turnstile 入口：檢視全部元件，新增、改網域與模式，金鑰一鍵輪替（可留 2 小時寬限平滑過渡），sitekey 和 secret 點按即複製。",
+          "zh-HK": "概覽頁新增 Turnstile 入口：查看全部組件，新建、改域名與模式，密鑰一鍵輪換（可留 2 小時寬限平滑過渡），sitekey 和 secret 點按即複製。",
+          "ja": "概要画面に Turnstile の入口を追加。全ウィジェットの一覧、作成やドメイン・モードの変更、シークレットのローテーション（2 時間の猶予つきでスムーズに移行）、sitekey と secret のタップコピーに対応しました。",
+          "es-MX": "Nueva entrada de Turnstile en el resumen: explora todos los widgets, crea y edita dominios y modos, rota secretos con un periodo de gracia opcional de 2 horas y copia la sitekey o el secreto con un toque.",
+          "ko": "개요 화면에 Turnstile 입구가 생겼습니다. 전체 위젯을 둘러보고, 만들고, 도메인과 모드를 수정하고, 2시간 유예를 선택해 시크릿을 교체하고, sitekey와 secret을 탭 한 번으로 복사하세요.",
+          "pt-BR": "Nova entrada do Turnstile na visão geral: veja todos os widgets, crie e edite domínios e modos, rotacione segredos com carência opcional de 2 horas e copie a sitekey ou o segredo com um toque.",
+          "pt-PT": "Nova entrada do Turnstile na vista geral: veja todos os widgets, crie e edite domínios e modos, rode segredos com tolerância opcional de 2 horas e copie a sitekey ou o segredo com um toque.",
+          "de": "Neuer Turnstile-Einstieg in der Übersicht: alle Widgets durchsehen, Domains und Modi anlegen und ändern, Secrets mit optionaler 2-Stunden-Karenz rotieren, Sitekey und Secret per Tipp kopieren.",
+          "fr": "Nouvelle entrée Turnstile sur l'aperçu : parcourez tous les widgets, créez et modifiez domaines et modes, renouvelez les secrets avec un délai de grâce optionnel de 2 h, et copiez la sitekey ou le secret d'un geste.",
+          "ar": "مدخل جديد لـ Turnstile في صفحة النظرة العامة: تصفح كل العناصر، أنشئ وعدّل النطاقات والأوضاع، ودوّر الأسرار مع مهلة اختيارية لساعتين، وانسخ sitekey أو secret بنقرة.",
+          "tr": "Genel bakışta yeni Turnstile girişi: tüm öğelere göz atın, alan adı ve mod oluşturup düzenleyin, isteğe bağlı 2 saatlik geçiş süresiyle anahtarları değiştirin, sitekey ve secret'ı dokunarak kopyalayın."
+        }
+      },
+      {
+        "icon": "terminal",
+        "title": {
+          "zh-Hans": "R2 数据目录，直接用 SQL 查",
+          "en": "Query R2 Data Catalog with SQL",
+          "zh-Hant": "R2 資料目錄，直接用 SQL 查",
+          "zh-HK": "R2 數據目錄，直接用 SQL 查",
+          "ja": "R2 データカタログを SQL で直接クエリ",
+          "es-MX": "Consulta R2 Data Catalog con SQL",
+          "ko": "R2 데이터 카탈로그를 SQL로 바로 조회",
+          "pt-BR": "Consulte o R2 Data Catalog com SQL",
+          "pt-PT": "Consulte o R2 Data Catalog com SQL",
+          "de": "R2 Data Catalog direkt per SQL abfragen",
+          "fr": "Interrogez R2 Data Catalog en SQL",
+          "ar": "استعلم عن كتالوج بيانات R2 مباشرة بلغة SQL",
+          "tr": "R2 Veri Kataloğu'nu doğrudan SQL ile sorgulayın"
+        },
+        "detail": {
+          "zh-Hans": "桶设置的数据目录里新增 R2 SQL 查询控制台：点选表名生成查询，结果表格展示。按扫描量计费（每月 10 GB 免费），控制台内有提示。",
+          "en": "Bucket settings gain an R2 SQL console under Data Catalog: tap a table to start a query and view results in a grid. Billed by data scanned (first 10 GB per month free) — the console reminds you.",
+          "zh-Hant": "儲存桶設定的資料目錄裡新增 R2 SQL 查詢主控台：點選資料表名產生查詢，結果以表格呈現。按掃描量計費（每月 10 GB 免費），主控台內有提示。",
+          "zh-HK": "儲存桶設定的數據目錄裡新增 R2 SQL 查詢控制台：點選表名生成查詢，結果表格展示。按掃描量計費（每月 10 GB 免費），控制台內有提示。",
+          "ja": "バケット設定のデータカタログに R2 SQL コンソールを追加。テーブル名をタップしてクエリを作り、結果をグリッドで確認できます。スキャン量課金（毎月 10 GB まで無料）で、コンソール内に注意書きがあります。",
+          "es-MX": "Los ajustes del bucket ganan una consola R2 SQL en Data Catalog: toca una tabla para generar la consulta y ver los resultados en una tabla. Se factura por datos escaneados (10 GB gratis al mes); la consola te lo recuerda.",
+          "ko": "버킷 설정의 데이터 카탈로그에 R2 SQL 콘솔이 추가되었습니다. 테이블을 탭해 쿼리를 만들고 결과를 표로 확인하세요. 스캔한 데이터양으로 과금되며(매월 10 GB 무료) 콘솔에 안내가 있습니다.",
+          "pt-BR": "As configurações do bucket ganham um console R2 SQL no Data Catalog: toque em uma tabela para gerar a consulta e veja os resultados em grade. Cobrança por dados verificados (10 GB grátis por mês) — o console avisa.",
+          "pt-PT": "As definições do bucket ganham uma consola R2 SQL no Data Catalog: toque numa tabela para gerar a consulta e veja os resultados em grelha. Faturação por dados analisados (10 GB grátis por mês) — a consola avisa.",
+          "de": "Die Bucket-Einstellungen erhalten unter Data Catalog eine R2-SQL-Konsole: Tabelle antippen, Abfrage starten, Ergebnisse im Raster ansehen. Abgerechnet nach gescannter Datenmenge (10 GB pro Monat frei) – die Konsole erinnert daran.",
+          "fr": "Les réglages du bucket gagnent une console R2 SQL sous Data Catalog : touchez une table pour lancer la requête et voir les résultats en grille. Facturation au volume scanné (10 GB gratuits par mois) — la console vous le rappelle.",
+          "ar": "أضفنا وحدة تحكم R2 SQL إلى كتالوج البيانات في إعدادات الحاوية: انقر على جدول لبدء استعلام واعرض النتائج في شبكة. تُحتسب التكلفة حسب البيانات الممسوحة (أول 10 GB شهريًا مجانًا) — وستذكّرك وحدة التحكم بذلك.",
+          "tr": "Kova ayarlarındaki Veri Kataloğu'na R2 SQL konsolu eklendi: bir tabloya dokunup sorgu oluşturun, sonuçları tabloda görün. Taranan veriye göre ücretlendirilir (ayda 10 GB ücretsiz) — konsol size hatırlatır."
+        }
+      },
+      {
+        "icon": "key.fill",
+        "title": {
+          "zh-Hans": "Workers 密钥，一次批量导入",
+          "en": "Bulk-import Worker secrets",
+          "zh-Hant": "Workers 金鑰，一次批次匯入",
+          "zh-HK": "Workers 密鑰，一次批量導入",
+          "ja": "Workers のシークレットを一括インポート",
+          "es-MX": "Importa secretos de Workers en lote",
+          "ko": "Workers 시크릿을 한 번에 가져오기",
+          "pt-BR": "Importe segredos do Workers em lote",
+          "pt-PT": "Importe segredos do Workers em lote",
+          "de": "Worker-Secrets im Stapel importieren",
+          "fr": "Importez les secrets Workers en masse",
+          "ar": "استورد أسرار Workers دفعة واحدة",
+          "tr": "Workers gizli anahtarlarını toplu aktarın"
+        },
+        "detail": {
+          "zh-Hans": "粘贴一段 JSON 就能批量写入变量或密钥：走 Cloudflare 新的批量接口，单次调用原子生效，不再逐条保存。",
+          "en": "Paste a JSON object to write variables or secrets in bulk — powered by Cloudflare's new bulk endpoint, one atomic call instead of saving one by one.",
+          "zh-Hant": "貼上一段 JSON 就能批次寫入變數或金鑰：走 Cloudflare 新的批次介面，單次呼叫原子生效，不再逐條儲存。",
+          "zh-HK": "貼上一段 JSON 就能批量寫入變數或密鑰：走 Cloudflare 新的批量接口，單次調用原子生效，不再逐條保存。",
+          "ja": "JSON を貼り付けるだけで変数やシークレットを一括登録。Cloudflare の新しいバルク API を使い、1 回の呼び出しでアトミックに反映されます。",
+          "es-MX": "Pega un objeto JSON para escribir variables o secretos en lote: usa el nuevo endpoint masivo de Cloudflare, una sola llamada atómica en vez de guardar uno por uno.",
+          "ko": "JSON을 붙여넣어 변수나 시크릿을 일괄 기록하세요. Cloudflare의 새 벌크 엔드포인트로 한 번의 원자적 호출이면 됩니다.",
+          "pt-BR": "Cole um objeto JSON para gravar variáveis ou segredos em lote — usa o novo endpoint em massa da Cloudflare, uma única chamada atômica em vez de salvar um por um.",
+          "pt-PT": "Cole um objeto JSON para gravar variáveis ou segredos em lote — usa o novo endpoint em massa da Cloudflare, uma única chamada atómica em vez de guardar um a um.",
+          "de": "JSON einfügen und Variablen oder Secrets im Stapel schreiben – über Cloudflares neuen Bulk-Endpunkt, ein atomarer Aufruf statt Einzelspeichern.",
+          "fr": "Collez un objet JSON pour écrire variables ou secrets en masse — via le nouvel endpoint bulk de Cloudflare, un seul appel atomique au lieu d'enregistrer un par un.",
+          "ar": "الصق كائن JSON لكتابة المتغيرات أو الأسرار دفعة واحدة — عبر واجهة Cloudflare الجديدة للعمليات المجمعة، استدعاء ذرّي واحد بدل الحفظ واحدًا تلو الآخر.",
+          "tr": "Bir JSON nesnesi yapıştırarak değişken veya gizli anahtarları toplu yazın — Cloudflare'ın yeni toplu uç noktasıyla tek atomik çağrı, tek tek kaydetmek yok."
+        }
+      },
+      {
+        "icon": "bolt.horizontal",
+        "title": {
+          "zh-Hans": "缓存规则认识 JA3/JA4 了",
+          "en": "Cache Rules learn JA3/JA4",
+          "zh-Hant": "快取規則認識 JA3/JA4 了",
+          "zh-HK": "緩存規則認識 JA3/JA4 了",
+          "ja": "キャッシュルールが JA3/JA4 に対応",
+          "es-MX": "Las reglas de caché aprenden JA3/JA4",
+          "ko": "캐시 규칙이 JA3/JA4를 알게 됐어요",
+          "pt-BR": "Regras de cache aprendem JA3/JA4",
+          "pt-PT": "Regras de cache aprendem JA3/JA4",
+          "de": "Cache-Regeln lernen JA3/JA4",
+          "fr": "Les règles de cache apprennent JA3/JA4",
+          "ar": "قواعد التخزين المؤقت تتعرف على JA3/JA4",
+          "tr": "Önbellek kuralları JA3/JA4 öğrendi"
+        },
+        "detail": {
+          "zh-Hans": "表达式速插芯片补上 JA3/JA4 指纹字段（需 Bot Management 订阅）；带 Vary 多版本缓存的规则自动只读，避免在 App 里误改丢掉配置。",
+          "en": "Expression quick-insert chips now include JA3/JA4 fingerprint fields (Bot Management subscription required). Rules using Vary-based caching turn read-only in the app so edits can't drop that config.",
+          "zh-Hant": "運算式速插晶片補上 JA3/JA4 指紋欄位（需 Bot Management 訂閱）；帶 Vary 多版本快取的規則自動唯讀，避免在 App 裡誤改遺失設定。",
+          "zh-HK": "表達式速插芯片補上 JA3/JA4 指紋欄位（需 Bot Management 訂閱）；帶 Vary 多版本緩存的規則自動只讀，避免在 App 裡誤改丟掉配置。",
+          "ja": "式のクイック挿入チップに JA3/JA4 フィンガープリントを追加（Bot Management サブスクリプションが必要）。Vary による複数バージョンキャッシュを使うルールはアプリ内で読み取り専用になり、誤編集で設定が消えるのを防ぎます。",
+          "es-MX": "Los chips de inserción rápida suman los campos de huella JA3/JA4 (requiere suscripción a Bot Management). Las reglas con caché por Vary pasan a solo lectura en la app para que una edición no borre esa configuración.",
+          "ko": "표현식 빠른 삽입 칩에 JA3/JA4 지문 필드가 추가되었습니다(Bot Management 구독 필요). Vary 다중 버전 캐시를 쓰는 규칙은 앱에서 읽기 전용이 되어 잘못 수정해 설정을 잃는 일을 막습니다.",
+          "pt-BR": "Os chips de inserção rápida ganham os campos de impressão digital JA3/JA4 (requer assinatura do Bot Management). Regras com cache por Vary ficam somente leitura no app, para uma edição não descartar essa configuração.",
+          "pt-PT": "Os chips de inserção rápida ganham os campos de impressão digital JA3/JA4 (requer subscrição do Bot Management). Regras com cache por Vary ficam só de leitura na app, para uma edição não descartar essa configuração.",
+          "de": "Die Schnelleinfüge-Chips für Ausdrücke enthalten jetzt JA3/JA4-Fingerprint-Felder (Bot-Management-Abo erforderlich). Regeln mit Vary-Caching werden in der App schreibgeschützt, damit Bearbeitungen diese Konfiguration nicht verwerfen.",
+          "fr": "Les puces d'insertion rapide gagnent les champs d'empreinte JA3/JA4 (abonnement Bot Management requis). Les règles utilisant le cache par Vary passent en lecture seule dans l'app pour qu'une modification ne supprime pas cette configuration.",
+          "ar": "أضفنا حقول بصمتي JA3/JA4 إلى شرائح الإدراج السريع (يتطلب اشتراك Bot Management). القواعد التي تستخدم التخزين المؤقت عبر Vary تصبح للقراءة فقط في التطبيق حتى لا يُفقد هذا الإعداد عند التعديل.",
+          "tr": "Hızlı ekleme çiplerine JA3/JA4 parmak izi alanları eklendi (Bot Management aboneliği gerekir). Vary tabanlı önbellek kullanan kurallar uygulamada salt okunur olur, böylece düzenlemeler bu yapılandırmayı silmez."
+        }
+      }
+    ]
+  },
+  {
+    "version": "2.0.0",
+    "date": "2026.08.10",
+    "channel": "Google Play",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "brain",
+        "title": {
+          "zh-Hans": "一个开关拦住 AI 爬虫",
+          "en": "Block AI crawlers with one switch",
+          "zh-Hant": "一個開關擋住 AI 爬蟲",
+          "zh-HK": "一個開關擋住 AI 爬蟲",
+          "ja": "AI クローラーをスイッチひとつでブロック",
+          "es-MX": "Bloquea rastreadores de IA con un interruptor",
+          "ko": "스위치 하나로 AI 크롤러 차단",
+          "pt-BR": "Bloqueie rastreadores de IA com um botão",
+          "pt-PT": "Bloqueie rastreadores de IA com um interruptor",
+          "de": "KI-Crawler mit einem Schalter blocken",
+          "fr": "Bloquez les robots d’IA en un geste",
+          "ar": "أوقف زواحف الذكاء الاصطناعي بمفتاح واحد",
+          "tr": "Yapay zekâ tarayıcılarını tek anahtarla engelleyin"
+        },
+        "detail": {
+          "zh-Hans": "域名详情页新增「AI 爬虫」一栏，三档任选：不拦截、只拦广告页、全站拦截。AI 内容相关的两个设置也挪到了同一页，不必再开控制台。",
+          "en": "Zone details now has an AI crawlers row with three modes: off, ad pages only, or block everywhere. The two AI content settings moved to the same screen, so you no longer need the dashboard.",
+          "zh-Hant": "網域詳情頁新增「AI 爬蟲」一欄，三檔任選：不攔截、只攔廣告頁、全站攔截。AI 內容相關的兩個設定也移到同一頁，不必再開主控台。",
+          "zh-HK": "域名詳情頁新增「AI 爬蟲」一欄，三檔任選：不攔截、只攔廣告頁、全站攔截。AI 內容相關的兩個設定也移到同一頁，不必再開控制台。",
+          "ja": "ドメイン詳細に「AI クローラー」の項目が加わりました。ブロックしない／広告ページのみ／サイト全体の 3 段階から選べます。AI コンテンツ関連の 2 つの設定も同じ画面に移り、ダッシュボードを開く必要はありません。",
+          "es-MX": "Los detalles del dominio ahora incluyen una fila de rastreadores de IA con tres modos: sin bloqueo, solo páginas con anuncios o todo el sitio. Los dos ajustes de contenido de IA pasaron a la misma pantalla, así que ya no hace falta el panel.",
+          "ko": "도메인 상세 화면에 ‘AI 크롤러’ 항목이 생겼습니다. 차단 안 함, 광고 페이지만, 사이트 전체 중에서 고를 수 있습니다. AI 콘텐츠 설정 두 개도 같은 화면으로 옮겨서 대시보드를 열 필요가 없습니다.",
+          "pt-BR": "Os detalhes do domínio agora têm uma linha de rastreadores de IA com três modos: sem bloqueio, só páginas com anúncios ou o site todo. As duas configurações de conteúdo de IA foram para a mesma tela, então o painel não é mais necessário.",
+          "pt-PT": "Os detalhes do domínio passam a ter uma linha de rastreadores de IA com três modos: sem bloqueio, apenas páginas com anúncios ou todo o site. As duas definições de conteúdo de IA passaram para o mesmo ecrã, pelo que já não precisa do painel.",
+          "de": "In den Domain-Details gibt es jetzt eine Zeile für KI-Crawler mit drei Stufen: nicht blocken, nur Anzeigenseiten oder die ganze Website. Die beiden KI-Inhaltseinstellungen sind auf denselben Bildschirm gewandert – das Dashboard brauchst du dafür nicht mehr.",
+          "fr": "Les détails du domaine comportent désormais une ligne « robots d’IA » avec trois niveaux : aucun blocage, pages publicitaires uniquement, ou tout le site. Les deux réglages de contenu IA ont rejoint le même écran : plus besoin du tableau de bord.",
+          "ar": "أضفنا إلى تفاصيل النطاق صفًّا لزواحف الذكاء الاصطناعي بثلاثة أوضاع: بلا حظر، أو صفحات الإعلانات فقط، أو الموقع كله. كما انتقل إعدادا محتوى الذكاء الاصطناعي إلى الشاشة نفسها، فلم تعد بحاجة إلى لوحة التحكم.",
+          "tr": "Alan adı ayrıntılarına üç modlu bir yapay zekâ tarayıcı satırı eklendi: engelleme yok, yalnızca reklam sayfaları ya da tüm site. İki yapay zekâ içerik ayarı da aynı ekrana taşındı; artık panele gitmeniz gerekmiyor."
+        }
+      },
+      {
+        "icon": "waveform.path.ecg",
+        "title": {
+          "zh-Hans": "源站掉线，Cloudflare 直接推给你",
+          "en": "Cloudflare pings you when your origin goes down",
+          "zh-Hant": "來源伺服器掉線，Cloudflare 直接推給你",
+          "zh-HK": "源站掉線，Cloudflare 直接推給你",
+          "ja": "オリジンが落ちたら Cloudflare が直接通知",
+          "es-MX": "Cloudflare te avisa si tu servidor de origen se cae",
+          "ko": "오리진이 죽으면 Cloudflare가 바로 알려줍니다",
+          "pt-BR": "O Cloudflare te avisa quando a origem cai",
+          "pt-PT": "O Cloudflare avisa-o quando a origem fica em baixo",
+          "de": "Cloudflare meldet sich, wenn dein Origin ausfällt",
+          "fr": "Cloudflare vous prévient quand votre origine tombe",
+          "ar": "يخبرك Cloudflare مباشرةً عند تعطّل خادم المصدر",
+          "tr": "Kaynak sunucunuz düşerse Cloudflare doğrudan haber verir"
+        },
+        "detail": {
+          "zh-Hans": "域名详情页新增独立健康检查：查看每个源站的状态与失败原因，左滑暂停、右滑删除。打开「源站异常时通知我」后，由 Cloudflare 在状态变化时直接推送，App 不用开着。",
+          "en": "Zone details now lists standalone health checks — status and failure reason per origin, swipe to suspend or delete. Turn on origin alerts and Cloudflare pushes you the moment status changes, whether or not the app is running.",
+          "zh-Hant": "網域詳情頁新增獨立健康檢查：查看每個來源伺服器的狀態與失敗原因，左滑暫停、右滑刪除。開啟「來源異常時通知我」後，由 Cloudflare 在狀態變化時直接推播，App 不必開著。",
+          "zh-HK": "域名詳情頁新增獨立健康檢查：查看每個源站的狀態與失敗原因，左滑暫停、右滑刪除。開啟「源站異常時通知我」後，由 Cloudflare 在狀態變化時直接推送，App 不用開著。",
+          "ja": "ドメイン詳細にスタンドアロンのヘルスチェックが加わりました。オリジンごとの状態と失敗理由を確認でき、スワイプで一時停止や削除ができます。「オリジン異常時に通知」をオンにすると、状態が変わった時点で Cloudflare が直接通知するので、アプリを開いていなくても届きます。",
+          "es-MX": "Los detalles del dominio ahora listan comprobaciones de estado independientes: estado y motivo del fallo por origen, y desliza para pausar o eliminar. Activa el aviso de origen y Cloudflare te lo envía en cuanto cambie el estado, con la app abierta o no.",
+          "ko": "도메인 상세 화면에 독립 상태 검사가 추가됐습니다. 오리진별 상태와 실패 사유를 보고, 밀어서 일시중지하거나 삭제할 수 있습니다. ‘오리진 이상 시 알림’을 켜면 상태가 바뀌는 순간 Cloudflare가 직접 알림을 보내므로 앱을 켜 둘 필요가 없습니다.",
+          "pt-BR": "Os detalhes do domínio agora listam verificações de integridade independentes: status e motivo da falha por origem, deslize para pausar ou excluir. Ative o alerta de origem e o Cloudflare envia assim que o status mudar, com o app aberto ou não.",
+          "pt-PT": "Os detalhes do domínio passam a listar verificações de estado independentes: estado e motivo da falha por origem, deslize para pausar ou eliminar. Ative o alerta de origem e o Cloudflare envia assim que o estado mudar, com a app aberta ou não.",
+          "de": "In den Domain-Details stehen jetzt eigenständige Health Checks: Status und Fehlergrund je Origin, per Wischen pausieren oder löschen. Aktivierst du die Origin-Benachrichtigung, schickt Cloudflare sie direkt beim Statuswechsel – auch wenn die App geschlossen ist.",
+          "fr": "Les détails du domaine listent désormais les contrôles d’intégrité autonomes : état et cause de l’échec par origine, balayez pour suspendre ou supprimer. Activez l’alerte d’origine et Cloudflare vous l’envoie dès que l’état change, application ouverte ou non.",
+          "ar": "تعرض تفاصيل النطاق الآن فحوص السلامة المستقلة: حالة كل خادم مصدر وسبب الإخفاق، مع السحب للإيقاف المؤقت أو الحذف. وبتفعيل تنبيه المصدر يرسل Cloudflare الإشعار فور تغيّر الحالة، سواء كان التطبيق مفتوحًا أم لا.",
+          "tr": "Alan adı ayrıntılarında artık bağımsız sağlık kontrolleri listeleniyor: her kaynak için durum ve hata nedeni, kaydırarak duraklatma veya silme. Kaynak uyarısını açtığınızda Cloudflare, durum değişir değişmez bildirimi doğrudan gönderir; uygulamanın açık olması gerekmez."
+        }
+      },
+      {
+        "icon": "calendar.badge.clock",
+        "title": {
+          "zh-Hans": "域名到期日一眼看到",
+          "en": "See domain expiry at a glance",
+          "zh-Hant": "網域到期日一眼看到",
+          "zh-HK": "域名到期日一眼看到",
+          "ja": "ドメインの有効期限がひと目で",
+          "es-MX": "Mira el vencimiento del dominio de un vistazo",
+          "ko": "도메인 만료일을 한눈에",
+          "pt-BR": "Veja o vencimento do domínio num relance",
+          "pt-PT": "Veja a expiração do domínio num relance",
+          "de": "Domain-Ablauf auf einen Blick",
+          "fr": "L’expiration du domaine en un coup d’œil",
+          "ar": "تاريخ انتهاء النطاق في لمحة",
+          "tr": "Alan adı bitiş tarihini bir bakışta görün"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增「域名注册商」：在 Cloudflare 注册的域名，到期日、自动续费与转移锁状态都列在一起，快到期的会标出来。",
+          "en": "The overview gains a Registrar section: for domains registered with Cloudflare you get expiry date, auto-renew and transfer lock in one list, with the ones expiring soon called out.",
+          "zh-Hant": "總覽頁新增「網域註冊商」：在 Cloudflare 註冊的網域，到期日、自動續約與移轉鎖狀態列在一起，快到期的會標示出來。",
+          "zh-HK": "概覽頁新增「域名註冊商」：在 Cloudflare 註冊的域名，到期日、自動續費與轉移鎖狀態列在一起，快到期的會標出來。",
+          "ja": "概要ページに「ドメイン登録」が加わりました。Cloudflare で登録したドメインの有効期限・自動更新・移管ロックが一覧で並び、期限が近いものは目立つように表示されます。",
+          "es-MX": "El resumen suma una sección de registrador: para los dominios registrados en Cloudflare verás vencimiento, renovación automática y bloqueo de transferencia en una sola lista, con los próximos a vencer destacados.",
+          "ko": "개요 화면에 ‘도메인 등록’ 섹션이 생겼습니다. Cloudflare에 등록한 도메인의 만료일, 자동 갱신, 이전 잠금을 한 목록에서 보고, 곧 만료되는 항목은 따로 표시됩니다.",
+          "pt-BR": "A visão geral ganha uma seção de registrador: para domínios registrados na Cloudflare você vê vencimento, renovação automática e bloqueio de transferência numa lista só, com os que vencem em breve destacados.",
+          "pt-PT": "A descrição geral ganha uma secção de registador: para domínios registados na Cloudflare vê expiração, renovação automática e bloqueio de transferência numa só lista, com os que expiram em breve destacados.",
+          "de": "Die Übersicht bekommt einen Registrar-Bereich: Für bei Cloudflare registrierte Domains stehen Ablaufdatum, automatische Verlängerung und Transfer-Sperre in einer Liste – bald ablaufende sind hervorgehoben.",
+          "fr": "L’aperçu gagne une section Bureau d’enregistrement : pour les domaines enregistrés chez Cloudflare, expiration, renouvellement automatique et verrou de transfert dans une même liste, avec un repère sur ceux qui expirent bientôt.",
+          "ar": "أضفنا إلى صفحة النظرة العامة قسم «مُسجِّل النطاقات»: للنطاقات المسجّلة لدى Cloudflare تظهر تواريخ الانتهاء والتجديد التلقائي وقفل النقل في قائمة واحدة، مع إبراز ما يقترب انتهاؤه.",
+          "tr": "Genel bakışa bir kayıt kuruluşu bölümü eklendi: Cloudflare’de kayıtlı alan adlarının bitiş tarihi, otomatik yenileme ve transfer kilidi tek listede; yakında dolacaklar ayrıca işaretleniyor."
+        }
+      },
+      {
+        "icon": "scope",
+        "title": {
+          "zh-Hans": "看清一条请求在 Cloudflare 里走过什么",
+          "en": "See what a request actually hits inside Cloudflare",
+          "zh-Hant": "看清一筆請求在 Cloudflare 裡走過什麼",
+          "zh-HK": "睇清一條請求喺 Cloudflare 裡面經過咗啲乜",
+          "ja": "リクエストが Cloudflare 内で何を通ったかを可視化",
+          "es-MX": "Mira por qué reglas pasa una solicitud dentro de Cloudflare",
+          "ko": "요청이 Cloudflare 안에서 무엇을 거치는지 확인",
+          "pt-BR": "Veja por onde uma requisição passa dentro da Cloudflare",
+          "pt-PT": "Veja por onde passa um pedido dentro da Cloudflare",
+          "de": "Sieh, was eine Anfrage in Cloudflare wirklich trifft",
+          "fr": "Voyez ce qu’une requête traverse réellement dans Cloudflare",
+          "ar": "اعرف ما يمرّ به الطلب فعليًا داخل Cloudflare",
+          "tr": "Bir isteğin Cloudflare içinde neye çarptığını görün"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增「请求追踪」：填一个网址就能看到这条请求依次命中了哪些规则——重定向、WAF、缓存规则、Worker，每一步是否生效都写清楚，调规则不用再靠猜。",
+          "en": "The overview gains Request Tracing: enter a URL and see, step by step, which rules the request hits — redirects, WAF, cache rules, Workers — and whether each one fired. No more guessing why a rule didn’t apply.",
+          "zh-Hant": "總覽頁新增「請求追蹤」：填一個網址就能看到這筆請求依序命中了哪些規則——重新導向、WAF、快取規則、Worker，每一步是否生效都寫清楚，調規則不必再靠猜。",
+          "zh-HK": "概覽頁新增「請求追蹤」：填一個網址就能看到這條請求依次命中咗邊啲規則——重新導向、WAF、緩存規則、Worker，每一步有冇生效都寫得清清楚楚，調規則唔使再靠估。",
+          "ja": "概要ページに「リクエスト追跡」が加わりました。URL を入力すると、そのリクエストがリダイレクト・WAF・キャッシュルール・Worker のどれに順番に当たり、各ステップが実際に効いたかまで表示されます。ルール調整で当て推量は不要です。",
+          "es-MX": "El resumen suma Rastreo de solicitudes: escribe una URL y verás, paso a paso, qué reglas alcanza la solicitud —redirecciones, WAF, reglas de caché, Workers— y si cada una se aplicó. Se acabó adivinar por qué una regla no entró.",
+          "ko": "개요 화면에 ‘요청 추적’이 추가됐습니다. URL을 넣으면 그 요청이 리디렉션, WAF, 캐시 규칙, Worker 중 무엇을 순서대로 거치고 각 단계가 실제로 적용됐는지까지 보여 줍니다. 규칙이 왜 안 먹는지 더 이상 짐작하지 않아도 됩니다.",
+          "pt-BR": "A visão geral ganha Rastreamento de requisições: informe uma URL e veja, passo a passo, quais regras a requisição atinge — redirecionamentos, WAF, regras de cache, Workers — e se cada uma foi aplicada. Chega de adivinhar por que uma regra não pegou.",
+          "pt-PT": "A descrição geral ganha Rastreio de pedidos: indique um URL e veja, passo a passo, que regras o pedido atinge — redirecionamentos, WAF, regras de cache, Workers — e se cada uma foi aplicada. Deixa de ser preciso adivinhar.",
+          "de": "Die Übersicht bekommt Request Tracing: Gib eine URL ein und sieh Schritt für Schritt, auf welche Regeln die Anfrage trifft – Redirects, WAF, Cache-Regeln, Workers – und ob jede davon gegriffen hat. Kein Raten mehr, warum eine Regel nicht zieht.",
+          "fr": "L’aperçu gagne le traçage de requêtes : saisissez une URL et voyez, étape par étape, quelles règles la requête rencontre — redirections, WAF, règles de cache, Workers — et si chacune s’est appliquée. Fini les suppositions.",
+          "ar": "أضفنا إلى صفحة النظرة العامة «تتبّع الطلبات»: أدخل عنوانًا لترى خطوة بخطوة القواعد التي يمرّ بها الطلب — إعادة التوجيه وWAF وقواعد التخزين المؤقت وWorkers — وما إذا كانت كل قاعدة قد طُبِّقت فعلًا. لا حاجة بعد الآن للتخمين.",
+          "tr": "Genel bakışa istek izleme eklendi: bir URL girin, isteğin sırayla hangi kurallara çarptığını — yönlendirmeler, WAF, önbellek kuralları, Worker’lar — ve her adımın gerçekten uygulanıp uygulanmadığını görün. Bir kuralın neden işlemediğini artık tahmin etmeyin."
+        }
+      },
+      {
+        "icon": "lock.shield",
+        "title": {
+          "zh-Hans": "DNSSEC 与 DNS 进阶设置",
+          "en": "DNSSEC and advanced DNS settings",
+          "zh-Hant": "DNSSEC 與 DNS 進階設定",
+          "zh-HK": "DNSSEC 同 DNS 進階設定",
+          "ja": "DNSSEC と DNS の詳細設定",
+          "es-MX": "DNSSEC y ajustes avanzados de DNS",
+          "ko": "DNSSEC 및 고급 DNS 설정",
+          "pt-BR": "DNSSEC e configurações avançadas de DNS",
+          "pt-PT": "DNSSEC e definições avançadas de DNS",
+          "de": "DNSSEC und erweiterte DNS-Einstellungen",
+          "fr": "DNSSEC et réglages DNS avancés",
+          "ar": "DNSSEC وإعدادات DNS المتقدمة",
+          "tr": "DNSSEC ve gelişmiş DNS ayarları"
+        },
+        "detail": {
+          "zh-Hans": "域名详情页新增 DNS 设置：一键开关 DNSSEC 并复制要填到注册商那边的 DS 记录，另可调整 CNAME 展平方式与域名服务器类型。",
+          "en": "Zone details gains a DNS settings screen: switch DNSSEC on or off and copy the DS record you need to paste at your registrar, plus adjust CNAME flattening and the nameserver type.",
+          "zh-Hant": "網域詳情頁新增 DNS 設定：一鍵開關 DNSSEC 並複製要填到註冊商那邊的 DS 記錄，另可調整 CNAME 扁平化方式與名稱伺服器類型。",
+          "zh-HK": "域名詳情頁新增 DNS 設定：一鍵開關 DNSSEC 並複製要填去註冊商嗰邊嘅 DS 記錄，仲可以調整 CNAME 扁平化方式同域名伺服器類型。",
+          "ja": "ドメイン詳細に DNS 設定が加わりました。DNSSEC をワンタップで切り替え、レジストラ側に貼り付ける DS レコードをコピーできます。CNAME フラット化とネームサーバーの種類も変更できます。",
+          "es-MX": "Los detalles del dominio suman una pantalla de ajustes DNS: activa o desactiva DNSSEC y copia el registro DS que debes pegar en tu registrador, además de ajustar el aplanamiento de CNAME y el tipo de servidor de nombres.",
+          "ko": "도메인 상세 화면에 DNS 설정이 생겼습니다. DNSSEC을 한 번에 켜고 끄면서 등록기관에 붙여 넣을 DS 레코드를 복사할 수 있고, CNAME 평탄화와 네임서버 유형도 조정할 수 있습니다.",
+          "pt-BR": "Os detalhes do domínio ganham uma tela de configurações de DNS: ligue ou desligue o DNSSEC e copie o registro DS para colar no seu registrador, além de ajustar o achatamento de CNAME e o tipo de servidor de nomes.",
+          "pt-PT": "Os detalhes do domínio ganham um ecrã de definições de DNS: ligue ou desligue o DNSSEC e copie o registo DS para colar no seu registador, além de ajustar o achatamento de CNAME e o tipo de servidor de nomes.",
+          "de": "Die Domain-Details bekommen einen DNS-Einstellungsbildschirm: DNSSEC ein- oder ausschalten und den DS-Eintrag kopieren, den du beim Registrar einträgst – dazu CNAME-Flattening und Nameserver-Typ anpassen.",
+          "fr": "Les détails du domaine gagnent un écran de réglages DNS : activez ou désactivez DNSSEC et copiez l’enregistrement DS à coller chez votre bureau d’enregistrement, et ajustez l’aplatissement CNAME et le type de serveurs de noms.",
+          "ar": "أضفنا إلى تفاصيل النطاق شاشة إعدادات DNS: فعِّل DNSSEC أو أوقفه وانسخ سجل DS المطلوب لصقه لدى المُسجِّل، مع إمكانية ضبط تسطيح CNAME ونوع خوادم الأسماء.",
+          "tr": "Alan adı ayrıntılarına DNS ayarları ekranı eklendi: DNSSEC’i açıp kapatın ve kayıt kuruluşunuza yapıştıracağınız DS kaydını kopyalayın; ayrıca CNAME düzleştirmesini ve ad sunucusu türünü ayarlayın."
+        }
+      },
+      {
+        "icon": "hammer",
+        "title": {
+          "zh-Hans": "Worker 构建失败会提醒你",
+          "en": "Get told when a Worker build fails",
+          "zh-Hant": "Worker 建置失敗會提醒你",
+          "zh-HK": "Worker 建置失敗會提你",
+          "ja": "Worker のビルド失敗をお知らせ",
+          "es-MX": "Te avisamos cuando falla una compilación de Worker",
+          "ko": "Worker 빌드가 실패하면 알려 드립니다",
+          "pt-BR": "Avisamos quando um build do Worker falha",
+          "pt-PT": "Avisamos quando uma compilação do Worker falha",
+          "de": "Melden, wenn ein Worker-Build fehlschlägt",
+          "fr": "Soyez averti quand un build de Worker échoue",
+          "ar": "تنبيه عند فشل بناء Worker",
+          "tr": "Bir Worker derlemesi başarısız olunca haber alın"
+        },
+        "detail": {
+          "zh-Hans": "Worker 详情页新增构建记录：每次构建的状态、耗时与触发来源都能看到。挑几个关心的 Worker 开启监视，构建失败时会收到通知。",
+          "en": "Worker details now show build history — status, duration and what triggered each build. Watch the Workers you care about and you’ll get a notification when a build fails.",
+          "zh-Hant": "Worker 詳情頁新增建置記錄：每次建置的狀態、耗時與觸發來源都能看到。挑幾個在意的 Worker 開啟監看，建置失敗時就會收到通知。",
+          "zh-HK": "Worker 詳情頁新增建置記錄：每次建置嘅狀態、耗時同觸發來源都睇得到。揀幾個關心嘅 Worker 開咗監察，建置失敗就會收到通知。",
+          "ja": "Worker 詳細にビルド履歴が加わりました。各ビルドの状態・所要時間・トリガー元を確認できます。気になる Worker を監視対象にしておくと、ビルド失敗時に通知が届きます。",
+          "es-MX": "Los detalles del Worker ahora muestran el historial de compilaciones: estado, duración y qué disparó cada una. Vigila los Workers que te importan y recibirás un aviso cuando una compilación falle.",
+          "ko": "Worker 상세 화면에 빌드 기록이 추가됐습니다. 각 빌드의 상태, 소요 시간, 트리거 출처를 볼 수 있습니다. 신경 쓰는 Worker를 감시로 지정해 두면 빌드 실패 시 알림이 옵니다.",
+          "pt-BR": "Os detalhes do Worker agora mostram o histórico de builds: status, duração e o que disparou cada um. Monitore os Workers que importam e você recebe um aviso quando um build falhar.",
+          "pt-PT": "Os detalhes do Worker passam a mostrar o histórico de compilações: estado, duração e o que despoletou cada uma. Vigie os Workers que lhe interessam e receberá um aviso quando uma compilação falhar.",
+          "de": "Die Worker-Details zeigen jetzt den Build-Verlauf: Status, Dauer und Auslöser jedes Builds. Beobachte die Workers, die dir wichtig sind, und du bekommst eine Meldung, wenn ein Build fehlschlägt.",
+          "fr": "Les détails du Worker affichent désormais l’historique des builds : état, durée et déclencheur de chacun. Surveillez les Workers qui comptent et vous serez notifié dès qu’un build échoue.",
+          "ar": "تعرض تفاصيل الـ Worker الآن سجل عمليات البناء: الحالة والمدة ومصدر التشغيل لكل عملية. راقِب الـ Workers التي تهمّك لتصلك إشعارات عند فشل أي عملية بناء.",
+          "tr": "Worker ayrıntılarında artık derleme geçmişi var: her derlemenin durumu, süresi ve neyin tetiklediği. Önemsediğiniz Worker’ları izlemeye alın, bir derleme başarısız olduğunda bildirim alın."
+        }
+      },
+      {
+        "icon": "square.grid.2x2",
+        "title": {
+          "zh-Hans": "更多模块，以及一处处打磨",
+          "en": "More modules, and a lot of polish",
+          "zh-Hant": "更多模組，以及一處處打磨",
+          "zh-HK": "更多模組，同埋一處處打磨",
+          "ja": "モジュールの追加と細部の磨き込み",
+          "es-MX": "Más módulos y muchos detalles pulidos",
+          "ko": "모듈 추가와 곳곳의 다듬기",
+          "pt-BR": "Mais módulos e muito polimento",
+          "pt-PT": "Mais módulos e muito polimento",
+          "de": "Mehr Module und viel Feinschliff",
+          "fr": "De nouveaux modules et beaucoup de finitions",
+          "ar": "وحدات إضافية ولمسات صقل كثيرة",
+          "tr": "Daha fazla modül ve bolca cila"
+        },
+        "detail": {
+          "zh-Hans": "新增 R2 数据目录、托管请求头、URL 安全扫描与 Email 抑制列表。审计日志点进任意一条即可查看同一资源的完整变更历史；缓存规则表达式加了常用字段速插（含 Bot 分数与来源 ASN）；Durable Objects 增加内存分位数。并修复隧道详情页不显示活跃连接的问题。",
+          "en": "Added R2 Data Catalog, Managed Transforms, URL security scanning and the Email suppression list. Tap any audit log entry to see the full change history of that resource; cache rule expressions got quick-insert chips for common fields (including bot score and source ASN); and Durable Objects now show memory percentiles. Also fixed tunnel details not listing active connections.",
+          "zh-Hant": "新增 R2 資料目錄、託管請求標頭、URL 安全掃描與 Email 抑制清單。審計日誌點進任一筆即可查看同一資源的完整變更歷史；快取規則運算式加了常用欄位速插（含 Bot 分數與來源 ASN）；Durable Objects 增加記憶體分位數。並修正通道詳情頁不顯示使用中連線的問題。",
+          "zh-HK": "新增 R2 數據目錄、託管請求標頭、URL 安全掃描同 Email 抑制清單。審計日誌撳入任何一條就可以睇到同一資源嘅完整變更歷史；緩存規則運算式加咗常用欄位速插（包括 Bot 分數同來源 ASN）；Durable Objects 加咗記憶體分位數。另外修正咗隧道詳情頁唔顯示使用中連線嘅問題。",
+          "ja": "R2 データカタログ、マネージドヘッダー、URL セキュリティスキャン、Email 抑制リストを追加しました。監査ログはどの項目からでも、そのリソースの変更履歴全体を辿れます。キャッシュルールの式にはよく使うフィールド（ボットスコアや送信元 ASN を含む）のクイック挿入を追加。Durable Objects にはメモリのパーセンタイルが加わりました。トンネル詳細でアクティブな接続が表示されない問題も修正しています。",
+          "es-MX": "Agregamos R2 Data Catalog, encabezados administrados, escaneo de seguridad de URL y la lista de supresión de Email. Toca cualquier entrada del registro de auditoría para ver el historial completo de cambios de ese recurso; las expresiones de reglas de caché ahora tienen atajos para campos comunes (incluidos la puntuación de bot y el ASN de origen); y Durable Objects muestra percentiles de memoria. También corregimos que los detalles del túnel no listaran las conexiones activas.",
+          "ko": "R2 데이터 카탈로그, 관리형 헤더, URL 보안 검사, Email 억제 목록을 추가했습니다. 감사 로그의 아무 항목이나 누르면 해당 리소스의 전체 변경 기록을 볼 수 있습니다. 캐시 규칙 식에는 자주 쓰는 필드(봇 점수, 출발지 ASN 포함) 빠른 삽입이 생겼고, Durable Objects에는 메모리 백분위수가 추가됐습니다. 터널 상세에서 활성 연결이 표시되지 않던 문제도 고쳤습니다.",
+          "pt-BR": "Adicionamos o R2 Data Catalog, cabeçalhos gerenciados, varredura de segurança de URL e a lista de supressão de Email. Toque em qualquer entrada do log de auditoria para ver todo o histórico de alterações daquele recurso; as expressões de regras de cache ganharam atalhos para campos comuns (incluindo pontuação de bot e ASN de origem); e os Durable Objects mostram percentis de memória. Também corrigimos os detalhes do túnel não listarem conexões ativas.",
+          "pt-PT": "Adicionámos o R2 Data Catalog, cabeçalhos geridos, análise de segurança de URL e a lista de supressão de Email. Toque em qualquer entrada do registo de auditoria para ver todo o histórico de alterações desse recurso; as expressões de regras de cache ganharam atalhos para campos comuns (incluindo pontuação de bot e ASN de origem); e os Durable Objects mostram percentis de memória. Corrigimos ainda os detalhes do túnel não listarem ligações ativas.",
+          "de": "Neu dabei: R2 Data Catalog, Managed Transforms, URL-Sicherheitsscan und die E-Mail-Sperrliste. Tippe im Audit-Log auf einen Eintrag, um den vollständigen Änderungsverlauf dieser Ressource zu sehen; Cache-Regel-Ausdrücke haben jetzt Schnellbausteine für gängige Felder (inklusive Bot-Score und Quell-ASN); und Durable Objects zeigen Speicher-Perzentile. Außerdem behoben: In den Tunnel-Details fehlten die aktiven Verbindungen.",
+          "fr": "Ajout de R2 Data Catalog, des en-têtes gérés, de l’analyse de sécurité d’URL et de la liste de suppression Email. Touchez n’importe quelle entrée du journal d’audit pour voir tout l’historique des modifications de la ressource ; les expressions de règles de cache disposent de raccourcis pour les champs courants (score de bot et ASN source compris) ; et les Durable Objects affichent des percentiles de mémoire. Correction également des détails de tunnel qui n’affichaient pas les connexions actives.",
+          "ar": "أضفنا R2 Data Catalog والعناوين المُدارة وفحص أمان الروابط وقائمة حظر البريد. اضغط أي سجل تدقيق لعرض سجل التغييرات الكامل لذلك المورد؛ وأضفنا إلى تعبيرات قواعد التخزين المؤقت إدراجًا سريعًا للحقول الشائعة (بما فيها درجة الروبوت ورقم النظام المصدر ASN)؛ كما تعرض Durable Objects الآن مئينات الذاكرة. وأصلحنا كذلك عدم ظهور الاتصالات النشطة في تفاصيل النفق.",
+          "tr": "R2 Data Catalog, yönetilen başlıklar, URL güvenlik taraması ve E-posta engelleme listesi eklendi. Denetim günlüğünde herhangi bir kayda dokunarak o kaynağın tüm değişiklik geçmişini görebilirsiniz; önbellek kuralı ifadelerine sık kullanılan alanlar için hızlı ekleme geldi (bot puanı ve kaynak ASN dahil); Durable Objects artık bellek yüzdeliklerini gösteriyor. Ayrıca tünel ayrıntılarında etkin bağlantıların listelenmemesi sorunu giderildi."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.7.2",
+    "date": "2026.08.08",
+    "channel": "Google Play",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "pause.circle",
+        "title": {
+          "zh-Hans": "一键暂停 Cloudflare",
+          "en": "Pause Cloudflare in one tap",
+          "zh-Hant": "一鍵暫停 Cloudflare",
+          "zh-HK": "一鍵暫停 Cloudflare",
+          "ja": "ワンタップで Cloudflare を一時停止",
+          "es-MX": "Pausa Cloudflare con un toque",
+          "ko": "한 번의 탭으로 Cloudflare 일시 중지",
+          "pt-BR": "Pause o Cloudflare com um toque",
+          "pt-PT": "Pause o Cloudflare com um toque",
+          "de": "Cloudflare mit einem Tipp pausieren",
+          "fr": "Mettre Cloudflare en pause en un geste",
+          "ar": "إيقاف Cloudflare مؤقتًا بنقرة واحدة",
+          "tr": "Tek dokunuşla Cloudflare’i duraklatın"
+        },
+        "detail": {
+          "zh-Hans": "域名设置页新增「暂停 Cloudflare」开关。暂停后流量不再经过 Cloudflare——WAF、缓存加速与源站 IP 隐藏都会失效，DNS 仍由 Cloudflare 解析；恢复同样一键完成，两者约 5 分钟生效。",
+          "en": "Zone settings now has a “Pause Cloudflare” switch. While paused, traffic no longer passes through Cloudflare — WAF, caching and origin IP masking stop working, while DNS is still resolved by Cloudflare. Resuming is one tap too, and either change takes about 5 minutes.",
+          "zh-Hant": "網域設定頁新增「暫停 Cloudflare」開關。暫停後流量不再經過 Cloudflare——WAF、快取加速與來源伺服器 IP 隱藏都會失效，DNS 仍由 Cloudflare 解析；恢復同樣一鍵完成，兩者約 5 分鐘生效。",
+          "zh-HK": "域名設定頁新增「暫停 Cloudflare」開關。暫停後流量不再經過 Cloudflare——WAF、緩存加速與源站 IP 隱藏都會失效，DNS 仍由 Cloudflare 解析；恢復同樣一鍵完成，兩者約 5 分鐘生效。",
+          "ja": "ドメイン設定に「Cloudflare を一時停止」スイッチを追加しました。一時停止中はトラフィックが Cloudflare を経由しなくなり、WAF・キャッシュ・オリジン IP の秘匿が無効になります（DNS の解決は Cloudflare が継続）。再開もワンタップで、どちらも反映まで約 5 分です。",
+          "es-MX": "La pantalla de ajustes del dominio ahora incluye el interruptor «Pausar Cloudflare». En pausa, el tráfico deja de pasar por Cloudflare: el WAF, la caché y el ocultamiento de la IP de origen dejan de funcionar, aunque el DNS lo sigue resolviendo Cloudflare. Reanudar es igual de simple y ambos cambios tardan unos 5 minutos.",
+          "ko": "도메인 설정에 'Cloudflare 일시 중지' 스위치가 생겼습니다. 일시 중지하면 트래픽이 Cloudflare를 거치지 않아 WAF, 캐시 가속, 원본 IP 숨김이 중단되며 DNS는 계속 Cloudflare가 확인합니다. 다시 시작도 한 번의 탭이고, 두 경우 모두 약 5분 뒤 적용됩니다.",
+          "pt-BR": "A tela de configurações do domínio agora tem a chave “Pausar o Cloudflare”. Em pausa, o tráfego deixa de passar pelo Cloudflare: WAF, cache e ocultação do IP de origem param de funcionar, e o DNS continua sendo resolvido pelo Cloudflare. Retomar é igualmente simples e ambos levam cerca de 5 minutos.",
+          "pt-PT": "O ecrã de definições do domínio passa a ter o interruptor “Pausar o Cloudflare”. Em pausa, o tráfego deixa de passar pelo Cloudflare: WAF, cache e ocultação do IP de origem deixam de funcionar e o DNS continua a ser resolvido pelo Cloudflare. Retomar é igualmente simples e ambos demoram cerca de 5 minutos.",
+          "de": "In den Domain-Einstellungen gibt es jetzt den Schalter „Cloudflare pausieren“. Pausiert läuft der Traffic nicht mehr über Cloudflare – WAF, Caching und die Verschleierung der Origin-IP entfallen, DNS wird weiterhin von Cloudflare aufgelöst. Fortsetzen geht genauso schnell, und beides greift nach etwa 5 Minuten.",
+          "fr": "L’écran des réglages du domaine propose désormais l’interrupteur « Mettre Cloudflare en pause ». En pause, le trafic ne passe plus par Cloudflare : WAF, mise en cache et masquage de l’IP d’origine cessent de fonctionner, tandis que le DNS reste résolu par Cloudflare. La réactivation est tout aussi simple, et comptez environ 5 minutes dans les deux cas.",
+          "ar": "أضفنا مفتاح «إيقاف Cloudflare مؤقتًا» في إعدادات النطاق. أثناء الإيقاف المؤقت لا تمر حركة المرور عبر Cloudflare، فيتوقف جدار حماية تطبيقات الويب والتخزين المؤقت وإخفاء عنوان IP للخادم الأصلي، بينما يستمر Cloudflare في تحليل DNS. والاستئناف بنقرة واحدة أيضًا، ويستغرق كلاهما نحو 5 دقائق.",
+          "tr": "Alan adı ayarlarına “Cloudflare’i duraklat” anahtarı eklendi. Duraklatıldığında trafik Cloudflare üzerinden geçmez; WAF, önbellek hızlandırma ve kaynak IP gizleme devre dışı kalır, DNS çözümlemesi Cloudflare’de sürer. Sürdürmek de tek dokunuş ve her ikisi de yaklaşık 5 dakikada etkili olur."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.7.1",
+    "date": "2026.07.25",
+    "channel": "Google Play",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "person.crop.circle.badge.checkmark",
+        "title": {
+          "zh-Hans": "记住你的默认账号",
+          "en": "Remembers your default account",
+          "zh-Hant": "記住你的預設帳戶",
+          "zh-HK": "記住你的預設帳戶",
+          "ja": "既定のアカウントを記憶",
+          "es-MX": "Recuerda tu cuenta predeterminada",
+          "ko": "기본 계정을 기억합니다",
+          "pt-BR": "Lembra sua conta padrão",
+          "pt-PT": "Memoriza a sua conta predefinida",
+          "de": "Merkt sich dein Standardkonto",
+          "fr": "Retient votre compte par défaut",
+          "ar": "يتذكّر حسابك الافتراضي",
+          "tr": "Varsayılan hesabınızı hatırlar"
+        },
+        "detail": {
+          "zh-Hans": "有多个 Cloudflare 账号时，App 会记住你上次选中的那一个，下次打开直接进入它，不再固定回到列表里的第一个。",
+          "en": "With more than one Cloudflare account, the app now remembers the one you picked last and opens straight into it, instead of always falling back to the first in the list.",
+          "zh-Hant": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到清單裡的第一個。",
+          "zh-HK": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到列表裡的第一個。",
+          "ja": "Cloudflare アカウントが複数ある場合、最後に選んだアカウントを記憶し、次に開いたときはそのアカウントで始まります。常に一覧の先頭に戻ることはありません。",
+          "es-MX": "Si tienes varias cuentas de Cloudflare, la app recuerda la última que elegiste y abre directamente en ella, en lugar de volver siempre a la primera de la lista.",
+          "ko": "Cloudflare 계정이 여러 개일 때 마지막으로 선택한 계정을 기억해, 다음에 열면 바로 그 계정으로 시작합니다. 더 이상 목록의 첫 번째 계정으로 돌아가지 않습니다.",
+          "pt-BR": "Com mais de uma conta Cloudflare, o app passa a lembrar a última que você escolheu e abre direto nela, em vez de sempre voltar para a primeira da lista.",
+          "pt-PT": "Com mais do que uma conta Cloudflare, a app passa a memorizar a última que escolheu e abre diretamente nela, em vez de voltar sempre à primeira da lista.",
+          "de": "Bei mehreren Cloudflare-Konten merkt sich die App das zuletzt gewählte Konto und startet direkt damit – statt immer auf das erste Konto der Liste zurückzufallen.",
+          "fr": "Avec plusieurs comptes Cloudflare, l’app retient celui que vous avez choisi en dernier et s’ouvre directement dessus, au lieu de revenir toujours au premier de la liste.",
+          "ar": "عند وجود أكثر من حساب Cloudflare، يتذكّر التطبيق الحساب الذي اخترته آخر مرة ويفتح عليه مباشرة بدلاً من العودة دائمًا إلى أول حساب في القائمة.",
+          "tr": "Birden fazla Cloudflare hesabı varsa uygulama en son seçtiğiniz hesabı hatırlar ve doğrudan onunla açılır; artık her seferinde listedeki ilk hesaba dönmez."
+        }
+      },
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "修复账号切换菜单",
+          "en": "Account switcher fixes",
+          "zh-Hant": "修正帳戶切換選單",
+          "zh-HK": "修正帳戶切換菜單",
+          "ja": "アカウント切り替えメニューの修正",
+          "es-MX": "Correcciones en el menú de cuentas",
+          "ko": "계정 전환 메뉴 수정",
+          "pt-BR": "Correções no menu de contas",
+          "pt-PT": "Correções no menu de contas",
+          "de": "Korrekturen am Kontowechsel-Menü",
+          "fr": "Corrections du menu des comptes",
+          "ar": "إصلاحات قائمة تبديل الحسابات",
+          "tr": "Hesap değiştirme menüsü düzeltmeleri"
+        },
+        "detail": {
+          "zh-Hans": "账号较多时，切换菜单现在可以上下滑动并完整显示所有账号，「添加账号」也不会再被挤出屏幕。",
+          "en": "With a long list of accounts, the switcher now scrolls and shows every account, and “Add account” stays pinned at the bottom instead of being pushed off screen.",
+          "zh-Hant": "帳戶較多時，切換選單現在可以上下滑動並完整顯示所有帳戶，「新增帳戶」也不會再被擠出畫面。",
+          "zh-HK": "帳戶較多時，切換菜單現在可以上下滑動並完整顯示所有帳戶，「新增帳戶」也不會再被擠出畫面。",
+          "ja": "アカウントが多い場合でも、切り替えメニューを上下にスクロールしてすべてのアカウントを表示できるようになりました。「アカウントを追加」も画面外に押し出されません。",
+          "es-MX": "Cuando tienes muchas cuentas, el menú ahora se desplaza y muestra todas, y «Agregar cuenta» ya no queda fuera de la pantalla.",
+          "ko": "계정이 많아도 전환 메뉴를 위아래로 스크롤해 모든 계정을 볼 수 있고, ‘계정 추가’도 화면 밖으로 밀려나지 않습니다.",
+          "pt-BR": "Com muitas contas, o menu agora rola e mostra todas elas, e “Adicionar conta” não fica mais fora da tela.",
+          "pt-PT": "Com muitas contas, o menu agora desloca-se e mostra todas, e “Adicionar conta” já não fica fora do ecrã.",
+          "de": "Bei vielen Konten lässt sich das Menü jetzt scrollen und zeigt alle Konten; „Konto hinzufügen“ wird nicht mehr aus dem Bild geschoben.",
+          "fr": "Avec de nombreux comptes, le menu défile désormais et affiche tous les comptes ; « Ajouter un compte » n’est plus repoussé hors de l’écran.",
+          "ar": "عند وجود حسابات كثيرة، يمكن الآن تمرير القائمة لأعلى وأسفل لعرض جميع الحسابات، ولم يعد زر «إضافة حساب» يُدفع خارج الشاشة.",
+          "tr": "Çok sayıda hesap olduğunda menü artık kaydırılabiliyor ve tüm hesapları gösteriyor; “Hesap ekle” de ekranın dışına itilmiyor."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.7.0",
+    "date": "2026.07.20",
+    "channel": "Google Play",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "magnifyingglass",
+        "title": {
+          "zh-Hans": "一处搜遍所有资源",
+          "en": "Search everything from one place",
+          "zh-Hant": "一處搜遍所有資源",
+          "zh-HK": "一處搜遍所有資源",
+          "ja": "すべてのリソースをまとめて検索",
+          "es-MX": "Busca todo desde un solo lugar",
+          "ko": "모든 리소스를 한 곳에서 검색",
+          "pt-BR": "Busque tudo em um só lugar",
+          "pt-PT": "Pesquise tudo num só lugar",
+          "de": "Alles an einer Stelle suchen",
+          "fr": "Tout chercher au même endroit",
+          "ar": "ابحث في كل شيء من مكان واحد",
+          "tr": "Her şeyi tek yerden arayın"
+        },
+        "detail": {
+          "zh-Hans": "概览页顶栏的放大镜可一次搜索域名、Worker、R2 存储桶、D1 数据库、KV 命名空间与隧道，点一下直达；任意资源都能星标固定到概览页。",
+          "en": "The magnifier on the overview searches domains, Workers, R2 buckets, D1 databases, KV namespaces and tunnels at once — tap a result to go straight there. And any resource can now be starred to the overview.",
+          "zh-Hant": "總覽頁頂端的放大鏡可一次搜尋網域、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與通道，點一下直達；任何資源都能加上星號固定到總覽頁。",
+          "zh-HK": "概覽頁頂部的放大鏡可一次搜尋域名、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與隧道，點一下直達；任何資源都可以加星固定到概覽頁。",
+          "ja": "概要ページの虫めがねから、ドメイン・Worker・R2 バケット・D1 データベース・KV ネームスペース・トンネルをまとめて検索でき、タップですぐ移動できます。どのリソースもスターを付けて概要ページに固定できます。",
+          "es-MX": "La lupa de la pantalla de resumen busca a la vez dominios, Workers, buckets R2, bases de datos D1, espacios de nombres KV y túneles; toca un resultado para ir directo. Además, ahora puedes fijar cualquier recurso al resumen con una estrella.",
+          "ko": "개요 화면 상단의 돋보기로 도메인, Worker, R2 버킷, D1 데이터베이스, KV 네임스페이스, 터널을 한 번에 검색하고 바로 이동할 수 있습니다. 이제 어떤 리소스든 별표로 개요 화면에 고정할 수 있습니다.",
+          "pt-BR": "A lupa na tela de visão geral busca de uma vez domínios, Workers, buckets R2, bancos D1, namespaces KV e túneis — toque para ir direto. E agora dá para fixar qualquer recurso na visão geral com uma estrela.",
+          "pt-PT": "A lupa no ecrã de descrição geral pesquisa de uma vez domínios, Workers, buckets R2, bases de dados D1, namespaces KV e túneis — toque para ir direto. E agora pode fixar qualquer recurso com uma estrela.",
+          "de": "Über die Lupe in der Übersicht durchsuchst du Domains, Workers, R2-Buckets, D1-Datenbanken, KV-Namespaces und Tunnel auf einmal – ein Tippen führt direkt hin. Und jede Ressource lässt sich per Stern an die Übersicht heften.",
+          "fr": "La loupe de l’aperçu recherche d’un coup les domaines, Workers, buckets R2, bases D1, espaces de noms KV et tunnels : touchez un résultat pour y aller. Et n’importe quelle ressource peut désormais être épinglée à l’aperçu.",
+          "ar": "تبحث العدسة في صفحة النظرة العامة دفعة واحدة في النطاقات وWorkers وحاويات R2 وقواعد بيانات D1 ومساحات أسماء KV والأنفاق، وانقر على النتيجة للانتقال مباشرة. ويمكن الآن تثبيت أي مورد في الصفحة بنجمة.",
+          "tr": "Genel bakıştaki büyüteç; alan adlarını, Worker’ları, R2 bucket’larını, D1 veritabanlarını, KV ad alanlarını ve tünelleri tek seferde arar, dokununca doğrudan açar. Artık her kaynağı yıldızlayıp genel bakışa sabitleyebilirsiniz."
+        }
+      },
+      {
+        "icon": "bell.badge",
+        "title": {
+          "zh-Hans": "告警中心",
+          "en": "Alert center",
+          "zh-Hant": "告警中心",
+          "zh-HK": "告警中心",
+          "ja": "アラートセンター",
+          "es-MX": "Centro de alertas",
+          "ko": "알림 센터",
+          "pt-BR": "Central de alertas",
+          "pt-PT": "Centro de alertas",
+          "de": "Warnungszentrale",
+          "fr": "Centre d’alertes",
+          "ar": "مركز التنبيهات",
+          "tr": "Uyarı merkezi"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增告警卡片，汇总需要注意的资源——未启用的域名、状态异常的隧道等，点一下直达。",
+          "en": "The overview now gathers what needs attention — inactive domains, tunnels in a bad state and more — into a single card. Tap an item to jump right to it.",
+          "zh-Hant": "總覽頁新增告警卡片，彙整需要留意的資源——未啟用的網域、狀態異常的通道等，點一下直達。",
+          "zh-HK": "概覽頁新增告警卡片，彙整需要留意的資源——未啟用的域名、狀態異常的隧道等，點一下直達。",
+          "ja": "概要ページに、注意が必要なリソース（有効になっていないドメイン、状態が異常なトンネルなど）をまとめるカードを追加しました。タップするとその場所へ移動します。",
+          "es-MX": "La pantalla de resumen reúne en una tarjeta lo que necesita atención: dominios sin activar, túneles con estado anómalo y más. Toca uno para ir directo.",
+          "ko": "개요 화면에 주의가 필요한 리소스(활성화되지 않은 도메인, 상태가 비정상인 터널 등)를 모아 보여주는 카드가 추가되었습니다. 탭하면 바로 이동합니다.",
+          "pt-BR": "A visão geral agora reúne num cartão o que precisa de atenção: domínios não ativados, túneis com estado anormal e mais. Toque para ir direto.",
+          "pt-PT": "A descrição geral reúne agora num cartão o que precisa de atenção: domínios não ativados, túneis com estado anómalo e mais. Toque para ir direto.",
+          "de": "Die Übersicht bündelt jetzt in einer Karte, was Aufmerksamkeit braucht – nicht aktivierte Domains, Tunnel in auffälligem Zustand und mehr. Ein Tippen führt direkt hin.",
+          "fr": "L’aperçu regroupe désormais dans une carte ce qui mérite votre attention : domaines non activés, tunnels en état anormal, etc. Touchez pour y accéder.",
+          "ar": "تجمع صفحة النظرة العامة الآن في بطاقة واحدة ما يحتاج انتباهك: النطاقات غير المفعّلة، والأنفاق ذات الحالة غير الطبيعية وغيرها. انقر على البند للانتقال إليه مباشرة.",
+          "tr": "Genel bakış artık dikkat gerektirenleri tek kartta topluyor: etkinleştirilmemiş alan adları, durumu bozuk tüneller ve daha fazlası. Dokununca doğrudan açılır."
+        }
+      },
+      {
+        "icon": "text.magnifyingglass",
+        "title": {
+          "zh-Hans": "实时日志更好用",
+          "en": "Better live logs",
+          "zh-Hant": "即時日誌更好用",
+          "zh-HK": "實時日誌更好用",
+          "ja": "リアルタイムログが使いやすく",
+          "es-MX": "Registros en vivo mejorados",
+          "ko": "실시간 로그 개선",
+          "pt-BR": "Logs ao vivo melhores",
+          "pt-PT": "Registos em direto melhorados",
+          "de": "Bessere Live-Logs",
+          "fr": "Journaux en direct améliorés",
+          "ar": "سجلات مباشرة أفضل",
+          "tr": "Daha iyi canlı günlükler"
+        },
+        "detail": {
+          "zh-Hans": "Worker 实时日志支持关键词搜索与级别筛选；长按复制整行，轻点展开完整详情并选取片段。「暂停」现在只冻结画面、日志照常接收，恢复后能看到完整记录。",
+          "en": "Live Worker logs now support keyword search and level filtering; long-press to copy a whole line, tap to expand the full detail and select any part of it. Pause now only freezes the view — logs keep arriving, so nothing is missing when you resume.",
+          "zh-Hant": "Worker 即時日誌支援關鍵字搜尋與等級篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後能看到完整記錄。",
+          "zh-HK": "Worker 實時日誌支援關鍵字搜尋與級別篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後可看到完整記錄。",
+          "ja": "Worker のリアルタイムログでキーワード検索とレベル絞り込みができるようになりました。長押しで 1 行コピー、タップで詳細を開いて一部を選択できます。「一時停止」は表示を止めるだけになり、ログは受信し続けるため再開後もすべて確認できます。",
+          "es-MX": "Los registros en vivo de Worker ahora tienen búsqueda por palabra clave y filtro por nivel; mantén presionada una línea para copiarla o tócala para ver el detalle completo y seleccionar fragmentos. Pausar solo congela la vista: los registros siguen llegando y no se pierde nada.",
+          "ko": "Worker 실시간 로그에서 키워드 검색과 레벨 필터를 쓸 수 있습니다. 길게 눌러 한 줄을 복사하고, 탭하면 전체 내용을 펼쳐 일부만 선택할 수도 있습니다. 일시정지는 이제 화면만 멈추고 로그는 계속 수신되어 재개하면 빠짐없이 확인할 수 있습니다.",
+          "pt-BR": "Os logs ao vivo do Worker agora têm busca por palavra-chave e filtro por nível; segure para copiar a linha inteira ou toque para abrir o detalhe completo e selecionar trechos. Pausar apenas congela a tela — os logs continuam chegando e nada se perde.",
+          "pt-PT": "Os registos em direto do Worker têm agora pesquisa por palavra-chave e filtro por nível; toque sem soltar para copiar a linha ou toque para abrir o detalhe completo e selecionar excertos. Pausar apenas congela o ecrã — os registos continuam a chegar e nada se perde.",
+          "de": "Live-Logs eines Workers lassen sich jetzt nach Stichwort durchsuchen und nach Level filtern; langes Tippen kopiert die ganze Zeile, kurzes Tippen öffnet das vollständige Detail zum Markieren. Die Pause friert nur die Ansicht ein – Logs laufen weiter ein, beim Fortsetzen fehlt nichts.",
+          "fr": "Les journaux en direct d’un Worker acceptent désormais la recherche par mot-clé et le filtre par niveau ; appui long pour copier toute la ligne, appui simple pour ouvrir le détail complet et en sélectionner un extrait. La pause ne fige que l’affichage : les journaux continuent d’arriver, rien ne manque à la reprise.",
+          "ar": "صارت سجلات Worker المباشرة تدعم البحث بالكلمات المفتاحية والتصفية حسب المستوى؛ اضغط مطوّلًا لنسخ السطر كاملًا، أو انقر لعرض التفاصيل كاملة وتحديد جزء منها. ولم يعد الإيقاف المؤقت سوى تجميد للعرض — تستمر السجلات في الوصول فلا يفوتك شيء عند المتابعة.",
+          "tr": "Worker canlı günlüklerinde artık anahtar kelime araması ve seviye filtresi var; uzun basınca satırın tamamı kopyalanır, dokununca tüm ayrıntı açılır ve içinden seçim yapılabilir. Duraklatma yalnızca görüntüyü dondurur; günlükler gelmeye devam eder, devam ettiğinizde hiçbir şey eksik olmaz."
+        }
+      },
+      {
+        "icon": "clock.arrow.circlepath",
+        "title": {
+          "zh-Hans": "SQL 历史与收藏",
+          "en": "SQL history and favorites",
+          "zh-Hant": "SQL 記錄與收藏",
+          "zh-HK": "SQL 記錄與收藏",
+          "ja": "SQL の履歴とお気に入り",
+          "es-MX": "Historial y favoritos de SQL",
+          "ko": "SQL 기록과 즐겨찾기",
+          "pt-BR": "Histórico e favoritos de SQL",
+          "pt-PT": "Histórico e favoritos de SQL",
+          "de": "SQL-Verlauf und Favoriten",
+          "fr": "Historique et favoris SQL",
+          "ar": "سجل SQL والمفضلة",
+          "tr": "SQL geçmişi ve favoriler"
+        },
+        "detail": {
+          "zh-Hans": "D1 查询自动记录最近 12 条，常用语句可收藏（按数据库分别保存）；查询结果一键导出 CSV，表详情还能查看索引。",
+          "en": "D1 keeps your last 12 queries and lets you favorite the ones you reuse (saved per database). Results export to CSV in a tap, and table details now list indexes.",
+          "zh-Hant": "D1 查詢會自動記錄最近 12 筆，常用語句可收藏（依資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還能檢視索引。",
+          "zh-HK": "D1 查詢會自動記錄最近 12 條，常用語句可收藏（按資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還可查看索引。",
+          "ja": "D1 は直近 12 件のクエリを自動で記録し、よく使う文はお気に入りに登録できます（データベースごとに保存）。結果はワンタップで CSV に書き出せ、テーブル詳細ではインデックスも確認できます。",
+          "es-MX": "D1 guarda tus últimas 12 consultas y te deja marcar como favoritas las que más usas (por base de datos). Los resultados se exportan a CSV con un toque y el detalle de la tabla ya muestra los índices.",
+          "ko": "D1이 최근 12개의 쿼리를 자동으로 기록하고, 자주 쓰는 문장은 즐겨찾기에 담을 수 있습니다(데이터베이스별로 저장). 결과는 한 번에 CSV로 내보낼 수 있고, 테이블 상세에서 인덱스도 볼 수 있습니다.",
+          "pt-BR": "O D1 guarda suas últimas 12 consultas e deixa favoritar as que você mais usa (salvas por banco). Os resultados viram CSV com um toque e o detalhe da tabela agora mostra os índices.",
+          "pt-PT": "O D1 guarda as suas últimas 12 consultas e permite marcar como favoritas as mais usadas (guardadas por base de dados). Os resultados exportam para CSV com um toque e o detalhe da tabela mostra agora os índices.",
+          "de": "D1 merkt sich die letzten 12 Abfragen, häufig genutzte lassen sich als Favorit sichern (je Datenbank getrennt). Ergebnisse exportierst du mit einem Tippen als CSV, und die Tabellendetails zeigen jetzt auch Indizes.",
+          "fr": "D1 conserve vos 12 dernières requêtes et permet de mettre en favori celles que vous réutilisez (par base de données). Les résultats s’exportent en CSV d’un geste, et le détail d’une table affiche désormais les index.",
+          "ar": "يحتفظ D1 بآخر 12 استعلامًا تلقائيًا، ويمكنك إضافة العبارات المتكررة إلى المفضلة (تُحفظ لكل قاعدة بيانات على حدة). صدّر النتائج إلى CSV بنقرة، وتعرض تفاصيل الجدول الآن الفهارس أيضًا.",
+          "tr": "D1 son 12 sorgunuzu otomatik saklar, sık kullandıklarınızı favorilere ekleyebilirsiniz (her veritabanı için ayrı). Sonuçlar tek dokunuşla CSV olarak dışa aktarılır, tablo ayrıntılarında artık dizinler de görünür."
+        }
+      },
+      {
+        "icon": "photo.artframe",
+        "title": {
+          "zh-Hans": "Workers AI 文生图",
+          "en": "Generate images with Workers AI",
+          "zh-Hant": "Workers AI 文字生圖",
+          "zh-HK": "Workers AI 文字生圖",
+          "ja": "Workers AI で画像生成",
+          "es-MX": "Genera imágenes con Workers AI",
+          "ko": "Workers AI로 이미지 생성",
+          "pt-BR": "Gere imagens com Workers AI",
+          "pt-PT": "Gere imagens com Workers AI",
+          "de": "Bilder mit Workers AI erzeugen",
+          "fr": "Générer des images avec Workers AI",
+          "ar": "توليد الصور عبر Workers AI",
+          "tr": "Workers AI ile görsel üretin"
+        },
+        "detail": {
+          "zh-Hans": "模型试运行新增文生图：输入提示词直接出图，可分享保存。",
+          "en": "The model playground now covers text-to-image models — type a prompt, get a picture, then share or save it.",
+          "zh-Hant": "模型試執行新增文字生圖：輸入提示詞直接產生圖片，可分享或儲存。",
+          "zh-HK": "模型試執行新增文字生圖：輸入提示詞直接生成圖片，可分享或儲存。",
+          "ja": "モデルの試し実行が画像生成モデルに対応。プロンプトを入力するだけで画像ができ、共有や保存もできます。",
+          "es-MX": "La prueba de modelos ahora incluye los de texto a imagen: escribe un prompt, obtén la imagen y compártela o guárdala.",
+          "ko": "모델 시험 실행이 이미지 생성 모델을 지원합니다. 프롬프트를 입력하면 바로 이미지가 만들어지고, 공유하거나 저장할 수 있습니다.",
+          "pt-BR": "O teste de modelos agora inclui os de texto para imagem: escreva um prompt, receba a imagem e compartilhe ou salve.",
+          "pt-PT": "O teste de modelos inclui agora os de texto para imagem: escreva um prompt, receba a imagem e partilhe ou guarde.",
+          "de": "Der Modell-Testlauf unterstützt jetzt Text-zu-Bild-Modelle: Prompt eingeben, Bild erhalten, teilen oder sichern.",
+          "fr": "L’essai de modèles prend désormais en charge le texte-vers-image : saisissez une consigne, obtenez l’image, partagez-la ou enregistrez-la.",
+          "ar": "صار تشغيل النماذج التجريبي يدعم نماذج تحويل النص إلى صورة: اكتب الوصف لتحصل على صورة، ثم شاركها أو احفظها.",
+          "tr": "Model deneme çalıştırması artık metinden görsele modellerini de destekliyor: bir istem yazın, görseli alın, paylaşın veya kaydedin."
+        }
+      },
+      {
+        "icon": "eye",
+        "title": {
+          "zh-Hans": "R2 对象预览",
+          "en": "Preview R2 objects",
+          "zh-Hant": "R2 物件預覽",
+          "zh-HK": "R2 物件預覽",
+          "ja": "R2 オブジェクトのプレビュー",
+          "es-MX": "Vista previa de objetos R2",
+          "ko": "R2 오브젝트 미리보기",
+          "pt-BR": "Prévia de objetos R2",
+          "pt-PT": "Pré-visualização de objetos R2",
+          "de": "R2-Objekte vorschauen",
+          "fr": "Aperçu des objets R2",
+          "ar": "معاينة كائنات R2",
+          "tr": "R2 nesnelerini önizleyin"
+        },
+        "detail": {
+          "zh-Hans": "点开 R2 对象即可预览：图片直接显示，JSON 自动格式化，文本可搜索并显示匹配数量；对象过大时会提示改用下载。",
+          "en": "Tap an R2 object to preview it: images show inline, JSON is formatted automatically, and text can be searched with a match count. Oversized objects still suggest downloading instead.",
+          "zh-Hant": "點開 R2 物件即可預覽：圖片直接顯示，JSON 自動排版，文字可搜尋並顯示符合筆數；物件過大時會提示改用下載。",
+          "zh-HK": "點開 R2 物件即可預覽：圖片直接顯示，JSON 自動格式化，文字可搜尋並顯示符合數量；物件過大時會提示改用下載。",
+          "ja": "R2 のオブジェクトをタップするとその場でプレビューできます。画像はそのまま表示、JSON は自動で整形、テキストは検索して一致件数も表示します。大きすぎるオブジェクトはこれまでどおりダウンロードをおすすめします。",
+          "es-MX": "Toca un objeto R2 para verlo al instante: las imágenes se muestran, el JSON se formatea solo y el texto se puede buscar con el número de coincidencias. Si el objeto es muy grande, se sugiere descargarlo.",
+          "ko": "R2 오브젝트를 탭하면 바로 미리 볼 수 있습니다. 이미지는 그대로 표시되고 JSON은 자동으로 정렬되며, 텍스트는 검색과 일치 개수 표시를 지원합니다. 너무 큰 오브젝트는 다운로드를 안내합니다.",
+          "pt-BR": "Toque em um objeto R2 para ver a prévia: imagens aparecem direto, JSON é formatado sozinho e textos podem ser pesquisados com contagem de ocorrências. Objetos muito grandes continuam sugerindo o download.",
+          "pt-PT": "Toque num objeto R2 para pré-visualizar: as imagens aparecem de imediato, o JSON é formatado automaticamente e o texto pode ser pesquisado com contagem de ocorrências. Objetos demasiado grandes continuam a sugerir a transferência.",
+          "de": "Tippe ein R2-Objekt an, um es direkt anzusehen: Bilder erscheinen inline, JSON wird automatisch formatiert, Text lässt sich durchsuchen samt Trefferzahl. Bei zu großen Objekten empfiehlt die App weiterhin den Download.",
+          "fr": "Touchez un objet R2 pour l’aperçu : les images s’affichent, le JSON est mis en forme automatiquement et le texte se recherche avec le nombre de correspondances. Les objets trop volumineux invitent toujours à un téléchargement.",
+          "ar": "انقر على كائن R2 لمعاينته فورًا: تظهر الصور مباشرة، ويُنسَّق JSON تلقائيًا، ويمكن البحث في النص مع عرض عدد المطابقات. أما الكائنات الكبيرة جدًا فيُقترح تنزيلها كما في السابق.",
+          "tr": "Bir R2 nesnesine dokunarak hemen önizleyin: görseller doğrudan görünür, JSON otomatik biçimlenir, metinde arama yapıp eşleşme sayısını görebilirsiniz. Çok büyük nesneler için indirme önerilmeye devam eder."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.6.6",
+    "date": "2026.07.18",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "快速绑定 R2 存储桶",
+          "en": "Quickly bind R2 buckets",
+          "zh-Hant": "快速綁定 R2 儲存桶",
+          "zh-HK": "快速綁定 R2 儲存桶",
+          "ja": "R2 バケットをすばやくバインド",
+          "es-MX": "Vincula buckets R2 rápidamente",
+          "ko": "R2 버킷 빠른 바인딩",
+          "pt-BR": "Vincule buckets R2 rapidamente",
+          "pt-PT": "Vincule buckets R2 rapidamente",
+          "de": "R2-Buckets schnell binden",
+          "fr": "Lier rapidement des buckets R2",
+          "ar": "ربط حاويات R2 بسرعة",
+          "tr": "R2 bucket’larını hızlıca bağla"
+        },
+        "detail": {
+          "zh-Hans": "资源绑定新增 R2：可把现有存储桶直接绑定到 Worker，与 D1 / KV 一样支持一键解除。",
+          "en": "Resource bindings now cover R2 — attach an existing bucket to a Worker, and unbind it just like D1 / KV.",
+          "zh-Hant": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。",
+          "zh-HK": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。",
+          "ja": "リソースバインディングに R2 を追加。既存のバケットを Worker にバインドでき、D1 / KV と同様に解除もできます。",
+          "es-MX": "Los vínculos de recursos ahora incluyen R2: conecta un bucket existente a un Worker y desvincúlalo igual que D1 / KV.",
+          "ko": "리소스 바인딩에 R2가 추가되었습니다. 기존 버킷을 Worker에 연결하고 D1 / KV처럼 해제할 수 있습니다.",
+          "pt-BR": "Os vínculos de recursos agora incluem R2: conecte um bucket existente a um Worker e desvincule como em D1 / KV.",
+          "pt-PT": "As ligações de recursos agora incluem R2: ligue um bucket existente a um Worker e desvincule como em D1 / KV.",
+          "de": "Ressourcenbindungen umfassen jetzt R2: Hänge einen vorhandenen Bucket an einen Worker und löse ihn wie bei D1 / KV wieder.",
+          "fr": "Les liaisons de ressources couvrent désormais R2 : rattachez un bucket existant à un Worker et dissociez-le comme D1 / KV.",
+          "ar": "صارت روابط الموارد تشمل R2: اربط حاوية موجودة بأحد Workers وألغِ الربط كما في D1 / KV.",
+          "tr": "Kaynak bağlamaları artık R2’yi de kapsıyor: mevcut bir bucket’ı Worker’a bağlayın, D1 / KV gibi kaldırın."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "编辑长脚本更流畅",
+          "en": "Smoother editing for long scripts",
+          "zh-Hant": "編輯長腳本更流暢",
+          "zh-HK": "編輯長腳本更流暢",
+          "ja": "長いスクリプトの編集が滑らかに",
+          "es-MX": "Edición más fluida de scripts largos",
+          "ko": "긴 스크립트 편집이 더 부드럽게",
+          "pt-BR": "Edição mais fluida de scripts longos",
+          "pt-PT": "Edição mais fluida de scripts longos",
+          "de": "Flüssigeres Bearbeiten langer Skripte",
+          "fr": "Édition plus fluide des longs scripts",
+          "ar": "تحرير أسلَس للنصوص البرمجية الطويلة",
+          "tr": "Uzun betiklerde daha akıcı düzenleme"
+        },
+        "detail": {
+          "zh-Hans": "重写了 Worker 代码编辑器的输入处理，长脚本打字不再卡顿。",
+          "en": "Rebuilt the Worker code editor’s input handling so typing stays smooth in long scripts.",
+          "zh-Hant": "重寫了 Worker 程式碼編輯器的輸入處理，長腳本打字不再卡頓。",
+          "zh-HK": "重寫了 Worker 程式碼編輯器的輸入處理，長腳本打字不再卡頓。",
+          "ja": "Worker コードエディタの入力処理を作り直し、長いスクリプトでも入力が滑らかになりました。",
+          "es-MX": "Rehicimos el manejo de entrada del editor de código de Worker para que escribir en scripts largos sea fluido.",
+          "ko": "Worker 코드 편집기의 입력 처리를 재구성해 긴 스크립트에서도 입력이 부드럽습니다.",
+          "pt-BR": "Refizemos o tratamento de entrada do editor de código do Worker para digitar sem travar em scripts longos.",
+          "pt-PT": "Refizemos o tratamento de entrada do editor de código do Worker para escrever sem bloqueios em scripts longos.",
+          "de": "Die Eingabeverarbeitung des Worker-Code-Editors wurde neu gebaut, damit das Tippen auch in langen Skripten flüssig bleibt.",
+          "fr": "Le traitement de la saisie de l’éditeur de code Worker a été refait pour rester fluide dans les longs scripts.",
+          "ar": "أُعيد بناء معالجة الإدخال في محرّر شفرة Worker ليبقى الكتابة سلسة في النصوص الطويلة.",
+          "tr": "Worker kod düzenleyicisinin girdi işleyişi yeniden yazıldı; uzun betiklerde yazım akıcı kalıyor."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.6.5",
+    "date": "2026.07.18",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "workers.dev 子域直达",
+          "en": "One-tap workers.dev URL",
+          "zh-Hant": "workers.dev 子網域直達",
+          "zh-HK": "workers.dev 子網域直達",
+          "ja": "workers.dev サブドメインに直接アクセス",
+          "es-MX": "Acceso directo al subdominio workers.dev",
+          "ko": "workers.dev 서브도메인 바로 열기",
+          "pt-BR": "Acesso direto ao subdomínio workers.dev",
+          "pt-PT": "Acesso direto ao subdomínio workers.dev",
+          "de": "Direkter workers.dev-Zugriff",
+          "fr": "Accès direct au sous-domaine workers.dev",
+          "ar": "وصول مباشر إلى نطاق workers.dev الفرعي",
+          "tr": "workers.dev alt alan adına doğrudan erişim"
+        },
+        "detail": {
+          "zh-Hans": "Worker 开启 workers.dev 子域后，直接显示完整访问地址，点一下即可打开。",
+          "en": "When a Worker’s workers.dev subdomain is on, its full URL now shows right there — tap to open.",
+          "zh-Hant": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。",
+          "zh-HK": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。",
+          "ja": "Worker の workers.dev サブドメインを有効にすると、完全な URL が表示され、タップして開けます。",
+          "es-MX": "Cuando el subdominio workers.dev de un Worker está activo, ahora se muestra su URL completa: tócala para abrir.",
+          "ko": "Worker의 workers.dev 서브도메인을 켜면 전체 주소가 바로 표시되며, 탭하면 열립니다.",
+          "pt-BR": "Quando o subdomínio workers.dev de um Worker está ativo, a URL completa aparece ali — toque para abrir.",
+          "pt-PT": "Quando o subdomínio workers.dev de um Worker está ativo, o URL completo aparece ali — toque para abrir.",
+          "de": "Ist die workers.dev-Subdomain eines Workers aktiv, wird jetzt die vollständige URL angezeigt – zum Öffnen tippen.",
+          "fr": "Lorsque le sous-domaine workers.dev d’un Worker est activé, son URL complète s’affiche : touchez pour l’ouvrir.",
+          "ar": "عند تفعيل نطاق workers.dev الفرعي لأحد Workers، يظهر عنوانه الكامل الآن — انقر لفتحه.",
+          "tr": "Bir Worker’ın workers.dev alt alan adı açıkken tam adresi artık orada görünür; açmak için dokunun."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "快速绑定 D1 / KV",
+          "en": "Quickly bind D1 / KV",
+          "zh-Hant": "快速綁定 D1 / KV",
+          "zh-HK": "快速綁定 D1 / KV",
+          "ja": "D1 / KV をすばやくバインド",
+          "es-MX": "Vincula D1 / KV rápidamente",
+          "ko": "D1 / KV 빠른 바인딩",
+          "pt-BR": "Vincule D1 / KV rapidamente",
+          "pt-PT": "Vincule D1 / KV rapidamente",
+          "de": "D1 / KV schnell binden",
+          "fr": "Lier rapidement D1 / KV",
+          "ar": "ربط D1 / KV بسرعة",
+          "tr": "D1 / KV’yi hızlıca bağla"
+        },
+        "detail": {
+          "zh-Hans": "在变量与密钥页直接把现有 D1 数据库或 KV 命名空间绑定到 Worker，也能一键解除。",
+          "en": "Bind an existing D1 database or KV namespace to a Worker right from the bindings page — and unbind just as easily.",
+          "zh-Hant": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。",
+          "zh-HK": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。",
+          "ja": "変数とシークレットのページから、既存の D1 データベースや KV ネームスペースを Worker にバインドでき、解除も簡単です。",
+          "es-MX": "Vincula una base de datos D1 o un espacio de nombres KV existente a un Worker desde la página de vínculos, y desvincúlalos con la misma facilidad.",
+          "ko": "변수·시크릿 페이지에서 기존 D1 데이터베이스나 KV 네임스페이스를 Worker에 바인딩하고, 해제도 간편합니다.",
+          "pt-BR": "Vincule um banco de dados D1 ou namespace KV existente a um Worker direto na página de vínculos — e desvincule com a mesma facilidade.",
+          "pt-PT": "Vincule uma base de dados D1 ou namespace KV existente a um Worker diretamente na página de ligações — e desvincule com a mesma facilidade.",
+          "de": "Binde eine vorhandene D1-Datenbank oder einen KV-Namespace direkt auf der Bindungsseite an einen Worker – und löse die Bindung ebenso einfach.",
+          "fr": "Liez une base de données D1 ou un espace de noms KV existant à un Worker depuis la page des liaisons, et dissociez-les tout aussi facilement.",
+          "ar": "اربط قاعدة بيانات D1 أو مساحة أسماء KV موجودة بأحد Workers مباشرة من صفحة الروابط، وألغِ الربط بالسهولة نفسها.",
+          "tr": "Mevcut bir D1 veritabanını veya KV ad alanını bağlamalar sayfasından doğrudan bir Worker’a bağlayın; bağlantıyı kaldırmak da aynı kolaylıkta."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "修复编辑长脚本闪退",
+          "en": "Fixed crash when editing long scripts",
+          "zh-Hant": "修復編輯長腳本閃退",
+          "zh-HK": "修復編輯長腳本閃退",
+          "ja": "長いスクリプト編集時のクラッシュを修正",
+          "es-MX": "Corregido un cierre al editar scripts largos",
+          "ko": "긴 스크립트 편집 시 앱 종료 문제 수정",
+          "pt-BR": "Corrigido travamento ao editar scripts longos",
+          "pt-PT": "Corrigida falha ao editar scripts longos",
+          "de": "Absturz beim Bearbeiten langer Skripte behoben",
+          "fr": "Correction d’un plantage lors de l’édition de longs scripts",
+          "ar": "إصلاح تعطّل عند تحرير النصوص البرمجية الطويلة",
+          "tr": "Uzun betikler düzenlenirken oluşan çökme giderildi"
+        },
+        "detail": {
+          "zh-Hans": "修复编辑较长 Worker 源码时可能闪退的问题。",
+          "en": "Fixed a crash that could occur when editing a longer Worker script.",
+          "zh-Hant": "修復編輯較長 Worker 原始碼時可能閃退的問題。",
+          "zh-HK": "修復編輯較長 Worker 原始碼時可能閃退的問題。",
+          "ja": "長めの Worker ソースコードを編集する際にクラッシュすることがある問題を修正しました。",
+          "es-MX": "Se corrigió un cierre que podía ocurrir al editar el código de un Worker más largo.",
+          "ko": "긴 Worker 소스 코드를 편집할 때 앱이 종료될 수 있던 문제를 수정했습니다.",
+          "pt-BR": "Corrigido um travamento que podia ocorrer ao editar o código-fonte de um Worker mais longo.",
+          "pt-PT": "Corrigida uma falha que podia ocorrer ao editar o código-fonte de um Worker mais longo.",
+          "de": "Ein Absturz beim Bearbeiten längerer Worker-Quelltexte wurde behoben.",
+          "fr": "Correction d’un plantage pouvant survenir lors de l’édition d’un code source de Worker plus long.",
+          "ar": "تم إصلاح تعطّل قد يحدث عند تحرير شفرة مصدر Worker أطول.",
+          "tr": "Daha uzun bir Worker kaynak kodu düzenlenirken oluşabilen bir çökme giderildi."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.6.4",
+    "date": "2026.07.18",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "账号用量总览",
+          "en": "Account usage overview",
+          "zh-Hant": "帳戶用量總覽",
+          "zh-HK": "帳戶用量總覽",
+          "ja": "アカウント使用量の概要",
+          "es-MX": "Resumen de uso de la cuenta",
+          "ko": "계정 사용량 개요",
+          "pt-BR": "Visão geral de uso da conta",
+          "pt-PT": "Visão geral da utilização da conta",
+          "de": "Übersicht der Kontonutzung",
+          "fr": "Aperçu de l’utilisation du compte",
+          "ar": "نظرة عامة على استخدام الحساب",
+          "tr": "Hesap kullanımı özeti"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增用量模块，一眼看清 Workers、R2、D1、KV 的用量与额度，可切换套餐并查看各项明细。",
+          "en": "The overview now has a usage module — see Workers, R2, D1 and KV usage against their quotas at a glance, with plan switching and per-metric details.",
+          "zh-Hant": "總覽頁新增用量模組，一眼看清 Workers、R2、D1、KV 的用量與額度，可切換方案並檢視各項明細。",
+          "zh-HK": "概覽頁新增用量模組，一眼看清 Workers、R2、D1、KV 的用量與額度，可切換計劃並查看各項明細。",
+          "ja": "概要画面に使用量モジュールを追加。Workers・R2・D1・KV の使用量と上限をひと目で確認でき、プラン切り替えと項目ごとの詳細に対応します。",
+          "es-MX": "La pantalla de resumen ahora incluye un módulo de uso: consulta de un vistazo el uso de Workers, R2, D1 y KV frente a sus límites, con cambio de plan y detalles por métrica.",
+          "ko": "개요 화면에 사용량 모듈이 추가되어 Workers, R2, D1, KV 사용량과 한도를 한눈에 확인하고 요금제 전환과 항목별 세부 정보를 볼 수 있습니다.",
+          "pt-BR": "A tela de visão geral agora tem um módulo de uso: veja de relance o uso de Workers, R2, D1 e KV em relação às cotas, com troca de plano e detalhes por métrica.",
+          "pt-PT": "O ecrã de visão geral passa a ter um módulo de utilização: veja num relance o uso de Workers, R2, D1 e KV face às quotas, com troca de plano e detalhes por métrica.",
+          "de": "Die Übersicht zeigt jetzt ein Nutzungsmodul – Workers-, R2-, D1- und KV-Nutzung im Verhältnis zu den Kontingenten auf einen Blick, mit Tarifwechsel und Details je Kennzahl.",
+          "fr": "L’aperçu affiche désormais un module d’utilisation : usage de Workers, R2, D1 et KV par rapport aux quotas d’un coup d’œil, avec changement de forfait et détails par métrique.",
+          "ar": "أصبحت شاشة النظرة العامة تعرض وحدة استخدام: استخدام Workers وR2 وD1 وKV مقابل الحصص في لمحة، مع تبديل الخطة وتفاصيل لكل مقياس.",
+          "tr": "Genel bakış ekranı artık bir kullanım modülü gösteriyor: Workers, R2, D1 ve KV kullanımını kotalara göre tek bakışta görün; plan değiştirme ve metrik ayrıntıları dahil."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "Worker 部署历史与删除",
+          "en": "Worker deployment history and delete",
+          "zh-Hant": "Worker 部署歷史與刪除",
+          "zh-HK": "Worker 部署歷史與刪除",
+          "ja": "Worker のデプロイ履歴と削除",
+          "es-MX": "Historial de despliegues y eliminación de Workers",
+          "ko": "Worker 배포 기록 및 삭제",
+          "pt-BR": "Histórico de implantações e exclusão de Workers",
+          "pt-PT": "Histórico de implementações e eliminação de Workers",
+          "de": "Worker-Bereitstellungsverlauf und Löschen",
+          "fr": "Historique des déploiements et suppression de Workers",
+          "ar": "سجل عمليات نشر Worker وحذفه",
+          "tr": "Worker dağıtım geçmişi ve silme"
+        },
+        "detail": {
+          "zh-Hans": "查看每个 Worker 的历次部署并删除旧部署，同时支持编辑与删除 Worker。",
+          "en": "View a Worker’s past deployments and delete old ones, plus edit and delete Workers.",
+          "zh-Hant": "檢視每個 Worker 的歷次部署並刪除舊部署，同時支援編輯與刪除 Worker。",
+          "zh-HK": "查看每個 Worker 的歷次部署並刪除舊部署，同時支援編輯與刪除 Worker。",
+          "ja": "各 Worker の過去のデプロイを確認して古いものを削除できるほか、Worker の編集・削除にも対応します。",
+          "es-MX": "Consulta los despliegues anteriores de un Worker y elimina los antiguos; además, edita y elimina Workers.",
+          "ko": "Worker의 과거 배포를 확인하고 이전 배포를 삭제할 수 있으며 Worker 편집과 삭제도 지원합니다.",
+          "pt-BR": "Veja as implantações anteriores de um Worker e exclua as antigas; também dá para editar e excluir Workers.",
+          "pt-PT": "Veja as implementações anteriores de um Worker e elimine as antigas; também pode editar e eliminar Workers.",
+          "de": "Sieh dir frühere Bereitstellungen eines Workers an und lösche alte – außerdem Worker bearbeiten und löschen.",
+          "fr": "Consultez les déploiements passés d’un Worker et supprimez les anciens ; modifiez et supprimez aussi des Workers.",
+          "ar": "اطّلع على عمليات نشر Worker السابقة واحذف القديمة، مع إمكانية تعديل وحذف Workers.",
+          "tr": "Bir Worker’ın geçmiş dağıtımlarını görüp eskileri silin; ayrıca Worker düzenleyip silebilirsiniz."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "存储管理增强",
+          "en": "More storage management",
+          "zh-Hant": "儲存管理增強",
+          "zh-HK": "儲存管理增強",
+          "ja": "ストレージ管理の強化",
+          "es-MX": "Más gestión de almacenamiento",
+          "ko": "스토리지 관리 강화",
+          "pt-BR": "Mais gerenciamento de armazenamento",
+          "pt-PT": "Mais gestão de armazenamento",
+          "de": "Mehr Speicherverwaltung",
+          "fr": "Gestion du stockage étendue",
+          "ar": "مزيد من إدارة التخزين",
+          "tr": "Daha fazla depolama yönetimi"
+        },
+        "detail": {
+          "zh-Hans": "新增 KV 命名空间与 R2 存储桶的创建/删除、D1 数据表删除，以及 Pages 部署删除。",
+          "en": "Create and delete KV namespaces and R2 buckets, drop D1 tables, and delete Pages deployments.",
+          "zh-Hant": "新增 KV 命名空間與 R2 儲存桶的建立/刪除、D1 資料表刪除，以及 Pages 部署刪除。",
+          "zh-HK": "新增 KV 命名空間與 R2 儲存桶的建立/刪除、D1 資料表刪除，以及 Pages 部署刪除。",
+          "ja": "KV 名前空間と R2 バケットの作成・削除、D1 テーブルの削除、Pages デプロイの削除に対応しました。",
+          "es-MX": "Crea y elimina espacios de nombres de KV y buckets de R2, elimina tablas de D1 y borra despliegues de Pages.",
+          "ko": "KV 네임스페이스와 R2 버킷 생성/삭제, D1 테이블 삭제, Pages 배포 삭제를 지원합니다.",
+          "pt-BR": "Crie e exclua namespaces de KV e buckets de R2, exclua tabelas do D1 e apague implantações do Pages.",
+          "pt-PT": "Crie e elimine namespaces de KV e buckets de R2, elimine tabelas do D1 e apague implementações do Pages.",
+          "de": "KV-Namespaces und R2-Buckets erstellen/löschen, D1-Tabellen löschen und Pages-Bereitstellungen entfernen.",
+          "fr": "Créez et supprimez des namespaces KV et des buckets R2, supprimez des tables D1 et des déploiements Pages.",
+          "ar": "أنشئ واحذف مساحات أسماء KV وحاويات R2، واحذف جداول D1 وعمليات نشر Pages.",
+          "tr": "KV ad alanları ve R2 paketleri oluşturup silin, D1 tablolarını silin ve Pages dağıtımlarını kaldırın."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.6.0",
+    "date": "2026.07.03",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "Pages 自定义域名",
+          "en": "Pages custom domains",
+          "zh-Hant": "Pages 自訂網域",
+          "zh-HK": "Pages 自訂域名",
+          "ja": "Pages カスタムドメイン",
+          "es-MX": "Dominios personalizados de Pages",
+          "ko": "Pages 사용자 지정 도메인",
+          "pt-BR": "Domínios personalizados do Pages",
+          "pt-PT": "Domínios personalizados do Pages",
+          "de": "Benutzerdefinierte Domains für Pages",
+          "fr": "Domaines personnalisés Pages",
+          "ar": "نطاقات Pages المخصصة",
+          "tr": "Pages özel alan adları"
+        },
+        "detail": {
+          "zh-Hans": "Pages 项目现可直接管理自定义域名：添加、删除、重新验证并检查解析状态；域名在当前账号时，还能一键添加指向项目的 CNAME 记录。",
+          "en": "Manage custom domains right inside a Pages project: add, remove, re-validate, and check DNS status — with one-tap CNAME setup when the domain’s zone is on your account.",
+          "zh-Hant": "Pages 專案現可直接管理自訂網域：新增、刪除、重新驗證並檢查解析狀態；網域在目前帳號時，還能一鍵新增指向專案的 CNAME 記錄。",
+          "zh-HK": "Pages 項目現可直接管理自訂域名：新增、刪除、重新驗證並檢查解析狀態；域名在當前帳戶時，還能一鍵新增指向項目的 CNAME 記錄。",
+          "ja": "Pages プロジェクト内でカスタムドメインを直接管理：追加・削除・再検証と DNS 状態の確認に対応。ドメインが現在のアカウントにある場合は、プロジェクトへ向ける CNAME レコードをワンタップで追加できます。",
+          "es-MX": "Administra dominios personalizados dentro de un proyecto de Pages: agregar, eliminar, revalidar y comprobar el estado del DNS; si la zona del dominio está en tu cuenta, agrega el registro CNAME con un toque.",
+          "ko": "Pages 프로젝트에서 사용자 지정 도메인을 직접 관리하세요: 추가·삭제·재확인과 DNS 상태 확인을 지원하며, 도메인이 현재 계정에 있으면 프로젝트를 가리키는 CNAME 레코드를 한 번에 추가할 수 있습니다.",
+          "pt-BR": "Gerencie domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o status do DNS — com criação do registro CNAME em um toque quando a zona do domínio está na sua conta.",
+          "pt-PT": "Faça a gestão de domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o estado do DNS — com criação do registo CNAME num toque quando a zona do domínio está na sua conta.",
+          "de": "Verwalte benutzerdefinierte Domains direkt im Pages-Projekt: hinzufügen, entfernen, erneut validieren und DNS-Status prüfen – mit Ein-Tipp-CNAME, wenn die Zone der Domain in deinem Konto liegt.",
+          "fr": "Gérez les domaines personnalisés directement dans un projet Pages : ajout, suppression, revalidation et vérification du DNS — avec création du CNAME en un geste quand la zone du domaine est sur votre compte.",
+          "ar": "أدر النطاقات المخصصة داخل مشروع Pages مباشرة: إضافة وحذف وإعادة تحقق وفحص حالة DNS — مع إضافة سجل CNAME بلمسة واحدة عندما تكون منطقة النطاق ضمن حسابك.",
+          "tr": "Özel alan adlarını doğrudan Pages projesi içinde yönetin: ekleme, silme, yeniden doğrulama ve DNS durumu kontrolü — alan adının bölgesi hesabınızdaysa tek dokunuşla CNAME kaydı ekleyin."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "列表排序",
+          "en": "List sorting",
+          "zh-Hant": "清單排序",
+          "zh-HK": "列表排序",
+          "ja": "リストの並べ替え",
+          "es-MX": "Orden de listas",
+          "ko": "목록 정렬",
+          "pt-BR": "Ordenação de listas",
+          "pt-PT": "Ordenação de listas",
+          "de": "Listensortierung",
+          "fr": "Tri des listes",
+          "ar": "ترتيب القوائم",
+          "tr": "Liste sıralama"
+        },
+        "detail": {
+          "zh-Hans": "Workers 与 Pages 列表新增排序：默认（名称）、创建日期、最近更新，选择会被记住。",
+          "en": "Workers and Pages lists can now be sorted by name (default), date created, or recently updated — your choice is remembered.",
+          "zh-Hant": "Workers 與 Pages 清單新增排序：預設（名稱）、建立日期、最近更新，選擇會被記住。",
+          "zh-HK": "Workers 與 Pages 列表新增排序：默認（名稱）、創建日期、最近更新，選擇會被記住。",
+          "ja": "Workers と Pages のリストを名前（デフォルト）・作成日・最近の更新で並べ替えられるようになりました。選択は記憶されます。",
+          "es-MX": "Las listas de Workers y Pages ahora se pueden ordenar por nombre (predeterminado), fecha de creación o actualización reciente; tu elección se recuerda.",
+          "ko": "Workers와 Pages 목록을 이름(기본), 생성일, 최근 업데이트로 정렬할 수 있습니다. 선택은 기억됩니다.",
+          "pt-BR": "As listas de Workers e Pages agora podem ser ordenadas por nome (padrão), data de criação ou atualização recente — sua escolha é lembrada.",
+          "pt-PT": "As listas de Workers e Pages podem agora ser ordenadas por nome (predefinição), data de criação ou atualização recente — a sua escolha é lembrada.",
+          "de": "Workers- und Pages-Listen lassen sich jetzt nach Name (Standard), Erstellungsdatum oder letzter Aktualisierung sortieren – die Auswahl wird gemerkt.",
+          "fr": "Les listes Workers et Pages peuvent désormais être triées par nom (par défaut), date de création ou mise à jour récente — votre choix est mémorisé.",
+          "ar": "يمكن الآن ترتيب قوائم Workers و Pages حسب الاسم (افتراضي) أو تاريخ الإنشاء أو آخر تحديث — ويُحفظ اختيارك.",
+          "tr": "Workers ve Pages listeleri artık ada (varsayılan), oluşturma tarihine veya son güncellemeye göre sıralanabilir; seçiminiz hatırlanır."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.5.0",
+    "date": "2026.06.30",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "免登录开发者工具箱",
+          "en": "No-login developer toolbox",
+          "zh-Hant": "免登入開發者工具箱",
+          "zh-HK": "免登入開發者工具箱",
+          "ja": "ログイン不要の開発者ツールボックス",
+          "es-MX": "Caja de herramientas para desarrolladores sin iniciar sesión",
+          "ko": "로그인 없는 개발자 도구 모음",
+          "pt-BR": "Caixa de ferramentas do desenvolvedor sem login",
+          "pt-PT": "Caixa de ferramentas do programador sem início de sessão",
+          "de": "Entwickler-Toolbox ohne Anmeldung",
+          "fr": "Boîte à outils développeur sans connexion",
+          "ar": "صندوق أدوات المطوّر بدون تسجيل دخول",
+          "tr": "Girişsiz geliştirici araç kutusu"
+        },
+        "detail": {
+          "zh-Hans": "无需登录即可使用一组常用网络工具：DNS 查询、SSL 证书检查、HTTP 头、WHOIS、IP 归属、CIDR 计算与 Cloudflare trace。打开 App 在登录页就能直接进入。",
+          "en": "A set of handy network tools you can use without signing in: DNS lookup, SSL certificate inspection, HTTP headers, WHOIS, IP geolocation, a CIDR calculator and Cloudflare trace — reachable right from the login screen.",
+          "zh-Hant": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。",
+          "zh-HK": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。",
+          "ja": "ログインせずに使える定番のネットワークツール群：DNS 検索、SSL 証明書チェック、HTTP ヘッダー、WHOIS、IP 位置情報、CIDR 計算、Cloudflare trace。ログイン画面からそのまま開けます。",
+          "es-MX": "Un conjunto de herramientas de red prácticas que puedes usar sin iniciar sesión: consulta DNS, inspección de certificados SSL, encabezados HTTP, WHOIS, geolocalización de IP, calculadora CIDR y Cloudflare trace, accesibles desde la pantalla de inicio de sesión.",
+          "ko": "로그인 없이 사용할 수 있는 유용한 네트워크 도구 모음: DNS 조회, SSL 인증서 검사, HTTP 헤더, WHOIS, IP 위치, CIDR 계산기, Cloudflare trace. 로그인 화면에서 바로 열 수 있습니다.",
+          "pt-BR": "Um conjunto de ferramentas de rede úteis que você pode usar sem fazer login: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis direto na tela de login.",
+          "pt-PT": "Um conjunto de ferramentas de rede úteis que pode usar sem iniciar sessão: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis a partir do ecrã de início de sessão.",
+          "de": "Praktische Netzwerk-Tools, die du ohne Anmeldung nutzen kannst: DNS-Abfrage, SSL-Zertifikatsprüfung, HTTP-Header, WHOIS, IP-Geolokalisierung, ein CIDR-Rechner und Cloudflare-Trace – direkt vom Anmeldebildschirm aus erreichbar.",
+          "fr": "Un ensemble d'outils réseau pratiques utilisables sans connexion : requête DNS, inspection de certificat SSL, en-têtes HTTP, WHOIS, géolocalisation IP, calculateur CIDR et Cloudflare trace — accessibles depuis l'écran de connexion.",
+          "ar": "مجموعة من أدوات الشبكة العملية التي يمكنك استخدامها دون تسجيل الدخول: استعلام DNS، فحص شهادة SSL، ترويسات HTTP، WHOIS، تحديد موقع IP، حاسبة CIDR، وCloudflare trace — يمكن الوصول إليها مباشرةً من شاشة تسجيل الدخول.",
+          "tr": "Oturum açmadan kullanabileceğiniz pratik ağ araçları: DNS sorgusu, SSL sertifikası incelemesi, HTTP başlıkları, WHOIS, IP konumu, CIDR hesaplayıcı ve Cloudflare trace — giriş ekranından doğrudan erişilebilir."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "推送中心",
+          "en": "Push Center",
+          "zh-Hant": "推送中心",
+          "zh-HK": "推送中心",
+          "ja": "プッシュセンター",
+          "es-MX": "Centro de notificaciones",
+          "ko": "푸시 센터",
+          "pt-BR": "Central de Push",
+          "pt-PT": "Centro de Push",
+          "de": "Push-Center",
+          "fr": "Centre de push",
+          "ar": "مركز الإشعارات",
+          "tr": "Push Merkezi"
+        },
+        "detail": {
+          "zh-Hans": "内置推送服务：拿到一个专属端点，用 curl 或脚本就能把消息推到这台设备，支持标题、分组与收件箱。无需登录 Cloudflare 即可使用。",
+          "en": "A built-in push service: get your own endpoint and send messages to this device with a simple curl or script — with titles, groups and an inbox. No Cloudflare sign-in required.",
+          "zh-Hant": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這台裝置，支援標題、分組與收件匣。無需登入 Cloudflare 即可使用。",
+          "zh-HK": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這部裝置，支援標題、分組與收件箱。無需登入 Cloudflare 即可使用。",
+          "ja": "プッシュ機能を内蔵。専用エンドポイントを取得すれば、curl やスクリプトでこの端末にメッセージを送れます。タイトル、グループ、受信箱に対応。Cloudflare へのサインインは不要です。",
+          "es-MX": "Servicio de notificaciones integrado: obtén tu propio endpoint y envía mensajes a este dispositivo con un simple curl o script, con título, grupo y bandeja de entrada. No requiere iniciar sesión en Cloudflare.",
+          "ko": "푸시 기능 내장: 전용 엔드포인트를 받아 curl이나 스크립트로 이 기기에 메시지를 보낼 수 있습니다. 제목, 그룹, 수신함을 지원합니다. Cloudflare 로그인이 필요 없습니다.",
+          "pt-BR": "Serviço de push integrado: obtenha seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo e caixa de entrada. Não exige login na Cloudflare.",
+          "pt-PT": "Serviço de push integrado: obtenha o seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo e caixa de entrada. Não exige iniciar sessão na Cloudflare.",
+          "de": "Integrierter Push-Dienst: Hol dir deinen eigenen Endpunkt und sende Nachrichten per curl oder Skript an dieses Gerät – mit Titel, Gruppe und Posteingang. Keine Cloudflare-Anmeldung nötig.",
+          "fr": "Service de push intégré : obtenez votre propre point de terminaison et envoyez des messages à cet appareil avec un simple curl ou script — avec titre, groupe et boîte de réception. Aucune connexion Cloudflare requise.",
+          "ar": "خدمة دفع مدمجة: احصل على نقطة نهاية خاصة بك وأرسل الرسائل إلى هذا الجهاز باستخدام curl أو سكربت بسيط — مع عنوان ومجموعة وصندوق وارد. لا يتطلب تسجيل الدخول إلى Cloudflare.",
+          "tr": "Yerleşik push hizmeti: kendi uç noktanızı alın ve basit bir curl veya betikle bu cihaza mesaj gönderin — başlık, grup ve gelen kutusu ile. Cloudflare oturumu gerekmez."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "把 Cloudflare 告警推到手机",
+          "en": "Cloudflare alerts on your phone",
+          "zh-Hant": "把 Cloudflare 告警推到手機",
+          "zh-HK": "把 Cloudflare 告警推到手機",
+          "ja": "Cloudflare のアラートをスマホへ",
+          "es-MX": "Alertas de Cloudflare en tu teléfono",
+          "ko": "휴대폰으로 받는 Cloudflare 경고",
+          "pt-BR": "Alertas da Cloudflare no seu celular",
+          "pt-PT": "Alertas da Cloudflare no seu telemóvel",
+          "de": "Cloudflare-Warnungen auf deinem Handy",
+          "fr": "Les alertes Cloudflare sur votre téléphone",
+          "ar": "تنبيهات Cloudflare على هاتفك",
+          "tr": "Cloudflare uyarıları telefonunuzda"
+        },
+        "detail": {
+          "zh-Hans": "登录后可直接管理 Cloudflare 告警策略：选择想关注的告警类型（DDoS、健康检查、证书到期、Workers 错误率等），一键接到推送中心，事件发生时直推到这台设备。需账号下有 Pro 及以上套餐的域名。",
+          "en": "Once signed in, manage your Cloudflare alert policies right here: pick the alert types you care about (DDoS, health checks, certificate expiry, Workers error rate and more) and wire them to the Push Center in one tap, so events land on this device. Requires a domain on a Pro or higher plan.",
+          "zh-Hant": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這台裝置。需帳戶下有 Pro 及以上方案的網域。",
+          "zh-HK": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這部裝置。需帳戶下有 Pro 及以上計劃的域名。",
+          "ja": "サインインすると Cloudflare のアラートポリシーをここで管理できます。気になるアラートの種類（DDoS、ヘルスチェック、証明書の有効期限、Workers のエラー率など）を選び、ワンタップでプッシュセンターに接続。イベント発生時にこの端末へ直接届きます。Pro 以上のプランのドメインが必要です。",
+          "es-MX": "Una vez que inicies sesión, administra aquí tus políticas de alertas de Cloudflare: elige los tipos de alerta que te importan (DDoS, comprobaciones de estado, vencimiento de certificados, tasa de errores de Workers y más) y conéctalos al Centro de notificaciones con un toque, para que los eventos lleguen a este dispositivo. Requiere un dominio con plan Pro o superior.",
+          "ko": "로그인하면 여기에서 Cloudflare 경고 정책을 관리할 수 있습니다. 원하는 경고 유형(DDoS, 상태 확인, 인증서 만료, Workers 오류율 등)을 골라 한 번의 탭으로 푸시 센터에 연결하면, 이벤트가 이 기기로 바로 전달됩니다. Pro 이상 요금제의 도메인이 필요합니다.",
+          "pt-BR": "Depois de fazer login, gerencie aqui suas políticas de alerta da Cloudflare: escolha os tipos de alerta que importam para você (DDoS, verificações de integridade, expiração de certificados, taxa de erros do Workers e mais) e conecte-os à Central de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior.",
+          "pt-PT": "Depois de iniciar sessão, faça aqui a gestão das suas políticas de alerta da Cloudflare: escolha os tipos de alerta que lhe interessam (DDoS, verificações de estado, expiração de certificados, taxa de erros do Workers e mais) e ligue-os ao Centro de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior.",
+          "de": "Nach der Anmeldung verwaltest du hier deine Cloudflare-Warnrichtlinien: Wähle die Warntypen, die dich interessieren (DDoS, Health Checks, Zertifikatsablauf, Workers-Fehlerrate und mehr), und verbinde sie mit einem Tippen mit dem Push-Center, damit Ereignisse auf diesem Gerät ankommen. Erfordert eine Domain mit Pro-Tarif oder höher.",
+          "fr": "Une fois connecté, gérez ici vos politiques d'alerte Cloudflare : choisissez les types d'alerte qui vous intéressent (DDoS, contrôles d'état, expiration de certificat, taux d'erreur Workers, etc.) et reliez-les au centre de push en un geste, pour que les événements arrivent sur cet appareil. Nécessite un domaine avec un forfait Pro ou supérieur.",
+          "ar": "بعد تسجيل الدخول، يمكنك إدارة سياسات تنبيهات Cloudflare من هنا: اختر أنواع التنبيهات التي تهمّك (DDoS، فحوصات السلامة، انتهاء الشهادات، معدل أخطاء Workers والمزيد) واربطها بمركز الإشعارات بنقرة واحدة، لتصل الأحداث إلى هذا الجهاز. يتطلب نطاقًا بخطة Pro أو أعلى.",
+          "tr": "Oturum açtıktan sonra Cloudflare uyarı politikalarınızı buradan yönetin: önemsediğiniz uyarı türlerini (DDoS, durum denetimleri, sertifika süresi dolması, Workers hata oranı ve daha fazlası) seçin ve tek dokunuşla Push Merkezi'ne bağlayın; böylece olaylar bu cihaza ulaşsın. Pro veya üzeri planda bir alan adı gerektirir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.4.2",
+    "date": "2026.06.29",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "Workers AI 体验升级",
+          "en": "Workers AI improvements",
+          "zh-Hant": "Workers AI 體驗升級",
+          "zh-HK": "Workers AI 體驗升級",
+          "ja": "Workers AI の改善",
+          "es-MX": "Mejoras en Workers AI",
+          "ko": "Workers AI 개선",
+          "pt-BR": "Melhorias no Workers AI",
+          "pt-PT": "Melhorias no Workers AI",
+          "de": "Workers-AI-Verbesserungen",
+          "fr": "Améliorations de Workers AI",
+          "ar": "تحسينات Workers AI",
+          "tr": "Workers AI iyileştirmeleri"
+        },
+        "detail": {
+          "zh-Hans": "现在可按任务类型分组浏览模型、查看模型详情，并修复了文本生成模型的试运行。",
+          "en": "Browse models grouped by task type, view model details, and the text-generation test run is fixed.",
+          "zh-Hant": "現在可按任務類型分組瀏覽模型、檢視模型詳情，並修復了文字生成模型的試執行。",
+          "zh-HK": "現在可按任務類型分組瀏覽模型、查看模型詳情，並修復了文字生成模型的試運行。",
+          "ja": "モデルをタスク種別ごとに分類して閲覧でき、モデルの詳細表示と、テキスト生成モデルの試し実行の不具合を修正しました。",
+          "es-MX": "Explora los modelos agrupados por tipo de tarea, consulta sus detalles y se corrigió la prueba de los modelos de generación de texto.",
+          "ko": "모델을 작업 유형별로 묶어 살펴보고 모델 상세 정보를 확인할 수 있으며, 텍스트 생성 모델의 시험 실행 오류를 수정했습니다.",
+          "pt-BR": "Navegue pelos modelos agrupados por tipo de tarefa, veja os detalhes do modelo e corrigimos o teste dos modelos de geração de texto.",
+          "pt-PT": "Navegue pelos modelos agrupados por tipo de tarefa, veja os detalhes do modelo e corrigimos o teste dos modelos de geração de texto.",
+          "de": "Modelle nach Aufgabentyp gruppiert durchsuchen, Modelldetails ansehen – und der Testlauf für Textgenerierungsmodelle wurde behoben.",
+          "fr": "Parcourez les modèles regroupés par type de tâche, consultez leurs détails et l'essai des modèles de génération de texte est corrigé.",
+          "ar": "تصفّح النماذج مجمّعة حسب نوع المهمة، واعرض تفاصيل النموذج، وأصلحنا التشغيل التجريبي لنماذج توليد النص.",
+          "tr": "Modelleri görev türüne göre gruplandırarak inceleyin, model ayrıntılarını görün; metin oluşturma modellerinin deneme çalıştırması düzeltildi."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.4",
+    "date": "2026.06.28",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "全新「开发者平台」",
+          "en": "New Developer Platform",
+          "zh-Hant": "全新「開發者平台」",
+          "zh-HK": "全新「開發者平台」",
+          "ja": "新しい「開発者プラットフォーム」",
+          "es-MX": "Nueva plataforma para desarrolladores",
+          "ko": "새로운 개발자 플랫폼",
+          "pt-BR": "Nova Plataforma para Desenvolvedores",
+          "pt-PT": "Nova Plataforma para Programadores",
+          "de": "Neue Entwicklerplattform",
+          "fr": "Nouvelle plateforme développeur",
+          "ar": "منصّة المطوّرين الجديدة",
+          "tr": "Yeni Geliştirici Platformu"
+        },
+        "detail": {
+          "zh-Hans": "把 Workers 与 Workers AI、AI Gateway、队列、Hyperdrive、Durable Objects、Pages 收进统一的「开发者平台」中枢，一处直达。",
+          "en": "Workers now sits alongside Workers AI, AI Gateway, Queues, Hyperdrive, Durable Objects and Pages in a single Developer Platform hub.",
+          "zh-Hant": "把 Workers 與 Workers AI、AI Gateway、佇列、Hyperdrive、Durable Objects、Pages 收進統一的「開發者平台」中樞，一處直達。",
+          "zh-HK": "把 Workers 與 Workers AI、AI Gateway、佇列、Hyperdrive、Durable Objects、Pages 收進統一的「開發者平台」中樞，一處直達。",
+          "ja": "Workers に加え、Workers AI・AI Gateway・キュー・Hyperdrive・Durable Objects・Pages を一つの「開発者プラットフォーム」にまとめました。",
+          "es-MX": "Workers ahora convive con Workers AI, AI Gateway, Colas, Hyperdrive, Durable Objects y Pages en un único centro.",
+          "ko": "Workers와 함께 Workers AI, AI Gateway, 큐, Hyperdrive, Durable Objects, Pages를 하나의 개발자 플랫폼 허브로 모았습니다.",
+          "pt-BR": "Workers agora fica ao lado de Workers AI, AI Gateway, Filas, Hyperdrive, Durable Objects e Pages em um hub único.",
+          "pt-PT": "O Workers fica agora ao lado de Workers AI, AI Gateway, Filas, Hyperdrive, Durable Objects e Pages num único centro.",
+          "de": "Workers steht jetzt zusammen mit Workers AI, AI Gateway, Queues, Hyperdrive, Durable Objects und Pages in einem Hub.",
+          "fr": "Workers rejoint Workers AI, AI Gateway, Queues, Hyperdrive, Durable Objects et Pages dans un hub unique.",
+          "ar": "أصبح Workers إلى جانب Workers AI وAI Gateway والطوابير وHyperdrive وDurable Objects وPages في مركز واحد.",
+          "tr": "Workers artık Workers AI, AI Gateway, Kuyruklar, Hyperdrive, Durable Objects ve Pages ile tek bir merkezde."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "缓存规则、速率限制与电子邮件路由",
+          "en": "Cache Rules, Rate Limiting & Email Routing",
+          "zh-Hant": "快取規則、速率限制與電子郵件路由",
+          "zh-HK": "緩存規則、速率限制與電子郵件路由",
+          "ja": "キャッシュルール・レート制限・メールルーティング",
+          "es-MX": "Cache Rules, límite de velocidad y enrutamiento de correo",
+          "ko": "캐시 규칙, 속도 제한, 이메일 라우팅",
+          "pt-BR": "Cache Rules, limite de taxa e roteamento de e-mail",
+          "pt-PT": "Cache Rules, limite de taxa e encaminhamento de e-mail",
+          "de": "Cache Rules, Rate Limiting & E-Mail-Routing",
+          "fr": "Cache Rules, limitation de débit & routage e-mail",
+          "ar": "قواعد التخزين المؤقت وتحديد المعدّل وتوجيه البريد",
+          "tr": "Önbellek Kuralları, Hız Sınırlama ve E-posta Yönlendirme"
+        },
+        "detail": {
+          "zh-Hans": "域名新增缓存规则与速率限制规则，以及电子邮件路由（转发规则与目的地址管理）。",
+          "en": "Zones gain Cache Rules and Rate Limiting rules, plus Email Routing with forwarding rules and destination addresses.",
+          "zh-Hant": "網域新增快取規則與速率限制規則，以及電子郵件路由（轉寄規則與目的地址管理）。",
+          "zh-HK": "域名新增緩存規則與速率限制規則，以及電子郵件路由（轉寄規則與目的地址管理）。",
+          "ja": "ゾーンにキャッシュルールとレート制限ルール、さらにメールルーティング（転送ルールと宛先アドレス管理）を追加しました。",
+          "es-MX": "Las zonas suman Cache Rules y reglas de límite de velocidad, además de enrutamiento de correo con reglas de reenvío y direcciones de destino.",
+          "ko": "영역에 캐시 규칙과 속도 제한 규칙, 그리고 전달 규칙·대상 주소 관리가 포함된 이메일 라우팅을 추가했습니다.",
+          "pt-BR": "As zonas ganham Cache Rules e regras de limite de taxa, além de roteamento de e-mail com regras de encaminhamento e endereços de destino.",
+          "pt-PT": "As zonas ganham Cache Rules e regras de limite de taxa, além de encaminhamento de e-mail com regras de reenvio e endereços de destino.",
+          "de": "Zonen erhalten Cache Rules und Rate-Limiting-Regeln sowie E-Mail-Routing mit Weiterleitungsregeln und Zieladressen.",
+          "fr": "Les zones gagnent Cache Rules et des règles de limitation de débit, ainsi que le routage e-mail avec règles de transfert et adresses de destination.",
+          "ar": "تكتسب النطاقات قواعد التخزين المؤقت وقواعد تحديد المعدّل، إضافةً إلى توجيه البريد مع قواعد إعادة التوجيه وعناوين الوجهة.",
+          "tr": "Bölgelere Cache Rules ve hız sınırlama kuralları ile yönlendirme kuralları ve hedef adresleri içeren E-posta Yönlendirme eklendi."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "负载均衡、Zero Trust 与批量重定向",
+          "en": "Load Balancing, Zero Trust & Bulk Redirects",
+          "zh-Hant": "負載平衡、Zero Trust 與批次重新導向",
+          "zh-HK": "負載平衡、Zero Trust 與批量重新導向",
+          "ja": "ロードバランシング・Zero Trust・一括リダイレクト",
+          "es-MX": "Balanceo de carga, Zero Trust y redirecciones masivas",
+          "ko": "로드 밸런싱, Zero Trust, 대량 리디렉션",
+          "pt-BR": "Balanceamento de carga, Zero Trust e redirecionamentos em massa",
+          "pt-PT": "Balanceamento de carga, Zero Trust e redirecionamentos em massa",
+          "de": "Load Balancing, Zero Trust & Massen-Weiterleitungen",
+          "fr": "Répartition de charge, Zero Trust & redirections groupées",
+          "ar": "موازنة الحمل وZero Trust وعمليات إعادة التوجيه الجماعية",
+          "tr": "Yük Dengeleme, Zero Trust ve Toplu Yönlendirmeler"
+        },
+        "detail": {
+          "zh-Hans": "新增负载均衡器（含源池健康）、Zero Trust（Access 应用与 Gateway 策略启停）、批量重定向列表与条目管理。",
+          "en": "New load balancers (with pool health), Zero Trust (Access apps and Gateway rule toggles), and Bulk Redirect lists and items.",
+          "zh-Hant": "新增負載平衡器（含來源池健康）、Zero Trust（Access 應用與 Gateway 政策啟停）、批次重新導向清單與項目管理。",
+          "zh-HK": "新增負載平衡器（含來源池健康）、Zero Trust（Access 應用與 Gateway 政策啟停）、批量重新導向清單與項目管理。",
+          "ja": "ロードバランサー（プールの健全性付き）、Zero Trust（Access アプリと Gateway ポリシーの切替）、一括リダイレクトのリストと項目を追加しました。",
+          "es-MX": "Nuevos balanceadores (con salud de grupos), Zero Trust (apps de Access y activación de reglas de Gateway) y listas y elementos de redirección masiva.",
+          "ko": "로드 밸런서(풀 상태 포함), Zero Trust(Access 앱 및 Gateway 정책 전환), 대량 리디렉션 목록과 항목을 추가했습니다.",
+          "pt-BR": "Novos balanceadores (com saúde de pools), Zero Trust (apps do Access e alternância de regras de Gateway) e listas e itens de redirecionamento em massa.",
+          "pt-PT": "Novos balanceadores (com saúde de pools), Zero Trust (apps do Access e alternância de regras de Gateway) e listas e itens de redirecionamento em massa.",
+          "de": "Neue Load Balancer (mit Pool-Status), Zero Trust (Access-Apps und Umschalten von Gateway-Regeln) sowie Massen-Weiterleitungslisten und -einträge.",
+          "fr": "Nouveaux répartiteurs de charge (avec santé des pools), Zero Trust (apps Access et bascule des règles Gateway), et listes et éléments de redirections groupées.",
+          "ar": "موازِنات تحميل جديدة (مع صحة التجمّعات)، وZero Trust (تطبيقات Access وتبديل قواعد Gateway)، وقوائم وعناصر إعادة التوجيه الجماعية.",
+          "tr": "Yeni yük dengeleyiciler (havuz sağlığıyla), Zero Trust (Access uygulamaları ve Gateway kuralı aç/kapama) ve toplu yönlendirme listeleri ile öğeleri."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "AI 助手与可视化 WAF",
+          "en": "AI assistant & visual WAF",
+          "zh-Hant": "AI 助手與視覺化 WAF",
+          "zh-HK": "AI 助手與視覺化 WAF",
+          "ja": "AI アシスタントとビジュアル WAF",
+          "es-MX": "Asistente de IA y WAF visual",
+          "ko": "AI 어시스턴트와 비주얼 WAF",
+          "pt-BR": "Assistente de IA e WAF visual",
+          "pt-PT": "Assistente de IA e WAF visual",
+          "de": "KI-Assistent & visuelle WAF",
+          "fr": "Assistant IA & WAF visuel",
+          "ar": "مساعد الذكاء الاصطناعي وWAF المرئي",
+          "tr": "Yapay zeka asistanı ve görsel WAF"
+        },
+        "detail": {
+          "zh-Hans": "新增由 Workers AI 驱动的 AI 助手；WAF 规则支持可视化构建，并可用自然语言生成表达式。",
+          "en": "A new AI assistant powered by Workers AI; WAF rules can be built visually or generated from natural language.",
+          "zh-Hant": "新增由 Workers AI 驅動的 AI 助手；WAF 規則支援視覺化建構，並可用自然語言產生運算式。",
+          "zh-HK": "新增由 Workers AI 驅動的 AI 助手；WAF 規則支援視覺化建構，並可用自然語言產生運算式。",
+          "ja": "Workers AI を活用した AI アシスタントを追加。WAF ルールはビジュアルに作成でき、自然言語からの生成にも対応します。",
+          "es-MX": "Nuevo asistente de IA con Workers AI; las reglas WAF se construyen visualmente o se generan desde lenguaje natural.",
+          "ko": "Workers AI 기반의 AI 어시스턴트를 추가했습니다. WAF 규칙은 시각적으로 구성하거나 자연어로 생성할 수 있습니다.",
+          "pt-BR": "Novo assistente de IA com Workers AI; as regras WAF podem ser criadas visualmente ou geradas em linguagem natural.",
+          "pt-PT": "Novo assistente de IA com Workers AI; as regras WAF podem ser criadas visualmente ou geradas em linguagem natural.",
+          "de": "Neuer KI-Assistent mit Workers AI; WAF-Regeln lassen sich visuell erstellen oder aus natürlicher Sprache generieren.",
+          "fr": "Nouvel assistant IA propulsé par Workers AI ; les règles WAF se construisent visuellement ou se génèrent en langage naturel.",
+          "ar": "مساعد ذكاء اصطناعي جديد مدعوم بـ Workers AI؛ ويمكن بناء قواعد WAF بصريًا أو توليدها من اللغة الطبيعية.",
+          "tr": "Workers AI destekli yeni yapay zeka asistanı; WAF kuralları görsel olarak oluşturulabilir veya doğal dilden üretilebilir."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "R2 接入「文件」、流量地图与审计日志",
+          "en": "R2 in Files, traffic map & audit log",
+          "zh-Hant": "R2 接入「檔案」、流量地圖與稽核紀錄",
+          "zh-HK": "R2 接入「檔案」、流量地圖與審計記錄",
+          "ja": "R2 をファイルアプリへ、トラフィックマップと監査ログ",
+          "es-MX": "R2 en Archivos, mapa de tráfico y registro de auditoría",
+          "ko": "R2를 파일 앱에, 트래픽 지도와 감사 로그",
+          "pt-BR": "R2 no app Arquivos, mapa de tráfego e log de auditoria",
+          "pt-PT": "R2 na app Ficheiros, mapa de tráfego e registo de auditoria",
+          "de": "R2 in Dateien, Traffic-Karte & Audit-Log",
+          "fr": "R2 dans Fichiers, carte du trafic & journal d’audit",
+          "ar": "R2 في تطبيق الملفات وخريطة الزيارات وسجل التدقيق",
+          "tr": "Dosyalar’da R2, trafik haritası ve denetim günlüğü"
+        },
+        "detail": {
+          "zh-Hans": "R2 对象可在系统「文件」App 中浏览、上传、改名、移动与删除；流量分析新增按国家/地区来源；设置新增账号审计日志；Pages 支持查看部署并一键重新部署或回滚。",
+          "en": "Browse, upload, rename, move and delete R2 objects in the system Files app; analytics adds traffic by country; Settings adds an account audit log; Pages shows deployments with one-tap retry or rollback.",
+          "zh-Hant": "R2 物件可在系統「檔案」App 中瀏覽開啟；流量分析新增依國家/地區來源；設定新增帳號稽核紀錄；Pages 支援檢視部署並一鍵重新部署或回復。",
+          "zh-HK": "R2 物件可在系統「檔案」App 中瀏覽開啟；流量分析新增依國家/地區來源；設定新增帳戶審計記錄；Pages 支援檢視部署並一鍵重新部署或回滾。",
+          "ja": "R2 オブジェクトを「ファイル」アプリで閲覧・オープン。分析に国・地域別を追加、設定にアカウント監査ログを追加、Pages はデプロイ確認と再デプロイ／ロールバックに対応します。",
+          "es-MX": "Explora y abre objetos R2 en la app Archivos; analíticas suma tráfico por país; Ajustes agrega registro de auditoría; Pages muestra despliegues con reintento o reversión al toque.",
+          "ko": "시스템 파일 앱에서 R2 객체를 탐색·열람하고, 분석에 국가별 트래픽을, 설정에 계정 감사 로그를 추가했으며, Pages에서 배포 확인과 원터치 재배포·롤백을 지원합니다.",
+          "pt-BR": "Navegue e abra objetos R2 no app Arquivos; análises adicionam tráfego por país; Configurações adicionam log de auditoria; Pages mostra implantações com repetição ou reversão em um toque.",
+          "pt-PT": "Navegue e abra objetos R2 na app Ficheiros; as análises adicionam tráfego por país; as Definições adicionam registo de auditoria; o Pages mostra implementações com repetição ou reversão num toque.",
+          "de": "R2-Objekte in der Dateien-App durchsuchen und öffnen; Analytics zeigt Traffic nach Land; Einstellungen erhalten ein Konto-Audit-Log; Pages zeigt Deployments mit Ein-Tipp-Wiederholung oder Rollback.",
+          "fr": "Parcourez et ouvrez les objets R2 dans l’app Fichiers ; les analyses ajoutent le trafic par pays ; les Réglages ajoutent un journal d’audit ; Pages affiche les déploiements avec relance ou rollback en un geste.",
+          "ar": "تصفّح وفتح كائنات R2 في تطبيق الملفات؛ وإضافة الزيارات حسب الدولة للتحليلات؛ وسجل تدقيق للحساب في الإعدادات؛ ويعرض Pages عمليات النشر مع إعادة المحاولة أو التراجع بنقرة واحدة.",
+          "tr": "R2 nesnelerini Dosyalar uygulamasında gözatıp açın; analizlere ülkeye göre trafik, Ayarlar’a hesap denetim günlüğü eklendi; Pages dağıtımları tek dokunuşla yeniden deneme veya geri almayla gösterir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.3",
+    "date": "2026.06.25",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "域名安全套件",
+          "en": "Domain security suite",
+          "zh-Hant": "網域安全套件",
+          "zh-HK": "域名安全套件",
+          "ja": "ドメインセキュリティ一式",
+          "es-MX": "Conjunto de seguridad del dominio",
+          "ko": "도메인 보안 모음",
+          "pt-BR": "Conjunto de segurança do domínio",
+          "pt-PT": "Conjunto de segurança do domínio",
+          "de": "Domain-Sicherheitspaket",
+          "fr": "Suite de sécurité du domaine",
+          "ar": "حزمة أمان النطاق",
+          "tr": "Alan adı güvenlik paketi"
+        },
+        "detail": {
+          "zh-Hans": "新增 SSL/TLS 加密模式与边缘证书、Universal SSL 开关、Transform Rules、IP 访问规则，以及 HTTP/2·HTTP/3·Brotli 等性能与缓存开关。",
+          "en": "New SSL/TLS encryption modes and edge certificates, Universal SSL toggle, Transform Rules, IP access rules, plus HTTP/2·HTTP/3·Brotli and other performance and cache controls.",
+          "zh-Hant": "新增 SSL/TLS 加密模式與邊緣憑證、Universal SSL 開關、Transform Rules、IP 存取規則，以及 HTTP/2·HTTP/3·Brotli 等效能與快取開關。",
+          "zh-HK": "新增 SSL/TLS 加密模式與邊緣憑證、Universal SSL 開關、Transform Rules、IP 存取規則，以及 HTTP/2·HTTP/3·Brotli 等效能與緩存開關。",
+          "ja": "SSL/TLS 暗号化モードとエッジ証明書、Universal SSL の切り替え、Transform Rules、IP アクセスルール、さらに HTTP/2・HTTP/3・Brotli などの性能とキャッシュ設定を追加しました。",
+          "es-MX": "Nuevos modos de cifrado SSL/TLS y certificados perimetrales, interruptor de Universal SSL, Transform Rules, reglas de acceso por IP y controles de rendimiento y caché como HTTP/2·HTTP/3·Brotli.",
+          "ko": "SSL/TLS 암호화 모드와 엣지 인증서, Universal SSL 전환, Transform Rules, IP 접근 규칙, 그리고 HTTP/2·HTTP/3·Brotli 등 성능·캐시 설정을 추가했습니다.",
+          "pt-BR": "Novos modos de criptografia SSL/TLS e certificados de borda, alternância do Universal SSL, Transform Rules, regras de acesso por IP e controles de desempenho e cache como HTTP/2·HTTP/3·Brotli.",
+          "pt-PT": "Novos modos de encriptação SSL/TLS e certificados de extremidade, alternância do Universal SSL, Transform Rules, regras de acesso por IP e controlos de desempenho e cache como HTTP/2·HTTP/3·Brotli.",
+          "de": "Neue SSL/TLS-Verschlüsselungsmodi und Edge-Zertifikate, Universal-SSL-Schalter, Transform Rules, IP-Zugriffsregeln sowie HTTP/2·HTTP/3·Brotli und weitere Leistungs- und Cache-Einstellungen.",
+          "fr": "Nouveaux modes de chiffrement SSL/TLS et certificats edge, bascule Universal SSL, Transform Rules, règles d’accès IP, ainsi que HTTP/2·HTTP/3·Brotli et d’autres contrôles de performance et de cache.",
+          "ar": "أوضاع تشفير SSL/TLS جديدة وشهادات طرفية، ومفتاح Universal SSL، وTransform Rules، وقواعد الوصول حسب IP، إضافةً إلى HTTP/2·HTTP/3·Brotli وعناصر تحكم أخرى للأداء والتخزين المؤقت.",
+          "tr": "Yeni SSL/TLS şifreleme modları ve uç sertifikalar, Universal SSL anahtarı, Transform Rules, IP erişim kuralları ve ayrıca HTTP/2·HTTP/3·Brotli ile diğer performans ve önbellek denetimleri."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "R2 升级与按 URL 清缓存",
+          "en": "R2 upgrade & purge by URL",
+          "zh-Hant": "R2 升級與依 URL 清快取",
+          "zh-HK": "R2 升級與依 URL 清緩存",
+          "ja": "R2 の強化と URL 単位のキャッシュ削除",
+          "es-MX": "Mejoras de R2 y purga por URL",
+          "ko": "R2 업그레이드 및 URL 단위 캐시 제거",
+          "pt-BR": "Melhorias do R2 e limpeza por URL",
+          "pt-PT": "Melhorias do R2 e limpeza por URL",
+          "de": "R2-Upgrade & Leeren per URL",
+          "fr": "Améliorations R2 & purge par URL",
+          "ar": "تحسينات R2 والمسح حسب URL",
+          "tr": "R2 yükseltmesi ve URL’ye göre temizleme"
+        },
+        "detail": {
+          "zh-Hans": "R2 支持文件夹浏览、对象复制/移动、桶的 CORS 与公开访问设置；缓存清理新增「按 URL 清理」。",
+          "en": "R2 now supports folder browsing, object copy/move, and per-bucket CORS and public access settings; cache purge adds “purge by URL”.",
+          "zh-Hant": "R2 支援資料夾瀏覽、物件複製/移動、儲存桶的 CORS 與公開存取設定；快取清理新增「依 URL 清理」。",
+          "zh-HK": "R2 支援資料夾瀏覽、物件複製/移動、儲存桶的 CORS 與公開存取設定；緩存清理新增「依 URL 清理」。",
+          "ja": "R2 でフォルダー閲覧、オブジェクトのコピー/移動、バケットの CORS と公開アクセス設定に対応。キャッシュ削除に「URL 単位の削除」を追加しました。",
+          "es-MX": "R2 ahora admite navegación por carpetas, copiar/mover objetos y ajustes de CORS y acceso público por bucket; la purga de caché añade “purgar por URL”.",
+          "ko": "R2에서 폴더 탐색, 객체 복사/이동, 버킷별 CORS 및 공개 액세스 설정을 지원합니다. 캐시 제거에 ‘URL 단위 제거’가 추가되었습니다.",
+          "pt-BR": "O R2 agora oferece navegação por pastas, copiar/mover objetos e configurações de CORS e acesso público por bucket; a limpeza de cache ganha “limpar por URL”.",
+          "pt-PT": "O R2 agora oferece navegação por pastas, copiar/mover objetos e definições de CORS e acesso público por bucket; a limpeza de cache ganha “limpar por URL”.",
+          "de": "R2 unterstützt jetzt Ordnernavigation, Objekt-Kopieren/-Verschieben sowie CORS- und Öffentlich-Zugriffseinstellungen pro Bucket; das Cache-Leeren erhält „Leeren per URL“.",
+          "fr": "R2 prend désormais en charge la navigation par dossiers, le copier/déplacer d’objets, ainsi que les paramètres CORS et d’accès public par bucket ; la purge du cache ajoute « purge par URL ».",
+          "ar": "يدعم R2 الآن تصفح المجلدات ونسخ/نقل الكائنات وإعدادات CORS والوصول العام لكل حاوية؛ ويضيف مسح الذاكرة المؤقتة ”المسح حسب URL“.",
+          "tr": "R2 artık klasör gezinme, nesne kopyalama/taşıma ve bucket başına CORS ve genel erişim ayarlarını destekliyor; önbellek temizlemeye “URL’ye göre temizleme” eklendi."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "桌面小组件、实况日志与更广兼容",
+          "en": "Home widget, live logs & wider support",
+          "zh-Hant": "桌面小工具、即時日誌與更廣相容",
+          "zh-HK": "桌面小工具、即時日誌與更廣相容",
+          "ja": "ホーム ウィジェット、ライブログ、対応拡大",
+          "es-MX": "Widget de inicio, registros en vivo y mayor compatibilidad",
+          "ko": "홈 위젯, 실시간 로그 및 더 넓은 지원",
+          "pt-BR": "Widget na tela inicial, logs ao vivo e suporte mais amplo",
+          "pt-PT": "Widget no ecrã inicial, registos ao vivo e suporte mais amplo",
+          "de": "Homescreen-Widget, Echtzeit-Logs & breitere Unterstützung",
+          "fr": "Widget d’accueil, journaux en direct & support élargi",
+          "ar": "أداة الشاشة الرئيسية والسجلات الحية ودعم أوسع",
+          "tr": "Ana ekran widget’ı, canlı günlükler ve daha geniş destek"
+        },
+        "detail": {
+          "zh-Hans": "新增晨昏「账号总览」桌面小组件；实时日志升级为实况通知（Android 16）；「帮助与反馈」可附带诊断日志；现已兼容 Android 9 及以上。",
+          "en": "A new daybreak “account overview” home widget; live tail logs are promoted to Live Updates (Android 16); Help & Feedback can attach a diagnostic log; now supports Android 9 and above.",
+          "zh-Hant": "新增晨昏「帳戶總覽」桌面小工具；即時日誌升級為實況通知（Android 16）；「說明與意見回饋」可附帶診斷日誌；現已相容 Android 9 以上。",
+          "zh-HK": "新增晨昏「帳戶總覽」桌面小工具；即時日誌升級為實況通知（Android 16）；「說明與意見回饋」可附帶診斷日誌；現已相容 Android 9 以上。",
+          "ja": "夜明けの「アカウント概要」ホーム ウィジェットを追加。ライブログを Live Updates（Android 16）に格上げ。ヘルプとフィードバックに診断ログを添付可能。Android 9 以降に対応しました。",
+          "es-MX": "Nuevo widget de inicio “resumen de la cuenta” al amanecer; los registros en vivo se promueven a Live Updates (Android 16); Ayuda y comentarios puede adjuntar un registro de diagnóstico; ahora compatible con Android 9 y posteriores.",
+          "ko": "여명 ‘계정 개요’ 홈 위젯 추가, 실시간 로그를 Live Updates(Android 16)로 승격, 도움말 및 피드백에 진단 로그 첨부 가능, 이제 Android 9 이상을 지원합니다.",
+          "pt-BR": "Novo widget de tela inicial “visão geral da conta” ao amanhecer; logs ao vivo promovidos a Live Updates (Android 16); Ajuda e feedback pode anexar um log de diagnóstico; agora compatível com Android 9 e superior.",
+          "pt-PT": "Novo widget de ecrã inicial “visão geral da conta” ao amanhecer; registos ao vivo promovidos a Live Updates (Android 16); Ajuda e feedback pode anexar um registo de diagnóstico; agora compatível com Android 9 e superior.",
+          "de": "Ein neues Dämmerungs-Widget „Kontoübersicht“; Echtzeit-Logs werden zu Live Updates (Android 16) hochgestuft; Hilfe & Feedback kann ein Diagnoseprotokoll anhängen; unterstützt jetzt Android 9 und höher.",
+          "fr": "Un nouveau widget d’accueil « aperçu du compte » à l’aube ; les journaux en direct sont promus en Live Updates (Android 16) ; Aide & retours peut joindre un journal de diagnostic ; prend désormais en charge Android 9 et plus.",
+          "ar": "أداة شاشة رئيسية جديدة ”نظرة عامة على الحساب“ عند الفجر؛ تُرقّى السجلات الحية إلى Live Updates (أندرويد 16)؛ ويمكن لميزة ”المساعدة والملاحظات“ إرفاق سجل تشخيصي؛ ويدعم الآن أندرويد 9 وأحدث.",
+          "tr": "Yeni bir şafak vakti “hesap özeti” ana ekran widget’ı; canlı günlükler Live Updates’e (Android 16) yükseltildi; Yardım ve geri bildirim bir tanılama günlüğü ekleyebilir; artık Android 9 ve üzerini destekliyor."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.1",
+    "date": "2026.06.18",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "从查看到管理",
+          "en": "From viewing to managing",
+          "zh-Hant": "從查看到管理",
+          "zh-HK": "從查看到管理",
+          "ja": "表示から管理へ",
+          "es-MX": "De ver a gestionar",
+          "ko": "보기에서 관리로",
+          "pt-BR": "De ver a gerenciar",
+          "pt-PT": "De ver a gerir"
+        },
+        "detail": {
+          "zh-Hans": "现在可以添加域名、新建并删除 D1 数据库与隧道，管理 Worker 变量/密钥/触发器/域名，以及隧道的公共主机名路由。",
+          "en": "You can now add domains, create and delete D1 databases and tunnels, manage Worker variables/secrets/triggers/domains, and a tunnel’s public hostname routes.",
+          "zh-Hant": "現在可以新增網域、建立並刪除 D1 資料庫與隧道，管理 Worker 變數/密鑰/觸發器/網域，以及隧道的公開主機名稱路由。",
+          "zh-HK": "現在可以新增域名、建立並刪除 D1 資料庫與隧道，管理 Worker 變數/密鑰/觸發器/域名，以及隧道的公開主機名稱路由。",
+          "ja": "ドメインの追加、D1 データベースとトンネルの作成・削除、Worker の変数/シークレット/トリガー/ドメイン、トンネルの公開ホスト名ルートを管理できるようになりました。",
+          "es-MX": "Ahora puedes añadir dominios, crear y eliminar bases de datos D1 y túneles, gestionar variables/secretos/activadores/dominios de Workers y las rutas de nombre de host público de un túnel.",
+          "ko": "이제 도메인 추가, D1 데이터베이스·터널 생성 및 삭제, Worker 변수/시크릿/트리거/도메인, 터널 공개 호스트 이름 경로를 관리할 수 있습니다.",
+          "pt-BR": "Agora você pode adicionar domínios, criar e excluir bancos de dados D1 e túneis, gerenciar variáveis/segredos/gatilhos/domínios de Workers e as rotas de nome de host público de um túnel.",
+          "pt-PT": "Agora pode adicionar domínios, criar e eliminar bases de dados D1 e túneis, gerir variáveis/segredos/acionadores/domínios de Workers e as rotas de nome de anfitrião público de um túnel."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.0",
+    "date": "2026.06.12",
+    "channel": "Google Play",
+    "items": [
+      {
+        "title": {
+          "zh-Hans": "OAuth 一键登录",
+          "en": "One-tap OAuth sign-in",
+          "zh-Hant": "OAuth 一鍵登入",
+          "zh-HK": "OAuth 一鍵登入",
+          "ja": "OAuth ワンタップログイン",
+          "es-MX": "Inicio de sesión OAuth con un toque",
+          "ko": "OAuth 원탭 로그인",
+          "pt-BR": "Login OAuth com um toque",
+          "pt-PT": "Início de sessão OAuth com um toque"
+        },
+        "detail": {
+          "zh-Hans": "用 Cloudflare 官方授权登录，无需手动粘贴 API Token。",
+          "en": "Sign in with Cloudflare's official authorization — no API tokens to paste.",
+          "zh-Hant": "用 Cloudflare 官方授權登入，無需手動貼上 API Token。",
+          "zh-HK": "用 Cloudflare 官方授權登入，無需手動貼上 API Token。",
+          "ja": "Cloudflare 公式の認証でログイン。API トークンの貼り付けは不要です。",
+          "es-MX": "Inicia sesión con la autorización oficial de Cloudflare, sin pegar tokens de API.",
+          "ko": "Cloudflare 공식 인증으로 로그인하며 API 토큰을 붙여넣을 필요가 없습니다.",
+          "pt-BR": "Entre com a autorização oficial da Cloudflare, sem colar tokens de API.",
+          "pt-PT": "Inicie sessão com a autorização oficial da Cloudflare, sem colar tokens de API."
+        }
+      },
+      {
+        "title": {
+          "zh-Hans": "域名 · Workers · 存储全覆盖",
+          "en": "Domains · Workers · Storage",
+          "zh-Hant": "網域 · Workers · 儲存全覆蓋",
+          "zh-HK": "域名 · Workers · 儲存全覆蓋",
+          "ja": "ドメイン · Workers · ストレージ",
+          "es-MX": "Dominios · Workers · Almacenamiento",
+          "ko": "도메인 · Workers · 스토리지",
+          "pt-BR": "Domínios · Workers · Armazenamento",
+          "pt-PT": "Domínios · Workers · Armazenamento"
+        },
+        "detail": {
+          "zh-Hans": "DNS、流量分析、WAF、Snippets、Workers 实时日志、R2/D1/KV 存储一应俱全。",
+          "en": "DNS, analytics, WAF, Snippets, Workers live logs, and R2/D1/KV storage — all in one place.",
+          "zh-Hant": "DNS、流量分析、WAF、Snippets、Workers 即時日誌、R2/D1/KV 儲存一應俱全。",
+          "zh-HK": "DNS、流量分析、WAF、Snippets、Workers 即時日誌、R2/D1/KV 儲存一應俱全。",
+          "ja": "DNS、トラフィック分析、WAF、Snippets、Workers リアルタイムログ、R2/D1/KV ストレージをすべて網羅。",
+          "es-MX": "DNS, analíticas, WAF, Snippets, registros en vivo de Workers y almacenamiento R2/D1/KV, todo en un solo lugar.",
+          "ko": "DNS, 트래픽 분석, WAF, Snippets, Workers 실시간 로그, R2/D1/KV 스토리지까지 한곳에서.",
+          "pt-BR": "DNS, análises, WAF, Snippets, logs ao vivo de Workers e armazenamento R2/D1/KV, tudo em um só lugar.",
+          "pt-PT": "DNS, análises, WAF, Snippets, logs ao vivo de Workers e armazenamento R2/D1/KV, tudo em um só lugar."
+        }
+      }
+    ]
+  }
+]

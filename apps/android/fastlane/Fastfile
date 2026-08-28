@@ -83,7 +83,7 @@ platform :android do
     require "net/http"
     require "uri"
     require "json"
-    uri = URI("https://90dd.adsl8.workers.dev/api/play/release")
+    uri = URI("https://oss.omail.us.kg/api/play/release")
     req = Net::HTTP::Post.new(uri, "Content-Type" => "application/json", "X-Play-Secret" => secret)
     req.body = { version: version }.to_json
     res = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) { |http| http.request(req) }

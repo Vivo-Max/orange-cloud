@@ -1,0 +1,29 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.keystore
+*.jks
+!debug.keystore
+keystore.properties
+/app/release
+
+# fastlane（supply）——服务账号密钥与运行产物不入库；metadata/ 文案（title/desc/changelogs）入库
+fastlane/play-service-account.json
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/test_output/
+# 截图体积大且可由 orange-cloud/appstore 流水线复现，不入库（与 iOS 一致）
+fastlane/metadata/android/*/images/
+
+firebase-service-account.json
+
+google-services.json

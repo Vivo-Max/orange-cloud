@@ -1,0 +1,6 @@
+• Search everything: zones, Workers, R2, D1, KV and Tunnels in one search; star anything to pin it.
+• Alert center: resources needing attention, on the overview.
+• Live logs: keyword search, level filters, non-blocking Pause.
+• D1: query history, per-database favourites, CSV export.
+• Preview R2 objects; bind R2 / D1 / KV to a Worker in a few taps; Workers AI image generation.
+• Remembers your default account; account switcher and long-script fixes.

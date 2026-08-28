@@ -1,0 +1,1 @@
+• Novidade: Pausar o Cloudflare. Pause ou retome o proxy nas definições do domínio com um toque. Em pausa, o tráfego ignora o Cloudflare: WAF, cache e ocultação do IP de origem deixam de funcionar e o DNS continua a ser resolvido pelo Cloudflare. Demora cerca de 5 minutos.

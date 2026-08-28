@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import Error1000Loop from "@/components/guides/Error1000Loop";
 import { guideBySlug, GUIDE_LOCALE } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("cloudflare-error-1000-dns-points-to-prohibited-ip");
 const PATH = `/guides/${guide.slug}`;
 

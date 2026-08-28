@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  存储模块增量文案（R2 内联预览 + D1 查询历史/收藏/CSV 导出/索引卡）。
+  源语言 zh-Hans，其余语种由发版时统一补译。
+-->
+<resources>
+
+    <!-- R2 对象内联预览 -->
+    <string name="r2_preview_title">预览</string>
+    <string name="r2_preview_loading">正在加载预览…</string>
+    <string name="r2_preview_json_formatted">JSON 已格式化</string>
+    <string name="r2_preview_truncated">内容较长，仅显示前 %1$d 个字符</string>
+    <string name="r2_preview_too_large">对象较大（%1$s），请改用「下载并打开」</string>
+    <string name="r2_preview_unsupported">此文件类型无法在应用内预览，请改用「下载并打开」</string>
+    <string name="r2_preview_failed">预览加载失败</string>
+    <string name="r2_preview_search">在预览中搜索</string>
+    <string name="r2_preview_matches">%1$d 处匹配</string>
+    <string name="r2_preview_no_match">无匹配</string>
+
+    <!-- D1 查询历史 / 收藏 -->
+    <string name="d1_history">最近执行</string>
+    <string name="d1_favorites">收藏</string>
+    <string name="d1_favorite_add">收藏此语句</string>
+    <string name="d1_favorite_remove">取消收藏</string>
+    <string name="d1_favorite_too_long">语句过长，未加入收藏</string>
+    <string name="d1_favorite_full">收藏已满（上限 %1$d 条）</string>
+
+    <!-- D1 结果导出 -->
+    <string name="d1_export_csv">导出 CSV</string>
+    <string name="d1_export_hint">仅导出当前已加载的结果，不会重新查询</string>
+    <string name="d1_export_share">分享查询结果</string>
+    <string name="d1_export_failed">导出失败</string>
+
+    <!-- D1 表结构索引 -->
+    <string name="d1_index_section">索引</string>
+    <string name="d1_index_empty">该表没有索引</string>
+    <string name="d1_index_unique">唯一</string>
+    <string name="d1_index_origin_pk">主键</string>
+    <string name="d1_index_origin_unique">UNIQUE 约束</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+
+</resources>

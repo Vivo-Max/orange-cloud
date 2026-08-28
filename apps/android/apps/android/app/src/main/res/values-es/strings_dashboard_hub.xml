@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">Fijado</string>
+    <string name="hub_pin">Fijar</string>
+    <string name="hub_unpin">Quitar de fijados</string>
+    <string name="hub_unresolved">Recurso no disponible</string>
+    <string name="hub_search">Buscar recursos</string>
+    <string name="hub_search_hint">Busca dominios, Workers, buckets…</string>
+    <string name="hub_search_empty">No hay recursos que coincidan</string>
+    <string name="hub_type_zone">Dominio</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">Bucket</string>
+    <string name="hub_type_d1">Base de datos D1</string>
+    <string name="hub_type_kv">Espacio de nombres KV</string>
+    <string name="hub_type_tunnel">Túnel</string>
+    <string name="hub_alerts">Centro de alertas</string>
+    <string name="hub_alert_all_clear">Sin alertas</string>
+    <string name="hub_alert_all_clear_sub">Dominios, túneles y Workers están bien</string>
+    <string name="hub_alert_zone_inactive">Dominio no activo: %1$s</string>
+    <string name="hub_alert_tunnel">Problema de túnel: %1$s</string>
+    <string name="hub_alert_no_workers">Aún no hay Workers</string>
+    <string name="hub_alert_no_workers_sub">Esta cuenta no tiene scripts de Worker</string>
+</resources>

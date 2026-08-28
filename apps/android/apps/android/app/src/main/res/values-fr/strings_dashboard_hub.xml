@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">Épinglé</string>
+    <string name="hub_pin">Épingler</string>
+    <string name="hub_unpin">Détacher</string>
+    <string name="hub_unresolved">Ressource indisponible</string>
+    <string name="hub_search">Rechercher des ressources</string>
+    <string name="hub_search_hint">Rechercher domaines, Workers, buckets…</string>
+    <string name="hub_search_empty">Aucune ressource correspondante</string>
+    <string name="hub_type_zone">Domaine</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">Bucket</string>
+    <string name="hub_type_d1">Base D1</string>
+    <string name="hub_type_kv">Espace de noms KV</string>
+    <string name="hub_type_tunnel">Tunnel</string>
+    <string name="hub_alerts">Centre d’alertes</string>
+    <string name="hub_alert_all_clear">Aucune alerte</string>
+    <string name="hub_alert_all_clear_sub">Domaines, tunnels et Workers sont opérationnels</string>
+    <string name="hub_alert_zone_inactive">Domaine inactif : %1$s</string>
+    <string name="hub_alert_tunnel">Problème de tunnel : %1$s</string>
+    <string name="hub_alert_no_workers">Aucun Worker</string>
+    <string name="hub_alert_no_workers_sub">Ce compte ne contient aucun script Worker</string>
+</resources>

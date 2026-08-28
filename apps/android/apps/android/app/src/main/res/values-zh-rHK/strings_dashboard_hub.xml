@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_dashboard_hub.xml (source: zh-Hans). -->
+<resources>
+    <string name="hub_pinned">已置頂</string>
+    <string name="hub_pin">置頂</string>
+    <string name="hub_unpin">取消置頂</string>
+    <string name="hub_unresolved">資源不可用</string>
+    <string name="hub_search">搜索資源</string>
+    <string name="hub_search_hint">搜索域名、Worker、儲存桶…</string>
+    <string name="hub_search_empty">沒有匹配的資源</string>
+    <string name="hub_type_zone">域名</string>
+    <string name="hub_type_worker">Worker</string>
+    <string name="hub_type_bucket">儲存桶</string>
+    <string name="hub_type_d1">D1 數據庫</string>
+    <string name="hub_type_kv">KV 命名空間</string>
+    <string name="hub_type_tunnel">隧道</string>
+    <string name="hub_alerts">告警中心</string>
+    <string name="hub_alert_all_clear">暫無告警</string>
+    <string name="hub_alert_all_clear_sub">域名、隧道與 Worker 一切正常</string>
+    <string name="hub_alert_zone_inactive">域名未啟用：%1$s</string>
+    <string name="hub_alert_tunnel">隧道異常：%1$s</string>
+    <string name="hub_alert_no_workers">還沒有 Worker</string>
+    <string name="hub_alert_no_workers_sub">目前帳戶下沒有 Worker 腳本</string>
+</resources>

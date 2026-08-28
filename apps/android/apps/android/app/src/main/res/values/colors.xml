@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="oc_orange">#FFF48120</color>
+    <!-- App 图标自适应背景：对齐 iOS AppIcon 的纯白底（三朵橙云前景自带浅卡片+阴影） -->
+    <color name="oc_icon_bg">#FFFFFFFF</color>
+    <!-- 启动窗背景：与晨昏天景顶色衔接，避免 Compose 接管前的白闪 -->
+    <color name="oc_window_light">#FFF5F2ED</color>
+    <color name="oc_window_dark">#FF0A0A0E</color>
+</resources>

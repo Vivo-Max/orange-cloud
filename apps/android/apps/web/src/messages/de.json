@@ -1,0 +1,243 @@
+{
+	"rank": {
+		"badge": "#{rank} bei Entwicklertools",
+		"ariaLabel": "App-Store-Platzierung"
+	},
+	"meta": {
+		"title": "Orange Cloud — Dein Cloudflare auf einen Blick",
+		"description": "Ein nativer Client für Cloudflare: offizielle OAuth-Anmeldung, Domains, DNS, Traffic-Analysen, Echtzeit-Workers-Logs und R2 · D1 · KV-Speicher auf iPhone, iPad und Android.",
+		"keywords": "cloudflare,dns,domain,workers,cdn,waf,r2,serverless,analytics,ssl,tunnel,website,devops,kv,d1"
+	},
+	"header": {
+		"language": "Sprache",
+		"support": "Unterstützen",
+		"download": "App Store",
+		"downloadComing": "In Prüfung"
+	},
+	"badge": {
+		"line1": "Laden im",
+		"line2": "App Store",
+		"comingLine1": "In Prüfung",
+		"comingLine2": "App Store",
+		"alt": "Im App Store laden",
+		"comingLabel": "In App-Store-Prüfung"
+	},
+	"productHunt": {
+		"alt": "Orange Cloud — der Open-Source-Cloudflare-Begleiter für Power-User | Product Hunt"
+	},
+	"hero": {
+		"kicker": "Nativ für iPhone, iPad & Android",
+		"title1": "Dein Cloudflare,",
+		"title2": "auf einen Blick",
+		"sub": "Domains, DNS, Analysen, Workers-Logs und Speicher, eingebettet in einen Himmel, der der Tageszeit folgt. Offizielle OAuth-Anmeldung — kein Einfügen von API-Tokens.",
+		"note": "iOS 17.0+ / Android 9+ · Kostenloser Download, optional Pro"
+	},
+	"phone": {
+		"greetMorning": "Guten Morgen, Jiamin",
+		"greetAfternoon": "Guten Tag, Jiamin",
+		"greetEvening": "Guten Abend, Jiamin",
+		"health": "Alle 6 Domains gesund",
+		"statZones": "Domains",
+		"statZonesSub": "6 aktiv",
+		"statWorkers": "Workers",
+		"statWorkersSub": "Bereitgestellte Skripte",
+		"statDNS": "DNS-Einträge",
+		"statDNSSub": "Synchronisierte Domains",
+		"statR2": "R2",
+		"statR2Sub": "Buckets",
+		"usage": "Nutzung",
+		"tileWorkers": "Workers · Anfragen",
+		"tileR2": "R2 · Klasse B",
+		"zonesSection": "Domains",
+		"all": "Alle",
+		"zoneActive": "Aktiv",
+		"tabs": [
+			"Übersicht",
+			"Domains",
+			"Workers",
+			"Speicher",
+			"Einstellungen"
+		]
+	},
+	"trust": {
+		"title": "Anmelden, ohne Schlüssel herzugeben",
+		"sub": "Keine Datenerfassung, keine Server dazwischen — eine Konsole, die nur dir gehört.",
+		"cards": [
+			{
+				"t": "Keine API-Tokens",
+				"b": "Offizielles Cloudflare OAuth 2.0 + PKCE. Wähle genau die gewünschten Scopes, jederzeit über das Dashboard widerrufbar."
+			},
+			{
+				"t": "Tokens leben im Keychain",
+				"b": "Anmeldedaten werden nur im Keychain deines Geräts gespeichert — nie hochgeladen, nie auf Drittservern."
+			},
+			{
+				"t": "Nur Gerät-zu-Cloudflare",
+				"b": "Jede Anfrage geht direkt an api.cloudflare.com. Diese Seite leitet nur den OAuth-Callback weiter und speichert nichts."
+			}
+		]
+	},
+	"gallery": {
+		"title": "Vom Morgengrauen bis Mitternacht wischen",
+		"sub": "Acht Bildschirme teilen einen durchgehenden Himmel — wische nach rechts und die Sonne durchläuft den Tag für dich.",
+		"alts": [
+			"Übersicht: Domains, Workers, DNS und Nutzung auf einem Bildschirm",
+			"Analysen: Anfragen, Bandbreite, Cache-Treffer und Bedrohungen",
+			"DNS-Eintragsliste und -Bearbeitung",
+			"Speicher: R2, D1 und KV",
+			"Hell und dunkel: ein Himmel, Tag und Nacht",
+			"Echtzeit-Workers-Logs",
+			"Homescreen-Widgets, die dem Himmel folgen",
+			"Offizielle OAuth-Anmeldung"
+		]
+	},
+	"features": {
+		"title": "Das ganze Cloudflare-Toolkit in deiner Hand",
+		"sub": "Von DNS bis Edge-Speicher — jeder tägliche Handgriff ist abgedeckt.",
+		"items": [
+			{
+				"t": "Domains & DNS",
+				"b": "Einträge erstellen, bearbeiten und löschen, mit Ein-Tipp-Proxy-Schalter und Schnellsuche."
+			},
+			{
+				"t": "Traffic-Analysen",
+				"b": "Anfragen, Bandbreite, Cache-Treffer und blockierte Bedrohungen, gezeichnet mit Swift Charts."
+			},
+			{
+				"t": "Echtzeit-Workers-Logs",
+				"b": "Direkter WebSocket-Tail, gestreamt in Dynamic Island und Live Activities."
+			},
+			{
+				"t": "R2 · D1 · KV",
+				"b": "Objekte durchsuchen, SQL ausführen, Schlüssel-Wert-Paare verwalten — ein Speicher-Tab für alle drei."
+			},
+			{
+				"t": "WAF-Eigenregeln",
+				"b": "Firewall-Regeln prüfen und schalten, wenn es darauf ankommt."
+			},
+			{
+				"t": "Cloudflare Tunnel",
+				"b": "Tunnelstatus und aktive Verbindungen auf einen Blick."
+			},
+			{
+				"t": "Widgets & Siri",
+				"b": "Homescreen-Widgets, die dem Himmel folgen, Shortcuts nur einen Satz entfernt."
+			},
+			{
+				"t": "Mehrere Konten",
+				"b": "Mehrere Cloudflare-Konten nebeneinander halten und mit einem Tipp wechseln."
+			}
+		]
+	},
+	"ipad": {
+		"title": "Zwei Spalten, gebaut für iPad",
+		"body": "Ein NavigationSplitView-Layout hält Liste und Detail nebeneinander — der große Bildschirm ist kein gedehntes Handy mehr."
+	},
+	"pro": {
+		"title": "Gratis, wo es zählt, Pro, wo es skaliert",
+		"sub": "Kernverwaltung ist für immer kostenlos. Power-Funktionen kommen mit Pro — abonnieren oder einmalig kaufen und behalten.",
+		"freeName": "Kostenlos",
+		"freeItems": [
+			"Ein Konto",
+			"Volle Domains & DNS",
+			"24-Stunden-Analysen",
+			"Alle Widgets & Siri-Shortcuts"
+		],
+		"proName": "Pro",
+		"proItems": [
+			"Mehrere Konten",
+			"R2 · D1 · KV-Speicher",
+			"Echtzeit-Workers-Logs",
+			"WAF & Tunnel",
+			"7-Tage- / 30-Tage-Analysen"
+		],
+		"note": "Orange Cloud ist Open Source (AGPL-3.0) — du kannst es auch selbst bauen."
+	},
+	"cta": {
+		"title": "Steck Cloudflare in die Tasche",
+		"sub": "Der heutige Abendhimmel wartet schon in der App.",
+		"requirement": "Erfordert iOS 17.0+ oder Android 9+ · iPhone, iPad & Android"
+	},
+	"sibling": {
+		"eyebrow": "Ebenfalls aus derselben Feder",
+		"name": "Apolu",
+		"tagline": "App-Store-Platzierungen in 175 Ländern",
+		"body": "Verfolge die Platzierung einer App in den Gratis- und Bezahl-Charts, lass dich benachrichtigen, sobald sie sich bewegt, und sieh Umsätze direkt aus deinem eigenen App Store Connect statt aus einer Schätzung Dritter. Für iPhone, iPad und Mac.",
+		"cta": "Mal ansehen"
+	},
+	"changelog": {
+		"title": "Versionsverlauf",
+		"sub": "Orange Cloud ist jetzt im App Store. Hier ist der Versionsverlauf — oder tritt TestFlight bei für frühen Zugang zu kommenden Builds.",
+		"tfButton": "TestFlight beitreten",
+		"tfNote": "Erfordert iOS 17.0 oder neuer · nur Apple-Geräte",
+		"androidSoon": "Die Android-App kommt bald in Google Play",
+		"statusInReview": "In Prüfung"
+	},
+	"footer": {
+		"privacy": "Datenschutzerklärung",
+		"terms": "Nutzungsbedingungen",
+		"contact": "Kontakt",
+		"copyright": "© 2026 Orange Cloud",
+		"disclaimer": "Orange Cloud ist ein unabhängiger Drittanbieter-Client und steht in keiner Verbindung zu Cloudflare, Inc., wird von dieser weder unterstützt noch gesponsert. Cloudflare ist eine Marke von Cloudflare, Inc."
+	},
+	"contact": {
+		"title": "Kontakt aufnehmen",
+		"intro": "Eine Frage, Feedback oder ein Fehler? Schreib dem Entwickler direkt — wir lesen jede Nachricht.",
+		"emailLabel": "E-Mail",
+		"emailHint": "Wir antworten so schnell wie möglich, meist innerhalb weniger Tage.",
+		"cards": [
+			{
+				"h": "Feedback & Ideen",
+				"p": "Sag uns, was funktioniert, was nicht und was du als Nächstes sehen möchtest."
+			},
+			{
+				"h": "Fehlerberichte",
+				"p": "Etwas kaputt? Schritte zum Reproduzieren und deine Geräteinfos helfen uns, es zu finden."
+			},
+			{
+				"h": "Datenschutz & Sicherheit",
+				"p": "Ein Sicherheitsproblem gefunden? Schick uns die Details und wir reagieren umgehend."
+			}
+		]
+	},
+	"privacy": {
+		"title": "Datenschutzerklärung",
+		"updated": "Zuletzt aktualisiert: Juni 2026",
+		"sections": [
+			{
+				"h": "Datenerfassung",
+				"p": "Orange Cloud erfasst, speichert oder überträgt keine personenbezogenen Daten an unsere Server. Deine Cloudflare-OAuth-Tokens werden ausschließlich im lokalen Keychain deines Geräts gespeichert. Alle API-Anfragen gehen direkt an api.cloudflare.com."
+			},
+			{
+				"h": "Authentifizierung",
+				"p": "Orange Cloud nutzt Cloudflares offiziellen OAuth-2.0-Autorisierungsfluss. Wir sehen oder speichern niemals dein Cloudflare-Passwort oder dauerhafte API-Tokens. Der OAuth-Callback-Endpunkt dieser Seite leitet den temporären Autorisierungscode an die App weiter, ohne ihn zu speichern."
+			},
+			{
+				"h": "Drittanbieter-Dienste",
+				"p": "Orange Cloud kommuniziert ausschließlich mit Cloudflares offiziellen API-Endpunkten (api.cloudflare.com und dash.cloudflare.com). Es werden keine anderen Drittanbieter-Dienste verwendet."
+			}
+		]
+	},
+	"terms": {
+		"title": "Nutzungsbedingungen",
+		"updated": "Zuletzt aktualisiert: Juni 2026",
+		"sections": [
+			{
+				"h": "Annahme der Bedingungen",
+				"p": "Mit der Nutzung von Orange Cloud stimmst du diesen Bedingungen zu. Orange Cloud ist ein unabhängiger Drittanbieter-Client für Cloudflare und steht in keiner Verbindung zu Cloudflare, Inc., wird von dieser weder unterstützt noch gesponsert."
+			},
+			{
+				"h": "Nutzung des Dienstes",
+				"p": "Orange Cloud ermöglicht dir, deine eigenen Cloudflare-Ressourcen über Cloudflares offizielle API zu verwalten. Du bist für alle über die App vorgenommenen Änderungen an deinem Cloudflare-Konto sowie für die Einhaltung der Nutzungsbedingungen von Cloudflare verantwortlich."
+			},
+			{
+				"h": "Gewährleistungsausschluss",
+				"p": "Orange Cloud wird „wie besehen“ ohne jegliche Gewährleistung bereitgestellt. Wir haften nicht für Schäden aus der Nutzung der App, einschließlich, aber nicht beschränkt auf DNS-Fehlkonfiguration oder Dienstunterbrechung."
+			},
+			{
+				"h": "Zugriff widerrufen",
+				"p": "Du kannst den Zugriff von Orange Cloud auf dein Cloudflare-Konto jederzeit über das Cloudflare-Dashboard oder durch Abmelden in der App widerrufen."
+			}
+		]
+	}
+}

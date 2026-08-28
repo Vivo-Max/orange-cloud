@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">로그 내용 검색</string>
+    <string name="tail_search_clear">검색 지우기</string>
+    <string name="tail_filter_empty">현재 필터와 일치하는 로그가 없습니다</string>
+    <string name="tail_copied">로그 줄을 복사했습니다</string>
+    <string name="tail_level_all">전체</string>
+    <string name="tail_level_event">요청</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">로그 상세</string>
+    <string name="tail_detail_close">닫기</string>
+    <string name="tail_detail_copy_all">전체 복사</string>
+    <string name="tail_detail_level">레벨</string>
+    <string name="tail_detail_time">시간</string>
+    <string name="tail_detail_method">요청 메서드</string>
+    <string name="tail_detail_url">요청 주소</string>
+    <string name="tail_detail_cron">cron 표현식</string>
+    <string name="tail_detail_outcome">결과</string>
+    <string name="tail_detail_exception">예외</string>
+    <string name="tail_detail_body">전체 내용</string>
+    <string name="tail_detail_select_hint">길게 누르면 일부만 선택해 복사할 수 있습니다</string>
+    <string name="tail_row_hint">탭하면 상세, 길게 누르면 줄 전체 복사</string>
+    <string name="dev_ai_image_playground">이미지 생성 시험 실행</string>
+    <string name="dev_ai_image_prompt">이미지 프롬프트</string>
+    <string name="dev_ai_image_generate">이미지 생성</string>
+    <string name="dev_ai_image_run_note">생성하면 모델이 호출되며 계정의 Workers AI 사용량에 포함됩니다.</string>
+    <string name="dev_ai_image_result">생성된 이미지</string>
+    <string name="dev_ai_image_decoding">이미지를 처리하는 중…</string>
+    <string name="dev_ai_image_share">이미지 공유</string>
+    <string name="dev_ai_image_share_failed">공유하지 못했습니다. 이미지를 받을 수 있는 앱이 없습니다.</string>
+    <string name="dev_ai_image_not_image">이 모델은 이미지를 반환하지 않았습니다. 원본 응답:</string>
+    <string name="tail_paused">일시정지됨</string>
+    <string name="tail_paused_new_count">일시정지됨 · 새 %1$d개</string>
+</resources>

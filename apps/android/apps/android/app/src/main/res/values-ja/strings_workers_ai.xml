@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">ログ内容を検索</string>
+    <string name="tail_search_clear">検索をクリア</string>
+    <string name="tail_filter_empty">現在の条件に一致するログはありません</string>
+    <string name="tail_copied">この行をコピーしました</string>
+    <string name="tail_level_all">すべて</string>
+    <string name="tail_level_event">リクエスト</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">ログの詳細</string>
+    <string name="tail_detail_close">閉じる</string>
+    <string name="tail_detail_copy_all">すべてコピー</string>
+    <string name="tail_detail_level">レベル</string>
+    <string name="tail_detail_time">時刻</string>
+    <string name="tail_detail_method">リクエストメソッド</string>
+    <string name="tail_detail_url">リクエスト URL</string>
+    <string name="tail_detail_cron">cron 式</string>
+    <string name="tail_detail_outcome">結果</string>
+    <string name="tail_detail_exception">例外</string>
+    <string name="tail_detail_body">全文</string>
+    <string name="tail_detail_select_hint">長押しすると一部だけを選択してコピーできます</string>
+    <string name="tail_row_hint">タップで詳細、長押しで行全体をコピー</string>
+    <string name="dev_ai_image_playground">画像生成のお試し実行</string>
+    <string name="dev_ai_image_prompt">画像プロンプト</string>
+    <string name="dev_ai_image_generate">画像を生成</string>
+    <string name="dev_ai_image_run_note">生成するとモデルが呼び出され、アカウントの Workers AI 使用量に計上されます。</string>
+    <string name="dev_ai_image_result">生成された画像</string>
+    <string name="dev_ai_image_decoding">画像を処理中…</string>
+    <string name="dev_ai_image_share">画像を共有</string>
+    <string name="dev_ai_image_share_failed">共有に失敗しました。画像を受け取れるアプリがありません。</string>
+    <string name="dev_ai_image_not_image">このモデルは画像を返しませんでした。以下は生のレスポンスです：</string>
+    <string name="tail_paused">一時停止中</string>
+    <string name="tail_paused_new_count">一時停止中 · 新着 %1$d 件</string>
+</resources>

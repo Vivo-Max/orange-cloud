@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">Buscar no conteúdo dos logs</string>
+    <string name="tail_search_clear">Limpar busca</string>
+    <string name="tail_filter_empty">Nenhum log corresponde aos filtros atuais</string>
+    <string name="tail_copied">Linha de log copiada</string>
+    <string name="tail_level_all">Todos</string>
+    <string name="tail_level_event">Requisições</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">Detalhes do log</string>
+    <string name="tail_detail_close">Fechar</string>
+    <string name="tail_detail_copy_all">Copiar tudo</string>
+    <string name="tail_detail_level">Nível</string>
+    <string name="tail_detail_time">Hora</string>
+    <string name="tail_detail_method">Método</string>
+    <string name="tail_detail_url">URL</string>
+    <string name="tail_detail_cron">Expressão cron</string>
+    <string name="tail_detail_outcome">Resultado</string>
+    <string name="tail_detail_exception">Exceção</string>
+    <string name="tail_detail_body">Conteúdo completo</string>
+    <string name="tail_detail_select_hint">Mantenha pressionado para selecionar e copiar um trecho</string>
+    <string name="tail_row_hint">Toque para ver detalhes; segure para copiar a linha inteira</string>
+    <string name="dev_ai_image_playground">Teste de texto para imagem</string>
+    <string name="dev_ai_image_prompt">Prompt da imagem</string>
+    <string name="dev_ai_image_generate">Gerar imagem</string>
+    <string name="dev_ai_image_run_note">Gerar chama o modelo e conta no uso de Workers AI da conta.</string>
+    <string name="dev_ai_image_result">Imagem gerada</string>
+    <string name="dev_ai_image_decoding">Processando imagem…</string>
+    <string name="dev_ai_image_share">Compartilhar imagem</string>
+    <string name="dev_ai_image_share_failed">Falha ao compartilhar: nenhum app pode receber a imagem.</string>
+    <string name="dev_ai_image_not_image">O modelo não retornou uma imagem. Resposta original:</string>
+    <string name="tail_paused">Pausado</string>
+    <string name="tail_paused_new_count">Pausado · %1$d novos</string>
+</resources>

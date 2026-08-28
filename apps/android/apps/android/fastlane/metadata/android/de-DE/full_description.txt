@@ -1,0 +1,46 @@
+Orange Cloud ist ein nativer Cloudflare-Client für Android-Smartphones und -Tablets. Melde dich mit Cloudflares offiziellem OAuth an, wähle die Berechtigungen, die du gewähren möchtest, und verwalte deine Domains von überall. Keine API-Tokens erstellen, kopieren oder einfügen.
+
+SICHER ANMELDEN
+- Offizielles OAuth 2.0 mit PKCE: Autorisierung im Browser, genau wie im Web
+- Du wählst die Scopes; die App erhält nur, was du gewährst
+- Tokens werden im Android Keystore gespeichert und verlassen nie dein Gerät
+- API-Anfragen gehen direkt von deinem Gerät zu Cloudflare. Keine Mittelsmann-Server, keine Datenerfassung
+
+DOMAINS & DNS
+- Jede Domain auf einen Blick, mit Status und Tarif
+- Vollständige DNS-Verwaltung: hinzufügen, bearbeiten, löschen, suchen
+- Proxy mit einem Tipp umschalten (die orange Wolke selbst)
+
+ANALYSEN
+- Anfragen, Bandbreite, Cache-Trefferrate und blockierte Bedrohungen
+- Klare Diagramme: die letzten 24 Stunden gratis, 7-Tage- und 30-Tage-Zeiträume mit Pro
+
+WORKERS
+- Bereitgestellte Skripte, Details und Metriken durchsuchen
+- Pro: Echtzeit-Logs über WebSocket mit laufender Benachrichtigung streamen
+
+SPEICHER (PRO)
+- R2: Buckets und Objekte durchsuchen, hoch- und herunterladen
+- D1: Abfragen in einer integrierten SQL-Konsole ausführen, Tabellenzeilen ansehen und bearbeiten
+- KV: Schlüssel lesen, schreiben und löschen
+
+SICHERHEIT & NETZWERK (PRO)
+- WAF-Eigenregeln: unterwegs prüfen, erstellen und schalten
+- Cloudflare Tunnel: Status und aktive Verbindungen prüfen
+
+FÜR ANDROID GEMACHT
+- Tag-und-Nacht-Theme, das sich mit der Tageszeit ändert, mit Material You Dynamic Color
+- Adaptives Zweispalten-Layout für Tablets und Foldables
+- Homescreen-Shortcuts (Icon lange drücken) und eine Quick-Settings-Kachel
+- Predictive Back und App-spezifische Sprache
+
+FREE VS PRO
+Für immer kostenlos: ein Konto, vollständige Domain- und DNS-Verwaltung und 24-Stunden-Analysen.
+Orange Cloud Pro schaltet mehrere Konten, den gesamten Speicher-Tab (R2 / D1 / KV), Echtzeit-Workers-Logs, WAF-Regeln, Tunnel sowie 7-Tage- / 30-Tage-Analysen frei. Erhältlich als Monats- oder Jahresabo (Jahresabo mit 7-tägiger Gratis-Testphase) oder als einmaliger Lifetime-Kauf.
+
+Abonnements werden über Google Play abgerechnet und verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Jederzeit in Google Play verwalten oder kündigen.
+
+Datenschutzerklärung: https://90dd.adsl8.workers.dev/privacy
+Nutzungsbedingungen: https://90dd.adsl8.workers.dev/terms
+
+Orange Cloud ist ein unabhängiger Drittanbieter-Client und steht in keiner Verbindung zu Cloudflare, Inc., wird von dieser weder unterstützt noch gesponsert. Cloudflare ist eine Marke von Cloudflare, Inc.

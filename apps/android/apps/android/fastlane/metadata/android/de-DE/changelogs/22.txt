@@ -1,0 +1,1 @@
+• Neu: Cloudflare pausieren. Den Proxy in den Domain-Einstellungen mit einem Tipp pausieren oder fortsetzen. Pausiert umgeht der Traffic Cloudflare – WAF, Caching und die Verschleierung der Origin-IP entfallen, DNS wird weiterhin von Cloudflare aufgelöst. Greift nach etwa 5 Minuten.

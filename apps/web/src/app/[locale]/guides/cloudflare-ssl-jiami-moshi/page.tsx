@@ -6,7 +6,7 @@ import GuideShell, { type RelatedLink } from "@/components/guides/GuideShell";
 import TlsModeLadder from "@/components/guides/TlsModeLadder";
 import { guideBySlug, guidePath, GUIDE_LOCALE_ZH } from "@/lib/guides/guides";
 
-const SITE_URL = "https://90dd.adsl8.workers.dev";
+const SITE_URL = "https://oss.omail.us.kg";
 const guide = guideBySlug("cloudflare-ssl-jiami-moshi", GUIDE_LOCALE_ZH);
 const PATH = guidePath(GUIDE_LOCALE_ZH, `/guides/${guide.slug}`);
 

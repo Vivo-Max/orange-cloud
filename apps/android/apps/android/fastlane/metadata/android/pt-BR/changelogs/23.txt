@@ -1,0 +1,7 @@
+• Rastreadores de IA: três modos de bloqueio e duas opções de conteúdo
+• Verificações de integridade: status da origem e alertas da Cloudflare
+• Registrador: vencimento, renovação automática e bloqueio
+• Rastreamento: veja quais regras são aplicadas
+• DNS: DNSSEC e registro DS, achatamento de CNAME, servidor de nomes
+• Histórico de builds do Worker, com aviso quando falham
+• Adiciona R2 Data Catalog, cabeçalhos gerenciados, varredura de URL e supressão de Email; histórico de auditoria

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_workers_ai.xml (source: zh-Hans). -->
+<resources>
+    <string name="tail_search_hint">البحث في محتوى السجلات</string>
+    <string name="tail_search_clear">مسح البحث</string>
+    <string name="tail_filter_empty">لا توجد سجلات مطابقة للمرشّحات الحالية</string>
+    <string name="tail_copied">تم نسخ سطر السجل</string>
+    <string name="tail_level_all">الكل</string>
+    <string name="tail_level_event">الطلبات</string>
+    <string name="tail_level_log">log</string>
+    <string name="tail_level_debug">debug</string>
+    <string name="tail_level_info">info</string>
+    <string name="tail_level_warn">warn</string>
+    <string name="tail_level_error">error</string>
+    <string name="tail_detail_title">تفاصيل السجل</string>
+    <string name="tail_detail_close">إغلاق</string>
+    <string name="tail_detail_copy_all">نسخ الكل</string>
+    <string name="tail_detail_level">المستوى</string>
+    <string name="tail_detail_time">الوقت</string>
+    <string name="tail_detail_method">طريقة الطلب</string>
+    <string name="tail_detail_url">عنوان الطلب</string>
+    <string name="tail_detail_cron">تعبير cron</string>
+    <string name="tail_detail_outcome">النتيجة</string>
+    <string name="tail_detail_exception">استثناء</string>
+    <string name="tail_detail_body">المحتوى الكامل</string>
+    <string name="tail_detail_select_hint">اضغط مطوّلًا لتحديد جزء ونسخه</string>
+    <string name="tail_row_hint">انقر للتفاصيل، واضغط مطوّلًا لنسخ السطر بالكامل</string>
+    <string name="dev_ai_image_playground">تجربة توليد الصور</string>
+    <string name="dev_ai_image_prompt">موجّه الصورة</string>
+    <string name="dev_ai_image_generate">توليد صورة</string>
+    <string name="dev_ai_image_run_note">التوليد يستدعي النموذج ويُحتسب ضمن استخدام Workers AI للحساب.</string>
+    <string name="dev_ai_image_result">الصورة المولَّدة</string>
+    <string name="dev_ai_image_decoding">جارٍ معالجة الصورة…</string>
+    <string name="dev_ai_image_share">مشاركة الصورة</string>
+    <string name="dev_ai_image_share_failed">فشلت المشاركة، لا يوجد تطبيق يمكنه استقبال الصورة.</string>
+    <string name="dev_ai_image_not_image">لم يُرجِع النموذج صورة. الاستجابة الأصلية:</string>
+    <string name="tail_paused">متوقف مؤقتًا</string>
+    <string name="tail_paused_new_count">متوقف مؤقتًا · %1$d جديد</string>
+</resources>

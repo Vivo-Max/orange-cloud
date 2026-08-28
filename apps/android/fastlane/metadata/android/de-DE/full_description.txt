@@ -40,7 +40,7 @@ Orange Cloud Pro schaltet mehrere Konten, den gesamten Speicher-Tab (R2 / D1 / K
 
 Abonnements werden über Google Play abgerechnet und verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Jederzeit in Google Play verwalten oder kündigen.
 
-Datenschutzerklärung: https://90dd.adsl8.workers.dev/privacy
-Nutzungsbedingungen: https://90dd.adsl8.workers.dev/terms
+Datenschutzerklärung: https://oss.omail.us.kg/privacy
+Nutzungsbedingungen: https://oss.omail.us.kg/terms
 
 Orange Cloud ist ein unabhängiger Drittanbieter-Client und steht in keiner Verbindung zu Cloudflare, Inc., wird von dieser weder unterstützt noch gesponsert. Cloudflare ist eine Marke von Cloudflare, Inc.

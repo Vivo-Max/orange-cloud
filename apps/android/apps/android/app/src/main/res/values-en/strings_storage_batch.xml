@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Translated from values/strings_storage_batch.xml (source: zh-Hans). -->
+<resources>
+    <string name="r2_preview_title">Preview</string>
+    <string name="r2_preview_loading">Loading preview…</string>
+    <string name="r2_preview_json_formatted">JSON formatted</string>
+    <string name="r2_preview_truncated">Content is long — showing the first %1$d characters</string>
+    <string name="r2_preview_too_large">This object is large (%1$s). Use “Download &amp; open” instead.</string>
+    <string name="r2_preview_unsupported">This file type can’t be previewed in the app. Use “Download &amp; open” instead.</string>
+    <string name="r2_preview_failed">Couldn’t load the preview</string>
+    <string name="r2_preview_search">Search in preview</string>
+    <string name="r2_preview_matches">%1$d matches</string>
+    <string name="r2_preview_no_match">No matches</string>
+    <string name="d1_history">Recent</string>
+    <string name="d1_favorites">Favorites</string>
+    <string name="d1_favorite_add">Save to favorites</string>
+    <string name="d1_favorite_remove">Remove from favorites</string>
+    <string name="d1_favorite_too_long">Statement is too long to save</string>
+    <string name="d1_favorite_full">Favorites are full (limit %1$d)</string>
+    <string name="d1_export_csv">Export CSV</string>
+    <string name="d1_export_hint">Exports only the results already loaded; no new query is run</string>
+    <string name="d1_export_share">Share results</string>
+    <string name="d1_export_failed">Export failed</string>
+    <string name="d1_index_section">Indexes</string>
+    <string name="d1_index_empty">This table has no indexes</string>
+    <string name="d1_index_unique">Unique</string>
+    <string name="d1_index_origin_pk">Primary key</string>
+    <string name="d1_index_origin_unique">UNIQUE constraint</string>
+    <string name="d1_index_origin_create">CREATE INDEX</string>
+</resources>

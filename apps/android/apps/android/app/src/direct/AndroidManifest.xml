@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- direct 风味：在 MainActivity 上追加激活码 deeplink，接住 Web 成功页的 orangecloud://redeem?code=... -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- sideload 自助更新：应用内通过 PackageInstaller 安装下载的新 APK -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            tools:node="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="orangecloud" android:host="redeem" />
+            </intent-filter>
+        </activity>
+
+        <!-- PackageInstaller 安装状态回调（拉起系统安装确认 / 失败提示） -->
+        <receiver
+            android:name="jiamin.chen.orangecloud.core.update.InstallResultReceiver"
+            android:exported="false" />
+    </application>
+</manifest>

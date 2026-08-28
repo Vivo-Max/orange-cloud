@@ -1,0 +1,4 @@
+• Neue Übersicht der Kontonutzung: Workers-, R2-, D1- und KV-Nutzung im Verhältnis zu den Kontingenten auf einen Blick.
+• Worker-Bereitstellungsverlauf und -verwaltung: frühere Bereitstellungen ansehen; Worker erstellen, Code bearbeiten und löschen.
+• Mehr Speicherverwaltung: KV-Namespaces, R2-Buckets und D1-Tabellen erstellen/löschen sowie Pages-Bereitstellungen verwalten.
+• Verschiedene Verbesserungen bei Stabilität und Bedienung.

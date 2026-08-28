@@ -1,0 +1,7 @@
+• KI-Crawler: drei Blockierstufen, dazu zwei KI-Inhaltsschalter
+• Health Checks: Origin-Status im Blick, Meldungen von Cloudflare
+• Registrar: Ablaufdatum, Auto-Verlängerung, Transfer-Sperre
+• Request Tracing: sehen, welche Regeln greifen
+• DNS: DNSSEC und DS-Eintrag, CNAME-Flattening, Nameserver-Typ
+• Worker-Build-Verlauf, Meldung bei Fehlschlag
+• Neu: R2 Data Catalog, Managed Transforms, URL-Scan, E-Mail-Sperrliste; Änderungsverlauf im Audit-Log; Tunnel-Fix

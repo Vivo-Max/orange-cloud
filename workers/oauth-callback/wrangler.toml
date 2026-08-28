@@ -1,0 +1,11 @@
+name = "orange-cloud-oauth-callback"
+main = "worker.js"
+compatibility_date = "2026-08-28"
+workers_dev = false
+
+routes = [
+  { pattern = "oss.omail.us.kg", custom_domain = true }
+]
+
+[observability]
+enabled = true
