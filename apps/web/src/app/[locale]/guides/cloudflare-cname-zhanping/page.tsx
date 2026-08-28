@@ -50,6 +50,11 @@ const FAQ: Array<{ q: string; a: string }> = [
 
 const RELATED: RelatedLink[] = [
 	{
+		href: "/guides/cloudflare-dns-jiexi-bu-shengxiao",
+		label: "改了 DNS 解析，为什么一直不生效？",
+		note: "展平后的上游一旦超时或 SERVFAIL，Cloudflare 会拿过期应答顶上，看起来就像改了不生效。",
+	},
+	{
 		href: "/guides/cloudflare-xiaohuangyun",
 		label: "Cloudflare 的小黄云到底是什么？什么时候该关掉？",
 		note: "展平后返回的是任播 IP 还是源站 IP，全看这条记录的代理开关拨在哪一边。",

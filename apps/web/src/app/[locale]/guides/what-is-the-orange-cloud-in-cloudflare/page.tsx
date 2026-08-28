@@ -60,6 +60,11 @@ const RELATED: RelatedLink[] = [
 		note: "What happens when a proxied record hands the proxy an address that is Cloudflare’s own.",
 	},
 	{
+		href: "/guides/cloudflare-real-visitor-ip-cf-connecting-ip",
+		label: "How do you get the real visitor IP behind Cloudflare?",
+		note: "The first thing proxying changes at the origin: every connection now comes from Cloudflare, and the visitor moves into a header.",
+	},
+	{
 		href: "https://developers.cloudflare.com/dns/proxy-status/",
 		label: "Cloudflare docs: Proxy status",
 		note: "The official reference for proxied and DNS-only records, including limitations and use cases.",

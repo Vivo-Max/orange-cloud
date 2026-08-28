@@ -77,6 +77,11 @@ const RELATED: RelatedLink[] = [
 		note: "开了小黄云才会遇到的报错：边缘节点连不上源站，19 秒之后返回 522。",
 	},
 	{
+		href: "/guides/cloudflare-dns-jiexi-bu-shengxiao",
+		label: "改了 DNS 解析，为什么一直不生效？",
+		note: "开着小黄云改源站 IP，dig 出来的结果一个字都不会变——这不是没生效，是它本来就不返回源站地址。",
+	},
+	{
 		href: "/guides/cloudflare-huancun-mingzhonglv",
 		label: "Cloudflare 到底缓存了什么？为什么命中率一直上不去",
 		note: "缓存和缓存规则只对代理流量生效——灰云记录的请求根本不经过 Cloudflare。",

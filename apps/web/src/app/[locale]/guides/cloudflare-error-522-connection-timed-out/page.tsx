@@ -68,6 +68,11 @@ const RELATED: RelatedLink[] = [
 		note: "Why a proxied record puts Cloudflare on the path at all, and what changes the moment you grey-cloud it for a test.",
 	},
 	{
+		href: "/guides/cloudflare-real-visitor-ip-cf-connecting-ip",
+		label: "How do you get the real visitor IP behind Cloudflare?",
+		note: "The same published IP ranges, used at the origin for the other half of the job — deciding which requests may claim a visitor address.",
+	},
+	{
 		href: DOCS_522,
 		label: "Cloudflare docs: Error 522",
 		note: "The official cause and resolution list this guide reorganises. Check it before changing anything at the origin.",
