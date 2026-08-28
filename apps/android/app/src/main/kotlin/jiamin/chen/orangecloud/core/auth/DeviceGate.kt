@@ -28,7 +28,7 @@ class DeviceGate @Inject constructor(
         "${uri.scheme}://${uri.host}"
     }
 
-    @SuppressLint("HardwareIds")
+    @get:SuppressLint("HardwareIds")
     val deviceId: String by lazy {
         (Settings.Secure.getString(context.contentResolver, Settings.Secure.ANDROID_ID) ?: "")
             .lowercase().ifEmpty { "unknown" }
