@@ -119,6 +119,66 @@ object Scopes {
     const val NOTIFICATIONS_READ = "notifications.read"
     const val NOTIFICATIONS_WRITE = "notifications.write"
 
+    // —— 扩展 scope（按自建 OAuth Client 实际注册集合逐项探测核对，2026-08-28）——
+    const val ACCOUNT_WRITE = "account-settings.write"
+    const val USER_DETAILS_READ = "user-details.read"           // 用户资料
+    const val MEMBERSHIPS_READ = "memberships.read"             // 账户成员关系
+    const val MEMBERSHIPS_WRITE = "memberships.write"
+    const val LOGS_READ = "logs.read"                           // Logpush（域名级）
+    const val LOGS_WRITE = "logs.write"
+    const val ACCOUNT_LOGS_READ = "account-logs.read"           // Logpush（账户级）
+    const val ACCOUNT_LOGS_WRITE = "account-logs.write"
+    const val WAITING_ROOMS_READ = "waiting-rooms.read"         // Waiting Room 等候室
+    const val WAITING_ROOMS_WRITE = "waiting-rooms.write"
+    const val DNS_FIREWALL_READ = "dns-firewall.read"           // DNS Firewall
+    const val DNS_FIREWALL_WRITE = "dns-firewall.write"
+    const val PAGE_SHIELD_READ = "page-shield.read"             // Page Shield 脚本监测
+    const val CUSTOM_PAGES_READ = "custom-pages.read"           // 自定义错误/质询页
+    const val CUSTOM_PAGES_WRITE = "custom-pages.write"
+    const val ZONE_VERSIONING_READ = "zone-versioning.read"     // 域名配置版本管理
+    const val ZONE_VERSIONING_WRITE = "zone-versioning.write"
+    const val ACCOUNT_RULESETS_READ = "account-rulesets.read"   // 账户级 Rulesets
+    const val ACCOUNT_RULESETS_WRITE = "account-rulesets.write"
+    const val VECTORIZE_READ = "vectorize.read"                 // Vectorize 向量库
+    const val VECTORIZE_WRITE = "vectorize.write"
+    const val BROWSER_RENDERING_READ = "browser-rendering.read" // Browser Rendering
+    const val BROWSER_RENDERING_WRITE = "browser-rendering.write"
+    const val PIPELINES_READ = "pipelines.read"                 // Pipelines 数据管道
+    const val PIPELINES_WRITE = "pipelines.write"
+    const val CONTAINERS_READ = "containers.read"               // Workers Containers
+    const val CONTAINERS_WRITE = "containers.write"
+    const val AI_SEARCH_READ = "ai-search.read"                 // AI Search（原 AutoRAG）
+    const val AI_SEARCH_WRITE = "ai-search.write"
+    const val SECRETS_STORE_READ = "secrets-store.read"         // 账户级 Secrets Store
+    const val SECRETS_STORE_WRITE = "secrets-store.write"
+    const val ZARAZ_READ = "zaraz.read"                         // Zaraz 第三方工具加载
+    const val ZARAZ_WRITE = "zaraz.write"
+    const val MAGIC_TRANSIT_READ = "magic-transit.read"         // Magic Transit
+    const val MAGIC_TRANSIT_WRITE = "magic-transit.write"
+    const val MAGIC_WAN_READ = "magic-wan.read"                 // Magic WAN
+    const val MAGIC_WAN_WRITE = "magic-wan.write"
+    const val MAGIC_FIREWALL_READ = "magic-firewall.read"       // Magic Firewall
+    const val MAGIC_FIREWALL_WRITE = "magic-firewall.write"
+    const val EMAIL_SENDING_READ = "email-sending.read"         // Email Sending
+    const val EMAIL_SENDING_WRITE = "email-sending.write"
+    const val INTEL_READ = "intel.read"                         // 威胁情报（Cloudforce One）
+    const val CASB_READ = "casb.read"                           // CASB SaaS 安全扫描
+    const val CASB_WRITE = "casb.write"
+
+    // —— 规则中心（对齐 iOS zone_rules：五个 Rulesets phase + Page Rules + 自定义错误页）——
+    const val DYNAMIC_REDIRECT_READ = "dynamic-redirect.read"   // 单条重定向（Single Redirects）
+    const val DYNAMIC_REDIRECT_WRITE = "dynamic-redirect.write"
+    const val ORIGIN_READ = "origin.read"                       // Origin Rules 源站规则
+    const val ORIGIN_WRITE = "origin.write"
+    const val CONFIG_SETTINGS_READ = "config-settings.read"     // Configuration Rules（含 URL 正规化）
+    const val CONFIG_SETTINGS_WRITE = "config-settings.write"
+    const val RESPONSE_COMPRESSION_READ = "response-compression.read"   // 压缩规则
+    const val RESPONSE_COMPRESSION_WRITE = "response-compression.write"
+    const val CUSTOM_ERRORS_READ = "custom-errors.read"         // 自定义错误页（规则）
+    const val CUSTOM_ERRORS_WRITE = "custom-errors.write"
+    const val PAGE_RULES_READ = "page-rules.read"               // 经典 Page Rules
+    const val PAGE_RULES_WRITE = "page-rules.write"
+
     /**
      * 默认申请的权限集，覆盖全部已对表 iOS 的功能（账号/域名/DNS/Workers/tail/Snippets/
      * 存储/Tunnel/WAF/Zone 设置/分析）。对应 iOS PermissionModels.allFeatures 的全选默认。
@@ -164,6 +224,29 @@ object Scopes {
         HYPERDRIVE_READ, HYPERDRIVE_WRITE,
         WORKERS_OBSERVABILITY_READ,
         NOTIFICATIONS_READ, NOTIFICATIONS_WRITE,
+        // 扩展集（与自建 Client 注册的 130 项对齐）
+        ACCOUNT_WRITE,
+        USER_DETAILS_READ, MEMBERSHIPS_READ, MEMBERSHIPS_WRITE,
+        LOGS_READ, LOGS_WRITE, ACCOUNT_LOGS_READ, ACCOUNT_LOGS_WRITE,
+        WAITING_ROOMS_READ, WAITING_ROOMS_WRITE,
+        DNS_FIREWALL_READ, DNS_FIREWALL_WRITE,
+        PAGE_SHIELD_READ,
+        CUSTOM_PAGES_READ, CUSTOM_PAGES_WRITE,
+        ZONE_VERSIONING_READ, ZONE_VERSIONING_WRITE,
+        ACCOUNT_RULESETS_READ, ACCOUNT_RULESETS_WRITE,
+        VECTORIZE_READ, VECTORIZE_WRITE,
+        BROWSER_RENDERING_READ, BROWSER_RENDERING_WRITE,
+        PIPELINES_READ, PIPELINES_WRITE,
+        CONTAINERS_READ, CONTAINERS_WRITE,
+        AI_SEARCH_READ, AI_SEARCH_WRITE,
+        SECRETS_STORE_READ, SECRETS_STORE_WRITE,
+        ZARAZ_READ, ZARAZ_WRITE,
+        MAGIC_TRANSIT_READ, MAGIC_TRANSIT_WRITE,
+        MAGIC_WAN_READ, MAGIC_WAN_WRITE,
+        MAGIC_FIREWALL_READ, MAGIC_FIREWALL_WRITE,
+        EMAIL_SENDING_READ, EMAIL_SENDING_WRITE,
+        INTEL_READ,
+        CASB_READ, CASB_WRITE,
     )
 
     /** 空格分隔、排序去重的 scope 字符串，直接用于 OAuth scope 参数。 */

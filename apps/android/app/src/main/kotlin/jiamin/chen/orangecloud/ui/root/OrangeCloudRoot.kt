@@ -29,8 +29,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import jiamin.chen.orangecloud.core.util.launchCustomTab
@@ -397,7 +400,18 @@ private fun MainScaffold(onOpenToolbox: () -> Unit) {
                         }
                     },
                     icon = { Icon(dest.icon, contentDescription = null) },
-                    label = { Text(stringResource(dest.labelRes)) },
+                    label = {
+                        // 五标签下长文本（如「开发者平台」）换行会挤压图标：
+                        // 1) 字号用 dp 转 sp，不随系统字体缩放，任何系统字号下都保持同一物理大小；
+                        // 2) 强制单行 + 省略号兜底，极端窄屏也不会换行挤压图标。
+                        Text(
+                            stringResource(dest.labelRes),
+                            maxLines = 1,
+                            softWrap = false,
+                            overflow = TextOverflow.Ellipsis,
+                            fontSize = with(LocalDensity.current) { 11.dp.toSp() },
+                        )
+                    },
                 )
             }
         },

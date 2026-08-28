@@ -311,5 +311,25 @@ private fun featureIcon(id: String) = when (id) {
     "waf" -> Icons.Outlined.Shield
     "zone_settings" -> Icons.Outlined.Tune
     "analytics" -> Icons.Outlined.BarChart
+    "identity" -> Icons.Outlined.Person
+    "logpush" -> Icons.Outlined.BarChart
+    "waiting_rooms" -> Icons.Outlined.Language
+    "dns_firewall" -> Icons.Outlined.Dns
+    "page_shield" -> Icons.Outlined.Shield
+    "custom_pages" -> Icons.Outlined.Code
+    "zone_versioning" -> Icons.Outlined.Tune
+    "account_rulesets" -> Icons.Outlined.Tune
+    "vectorize" -> Icons.Outlined.Storage
+    "browser_rendering" -> Icons.Outlined.Language
+    "pipelines" -> Icons.Outlined.Hub
+    "containers" -> Icons.Outlined.Storage
+    "ai_search" -> Icons.Outlined.Bolt
+    "secrets_store" -> Icons.Outlined.Key
+    "zaraz" -> Icons.Outlined.Code
+    "magic_network" -> Icons.Outlined.Hub
+    "email_sending" -> Icons.Outlined.Language
+    "intel" -> Icons.Outlined.Shield
+    "casb" -> Icons.Outlined.Shield
+    "zone_rules" -> Icons.Outlined.Tune
     else -> Icons.Outlined.Language
 }

@@ -37,7 +37,7 @@ extension FeaturePermission {
             description: String(localized: "查看账号基本信息和设置"),
             icon: "person.circle",
             readScopes: ["account-settings.read"],
-            editScopes: [],
+            editScopes: ["account-settings.write"],
             isRequired: true
         ),
         .init(
@@ -399,6 +399,178 @@ extension FeaturePermission {
             icon: "bell.badge",
             readScopes: ["notifications.read"],
             editScopes: ["notifications.write"],
+            isRequired: false
+        ),
+        // —— 扩展功能（与 Android PermissionCatalog 对齐；scope 均经 OAuth client 逐项探测核对，2026-08-28）——
+        .init(
+            id: "identity",
+            title: String(localized: "用户与成员"),
+            description: String(localized: "查看用户资料和账户成员"),
+            icon: "person.2",
+            readScopes: ["user-details.read", "memberships.read"],
+            editScopes: ["memberships.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "logpush",
+            title: String(localized: "日志推送"),
+            description: String(localized: "Logpush 日志任务管理"),
+            icon: "doc.text.magnifyingglass",
+            readScopes: ["logs.read", "account-logs.read"],
+            editScopes: ["logs.write", "account-logs.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "waiting_rooms",
+            title: String(localized: "等候室"),
+            description: String(localized: "Waiting Room 排队管理"),
+            icon: "person.3.sequence",
+            readScopes: ["waiting-rooms.read"],
+            editScopes: ["waiting-rooms.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "dns_firewall",
+            title: String(localized: "DNS 防火墙"),
+            description: String(localized: "DNS Firewall 集群管理"),
+            icon: "network.badge.shield.half.filled",
+            readScopes: ["dns-firewall.read"],
+            editScopes: ["dns-firewall.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "page_shield",
+            title: "Page Shield",
+            description: String(localized: "页面脚本安全监测"),
+            icon: "checkmark.shield",
+            readScopes: ["page-shield.read"],
+            editScopes: [],
+            isRequired: false
+        ),
+        .init(
+            id: "custom_pages",
+            title: String(localized: "自定义页面"),
+            description: String(localized: "自定义错误与质询页面"),
+            icon: "doc.badge.gearshape",
+            readScopes: ["custom-pages.read"],
+            editScopes: ["custom-pages.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "zone_versioning",
+            title: String(localized: "版本管理"),
+            description: String(localized: "域名配置版本与回滚"),
+            icon: "clock.arrow.circlepath",
+            readScopes: ["zone-versioning.read"],
+            editScopes: ["zone-versioning.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "account_rulesets",
+            title: String(localized: "账户规则集"),
+            description: String(localized: "账户级 Rulesets 管理"),
+            icon: "list.bullet.rectangle",
+            readScopes: ["account-rulesets.read"],
+            editScopes: ["account-rulesets.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "vectorize",
+            title: "Vectorize",
+            description: String(localized: "向量索引管理"),
+            icon: "circle.grid.3x3",
+            readScopes: ["vectorize.read"],
+            editScopes: ["vectorize.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "browser_rendering",
+            title: String(localized: "浏览器渲染"),
+            description: String(localized: "Browser Rendering 无头浏览器"),
+            icon: "macwindow",
+            readScopes: ["browser-rendering.read"],
+            editScopes: ["browser-rendering.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "pipelines",
+            title: String(localized: "数据管道"),
+            description: String(localized: "Pipelines 数据流管理"),
+            icon: "arrow.triangle.swap",
+            readScopes: ["pipelines.read"],
+            editScopes: ["pipelines.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "containers",
+            title: String(localized: "容器"),
+            description: String(localized: "Workers Containers 管理"),
+            icon: "shippingbox",
+            readScopes: ["containers.read"],
+            editScopes: ["containers.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "ai_search",
+            title: "AI Search",
+            description: String(localized: "AI Search（AutoRAG）实例管理"),
+            icon: "sparkle.magnifyingglass",
+            readScopes: ["ai-search.read"],
+            editScopes: ["ai-search.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "secrets_store",
+            title: "Secrets Store",
+            description: String(localized: "账户级密钥存储"),
+            icon: "key.horizontal",
+            readScopes: ["secrets-store.read"],
+            editScopes: ["secrets-store.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "zaraz",
+            title: "Zaraz",
+            description: String(localized: "Zaraz 第三方工具管理"),
+            icon: "curlybraces.square",
+            readScopes: ["zaraz.read"],
+            editScopes: ["zaraz.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "magic_network",
+            title: String(localized: "Magic 网络"),
+            description: String(localized: "Magic Transit / WAN / Firewall"),
+            icon: "point.3.connected.trianglepath.dotted",
+            readScopes: ["magic-transit.read", "magic-wan.read", "magic-firewall.read"],
+            editScopes: ["magic-transit.write", "magic-wan.write", "magic-firewall.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "email_sending",
+            title: String(localized: "邮件发送"),
+            description: String(localized: "Email Sending 发信管理"),
+            icon: "paperplane",
+            readScopes: ["email-sending.read"],
+            editScopes: ["email-sending.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "intel",
+            title: String(localized: "威胁情报"),
+            description: String(localized: "Cloudforce One 威胁情报"),
+            icon: "eye.trianglebadge.exclamationmark",
+            readScopes: ["intel.read"],
+            editScopes: [],
+            isRequired: false
+        ),
+        .init(
+            id: "casb",
+            title: "CASB",
+            description: String(localized: "SaaS 安全态势扫描"),
+            icon: "checklist.checked",
+            readScopes: ["casb.read"],
+            editScopes: ["casb.write"],
             isRequired: false
         ),
     ]

@@ -17,7 +17,8 @@ data class PermissionFeature(
 
 object PermissionCatalog {
     val features: List<PermissionFeature> = listOf(
-        PermissionFeature("account", R.string.perm_account, R.string.perm_account_desc, listOf(Scopes.ACCOUNT_READ)),
+        PermissionFeature("account", R.string.perm_account, R.string.perm_account_desc, listOf(Scopes.ACCOUNT_READ), listOf(Scopes.ACCOUNT_WRITE)),
+        PermissionFeature("identity", R.string.perm_identity, R.string.perm_identity_desc, listOf(Scopes.USER_DETAILS_READ, Scopes.MEMBERSHIPS_READ), listOf(Scopes.MEMBERSHIPS_WRITE)),
         PermissionFeature("zones", R.string.perm_zones, R.string.perm_zones_desc, listOf(Scopes.ZONE_READ), listOf(Scopes.ZONE_WRITE), required = true),
         PermissionFeature("dns", R.string.perm_dns, R.string.perm_dns_desc, listOf(Scopes.DNS_READ), listOf(Scopes.DNS_WRITE)),
         PermissionFeature("workers", R.string.perm_workers, R.string.perm_workers_desc, listOf(Scopes.WORKERS_READ, Scopes.WORKERS_ROUTES_READ, Scopes.WORKERS_OBSERVABILITY_READ), listOf(Scopes.WORKERS_WRITE, Scopes.WORKERS_ROUTES_WRITE)),
@@ -57,6 +58,32 @@ object PermissionCatalog {
         PermissionFeature("hyperdrive", R.string.perm_hyperdrive, R.string.perm_hyperdrive_desc, listOf(Scopes.HYPERDRIVE_READ), listOf(Scopes.HYPERDRIVE_WRITE)),
         PermissionFeature("turnstile", R.string.perm_turnstile, R.string.perm_turnstile_desc, listOf(Scopes.CHALLENGE_WIDGETS_READ), listOf(Scopes.CHALLENGE_WIDGETS_WRITE)),
         PermissionFeature("notifications", R.string.perm_notifications, R.string.perm_notifications_desc, listOf(Scopes.NOTIFICATIONS_READ), listOf(Scopes.NOTIFICATIONS_WRITE)),
+        // —— 扩展功能（对齐自建 OAuth Client 注册的完整 130 项 scope，逐项探测核对）——
+        PermissionFeature("logpush", R.string.perm_logpush, R.string.perm_logpush_desc, listOf(Scopes.LOGS_READ, Scopes.ACCOUNT_LOGS_READ), listOf(Scopes.LOGS_WRITE, Scopes.ACCOUNT_LOGS_WRITE)),
+        PermissionFeature("waiting_rooms", R.string.perm_waiting_rooms, R.string.perm_waiting_rooms_desc, listOf(Scopes.WAITING_ROOMS_READ), listOf(Scopes.WAITING_ROOMS_WRITE)),
+        PermissionFeature("dns_firewall", R.string.perm_dns_firewall, R.string.perm_dns_firewall_desc, listOf(Scopes.DNS_FIREWALL_READ), listOf(Scopes.DNS_FIREWALL_WRITE)),
+        PermissionFeature("page_shield", R.string.perm_page_shield, R.string.perm_page_shield_desc, listOf(Scopes.PAGE_SHIELD_READ)),
+        PermissionFeature("custom_pages", R.string.perm_custom_pages, R.string.perm_custom_pages_desc, listOf(Scopes.CUSTOM_PAGES_READ), listOf(Scopes.CUSTOM_PAGES_WRITE)),
+        PermissionFeature("zone_versioning", R.string.perm_zone_versioning, R.string.perm_zone_versioning_desc, listOf(Scopes.ZONE_VERSIONING_READ), listOf(Scopes.ZONE_VERSIONING_WRITE)),
+        PermissionFeature("account_rulesets", R.string.perm_account_rulesets, R.string.perm_account_rulesets_desc, listOf(Scopes.ACCOUNT_RULESETS_READ), listOf(Scopes.ACCOUNT_RULESETS_WRITE)),
+        PermissionFeature("vectorize", R.string.perm_vectorize, R.string.perm_vectorize_desc, listOf(Scopes.VECTORIZE_READ), listOf(Scopes.VECTORIZE_WRITE)),
+        PermissionFeature("browser_rendering", R.string.perm_browser_rendering, R.string.perm_browser_rendering_desc, listOf(Scopes.BROWSER_RENDERING_READ), listOf(Scopes.BROWSER_RENDERING_WRITE)),
+        PermissionFeature("pipelines", R.string.perm_pipelines, R.string.perm_pipelines_desc, listOf(Scopes.PIPELINES_READ), listOf(Scopes.PIPELINES_WRITE)),
+        PermissionFeature("containers", R.string.perm_containers, R.string.perm_containers_desc, listOf(Scopes.CONTAINERS_READ), listOf(Scopes.CONTAINERS_WRITE)),
+        PermissionFeature("ai_search", R.string.perm_ai_search, R.string.perm_ai_search_desc, listOf(Scopes.AI_SEARCH_READ), listOf(Scopes.AI_SEARCH_WRITE)),
+        PermissionFeature("secrets_store", R.string.perm_secrets_store, R.string.perm_secrets_store_desc, listOf(Scopes.SECRETS_STORE_READ), listOf(Scopes.SECRETS_STORE_WRITE)),
+        PermissionFeature("zaraz", R.string.perm_zaraz, R.string.perm_zaraz_desc, listOf(Scopes.ZARAZ_READ), listOf(Scopes.ZARAZ_WRITE)),
+        PermissionFeature("magic_network", R.string.perm_magic_network, R.string.perm_magic_network_desc, listOf(Scopes.MAGIC_TRANSIT_READ, Scopes.MAGIC_WAN_READ, Scopes.MAGIC_FIREWALL_READ), listOf(Scopes.MAGIC_TRANSIT_WRITE, Scopes.MAGIC_WAN_WRITE, Scopes.MAGIC_FIREWALL_WRITE)),
+        PermissionFeature("email_sending", R.string.perm_email_sending, R.string.perm_email_sending_desc, listOf(Scopes.EMAIL_SENDING_READ), listOf(Scopes.EMAIL_SENDING_WRITE)),
+        PermissionFeature("intel", R.string.perm_intel, R.string.perm_intel_desc, listOf(Scopes.INTEL_READ)),
+        PermissionFeature("casb", R.string.perm_casb, R.string.perm_casb_desc, listOf(Scopes.CASB_READ), listOf(Scopes.CASB_WRITE)),
+        // 规则中心（对齐 iOS zone_rules）：五个 Rulesets phase + Page Rules；
+        // config-settings 同时覆盖 URL 正规化。缺这组会导致进规则页还要逐个补授权。
+        PermissionFeature("zone_rules", R.string.perm_zone_rules, R.string.perm_zone_rules_desc,
+            listOf(Scopes.DYNAMIC_REDIRECT_READ, Scopes.ORIGIN_READ, Scopes.CONFIG_SETTINGS_READ,
+                Scopes.RESPONSE_COMPRESSION_READ, Scopes.CUSTOM_ERRORS_READ, Scopes.PAGE_RULES_READ),
+            listOf(Scopes.DYNAMIC_REDIRECT_WRITE, Scopes.ORIGIN_WRITE, Scopes.CONFIG_SETTINGS_WRITE,
+                Scopes.RESPONSE_COMPRESSION_WRITE, Scopes.CUSTOM_ERRORS_WRITE, Scopes.PAGE_RULES_WRITE)),
     )
 
     /** 默认全选的功能 id 集合。 */
