@@ -4,7 +4,7 @@ compatibility_date = "2026-08-28"
 workers_dev = false
 
 routes = [
-  { pattern = "", custom_domain = true }
+  { pattern = "xxx.xxx.us.kg", custom_domain = true }
 ]
 
 # 设备名单存储。先执行：npx wrangler kv namespace create DEVICES
