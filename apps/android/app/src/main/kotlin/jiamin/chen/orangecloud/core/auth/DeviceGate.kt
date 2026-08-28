@@ -22,6 +22,11 @@ import javax.inject.Singleton
 class DeviceGate @Inject constructor(
     @ApplicationContext private val context: Context,
 ) {
+    private companion object {
+        /** 节流间隔：5 分钟内复用上次封禁检查结果 */
+        const val THROTTLE_MS = 5 * 60 * 1000L
+    }
+
     /** 由 OAuth 回调地址推导控制台 API 基址（同一 Worker 域名）。 */
     private val baseUrl: String by lazy {
         val uri = android.net.Uri.parse(OAuthConfig.redirectUri)

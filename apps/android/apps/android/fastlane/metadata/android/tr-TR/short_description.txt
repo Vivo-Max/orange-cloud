@@ -1,1 +1,0 @@
-Yanınızda Cloudflare: OAuth girişi, DNS, Workers, analitik, depolama ve WAF

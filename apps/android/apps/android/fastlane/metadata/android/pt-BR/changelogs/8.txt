@@ -1,3 +1,0 @@
-• Caixa de ferramentas do desenvolvedor sem login
-• Central de Push
-• Alertas da Cloudflare no seu celular
