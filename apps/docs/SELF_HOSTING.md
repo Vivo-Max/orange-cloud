@@ -169,5 +169,5 @@ EOF
 ## 8. 安全须知
 
 - `ADMIN_PASSWORD`、API Token、keystore 密码等**只放 Secret**，永远不要提交进仓库；
-- 如果密码曾经明文泄露（包括发在聊天记录里），请立即更换：`npx wrangler secret put ADMIN_PASSWORD`；
-- 封禁与上限对终端用户不可感知（只表现为"登录失败"），请勿在公开渠道说明该机制细节。
+- 如果密码曾经明文泄露，请立即更换：`npx wrangler secret put ADMIN_PASSWORD`；
+- 请勿在公开渠道说明该机制细节。
